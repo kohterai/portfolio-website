@@ -2,14 +2,33 @@
 This dictates how the rest of the page loads*/
 var ContentArea = React.createClass({
   getInitialState: function() {
-    return {mode: 'Developer'};
+    return {
+      mode: 'Developer',
+      project: 'nyuvote'
+    };
+  },
+  setProject: function(newProject) {
+    this.setState({project: newProject});
   },
   render: function() {
     return(
       <div>
-        <ProjectsMenu mode={this.state.mode} />
+        <ProjectsMenu mode={this.state.mode} setProject={this.setProject}/>
+        <ProjectsDetails project={this.state.project} />
       </div>
     );
+  }
+})
+
+/*ProjectsDetails is loaded according to the project state of ContentArea.*/
+var ProjectsDetails = React.createClass({
+  render: function() {
+    var projectDetailHTML = projectDetails[this.props.project];
+    console.log(this.props.project);
+    console.log(projectDetailHTML);
+    return (
+      <div dangerouslySetInnerHTML={{__html: projectDetailHTML}}></div>
+    )
   }
 })
 
@@ -20,7 +39,7 @@ var ProjectsMenu = React.createClass({
     return {displayProject: false};
   },
   onClick: function(color) {
-    this.setState({displayProject: color});
+    this.props.setProject(color)
   },
   isTrue: function() {
     if (this.state.displayProject=='orange') {
@@ -92,6 +111,10 @@ var DeveloperDetails = [
   {title: 'Student Voice', description: 'Student Service Communication ', keyword: 'studentvoice'},
   {title: 'Misc Works', description: 'Research and Classwork', keyword: 'misccswork'}
 ];
+
+var projectDetails =
+  {nyuvote: '<div>asdifjdsaiofj</div>',
+  yalla: "<div class='orangeBox'></div>"};
 
 React.render(
   <ContentArea />, document.getElementById('container')
