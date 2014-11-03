@@ -13,11 +13,13 @@ var ContentArea = React.createClass({
   }
 })
 
+/*ProjectsMenu is created from the projects constant set
+which set to choose from is determined by this.state.mode*/
 var ProjectsMenu = React.createClass({
   getInitialState: function(){
     return {displayProject: false};
   },
-  onClicker: function(color) {
+  onClick: function(color) {
     this.setState({displayProject: color});
   },
   isTrue: function() {
@@ -28,11 +30,31 @@ var ProjectsMenu = React.createClass({
         };
   },
   render: function() {
-    return(
+    if (this.state.mode = 'Developer'){
+      var menuList = DeveloperDetails;
+    };
+
+    //Each menuList is a dict of {tite: , description:, keyword: }
+    return (
+      <ul className="menuList">
+        <h3>Projects</h3>
+        {menuList.map(function(item){
+          return (
+            <li key={item['keyword']} className="menuItem" onClick={this.onClick.bind(this, item['keyword'])}>
+              <h4>{item['title']}</h4>
+              <h5>{item['description']}</h5>
+            </li>
+            );
+          }, this)
+        }
+      </ul>
+    )
+
+/*
       <div>
       <ul>
-        <li onClick={this.onClicker.bind(this, 'orange')}>NYU Vote</li>
-        <li onClick={this.onClicker.bind(this, 'blue')}>wellSense</li>
+        <li onClick={this.onClick.bind(this, 'orange')}>NYU Vote</li>
+        <li onClick={this.onClick.bind(this, 'blue')}>wellSense</li>
         <li>Student Voice</li>
         <li>Misc Works</li>
         <li>{this.props.mode}</li>
@@ -40,8 +62,10 @@ var ProjectsMenu = React.createClass({
       {this.isTrue()}
       </div>
     );
+*/
   }
 });
+
 
 var OrangeBox = React.createClass({
   render: function() {
@@ -61,7 +85,7 @@ var BlueBox = React.createClass({
   }
 });
 
-var PROJECTS = [
+var DeveloperDetails = [
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},

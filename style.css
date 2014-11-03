@@ -1,3 +1,10 @@
+body {
+	font-family: Source Sans Pro;
+}
+ul {
+	list-style-type: none;
+}
+
 .orangeBox {
 	background-color: orange;
 	height: 200px;
