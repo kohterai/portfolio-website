@@ -14,10 +14,13 @@ var ContentArea = React.createClass({
   render: function() {
     //which menuList to send into the menu is decided here
     if (this.state.mode == 'Developer'){
-      var menuList = DeveloperDetails;
+      var menuList = DeveloperDetails
+      var modeDescription = "I am currently studying computer science at New York University Abu Dhabi.  I've been\
+      keen on technology since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade."
     };
     return(
       <div>
+        <Header mode={this.state.mode} description={modeDescription} />
         <SkillsDetail />
         <div id="projectElements">
           <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
@@ -25,6 +28,17 @@ var ContentArea = React.createClass({
         </div>
       </div>
     );
+  }
+})
+
+var Header = React.createClass({
+  render: function() {
+    return(
+      <div className='header'>
+        <div id='kohTitle'>KOH TERAI</div><div id='modeTitle'>as a {this.props.mode}</div>
+        <p id='modeDescription'>{this.props.description}</p>
+      </div>
+      )
   }
 })
 
@@ -54,15 +68,15 @@ var SkillsDetail = React.createClass({
   }
 })
 
-/*ProjectsDetails is loaded according to the project state of ContentArea.*/
+/*Once ProjectsDetails is rendered, our default html is loaded in..*/
 var ProjectsDetails = React.createClass({
   render: function() {
-    var projectDetailHTML = projectDetails[this.props.project];
-    console.log(this.props.project);
-    console.log(projectDetailHTML);
     return (
-      <div className='projectDetail' dangerouslySetInnerHTML={{__html: projectDetailHTML}}></div>
+      <div className='projectDetail'></div>
     )
+  },
+  componentDidMount: function(){
+    {$(".projectDetail").load('projectsHTML/'+'nyuvote'+'.html')}
   }
 })
 
@@ -99,10 +113,6 @@ var DeveloperDetails = [
   {title: 'Student Voice', description: 'Student Service Communication ', keyword: 'studentvoice'},
   {title: 'Misc Works', description: 'Research and Classwork', keyword: 'misccswork'}
 ];
-
-var projectDetails =
-  {nyuvote: "",
-  yalla: "<div class='orangeBox'></div>"};
 
 React.render(
   <ContentArea />, document.getElementById('container')

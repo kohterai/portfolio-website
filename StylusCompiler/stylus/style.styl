@@ -1,6 +1,7 @@
 body
   font-family: Source Sans Pro
   color: #3C8DA6
+  padding-top 30px
 
 #container
   max-width: 900px
@@ -10,9 +11,13 @@ body
 ul
   list-style-type: none
 
+li
+  cursor pointer
+
 //Project title
 h2
   margin: 0px
+  font-weight: 700
 
 //"Projects" and "Skills" heading
 h3
@@ -23,6 +28,7 @@ h3
 h4
   margin: 5px 0px 0px 0px
   font-weight: 600
+  font-size 1.4em
 
 h5
   margin: 0px
@@ -60,3 +66,43 @@ p
 
 .skillTable
   margin-bottom: 40px
+
+.fullWidth
+  width 100%
+
+.halfWidth
+  width 49.4%
+  display inline-block
+  
+.thinBorder
+  border-style solid
+  border-color #CFCFCF
+  border-width 1px
+
+.center
+  margin 15px 0px
+  display flex
+  justify-content center
+
+.button
+  border 1px solid #CFCFCF
+  border-radius 5px
+  text-decoration: none
+  color #CFCFCF
+  padding 10px 20px
+  margin 0 10px
+  transition: color 0.1s linear;
+  &:hover
+    color #7C7C7C
+    border-color #7C7C7C
+  
+#kohTitle
+  display inline-block
+  font-size 2em
+  font-weight 300
+  margin-right 5px
+  
+#modeTitle
+  display inline-block
+  font-weight 300
+  font-size 1.4em
