@@ -117,3 +117,16 @@ var DeveloperDetails = [
 React.render(
   <ContentArea />, document.getElementById('container')
 );
+
+$(document).ready(function() {  
+ // check where the shoppingcart-div is  
+ var offset = $('.menuList').offset();
+ console.log(offset)
+
+ $(window).scroll(function () {  
+   var scrollTop = $(window).scrollTop(); // check the visible top of the browser  
+
+   if (offset.top<scrollTop) $('.menuList').addClass('fixed');  
+   else $('.menuList').removeClass('fixed');  
+  });  
+});
