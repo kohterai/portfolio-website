@@ -5,11 +5,11 @@ var ContentArea = React.createClass({
   getInitialState: function() {
     return {
       mode: 'Developer',
-      project: 'nyuvote'
     };
   },
   setProject: function(newProject) {
-    this.setState({project: newProject});
+    {$(".projectDetail").load('projectsHTML/'+newProject+'.html')}
+    // this.setState({project: newProject});
   },
   render: function() {
     //which menuList to send into the menu is decided here
@@ -21,7 +21,7 @@ var ContentArea = React.createClass({
         <SkillsDetail />
         <div id="projectElements">
           <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
-          <ProjectsDetails project={this.state.project} />
+          <ProjectsDetails project={'yalla'} />
         </div>
       </div>
     );
@@ -101,7 +101,7 @@ var DeveloperDetails = [
 ];
 
 var projectDetails =
-  {nyuvote: "<div class='blueBox'></div>",
+  {nyuvote: "",
   yalla: "<div class='orangeBox'></div>"};
 
 React.render(
