@@ -6,111 +6,70 @@ var NotFoundRoute = Router.NotFoundRoute;
 var DefaultRoute = Router.DefaultRoute;
 var Link = Router.Link;
 
-/*The ContentArea sets the mode state either in Developer or Photographer.
-This dictates how the rest of the page loads*/
-var ContentArea = React.createClass({
-  //set here the default project and mode to be loaded
+
+
+
+//Landing screen where user selects which mode.  Clicking mode will switch out components w/ appropiate mode.
+var SelectMode = React.createClass({
+  render: function() {
+    return(
+      <div className="selectMode">
+        <h1 id="modeSelectTitle">KOH TERAI</h1>
+
+        <Link to="developer">
+          <img className="circularPhoto" src="images/KohApple-Circular.png" />
+          <h2 className="modeLabel">product designer</h2>
+        </Link>
+
+        <Link to="photographer">
+          <img className="circularPhoto" src="images/KohCamera-Circular.png" />
+          <h2 className="modeLabel">photographer</h2>
+        </Link>
+      </div>
+    )
+  }
+});
+
+
+//In charge of the projects menubar and loading projects
+var ProjectDisplay = React.createClass({
   getInitialState: function() {
     return {
-      mode: 'Developer',
+      mode: this.props.mode,
     };
-  },
-  setProject: function(newProject) {
-    {$(".projectDetail").load('projectsHTML/'+newProject+'.html')}
-    // this.setState({project: newProject});
   },
   render: function() {
     //which menuList to send into the menu is decided here
     if (this.state.mode == 'Developer'){
       var menuList = DeveloperDetails
-      var modeDescription = "I am currently studying computer science at New York University Abu Dhabi.  I've been\
-      keen on technology since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade."
     };
     return(
       <div>
-        <Header mode={this.state.mode} description={modeDescription} />
-        <SkillsDetail />
         <div id="projectElements">
           <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
-          <ProjectsDetails project={'yalla'} />
+          <this.props.activeRouteHandler/>
         </div>
-        <this.props.activeRouteHandler/>
       </div>
     );
   }
 })
 
-var routes = (
-  <Routes location="history">
-    <Route name="contentArea" path="" handler={ContentArea}>
-      <Route name="yalla" handler={}
-  )
-
-var Header = React.createClass({
-  render: function() {
-    return(
-      <div className='header'>
-        <div id='kohTitle'>KOH TERAI</div><div id='modeTitle'>as a {this.props.mode}</div>
-        <p id='modeDescription'>{this.props.description}</p>
-      </div>
-      )
-  }
-})
-
-var SkillsDetail = React.createClass({
-  render: function() {
-    return(
-      <div className="skillTable">
-        <h3>Skills</h3>
-        <table>
-          <tr>
-            <td>InDesign</td>
-            <td>Photoshop</td>
-            <td>Illustrator</td>
-            <td>Keynote</td>
-          </tr>
-          <tr>
-            <td>Python</td>
-            <td>MongoDB</td>
-            <td>C++</td>
-            <td>C</td>
-            <td>HTML</td>
-            <td>CSS</td>
-          </tr>
-        </table>
-      </div>
-    )
-  }
-})
-
-/*Once ProjectsDetails is rendered, our default html is loaded in..*/
-var ProjectsDetails = React.createClass({
-  render: function() {
-    return (
-      <div className='projectDetail'></div>
-    )
-  },
-  componentDidMount: function(){
-    {$(".projectDetail").load('projectsHTML/'+'nyuvote'+'.html')}
-  }
-})
 
 /*ProjectsMenu is created from the projects constant set
 which set to choose from is determined by this.state.mode*/
 var ProjectsMenu = React.createClass({
-  onClick: function(color) {
-    this.props.setProject(color)
-  },
   render: function() {
     //Each menuList is a dict of {tite: , description:, keyword: }
+    //item['description'] to print out desciption as well
     return (
       <ul className="menuList">
         <h3>Projects</h3>
         {this.props.menuList.map(function(item){
           return (
-            <li key={item['keyword']} className="menuItem" onClick={this.onClick.bind(this, item['keyword'])}>
-              <h4>{item['title']}</h4>
-              <h5>{item['description']}</h5>
+            <li key={item['keyword']} className="menuItem">
+              <Link to={item['keyword']}>
+                <h4>{item['title']}</h4>
+              </Link>
             </li>
             );
           }, this)
@@ -120,18 +79,55 @@ var ProjectsMenu = React.createClass({
   }
 });
 
+var NYUVote = React.createClass({
+  render: function() {
+    return(
+      <p>Yay we are isnide of Yalla</p>
+    )
+  }
+})
+
+
+var Georgia = React.createClass({
+  render: function() {
+    return(
+      <p>Yay we are isnide of Georgia</p>
+    )
+  }
+})
 
 var DeveloperDetails = [
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
   {title: 'Student Voice', description: 'Student Service Communication ', keyword: 'studentvoice'},
-  {title: 'Misc Works', description: 'Research and Classwork', keyword: 'misccswork'}
+  {title: 'Misc Works', description: 'Research and Classwork', keyword: 'miscswork'}
 ];
 
-React.render(
-  <ContentArea />, document.getElementById('container')
+
+//name must be identical to the keyword inside menu keyword
+//we use the ProjectDisplay component but with the mode parameter as Photographer
+var routes = (
+  <Routes location="hash">
+    <Route path="/" handler={SelectMode} />
+    <Route path="/dev" name="developer" mode={"Developer"} handler={ProjectDisplay}>
+      <Route name="nyuvote" handler={NYUVote} />
+      <Route name="yalla" handler={NYUVote} />
+      <Route name="wellsense" handler={NYUVote} />
+      <Route name="studentvoice" handler={NYUVote} />
+      <Route name="miscswork" handler={NYUVote} />
+    </Route>
+    <Route path="/photo" name="photographer" mode={"Photographer"} handler={ProjectDisplay}>
+      <Route name="georgia" handler={Georgia} />
+    </Route>
+  </Routes>
 );
+
+
+React.render(
+  routes, document.getElementById('container')
+);
+
 
 $(document).ready(function() {  
  // check where the shoppingcart-div is  
