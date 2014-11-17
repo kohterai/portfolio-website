@@ -1,15 +1,24 @@
+darkerblack = #7C7C7C
+lighterblack = #9D9D9D
+lightestGray = #CFCFCF
+blue = #81A8C5
+
 body
-  font-family: Source Sans Pro
-  color: #3C8DA6
+  font-family: Lato
+  color: blue
   padding-top 30px
 
 #container
   max-width: 1200px
   margin-left: auto
   margin-right: auto
+  padding: 0px 30px
 
 ul
   list-style-type: none
+
+a
+  text-decoration: none
 
 li
   cursor pointer
@@ -21,41 +30,34 @@ li
 
 //Project title
 h2
-  margin: 0px
-  font-weight: 700
+  margin: -10px
+  font-size 3em
+  font-weight: 600
 
 //"Projects" and "Skills" heading
 h3
   margin: 0px 0px 0px 0px
-  font-size: 1.5em
+  font-size: 1.2em
   font-weight: 300
+  color darkerblack
+
 
 h4
   margin: 5px 0px 0px 0px
   font-weight: 600
   font-size 1.4em
-
+  
 h5
   margin: 0px
   font-weight: 300
 
 p
   font-weight: 300
-
-.skillTable
-  font-weight: 300
-
-.orangeBox 
-  background-color: orange
-  height: 200px
-  width: 100%
+  color: lighterblack
 
 
-.blueBox
-  background-color: blue
-  height: 200px
-  width: 100%
-  
+
+//******FOR THE PROJECTS MENU******//  
 .menuList
   width: 20%
   padding: 0px
@@ -63,26 +65,57 @@ p
   margin-right: 30px
   display: inline-block
   vertical-align:top
+  position fixed
+  top 15%
+
+#menuKohHeading
+  font-size 1.7em
+  font-weight 200
+  margin-bottom 40px
+  
+#projectHeading
+  color blue
+  margin-bottom 10px
+  font-weight 300
+  font-size 1.2em
+  
+
+a
+  color lightestGray
+  font-weight 200
+  line-height 1.8em
+  font-size 1.1em
+  &.active
+    color darkerblack 
+
   
 .projectDetail
   float: right
-  width: 70%
+  width: 80%
   display: inline-block
   vertical-align:top
+  text-align center
+  img
+    margin 10px 0px
+    
 
-.skillTable
-  margin-bottom: 40px
+//*****FOR IMAGE MANIPULATION FOR PROJECT DETAILS*****//
+.left
+  float left
+
+.right
+  float right  
 
 .fullWidth
   width 100%
 
 .halfWidth
-  width 49.4%
+  width 48%
   display inline-block
-  
+
 .thinBorder
   border-style solid
-  border-color #CFCFCF
+  border-color lightestGray
   border-width 1px
 
 .center
@@ -90,29 +123,23 @@ p
   display flex
   justify-content center
 
+//our buttons for accessing code, page, etc
 .button
-  border 1px solid #CFCFCF
+  border 1px solid lightestGray
   border-radius 5px
   text-decoration: none
-  color #CFCFCF
+  color lightestGray
   padding 10px 20px
   margin 0 10px
   transition: color 0.1s linear;
   &:hover
-    color #7C7C7C
-    border-color #7C7C7C
+    color darkerblack
+    border-color darkerblack
+  i
+    margin-right 8px
   
-#kohTitle
-  display inline-block
-  font-size 2em
-  font-weight 300
-  margin-right 5px
-  
-#modeTitle
-  display inline-block
-  font-weight 300
-  font-size 1.4em
-  
+
+//WHALE//
 .fixed
   position: fixed
   top: 20px

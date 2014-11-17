@@ -47,7 +47,9 @@ var ProjectDisplay = React.createClass({
       <div>
         <div id="projectElements">
           <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
-          <this.props.activeRouteHandler/>
+          <div className="projectDetail">
+            <this.props.activeRouteHandler/>
+          </div>
         </div>
       </div>
     );
@@ -63,14 +65,15 @@ var ProjectsMenu = React.createClass({
     //item['description'] to print out desciption as well
     return (
       <ul className="menuList">
-        <h3>Projects</h3>
+        <div id="menuKohHeading">Koh Terai</div>
+        <div id="projectHeading">Projects</div>
         {this.props.menuList.map(function(item){
           return (
-            <li key={item['keyword']} className="menuItem">
-              <Link to={item['keyword']}>
-                <h4>{item['title']}</h4>
-              </Link>
-            </li>
+            <Link to={item['keyword']}>
+              <li key={item['keyword']} className="menuItem">
+              <div className="menuItem">{item['title']}</div>
+              </li>
+            </Link>  
             );
           }, this)
         }
@@ -82,7 +85,26 @@ var ProjectsMenu = React.createClass({
 var NYUVote = React.createClass({
   render: function() {
     return(
-      <p>Yay we are isnide of Yalla</p>
+      <div>
+        <h2>NYU Vote</h2>
+        <h3>Target audience of 20,000 over the NYU Global Network</h3>
+        <p>NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively.</p>
+        <img className='fullWidth' src='images/VoteHome.png' />
+        <p>The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well.</p>
+        <div className='halfWidthContainer'>
+          <img className='halfWidth thinBorder left' src='images/VoteMobile-1.png' />
+          <img className='halfWidth thinBorder right' src='images/VoteMobile-2.png' />
+        </div>
+        <img className='fullWidth thinBorder' src='images/VoteEnteringBallot.png' />
+        <p>The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app.</p>
+        <img className='fullWidth thinBorder' src='images/VoteBallot.png' />
+        <p>Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process.</p>
+        <img className='fullWidth' src='images/VoteButtonFlow.png' />
+        <div className='center'>
+          <a className="button" href="https://vote.nyuapps.com/" target="_blank"><i className="fa fa-laptop"></i>View Website</a>
+          <a className="button" href="https://github.com/hackAD/nyu-vote" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
+        </div>
+      </div>
     )
   }
 })
@@ -96,6 +118,7 @@ var Georgia = React.createClass({
   }
 })
 
+//Title is what shows up in the menu list
 var DeveloperDetails = [
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
@@ -127,17 +150,3 @@ var routes = (
 React.render(
   routes, document.getElementById('container')
 );
-
-
-$(document).ready(function() {  
- // check where the shoppingcart-div is  
- var offset = $('.menuList').offset();
- console.log(offset)
-
- $(window).scroll(function () {  
-   var scrollTop = $(window).scrollTop(); // check the visible top of the browser  
-
-   if (offset.top<scrollTop) $('.menuList').addClass('fixed');  
-   else $('.menuList').removeClass('fixed');  
-  });  
-});
