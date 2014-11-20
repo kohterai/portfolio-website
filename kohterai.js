@@ -72,7 +72,7 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
           return (
             React.createElement(Link, {to: item['keyword']}, 
               React.createElement("li", {key: item['keyword'], className: "menuItem"}, 
-              React.createElement("div", {className: "menuItem"}, item['title'])
+              React.createElement("div", {className: "menuItem hover-effect"}, item['title'])
               )
             )  
             );
