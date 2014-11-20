@@ -67,13 +67,12 @@ var ProjectsMenu = React.createClass({
       <ul className="menuList">
         <div id="menuKohHeading">Koh Terai</div>
         <div id="projectHeading">Projects</div>
+        <div id="projectMenuCirlce"></div>
         {this.props.menuList.map(function(item){
+          // var clickHandler = this.menuItemClicked.bind(this, item);
           return (
-            <Link to={item['keyword']}>
-              <li key={item['keyword']} className="menuItem">
-              <div className="menuItem hover-effect">{item['title']}</div>
-              </li>
-            </Link>  
+              <ProjectMenuItem keyword={item['keyword']} title={item['title']} />
+              // <ProjectMenuItem  onClick={this.menuItemClicked} keyword='nyuvote' title='pumklin' />
             );
           }, this)
         }
@@ -81,6 +80,35 @@ var ProjectsMenu = React.createClass({
     )
   }
 });
+
+//We need to change the 
+
+//Each menu item needs to be its own component so that we can use getDOMNode() for the menu circle position manipulation
+var ProjectMenuItem = React.createClass({
+  menuItemClicked: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    //we get the cordinates of the clicked menu item then manipulate #projectMenuCircle with it
+    //getDOMNode() is needed to taget the DOM element instead of the react component
+    console.log(menuCircle)
+    var menuItemCoords = this.getDOMNode().getBoundingClientRect();
+    console.log('Before: ');
+    console.log(menuCircle.style.top)
+    menuCircle.style.top = menuItemCoords.top;
+    console.log('After: ');
+    console.log(menuCircle.style.top)
+    menuCircle.style.left = menuItemCoords.left;
+    // console.log(menuItemCoords);
+  },
+  render: function() {
+    return(
+      <Link to={this.props.keyword}>
+        <li onClick={this.menuItemClicked} key={this.props.keyword} className="menuItem">
+          <div>{this.props.title}</div>
+        </li>
+      </Link>
+    )
+  }
+})
 
 var NYUVote = React.createClass({
   render: function() {
@@ -108,7 +136,6 @@ var NYUVote = React.createClass({
     )
   }
 })
-
 
 var Georgia = React.createClass({
   render: function() {
@@ -147,6 +174,16 @@ var routes = (
 );
 
 
+
 React.render(
   routes, document.getElementById('container')
 );
+
+// $(document).ready(function() {
+//   $("#menuKohHeading").click(function(){
+//     console.log("we are here and this is working")
+//   })
+// })
+// var samplePos = document.querySelectorAll('#menuKohHeading');
+// var rect = samplePos.getBoundingClientRect();
+// console.log(rect.top, rect.right, rect.bottom, rect.left);

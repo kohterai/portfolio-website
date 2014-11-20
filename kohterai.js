@@ -68,13 +68,12 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
       React.createElement("ul", {className: "menuList"}, 
         React.createElement("div", {id: "menuKohHeading"}, "Koh Terai"), 
         React.createElement("div", {id: "projectHeading"}, "Projects"), 
+        React.createElement("div", {id: "projectMenuCirlce"}), 
         this.props.menuList.map(function(item){
+          // var clickHandler = this.menuItemClicked.bind(this, item);
           return (
-            React.createElement(Link, {to: item['keyword']}, 
-              React.createElement("li", {key: item['keyword'], className: "menuItem"}, 
-              React.createElement("div", {className: "menuItem hover-effect"}, item['title'])
-              )
-            )  
+              React.createElement(ProjectMenuItem, {keyword: item['keyword'], title: item['title']})
+              // <ProjectMenuItem  onClick={this.menuItemClicked} keyword='nyuvote' title='pumklin' />
             );
           }, this)
         
@@ -82,6 +81,35 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     )
   }
 });
+
+//We need to change the 
+
+//Each menu item needs to be its own component so that we can use getDOMNode() for the menu circle position manipulation
+var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
+  menuItemClicked: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    //we get the cordinates of the clicked menu item then manipulate #projectMenuCircle with it
+    //getDOMNode() is needed to taget the DOM element instead of the react component
+    console.log(menuCircle)
+    var menuItemCoords = this.getDOMNode().getBoundingClientRect();
+    console.log('Before: ');
+    console.log(menuCircle.style.top)
+    menuCircle.style.top = menuItemCoords.top;
+    console.log('After: ');
+    console.log(menuCircle.style.top)
+    menuCircle.style.left = menuItemCoords.left;
+    // console.log(menuItemCoords);
+  },
+  render: function() {
+    return(
+      React.createElement(Link, {to: this.props.keyword}, 
+        React.createElement("li", {onClick: this.menuItemClicked, key: this.props.keyword, className: "menuItem"}, 
+          React.createElement("div", null, this.props.title)
+        )
+      )
+    )
+  }
+})
 
 var NYUVote = React.createClass({displayName: 'NYUVote',
   render: function() {
@@ -109,7 +137,6 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
     )
   }
 })
-
 
 var Georgia = React.createClass({displayName: 'Georgia',
   render: function() {
@@ -148,9 +175,19 @@ var routes = (
 );
 
 
+
 React.render(
   routes, document.getElementById('container')
 );
+
+// $(document).ready(function() {
+//   $("#menuKohHeading").click(function(){
+//     console.log("we are here and this is working")
+//   })
+// })
+// var samplePos = document.querySelectorAll('#menuKohHeading');
+// var rect = samplePos.getBoundingClientRect();
+// console.log(rect.top, rect.right, rect.bottom, rect.left);
 },{"react":"/Users/darwin/node_modules/react/react.js","react-router":"/Users/darwin/node_modules/react-router/modules/index.js"}],"/Users/darwin/node_modules/react-router/modules/actions/LocationActions.js":[function(require,module,exports){
 /**
  * Actions that modify the URL.
