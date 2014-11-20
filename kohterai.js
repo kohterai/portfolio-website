@@ -67,8 +67,8 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     return (
       React.createElement("ul", {className: "menuList"}, 
         React.createElement("div", {id: "menuKohHeading"}, "Koh Terai"), 
-        React.createElement("div", {id: "projectHeading"}, "Projects"), 
         React.createElement("div", {id: "projectMenuCirlce"}), 
+        React.createElement("div", {id: "projectHeading"}, "Projects"), 
         this.props.menuList.map(function(item){
           // var clickHandler = this.menuItemClicked.bind(this, item);
           return (
@@ -90,15 +90,9 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
     menuCircle = document.getElementById("projectMenuCirlce")
     //we get the cordinates of the clicked menu item then manipulate #projectMenuCircle with it
     //getDOMNode() is needed to taget the DOM element instead of the react component
-    console.log(menuCircle)
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
-    console.log('Before: ');
-    console.log(menuCircle.style.top)
-    menuCircle.style.top = menuItemCoords.top;
-    console.log('After: ');
-    console.log(menuCircle.style.top)
-    menuCircle.style.left = menuItemCoords.left;
-    // console.log(menuItemCoords);
+    menuCircle.style.top = String(menuItemCoords.top+10)+'px';
+    menuCircle.style.left = String(menuItemCoords.left-15)+'px'
   },
   render: function() {
     return(
