@@ -51,6 +51,10 @@ var ProjectDisplay = React.createClass({
             <this.props.activeRouteHandler/>
           </div>
         </div>
+        <div className="clear"></div>
+        <div id="projectsFooter">
+            <p>Hello This is projectsFoot</p>
+        </div>
       </div>
     );
   }

@@ -51,6 +51,10 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
           React.createElement("div", {className: "projectDetail "}, 
             React.createElement(this.props.activeRouteHandler, null)
           )
+        ), 
+        React.createElement("div", {className: "clear"}), 
+        React.createElement("div", {id: "projectsFooter"}, 
+            React.createElement("p", null, "Hello This is projectsFoot")
         )
       )
     );
