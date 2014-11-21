@@ -78,6 +78,15 @@ var ProjectsMenu = React.createClass({
         }
       </ul>
     )
+  },
+  //We need to make sure that the cirlce gets loaded in the right position first time it is rendered
+  componentDidMount: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    //querySelector by .active to find which route user is currently on.
+    var menuItem = document.querySelector(".active");
+    var menuItemCoords = menuItem.getBoundingClientRect();
+    menuCircle.style.top = String(menuItemCoords.top+10)+'px';
+    menuCircle.style.left = String(menuItemCoords.left-15)+'px';
   }
 });
 
@@ -155,11 +164,11 @@ var routes = (
   <Routes location="hash">
     <Route path="/" handler={SelectMode} />
     <Route path="/dev" name="developer" mode={"Developer"} handler={ProjectDisplay}>
-      <Route name="nyuvote" handler={NYUVote} />
       <Route name="yalla" handler={NYUVote} />
       <Route name="wellsense" handler={NYUVote} />
       <Route name="studentvoice" handler={NYUVote} />
       <Route name="miscswork" handler={NYUVote} />
+      <DefaultRoute name="nyuvote" handler={NYUVote} />
     </Route>
     <Route path="/photo" name="photographer" mode={"Photographer"} handler={ProjectDisplay}>
       <Route name="georgia" handler={Georgia} />

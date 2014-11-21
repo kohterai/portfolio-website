@@ -79,6 +79,15 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
         
       )
     )
+  },
+  //We need to make sure that the cirlce gets loaded in the right position first time it is rendered
+  componentDidMount: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    //querySelector by .active to find which route user is currently on.
+    var menuItem = document.querySelector(".active");
+    var menuItemCoords = menuItem.getBoundingClientRect();
+    menuCircle.style.top = String(menuItemCoords.top+10)+'px';
+    menuCircle.style.left = String(menuItemCoords.left-15)+'px';
   }
 });
 
@@ -156,11 +165,11 @@ var routes = (
   React.createElement(Routes, {location: "hash"}, 
     React.createElement(Route, {path: "/", handler: SelectMode}), 
     React.createElement(Route, {path: "/dev", name: "developer", mode: "Developer", handler: ProjectDisplay}, 
-      React.createElement(Route, {name: "nyuvote", handler: NYUVote}), 
       React.createElement(Route, {name: "yalla", handler: NYUVote}), 
       React.createElement(Route, {name: "wellsense", handler: NYUVote}), 
       React.createElement(Route, {name: "studentvoice", handler: NYUVote}), 
-      React.createElement(Route, {name: "miscswork", handler: NYUVote})
+      React.createElement(Route, {name: "miscswork", handler: NYUVote}), 
+      React.createElement(DefaultRoute, {name: "nyuvote", handler: NYUVote})
     ), 
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "georgia", handler: Georgia})
