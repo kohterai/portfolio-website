@@ -84,9 +84,11 @@ var ProjectsMenu = React.createClass({
     menuCircle = document.getElementById("projectMenuCirlce")
     //querySelector by .active to find which route user is currently on.
     var menuItem = document.querySelector(".active");
+    var menuList = document.querySelector(".menuList");
     var menuItemCoords = menuItem.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top+10)+'px';
-    menuCircle.style.left = String(menuItemCoords.left-15)+'px';
+    var menuListCoords = menuList.getBoundingClientRect();
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   }
 });
 
@@ -99,8 +101,10 @@ var ProjectMenuItem = React.createClass({
     //we get the cordinates of the clicked menu item then manipulate #projectMenuCircle with it
     //getDOMNode() is needed to taget the DOM element instead of the react component
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top+10)+'px';
-    menuCircle.style.left = String(menuItemCoords.left-15)+'px'
+    var menuList = document.querySelector(".menuList");
+    var menuListCoords = menuList.getBoundingClientRect();
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   },
   render: function() {
     return(
