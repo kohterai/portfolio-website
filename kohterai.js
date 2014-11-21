@@ -48,7 +48,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
       React.createElement("div", null, 
         React.createElement("div", {id: "projectElements"}, 
           React.createElement(ProjectsMenu, {menuList: menuList, setProject: this.setProject}), 
-          React.createElement("div", {className: "projectDetail"}, 
+          React.createElement("div", {className: "projectDetail "}, 
             React.createElement(this.props.activeRouteHandler, null)
           )
         )
@@ -118,23 +118,62 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
   }
 })
 
+//This is the default "project" that will be loaded when user lands on Dev projects.
+var AboutDev = React.createClass({displayName: 'AboutDev',
+  render: function() {
+    return(
+      React.createElement("div", {className: "narrowSection"}, 
+        React.createElement("img", {className: "circularPhotoSmall", src: "images/KohApple-Circular.png"}), 
+        React.createElement("h2", null, "Koh Terai"), 
+        React.createElement("h3", {className: "blue"}, "as a Developer"), 
+        React.createElement("p", null, "I am currently studying computer science at ", React.createElement("b", null, "New York University Abu Dhabi"), ". I’ve been keen on technology" + ' ' +
+        "since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade." + ' ' +
+        "I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful" + ' ' +
+        "looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs."), 
+        React.createElement("h4", null, "Skills"), 
+        React.createElement("table", {className: "skillsTable"}, 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Python"), 
+            React.createElement("td", null, "MongoDB"), 
+            React.createElement("td", null, "C++"), 
+            React.createElement("td", null, "C"), 
+            React.createElement("td", null, "HTML")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "InDesign"), 
+            React.createElement("td", null, "Photoshop"), 
+            React.createElement("td", null, "Illustrator"), 
+            React.createElement("td", null, "Keynote"), 
+            React.createElement("td", null, "CSS")
+          )
+        ), 
+        React.createElement("h4", null, "Contact"), 
+        React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
+        React.createElement("h4", null, "CV"), 
+        React.createElement("p", {className: "smallMargin"}, "download (doesnt work right now)")
+      )
+
+    )
+  }
+})
+
 var NYUVote = React.createClass({displayName: 'NYUVote',
   render: function() {
     return(
       React.createElement("div", null, 
         React.createElement("h2", null, "NYU Vote"), 
         React.createElement("h3", null, "Target audience of 20,000 over the NYU Global Network"), 
-        React.createElement("p", null, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively."), 
+        React.createElement("p", {className: "narrowSection"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively."), 
         React.createElement("img", {className: "fullWidth", src: "images/VoteHome.png"}), 
-        React.createElement("p", null, "The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well."), 
+        React.createElement("p", {className: "narrowSection"}, "The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well."), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/VoteMobile-1.png"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/VoteMobile-2.png"})
         ), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/VoteEnteringBallot.png"}), 
-        React.createElement("p", null, "The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app."), 
+        React.createElement("p", {className: "narrowSection"}, "The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/VoteBallot.png"}), 
-        React.createElement("p", null, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process."), 
+        React.createElement("p", {className: "narrowSection"}, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process."), 
         React.createElement("img", {className: "fullWidth", src: "images/VoteButtonFlow.png"}), 
         React.createElement("div", {className: "center"}, 
           React.createElement("a", {className: "button", href: "https://vote.nyuapps.com/", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "View Website"), 
@@ -142,6 +181,36 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
         )
       )
     )
+  }
+})
+
+
+var Yalla = React.createClass({displayName: 'Yalla',
+  render: function() {
+    return(
+      React.createElement("div", null, 
+        React.createElement("h2", null, "Yalla"), 
+        React.createElement("h3", null, "Community based event discovery platform in currently in Beta"), 
+        React.createElement("p", {className: "narrowSection"}, "Yalla is an events-centric social network focussed on communities.  It integrates with existing cloud based calendar workflows." + ' ' +
+        "The system enables users to search for nearby events and RSVP to them. I lead the design and coded the front-end for this project."), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/YallaBlueLogin.png"}), 
+        React.createElement("p", {className: "narrowSection"}, "SVGs were used throughout Yalla to maximize compatibility accross screen resolutions and to minimize file sizes . PNG fallblacks were implemented for older systems." + ' ' +
+        "The login screen consisted of a loading animation through CSS and SVG properties."), 
+        React.createElement("img", {className: "fullWidth", src: "images/YallaBrowserMockup.png"}), 
+        React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3 pane interface which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
+        "For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive."), 
+        React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/Yallamobile1.jpg"}), 
+        React.createElement("img", {className: "thirdWidth thinBorder", src: "images/Yallamobile2.jpg"}), 
+        React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/Yallamobile3.jpg"}), 
+        React.createElement("p", {className: "narrowSection"}, "Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate." + ' ' +
+        "The menu intentionally does not cover the whole sreen to remind the user that they can swipe back to the pain events panel."), 
+        React.createElement("img", {className: "halfWidth thinBorder", src: "images/EventCreation.jpg"}), 
+        React.createElement("p", {className: "narrowSection"}, "When users try to create a new event, the right panel updates to the create event screen."), 
+        React.createElement("p", {className: "narrowSection"}, "I also worked with the designer on the team to help create the logo."), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/YallaLogoCompilation.jpg"})
+
+      )
+      )
   }
 })
 
@@ -153,8 +222,11 @@ var Georgia = React.createClass({displayName: 'Georgia',
   }
 })
 
+
+
 //Title is what shows up in the menu list
 var DeveloperDetails = [
+  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'about'},
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
@@ -169,11 +241,12 @@ var routes = (
   React.createElement(Routes, {location: "hash"}, 
     React.createElement(Route, {path: "/", handler: SelectMode}), 
     React.createElement(Route, {path: "/dev", name: "developer", mode: "Developer", handler: ProjectDisplay}, 
-      React.createElement(Route, {name: "yalla", handler: NYUVote}), 
+      React.createElement(Route, {name: "nyuvote", handler: NYUVote}), 
+      React.createElement(Route, {name: "yalla", handler: Yalla}), 
       React.createElement(Route, {name: "wellsense", handler: NYUVote}), 
       React.createElement(Route, {name: "studentvoice", handler: NYUVote}), 
       React.createElement(Route, {name: "miscswork", handler: NYUVote}), 
-      React.createElement(DefaultRoute, {name: "nyuvote", handler: NYUVote})
+      React.createElement(DefaultRoute, {name: "about", handler: AboutDev})
     ), 
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "georgia", handler: Georgia})
