@@ -35,7 +35,6 @@ var SelectMode = React.createClass({displayName: 'SelectMode',
   }
 });
 
-
 //In charge of the projects menubar and loading projects
 var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
   getInitialState: function() {
@@ -56,6 +55,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     return(
       React.createElement("div", null, 
         React.createElement("div", {id: "projectElements"}, 
+          React.createElement("div", {id: "menuKohHeading"}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
           React.createElement(ProjectsMenu, {menuList: menuList, setProject: this.setProject}), 
           React.createElement("div", {className: "projectDetail "}, 
             React.createElement(this.props.activeRouteHandler, null)
@@ -80,7 +80,6 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     //item['description'] to print out desciption as well
     return (
       React.createElement("ul", {className: "menuList"}, 
-        React.createElement("div", {id: "menuKohHeading"}, "Koh Terai"), 
         React.createElement("div", {id: "projectMenuCirlce"}), 
         React.createElement("div", {id: "projectHeading"}, "Projects"), 
         this.props.menuList.map(function(item){
@@ -102,7 +101,7 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     var menuList = document.querySelector(".menuList");
     var menuItemCoords = menuItem.getBoundingClientRect();
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   }
 });
@@ -118,7 +117,7 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
     var menuList = document.querySelector(".menuList");
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   },
   render: function() {
@@ -351,7 +350,6 @@ var AboutPhoto = React.createClass({displayName: 'AboutPhoto',
   }
 })
 
-
 var Portraits = React.createClass({displayName: 'Portraits',
   render: function() {
     return(
@@ -382,11 +380,8 @@ var Portraits = React.createClass({displayName: 'Portraits',
   }
 })
 
-
-
 //Title is what shows up in the menu list
 var DeveloperDetails = [
-  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'aboutdev'},
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},

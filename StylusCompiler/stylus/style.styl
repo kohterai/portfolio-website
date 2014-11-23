@@ -103,12 +103,18 @@ p
   display: inline-block
   vertical-align:top
   position fixed
-  top 15%
+  top 20%
 
 #menuKohHeading
   font-size 1.7em
   font-weight 200
-  margin-bottom 40px
+  position: fixed
+  top 15%
+  .active
+    color blue
+  a
+    &:hover
+      color blue
   
 #projectHeading
   color blue

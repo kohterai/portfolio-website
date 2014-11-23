@@ -34,7 +34,6 @@ var SelectMode = React.createClass({
   }
 });
 
-
 //In charge of the projects menubar and loading projects
 var ProjectDisplay = React.createClass({
   getInitialState: function() {
@@ -55,6 +54,7 @@ var ProjectDisplay = React.createClass({
     return(
       <div>
         <div id="projectElements">
+          <div id="menuKohHeading"><Link to="aboutdev">Koh Terai</Link></div>
           <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
           <div className="projectDetail ">
             <this.props.activeRouteHandler/>
@@ -79,7 +79,6 @@ var ProjectsMenu = React.createClass({
     //item['description'] to print out desciption as well
     return (
       <ul className="menuList">
-        <div id="menuKohHeading">Koh Terai</div>
         <div id="projectMenuCirlce"></div>
         <div id="projectHeading">Projects</div>
         {this.props.menuList.map(function(item){
@@ -101,7 +100,7 @@ var ProjectsMenu = React.createClass({
     var menuList = document.querySelector(".menuList");
     var menuItemCoords = menuItem.getBoundingClientRect();
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   }
 });
@@ -117,7 +116,7 @@ var ProjectMenuItem = React.createClass({
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
     var menuList = document.querySelector(".menuList");
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top-63)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
   },
   render: function() {
@@ -350,7 +349,6 @@ var AboutPhoto = React.createClass({
   }
 })
 
-
 var Portraits = React.createClass({
   render: function() {
     return(
@@ -381,11 +379,8 @@ var Portraits = React.createClass({
   }
 })
 
-
-
 //Title is what shows up in the menu list
 var DeveloperDetails = [
-  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'aboutdev'},
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
