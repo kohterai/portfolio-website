@@ -13,18 +13,22 @@ var Link = Router.Link;
 var SelectMode = React.createClass({
   render: function() {
     return(
-      <div className="selectMode">
-        <h1 id="modeSelectTitle">KOH TERAI</h1>
+      <div id="selectMode">
+        <div id="modeSelectTitle">KOH TERAI</div>
 
-        <Link to="developer">
-          <img className="circularPhoto" src="images/KohApple-Circular.png" />
-          <h2 className="modeLabel">product designer</h2>
-        </Link>
+        <div className="modeSelectButton" id="developerSelect">
+          <Link to="developer">
+            <img className="circularPhoto" src="images/KohApple-Circular.png" />
+            <div className="modeLabel">product designer</div>
+          </Link>
+        </div>
 
-        <Link to="photographer">
-          <img className="circularPhoto" src="images/KohCamera-Circular.png" />
-          <h2 className="modeLabel">photographer</h2>
-        </Link>
+        <div className="modeSelectButton" id="phorographerSelect">
+          <Link to="photographer">
+            <img className="circularPhoto" src="images/KohCamera-Circular.png" />
+            <div className="modeLabel">photographer</div>
+          </Link>
+        </div>
       </div>
     )
   }

@@ -14,17 +14,21 @@ var Link = Router.Link;
 var SelectMode = React.createClass({displayName: 'SelectMode',
   render: function() {
     return(
-      React.createElement("div", {className: "selectMode"}, 
-        React.createElement("h1", {id: "modeSelectTitle"}, "KOH TERAI"), 
+      React.createElement("div", {id: "selectMode"}, 
+        React.createElement("div", {id: "modeSelectTitle"}, "KOH TERAI"), 
 
-        React.createElement(Link, {to: "developer"}, 
-          React.createElement("img", {className: "circularPhoto", src: "images/KohApple-Circular.png"}), 
-          React.createElement("h2", {className: "modeLabel"}, "product designer")
+        React.createElement("div", {className: "modeSelectButton", id: "developerSelect"}, 
+          React.createElement(Link, {to: "developer"}, 
+            React.createElement("img", {className: "circularPhoto", src: "images/KohApple-Circular.png"}), 
+            React.createElement("div", {className: "modeLabel"}, "product designer")
+          )
         ), 
 
-        React.createElement(Link, {to: "photographer"}, 
-          React.createElement("img", {className: "circularPhoto", src: "images/KohCamera-Circular.png"}), 
-          React.createElement("h2", {className: "modeLabel"}, "photographer")
+        React.createElement("div", {className: "modeSelectButton", id: "phorographerSelect"}, 
+          React.createElement(Link, {to: "photographer"}, 
+            React.createElement("img", {className: "circularPhoto", src: "images/KohCamera-Circular.png"}), 
+            React.createElement("div", {className: "modeLabel"}, "photographer")
+          )
         )
       )
     )
