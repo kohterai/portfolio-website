@@ -16,17 +16,17 @@ var SelectMode = React.createClass({
       <div id="selectMode">
         <div id="modeSelectTitle">KOH TERAI</div>
 
-        <div className="modeSelectButton" id="developerSelect">
-          <Link to="developer">
-            <img className="circularPhoto" src="images/KohApple-Circular.png" />
-            <div className="modeLabel">product designer</div>
+        <div className="modeSelectButton" id="phorographerSelect">
+          <Link to="photographer">
+            <img className="circularPhoto circular" src="images/KohCamera-Circular.png" />
+            <div className="modeLabel">photographer</div>
           </Link>
         </div>
 
-        <div className="modeSelectButton" id="phorographerSelect">
-          <Link to="photographer">
-            <img className="circularPhoto" src="images/KohCamera-Circular.png" />
-            <div className="modeLabel">photographer</div>
+        <div className="modeSelectButton" id="developerSelect">
+          <Link to="developer">
+            <img className="circularPhoto circular" src="images/KohApple-Circular.png" />
+            <div className="modeLabel">product designer</div>
           </Link>
         </div>
       </div>
@@ -44,9 +44,14 @@ var ProjectDisplay = React.createClass({
   },
   render: function() {
     //which menuList to send into the menu is decided here
-    if (this.state.mode == 'Developer'){
-      var menuList = DeveloperDetails
-    };
+    switch (this.state.mode){
+      case "Developer":
+        var menuList = DeveloperDetails
+        break;
+      case "Photographer":
+        var menuList = PhotoDetails
+        break;
+    }
     return(
       <div>
         <div id="projectElements">
@@ -307,10 +312,71 @@ var MiscDev = React.createClass({
   }
 })
 
-var Georgia = React.createClass({
+var AboutPhoto = React.createClass({
   render: function() {
     return(
-      <p>Yay we are isnide of Georgia</p>
+      <div className="narrowSection">
+        <img className="circularPhotoSmall" src="images/KohCamera-Circular.png"/>
+        <h2>Koh Terai</h2>
+        <h3 className="blue">as a Photographer</h3>
+        <p>I am currently studying computer science at <b>New York University Abu Dhabi</b>. I’ve been keen on technology
+        since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade.
+        I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful
+        looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs.</p>
+        <h4>Skills</h4>
+        <table className="skillsTable">
+          <tr>
+            <td>Python</td>
+            <td>MongoDB</td>
+            <td>C++</td>
+            <td>C</td>
+            <td>HTML</td>
+          </tr>
+          <tr>
+            <td>InDesign</td>
+            <td>Photoshop</td>
+            <td>Illustrator</td>
+            <td>Keynote</td>
+            <td>CSS</td>
+          </tr>
+        </table>
+        <h4>Contact</h4>
+        <p className="smallMargin">koh.terai@nyu.edu</p>
+        <h4>CV</h4>
+        <p className="smallMargin">download (doesnt work right now)</p>
+      </div>
+
+    )
+  }
+})
+
+
+var Portraits = React.createClass({
+  render: function() {
+    return(
+      <div id="portraits">
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-izumi-1.jpg' />
+          <img className='halfWidth' src='images/photo/portrait-izumi-2.jpg' />
+        </div>
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-yabui-1.jpg' />
+          <img className='halfWidth' src='images/photo/portrait-yabui-2.jpg' />
+        </div>
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-KP-1.jpg' />
+          <img className='halfWidth' src='images/photo/portrait-KP-2.jpg' />
+        </div>
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-grad-1.jpg' />
+          <img className='halfWidth' src='images/photo/portrait-grad-2.jpg' />
+        </div>
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-band-1.jpg' />
+          <img className='halfWidth' src='images/photo/portrait-band-2.jpg' />
+        </div>
+        <img className='halfWidth' src='images/photo/portrait-alistair-1.jpg' />
+      </div>
     )
   }
 })
@@ -319,7 +385,7 @@ var Georgia = React.createClass({
 
 //Title is what shows up in the menu list
 var DeveloperDetails = [
-  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'about'},
+  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'aboutdev'},
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
@@ -327,6 +393,13 @@ var DeveloperDetails = [
   {title: 'Misc Works', description: 'Research and Classwork', keyword: 'miscdevwork'}
 ];
 
+var PhotoDetails = [
+  {title: 'About', description: 'Kohs portfolio website', keyword:'aboutphoto'},
+  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Sports', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Georgia', description: 'Voting Service', keyword: 'portraits'}
+];
 
 //name must be identical to the keyword inside menu keyword
 //we use the ProjectDisplay component but with the mode parameter as Photographer
@@ -339,10 +412,11 @@ var routes = (
       <Route name="wellsense" handler={WellSense} />
       <Route name="studentvoice" handler={StudentVoice} />
       <Route name="miscdevwork" handler={MiscDev} />
-      <DefaultRoute name="about" handler={AboutDev} />
+      <DefaultRoute name="aboutdev" handler={AboutDev} />
     </Route>
     <Route path="/photo" name="photographer" mode={"Photographer"} handler={ProjectDisplay}>
-      <Route name="georgia" handler={Georgia} />
+      <Route name="portraits" handler={Portraits} />
+      <DefaultRoute name="aboutphoto" handler={AboutPhoto} />
     </Route>
   </Routes>
 );

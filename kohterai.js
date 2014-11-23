@@ -17,17 +17,17 @@ var SelectMode = React.createClass({displayName: 'SelectMode',
       React.createElement("div", {id: "selectMode"}, 
         React.createElement("div", {id: "modeSelectTitle"}, "KOH TERAI"), 
 
-        React.createElement("div", {className: "modeSelectButton", id: "developerSelect"}, 
-          React.createElement(Link, {to: "developer"}, 
-            React.createElement("img", {className: "circularPhoto", src: "images/KohApple-Circular.png"}), 
-            React.createElement("div", {className: "modeLabel"}, "product designer")
+        React.createElement("div", {className: "modeSelectButton", id: "phorographerSelect"}, 
+          React.createElement(Link, {to: "photographer"}, 
+            React.createElement("img", {className: "circularPhoto circular", src: "images/KohCamera-Circular.png"}), 
+            React.createElement("div", {className: "modeLabel"}, "photographer")
           )
         ), 
 
-        React.createElement("div", {className: "modeSelectButton", id: "phorographerSelect"}, 
-          React.createElement(Link, {to: "photographer"}, 
-            React.createElement("img", {className: "circularPhoto", src: "images/KohCamera-Circular.png"}), 
-            React.createElement("div", {className: "modeLabel"}, "photographer")
+        React.createElement("div", {className: "modeSelectButton", id: "developerSelect"}, 
+          React.createElement(Link, {to: "developer"}, 
+            React.createElement("img", {className: "circularPhoto circular", src: "images/KohApple-Circular.png"}), 
+            React.createElement("div", {className: "modeLabel"}, "product designer")
           )
         )
       )
@@ -45,9 +45,14 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
   },
   render: function() {
     //which menuList to send into the menu is decided here
-    if (this.state.mode == 'Developer'){
-      var menuList = DeveloperDetails
-    };
+    switch (this.state.mode){
+      case "Developer":
+        var menuList = DeveloperDetails
+        break;
+      case "Photographer":
+        var menuList = PhotoDetails
+        break;
+    }
     return(
       React.createElement("div", null, 
         React.createElement("div", {id: "projectElements"}, 
@@ -308,10 +313,71 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
   }
 })
 
-var Georgia = React.createClass({displayName: 'Georgia',
+var AboutPhoto = React.createClass({displayName: 'AboutPhoto',
   render: function() {
     return(
-      React.createElement("p", null, "Yay we are isnide of Georgia")
+      React.createElement("div", {className: "narrowSection"}, 
+        React.createElement("img", {className: "circularPhotoSmall", src: "images/KohCamera-Circular.png"}), 
+        React.createElement("h2", null, "Koh Terai"), 
+        React.createElement("h3", {className: "blue"}, "as a Photographer"), 
+        React.createElement("p", null, "I am currently studying computer science at ", React.createElement("b", null, "New York University Abu Dhabi"), ". I’ve been keen on technology" + ' ' +
+        "since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade." + ' ' +
+        "I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful" + ' ' +
+        "looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs."), 
+        React.createElement("h4", null, "Skills"), 
+        React.createElement("table", {className: "skillsTable"}, 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Python"), 
+            React.createElement("td", null, "MongoDB"), 
+            React.createElement("td", null, "C++"), 
+            React.createElement("td", null, "C"), 
+            React.createElement("td", null, "HTML")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "InDesign"), 
+            React.createElement("td", null, "Photoshop"), 
+            React.createElement("td", null, "Illustrator"), 
+            React.createElement("td", null, "Keynote"), 
+            React.createElement("td", null, "CSS")
+          )
+        ), 
+        React.createElement("h4", null, "Contact"), 
+        React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
+        React.createElement("h4", null, "CV"), 
+        React.createElement("p", {className: "smallMargin"}, "download (doesnt work right now)")
+      )
+
+    )
+  }
+})
+
+
+var Portraits = React.createClass({displayName: 'Portraits',
+  render: function() {
+    return(
+      React.createElement("div", {id: "portraits"}, 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-izumi-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-izumi-2.jpg"})
+        ), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-yabui-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-yabui-2.jpg"})
+        ), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-KP-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-KP-2.jpg"})
+        ), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-grad-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-grad-2.jpg"})
+        ), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-band-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-band-2.jpg"})
+        ), 
+        React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-alistair-1.jpg"})
+      )
     )
   }
 })
@@ -320,7 +386,7 @@ var Georgia = React.createClass({displayName: 'Georgia',
 
 //Title is what shows up in the menu list
 var DeveloperDetails = [
-  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'about'},
+  {title: 'kohterai.com', description: 'Kohs portfolio website', keyword:'aboutdev'},
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
@@ -328,6 +394,13 @@ var DeveloperDetails = [
   {title: 'Misc Works', description: 'Research and Classwork', keyword: 'miscdevwork'}
 ];
 
+var PhotoDetails = [
+  {title: 'About', description: 'Kohs portfolio website', keyword:'aboutphoto'},
+  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Sports', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Georgia', description: 'Voting Service', keyword: 'portraits'}
+];
 
 //name must be identical to the keyword inside menu keyword
 //we use the ProjectDisplay component but with the mode parameter as Photographer
@@ -340,10 +413,11 @@ var routes = (
       React.createElement(Route, {name: "wellsense", handler: WellSense}), 
       React.createElement(Route, {name: "studentvoice", handler: StudentVoice}), 
       React.createElement(Route, {name: "miscdevwork", handler: MiscDev}), 
-      React.createElement(DefaultRoute, {name: "about", handler: AboutDev})
+      React.createElement(DefaultRoute, {name: "aboutdev", handler: AboutDev})
     ), 
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
-      React.createElement(Route, {name: "georgia", handler: Georgia})
+      React.createElement(Route, {name: "portraits", handler: Portraits}), 
+      React.createElement(DefaultRoute, {name: "aboutphoto", handler: AboutPhoto})
     )
   )
 );
