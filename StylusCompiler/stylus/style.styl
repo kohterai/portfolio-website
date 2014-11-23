@@ -9,6 +9,7 @@ body
   color: blue
   height 100%
   margin 0
+  -webkit-font-smoothing: subpixel-antialiased
 
 html
   height 100%
@@ -17,7 +18,7 @@ html
   max-width: 1000px
   margin-left: auto
   margin-right: auto
-  padding: 30px 30px
+  padding: 30px 40px
   
 .clear
   clear both
@@ -103,7 +104,7 @@ p
   display: inline-block
   vertical-align:top
   position fixed
-  top 20%
+  top 22%
 
 #menuKohHeading
   font-size 1.7em
@@ -133,8 +134,10 @@ a
   &.active
     color darkerblack 
 
+//position set to absolute so doesnt cause problems when we set display to none
 #projectMenuCirlce
-  position: relative;
+  opacity 0
+  position: absolute;
   background-color: blue;
   border-radius: 50%;
   width: 10px;
@@ -147,6 +150,7 @@ a
   display: inline-block
   vertical-align:top
   text-align center
+  min-height 1000px
   .bottomMargin
     margin-bottom 40px
   img

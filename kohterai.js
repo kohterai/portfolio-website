@@ -42,6 +42,12 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
       mode: this.props.mode,
     };
   },
+  aboutClicked: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    menuCircle.style.opacity = 0
+    //Make it look like the ball is shooting up
+    menuCircle.style.top = String(0)+'px';
+  },
   render: function() {
     //which menuList to send into the menu is decided here
     switch (this.state.mode){
@@ -55,8 +61,10 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     return(
       React.createElement("div", null, 
         React.createElement("div", {id: "projectElements"}, 
-          React.createElement("div", {id: "menuKohHeading"}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
-          React.createElement(ProjectsMenu, {menuList: menuList, setProject: this.setProject}), 
+          React.createElement("div", {id: "menu"}, 
+            React.createElement("div", {id: "menuKohHeading", onClick: this.aboutClicked}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
+            React.createElement(ProjectsMenu, {menuList: menuList})
+          ), 
           React.createElement("div", {className: "projectDetail "}, 
             React.createElement(this.props.activeRouteHandler, null)
           )
@@ -101,8 +109,15 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     var menuList = document.querySelector(".menuList");
     var menuItemCoords = menuItem.getBoundingClientRect();
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    //setting circle to top for sweeping animation on initial load
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
+    menuCircle.style.top = String(0)+'px';
+    //We do not want to display the cirlce if the about page is active.
+    if (menuItem.parentNode.id == "menuKohHeading"){
+      return;
+    }
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.opacity = 1
   }
 });
 
@@ -119,6 +134,7 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
     var menuListCoords = menuList.getBoundingClientRect();
     menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
+    menuCircle.style.opacity = 1
   },
   render: function() {
     return(

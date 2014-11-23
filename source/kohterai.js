@@ -41,6 +41,12 @@ var ProjectDisplay = React.createClass({
       mode: this.props.mode,
     };
   },
+  aboutClicked: function() {
+    menuCircle = document.getElementById("projectMenuCirlce")
+    menuCircle.style.opacity = 0
+    //Make it look like the ball is shooting up
+    menuCircle.style.top = String(0)+'px';
+  },
   render: function() {
     //which menuList to send into the menu is decided here
     switch (this.state.mode){
@@ -54,8 +60,10 @@ var ProjectDisplay = React.createClass({
     return(
       <div>
         <div id="projectElements">
-          <div id="menuKohHeading"><Link to="aboutdev">Koh Terai</Link></div>
-          <ProjectsMenu menuList={menuList} setProject={this.setProject}/>
+          <div id="menu">
+            <div id="menuKohHeading" onClick={this.aboutClicked}><Link to="aboutdev">Koh Terai</Link></div>
+            <ProjectsMenu menuList={menuList}/>
+          </div>
           <div className="projectDetail ">
             <this.props.activeRouteHandler/>
           </div>
@@ -100,8 +108,15 @@ var ProjectsMenu = React.createClass({
     var menuList = document.querySelector(".menuList");
     var menuItemCoords = menuItem.getBoundingClientRect();
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    //setting circle to top for sweeping animation on initial load
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
+    menuCircle.style.top = String(0)+'px';
+    //We do not want to display the cirlce if the about page is active.
+    if (menuItem.parentNode.id == "menuKohHeading"){
+      return;
+    }
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.opacity = 1
   }
 });
 
@@ -118,6 +133,7 @@ var ProjectMenuItem = React.createClass({
     var menuListCoords = menuList.getBoundingClientRect();
     menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
+    menuCircle.style.opacity = 1
   },
   render: function() {
     return(
