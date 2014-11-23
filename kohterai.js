@@ -54,7 +54,8 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
         ), 
         React.createElement("div", {className: "clear"}), 
         React.createElement("div", {id: "projectsFooter"}, 
-            React.createElement("p", null, "Hello This is projectsFoot")
+            React.createElement("div", {className: "left"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu"), 
+            React.createElement("div", {className: "right"}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV")
         )
       )
     );
@@ -168,17 +169,17 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
         React.createElement("h2", null, "NYU Vote"), 
         React.createElement("h3", null, "Target audience of 20,000 over the NYU Global Network"), 
         React.createElement("p", {className: "narrowSection"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively."), 
-        React.createElement("img", {className: "fullWidth", src: "images/VoteHome.png"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/developer/VoteHome.png"}), 
         React.createElement("p", {className: "narrowSection"}, "The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well."), 
         React.createElement("div", {className: "halfWidthContainer"}, 
-          React.createElement("img", {className: "halfWidth thinBorder left", src: "images/VoteMobile-1.png"}), 
-          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/VoteMobile-2.png"})
+          React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/VoteMobile-1.png"}), 
+          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/VoteMobile-2.png"})
         ), 
-        React.createElement("img", {className: "fullWidth thinBorder", src: "images/VoteEnteringBallot.png"}), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/VoteEnteringBallot.png"}), 
         React.createElement("p", {className: "narrowSection"}, "The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app."), 
-        React.createElement("img", {className: "fullWidth thinBorder", src: "images/VoteBallot.png"}), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/VoteBallot.png"}), 
         React.createElement("p", {className: "narrowSection"}, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process."), 
-        React.createElement("img", {className: "fullWidth", src: "images/VoteButtonFlow.png"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/developer/VoteButtonFlow.png"}), 
         React.createElement("div", {className: "center"}, 
           React.createElement("a", {className: "button", href: "https://vote.nyuapps.com/", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "View Website"), 
           React.createElement("a", {className: "button", href: "https://github.com/hackAD/nyu-vote", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
@@ -188,7 +189,6 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
   }
 })
 
-
 var Yalla = React.createClass({displayName: 'Yalla',
   render: function() {
     return(
@@ -197,22 +197,108 @@ var Yalla = React.createClass({displayName: 'Yalla',
         React.createElement("h3", null, "Community based event discovery platform in currently in Beta"), 
         React.createElement("p", {className: "narrowSection"}, "Yalla is an events-centric social network focussed on communities.  It integrates with existing cloud based calendar workflows." + ' ' +
         "The system enables users to search for nearby events and RSVP to them. I lead the design and coded the front-end for this project."), 
-        React.createElement("img", {className: "fullWidth thinBorder", src: "images/YallaBlueLogin.png"}), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaBlueLogin.png"}), 
         React.createElement("p", {className: "narrowSection"}, "SVGs were used throughout Yalla to maximize compatibility accross screen resolutions and to minimize file sizes . PNG fallblacks were implemented for older systems." + ' ' +
         "The login screen consisted of a loading animation through CSS and SVG properties."), 
-        React.createElement("img", {className: "fullWidth", src: "images/YallaBrowserMockup.png"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/developer/YallaBrowserMockup.png"}), 
         React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3 pane interface which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
         "For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive."), 
-        React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/Yallamobile1.jpg"}), 
-        React.createElement("img", {className: "thirdWidth thinBorder", src: "images/Yallamobile2.jpg"}), 
-        React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/Yallamobile3.jpg"}), 
+        React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Yallamobile1.jpg"}), 
+        React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Yallamobile2.jpg"}), 
+        React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Yallamobile3.jpg"}), 
         React.createElement("p", {className: "narrowSection"}, "Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate." + ' ' +
         "The menu intentionally does not cover the whole sreen to remind the user that they can swipe back to the pain events panel."), 
-        React.createElement("img", {className: "halfWidth thinBorder", src: "images/EventCreation.jpg"}), 
+        React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/YallaEventCreation.jpg"}), 
         React.createElement("p", {className: "narrowSection"}, "When users try to create a new event, the right panel updates to the create event screen."), 
         React.createElement("p", {className: "narrowSection"}, "I also worked with the designer on the team to help create the logo."), 
-        React.createElement("img", {className: "fullWidth thinBorder", src: "images/YallaLogoCompilation.jpg"})
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaLogoCompilation.jpg"})
+      )
+      )
+  }
+})
 
+var WellSense = React.createClass({displayName: 'WellSense',
+  render: function() {
+    return(
+
+      React.createElement("div", null, 
+          React.createElement("h2", null, "WellSense"), 
+          React.createElement("h3", null, "3rd Place Winner at 2014 Hackathon for Social Good in the Arab world"), 
+          React.createElement("p", {className: "narrowSection"}, "WellSense is a cost-effective web- undefinedsolution for well monitoring, to benefit NGOs and local populations." + ' ' +
+          "I was in charge of designing and front-ending the interface.  I worked with parsing data for disaplying the graphs using the Google Charts API."), 
+          React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/WellSense.jpg"}), 
+          React.createElement("p", {className: "narrowSection"}, "The icons for well monitoring were designed be able to be distinguished based on color."), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/WellSenseIcons.jpg"}), 
+          React.createElement("p", null, "The project was completed in a span of 48 hours. The team conisted of faculty advisors from NYU and CMU Qatar as well as students from NYU Abu Dhabi" + ' ' +
+          "and Carnegie Mellon University"), 
+          React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/WellSenseGroupshot.jpg"}), 
+          React.createElement("a", {className: "button", href: "http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "Hackathon Info"), 
+          React.createElement("a", {className: "button", href: "https://github.com/lingz/wellSense", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+      )
+      )
+  }
+})
+
+var StudentVoice = React.createClass({displayName: 'StudentVoice',
+  render: function() {
+    return(
+      React.createElement("div", null, 
+        React.createElement("h2", null, "Student Voice"), 
+        React.createElement("h3", null, "Online feedback sytem developed for NYUAD Student Government"), 
+        React.createElement("p", null, "Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system."), 
+        React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/StudentVoiceFeed.jpg"}), 
+        React.createElement("p", null, "Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed" + ' ' +
+        "the details page is rendered where they can comment on the issue at hand."), 
+        React.createElement("img", {className: "fullWidth", src: "images/developer/StudentVoiceDetails.jpg"}), 
+        React.createElement("p", null, "Users have the ability to tag their issues on the submit issue page. The website is created fully responsive."), 
+        React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/StudentVoiceCreateIssue.jpg"}), 
+        React.createElement("a", {className: "button", href: "https://github.com/lingz/nyu-student-voice", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+
+      )
+      )
+  }
+})
+
+var MiscDev = React.createClass({displayName: 'MiscDev',
+  render: function() {
+    return(
+      React.createElement("div", null, 
+        React.createElement("div", {id: "HideAndSeak"}, 
+          React.createElement("h2", null, "Hide and Seak"), 
+          React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
+          React.createElement("p", {className: "narrowSection"}, "The game was developed in a group of two. I was responsible mainly for the implementation" + ' ' +
+          "of GUI using pygame.  All graphics and pygame implementations are done by me."), 
+          React.createElement("div", {className: "halfWidthContainer"}, 
+            React.createElement("img", {className: "halfWidth left thinBorder", src: "images/developer/HideAndSeakMain.jpg"}), 
+            React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/HideAndSeakAttack.jpg"})
+          ), 
+          React.createElement("div", {className: "halfWidthContainer"}, 
+            React.createElement("img", {className: "halfWidth left", src: "images/developer/HideAndSeakVictory.jpg"}), 
+            React.createElement("img", {className: "halfWidth", src: "images/developer/HideAndSeakDead.jpg"})
+          ), 
+          React.createElement("p", null, "The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you" + ' ' +
+          "or reaches your homebase."), 
+          React.createElement("a", {className: "button", href: "https://github.com/kohterai/HideAndSeak", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+        ), 
+        React.createElement("div", {className: "dividerLine"}), 
+        React.createElement("div", {id: "DiplomatLayout"}, 
+          React.createElement("h2", null, "The Diplomat Layout Editor"), 
+          React.createElement("h3", null, "Complete resdesign of high school newspaper"), 
+          React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-1v48issue2-1.jpg"}), 
+          React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-2v47issue10-1.jpg"}), 
+          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-3v47issue10-2.jpg"}), 
+
+          React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-4v47issue9.jpg"}), 
+          React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-5v47issue10-3.jpg"}), 
+          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-6v48issue1-1.jpg"}), 
+
+          React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue2-2.jpg"}), 
+          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue2-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"})
+
+
+        )
       )
       )
   }
@@ -235,7 +321,7 @@ var DeveloperDetails = [
   {title: 'Yalla', description: 'Event Sharing Applicaton', keyword: 'yalla'},
   {title: 'WellSense', description: 'Well analytics', keyword: 'wellsense'},
   {title: 'Student Voice', description: 'Student Service Communication ', keyword: 'studentvoice'},
-  {title: 'Misc Works', description: 'Research and Classwork', keyword: 'miscswork'}
+  {title: 'Misc Works', description: 'Research and Classwork', keyword: 'miscdevwork'}
 ];
 
 
@@ -247,9 +333,9 @@ var routes = (
     React.createElement(Route, {path: "/dev", name: "developer", mode: "Developer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "nyuvote", handler: NYUVote}), 
       React.createElement(Route, {name: "yalla", handler: Yalla}), 
-      React.createElement(Route, {name: "wellsense", handler: NYUVote}), 
-      React.createElement(Route, {name: "studentvoice", handler: NYUVote}), 
-      React.createElement(Route, {name: "miscswork", handler: NYUVote}), 
+      React.createElement(Route, {name: "wellsense", handler: WellSense}), 
+      React.createElement(Route, {name: "studentvoice", handler: StudentVoice}), 
+      React.createElement(Route, {name: "miscdevwork", handler: MiscDev}), 
       React.createElement(DefaultRoute, {name: "about", handler: AboutDev})
     ), 
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
