@@ -60,6 +60,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     }
     return(
       React.createElement("div", null, 
+        React.createElement("div", {id: "showmenu"}, React.createElement("i", {id: "menuBar", className: "fa fa-bars"})), 
         React.createElement("div", {id: "projectElements"}, 
           React.createElement("div", {id: "menu"}, 
             React.createElement("div", {id: "menuKohHeading", onClick: this.aboutClicked}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
@@ -116,7 +117,7 @@ var ProjectsMenu = React.createClass({displayName: 'ProjectsMenu',
     if (menuItem.parentNode.id == "menuKohHeading"){
       return;
     }
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.opacity = 1
   }
 });
@@ -132,7 +133,7 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
     var menuList = document.querySelector(".menuList");
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
     menuCircle.style.opacity = 1
   },

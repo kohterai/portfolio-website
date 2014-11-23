@@ -95,21 +95,34 @@ p
 //******GENERAL USE STYLING******//
 
 
-//******FOR THE PROJECTS MENU******//  
+//******FOR THE PROJECTS MENU******//
+#menu
+  position: fixed
+  top 17%
+  transition: all 0.2s linear;
+
+#showmenu
+  transition: all 0.2s linear;
+  margin-left -100px
+  display none
+  position: fixed
+  height 40px
+  width 50px
+  background-color darkerblack
+  top 0
+  #menuBar
+    color white
+    font-size 1.6em
+    padding-left 13px
+    padding-top 6px
+    
 .menuList
-  width: 20%
   padding: 0px
-  margin: 0px
-  margin-right: 30px
-  display: inline-block
-  vertical-align:top
-  position fixed
-  top 22%
+  margin-top 40px
 
 #menuKohHeading
   font-size 1.7em
   font-weight 200
-  position: fixed
   top 15%
   .active
     color blue
@@ -145,12 +158,10 @@ a
   transition: all 0.2s ease-out;
   
 .projectDetail
-  float: right
-  width: 80%
-  display: inline-block
-  vertical-align:top
+  padding-left 20%
   text-align center
   min-height 1000px
+  transition: all 0.2s linear;
   .bottomMargin
     margin-bottom 40px
   img
@@ -266,3 +277,28 @@ td
     75%  {left:-30px; bottom:-30px;}
     100% {left:-20px; bottom:-10px;}
 }
+
+@media screen and (max-width: 900px)
+  .projectDetail
+    padding-left 0
+  #menu
+    margin-left -170px
+  #showmenu
+    margin-left -40px
+    display block
+  .left
+    float none
+  .right
+    float none
+  #projectsFooter
+    text-align center
+    margin-bottom 10px
+    margin-top 30px
+  #projectMenuCirlce
+    display none
+
+@media screen and (max-width: 600px)
+  #container
+    padding 30px 10px
+  #showmenu
+    margin-left -10px

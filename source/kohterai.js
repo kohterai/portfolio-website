@@ -59,6 +59,7 @@ var ProjectDisplay = React.createClass({
     }
     return(
       <div>
+        <div id="showmenu"><i id="menuBar" className="fa fa-bars"></i></div>
         <div id="projectElements">
           <div id="menu">
             <div id="menuKohHeading" onClick={this.aboutClicked}><Link to="aboutdev">Koh Terai</Link></div>
@@ -115,7 +116,7 @@ var ProjectsMenu = React.createClass({
     if (menuItem.parentNode.id == "menuKohHeading"){
       return;
     }
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.opacity = 1
   }
 });
@@ -131,7 +132,7 @@ var ProjectMenuItem = React.createClass({
     var menuItemCoords = this.getDOMNode().getBoundingClientRect();
     var menuList = document.querySelector(".menuList");
     var menuListCoords = menuList.getBoundingClientRect();
-    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+11)+'px';
+    menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
     menuCircle.style.opacity = 1
   },
