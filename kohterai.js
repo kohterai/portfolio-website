@@ -27,7 +27,7 @@ var SelectMode = React.createClass({displayName: 'SelectMode',
         React.createElement("div", {className: "modeSelectButton", id: "developerSelect"}, 
           React.createElement(Link, {to: "developer"}, 
             React.createElement("img", {className: "circularPhoto circular", src: "images/KohApple-Circular.png"}), 
-            React.createElement("div", {className: "modeLabel"}, "product designer")
+            React.createElement("div", {className: "modeLabel"}, "developer")
           )
         )
       )
@@ -174,6 +174,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
   render: function() {
     return(
       React.createElement("div", {className: "narrowSection"}, 
+        React.createElement("i", {className: "fa fa-home"}), 
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohApple-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Developer"), 
@@ -201,9 +202,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume")), 
-        React.createElement("h4", null, "About This Webiste"), 
-        React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu")
+        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
       )
 
     )
@@ -216,17 +215,18 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
       React.createElement("div", null, 
         React.createElement("h2", null, "NYU Vote"), 
         React.createElement("h3", null, "Target audience of 20,000 over the NYU Global Network"), 
-        React.createElement("p", {className: "narrowSection"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively."), 
+        React.createElement("p", {className: "narrowSection mainCaption"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin interface. The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively." + ' ' +
+        "I lead the design and coded the front-end for this project."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/VoteHome.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well."), 
+        React.createElement("p", {className: "narrowSection"}, "The app was designed mobile first to accommodate high volumes of students voting through mobile devices. NYU Vote is built with a responsive design and runs seamlessly across tablets, mobile, and desktop computers."), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/VoteMobile-1.png"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/VoteMobile-2.png"})
         ), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/VoteEnteringBallot.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app."), 
+        React.createElement("p", {className: "narrowSection"}, "The green color, which is often associated with validity, is used throughout the design to make users feel secure about the voting app."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/VoteBallot.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process."), 
+        React.createElement("p", {className: "narrowSection"}, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button were used to guide the user through process."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/VoteButtonFlow.png"}), 
         React.createElement("div", {className: "center"}, 
           React.createElement("a", {className: "button", href: "https://vote.nyuapps.com/", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "View Website"), 
@@ -243,21 +243,25 @@ var Yalla = React.createClass({displayName: 'Yalla',
       React.createElement("div", null, 
         React.createElement("h2", null, "Yalla"), 
         React.createElement("h3", null, "Community based event discovery platform in currently in Beta"), 
-        React.createElement("p", {className: "narrowSection"}, "Yalla is an events-centric social network focussed on communities.  It integrates with existing cloud based calendar workflows." + ' ' +
-        "The system enables users to search for nearby events and RSVP to them. I lead the design and coded the front-end for this project."), 
+        React.createElement("p", {className: "narrowSection mainCaption"}, "Yalla is an events-centric social network focused on communities. It integrates" + ' ' + 
+        "with existing cloud based calendar workflows. The system enables users to search for nearby events and RSVP to" + ' ' + 
+        "them. I lead the design and coded the front-end for the startup."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaBlueLogin.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "SVGs were used throughout Yalla to maximize compatibility accross screen resolutions and to minimize file sizes . PNG fallblacks were implemented for older systems." + ' ' +
-        "The login screen consisted of a loading animation through CSS and SVG properties."), 
-        React.createElement("img", {className: "fullWidth", src: "images/developer/YallaBrowserMockup.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3 pane interface which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
+        React.createElement("p", {className: "narrowSection"}, "SVGs were used throughout Yalla to maximize compatibility across" + ' ' + 
+        "screen densities and to minimize file sizes.  PNG fallbacks were" + ' ' + 
+        "implemented to support older systems. Yalla consisted of a blue and" + ' ' + 
+        "white base color pallet."
+        ), 
+        React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3-pane interface, which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
         "For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive."), 
+        React.createElement("img", {className: "fullWidth", src: "images/developer/YallaBrowserMockup.png"}), 
+        React.createElement("p", {className: "narrowSection"}, "Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate." + ' ' +
+        "The menu intentionally does not cover the whole screen to remind the user that they can swipe back to the pain events panel."), 
         React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Yallamobile1.jpg"}), 
         React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Yallamobile2.jpg"}), 
         React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Yallamobile3.jpg"}), 
-        React.createElement("p", {className: "narrowSection"}, "Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate." + ' ' +
-        "The menu intentionally does not cover the whole sreen to remind the user that they can swipe back to the pain events panel."), 
-        React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/YallaEventCreation.jpg"}), 
         React.createElement("p", {className: "narrowSection"}, "When users try to create a new event, the right panel updates to the create event screen."), 
+        React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/YallaEventCreation.jpg"}), 
         React.createElement("p", {className: "narrowSection"}, "I also worked with the designer on the team to help create the logo."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaLogoCompilation.jpg"})
       )
@@ -272,13 +276,13 @@ var WellSense = React.createClass({displayName: 'WellSense',
       React.createElement("div", null, 
           React.createElement("h2", null, "WellSense"), 
           React.createElement("h3", null, "3rd Place Winner at 2014 Hackathon for Social Good in the Arab world"), 
-          React.createElement("p", {className: "narrowSection"}, "WellSense is a cost-effective web- undefinedsolution for well monitoring, to benefit NGOs and local populations." + ' ' +
-          "I was in charge of designing and front-ending the interface.  I worked with parsing data for disaplying the graphs using the Google Charts API."), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "WellSense is a cost-effective web and hardware solution for well monitoring, to benefit NGOs and local populations. I was in charge of designing and front-ending the interface." + ' ' +
+          "I also worked with parsing data for displaying the graphs via the Google Charts API."), 
           React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/WellSense.jpg"}), 
-          React.createElement("p", {className: "narrowSection"}, "The icons for well monitoring were designed be able to be distinguished based on color."), 
+          React.createElement("p", {className: "narrowSection"}, "The icons for well monitoring were designed to be able to be distinguished by color."), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/WellSenseIcons.jpg"}), 
-          React.createElement("p", null, "The project was completed in a span of 48 hours. The team conisted of faculty advisors from NYU and CMU Qatar as well as students from NYU Abu Dhabi" + ' ' +
-          "and Carnegie Mellon University"), 
+          React.createElement("p", {className: "narrowSection"}, "The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar" + ' ' +
+          "as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon."), 
           React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/WellSenseGroupshot.jpg"}), 
           React.createElement("a", {className: "button", href: "http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "Hackathon Info"), 
           React.createElement("a", {className: "button", href: "https://github.com/lingz/wellSense", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
@@ -293,12 +297,13 @@ var StudentVoice = React.createClass({displayName: 'StudentVoice',
       React.createElement("div", null, 
         React.createElement("h2", null, "Student Voice"), 
         React.createElement("h3", null, "Online feedback sytem developed for NYUAD Student Government"), 
-        React.createElement("p", null, "Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system."), 
+        React.createElement("p", {className: "narrowSection mainCaption"}, "Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics" + ' ' + 
+        "ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/StudentVoiceFeed.jpg"}), 
-        React.createElement("p", null, "Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed" + ' ' +
+        React.createElement("p", {className: "narrowSection"}, "Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed" + ' ' +
         "the details page is rendered where they can comment on the issue at hand."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/StudentVoiceDetails.jpg"}), 
-        React.createElement("p", null, "Users have the ability to tag their issues on the submit issue page. The website is created fully responsive."), 
+        React.createElement("p", {className: "narrowSection"}, "Users have the ability to tag their issues on the submit issue page. The website is created fully responsive."), 
         React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/StudentVoiceCreateIssue.jpg"}), 
         React.createElement("a", {className: "button", href: "https://github.com/lingz/nyu-student-voice", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
 
@@ -314,8 +319,8 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
         React.createElement("div", {id: "HideAndSeak"}, 
           React.createElement("h2", null, "Hide and Seak"), 
           React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
-          React.createElement("p", {className: "narrowSection"}, "The game was developed in a group of two. I was responsible mainly for the implementation" + ' ' +
-          "of GUI using pygame.  All graphics and pygame implementations are done by me."), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "The game was developed in a group of two. I was responsible mainly" + ' ' + 
+          "for the implementation of GUI using the pygame module.  I also made all the graphics for this project."), 
           React.createElement("div", {className: "halfWidthContainer"}, 
             React.createElement("img", {className: "halfWidth left thinBorder", src: "images/developer/HideAndSeakMain.jpg"}), 
             React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/HideAndSeakAttack.jpg"})
@@ -324,14 +329,31 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
             React.createElement("img", {className: "halfWidth left", src: "images/developer/HideAndSeakVictory.jpg"}), 
             React.createElement("img", {className: "halfWidth", src: "images/developer/HideAndSeakDead.jpg"})
           ), 
-          React.createElement("p", null, "The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you" + ' ' +
-          "or reaches your homebase."), 
+          React.createElement("p", {className: "narrowSection"}, "The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you" + ' ' +
+          "or reaches your home base.  The man illustrated with the burger king hat was our lovely intro professor as he always liked to include \"The end is nigh\" in his slide decks."), 
           React.createElement("a", {className: "button", href: "https://github.com/kohterai/HideAndSeak", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
         ), 
         React.createElement("div", {className: "dividerLine"}), 
+        React.createElement("div", {id: "Architecture"}, 
+          React.createElement("h2", null, "Architectural Design"), 
+          React.createElement("h3", null, "Architectural models from IB Visual Arts"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs." + ' ' +  
+          "I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead." + ' ' +  
+          "The paper dimension was 11\" X 15\" with a circulation of over 150."), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-2.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/developer/Architect-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-4.jpg"}), 
+          React.createElement("img", {className: "halfWidth", src: "images/developer/Architect-5.jpg"}), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-6.jpg"})
+        ), 
+        React.createElement("div", {className: "dividerLine"}), 
         React.createElement("div", {id: "DiplomatLayout"}, 
-          React.createElement("h2", null, "The Diplomat Layout Editor"), 
+          React.createElement("h2", null, "Newspaper Layout Editor"), 
           React.createElement("h3", null, "Complete resdesign of high school newspaper"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs." + ' ' +  
+          "I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead." + ' ' +  
+          "The paper dimension was 11\" X 15\" with a circulation of over 150."), 
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-1v48issue2-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-2v47issue10-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-3v47issue10-2.jpg"}), 
@@ -339,13 +361,13 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-4v47issue9.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-5v47issue10-3.jpg"}), 
           React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-6v48issue1-1.jpg"}), 
-
+          React.createElement("p", {className: "narrowSection"}, "In my efforts to increase readership though a much more approachable newspaper design, I made an effort" + ' ' +
+          "to make the middle spread as eye-catching as possible.  In collaboration with the editors we created special content that spanned about the middle spread."), 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue2-2.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue2-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
-          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"})
-
-
+          React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"}), 
+          React.createElement("div", {className: "dividerLine"})
         )
       )
       )

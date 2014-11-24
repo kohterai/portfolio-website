@@ -156,7 +156,7 @@ a
 .projectDetail
   padding-left 20%
   text-align center
-  min-height 1000px
+  min-height 600px
   transition: all 0.2s linear;
   .bottomMargin
     margin-bottom 40px
@@ -164,8 +164,11 @@ a
     margin 10px 0px
   
 #projectsFooter
+  max-width 1000px
+  margin-left auto
+  margin-right auto
   padding 0px 30px
-  margin-top 70px
+  margin-top 40px
   margin-bottom 50px
   padding-top 20px
   border-top: 1px solid evenLighterGray;
@@ -201,10 +204,15 @@ a
 
 //When we dont want text etc to span the whole width of project display area
 .narrowSection
-  max-width: 800px
+  max-width: 700px
   margin-right auto
   margin-left auto
-
+  margin-top 30px
+  margin-bottom 30px
+  &.mainCaption
+    //nothing right now
+    margin-top 30px
+    
 .smallMargin
   margin 5px 0px
   

@@ -26,7 +26,7 @@ var SelectMode = React.createClass({
         <div className="modeSelectButton" id="developerSelect">
           <Link to="developer">
             <img className="circularPhoto circular" src="images/KohApple-Circular.png" />
-            <div className="modeLabel">product designer</div>
+            <div className="modeLabel">developer</div>
           </Link>
         </div>
       </div>
@@ -173,6 +173,7 @@ var AboutDev = React.createClass({
   render: function() {
     return(
       <div className="narrowSection">
+        <i className="fa fa-home"></i>
         <img className="circularPhotoSmall" src="images/KohApple-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Developer</h3>
@@ -201,8 +202,6 @@ var AboutDev = React.createClass({
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
         <a href="downloads/CV-PD.pdf"><p className="smallMargin">view resume</p></a>
-        <h4>About This Webiste</h4>
-        <p className="smallMargin">koh.terai@nyu.edu</p>
       </div>
 
     )
@@ -215,17 +214,18 @@ var NYUVote = React.createClass({
       <div>
         <h2>NYU Vote</h2>
         <h3>Target audience of 20,000 over the NYU Global Network</h3>
-        <p className="narrowSection">NYU Vote is an open source live voting platform designed to be the union of capability and simplicity.  It has an ultra simple user-facing ballot interface, as well as a minimilistic admin interface.  I lead the design and coded the front-end for this project.  The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively.</p>
+        <p className="narrowSection mainCaption">NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin interface. The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively.
+        I lead the design and coded the front-end for this project.</p>
         <img className='fullWidth' src='images/developer/VoteHome.png' />
-        <p className="narrowSection">The app was designed mobile first to accomidate high volumes of students voting through mobile devices.  NYU Vote is built with a responsive design and runs seamlessly on tablets and desktop computers as well.</p>
+        <p className="narrowSection">The app was designed mobile first to accommodate high volumes of students voting through mobile devices. NYU Vote is built with a responsive design and runs seamlessly across tablets, mobile, and desktop computers.</p>
         <div className='halfWidthContainer'>
           <img className='halfWidth thinBorder left' src='images/developer/VoteMobile-1.png' />
           <img className='halfWidth thinBorder right' src='images/developer/VoteMobile-2.png' />
         </div>
         <img className='fullWidth thinBorder' src='images/developer/VoteEnteringBallot.png' />
-        <p className="narrowSection">The green color which is often associated with validity is used throughout the design to make users feel secure about the voting app.</p>
+        <p className="narrowSection">The green color, which is often associated with validity, is used throughout the design to make users feel secure about the voting app.</p>
         <img className='fullWidth thinBorder' src='images/developer/VoteBallot.png' />
-        <p className="narrowSection">Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button was used to guide the user through process.</p>
+        <p className="narrowSection">Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button were used to guide the user through process.</p>
         <img className='fullWidth' src='images/developer/VoteButtonFlow.png' />
         <div className='center'>
           <a className="button" href="https://vote.nyuapps.com/" target="_blank"><i className="fa fa-laptop"></i>View Website</a>
@@ -242,21 +242,25 @@ var Yalla = React.createClass({
       <div>
         <h2>Yalla</h2>
         <h3>Community based event discovery platform in currently in Beta</h3>
-        <p className="narrowSection">Yalla is an events-centric social network focussed on communities.  It integrates with existing cloud based calendar workflows.
-        The system enables users to search for nearby events and RSVP to them. I lead the design and coded the front-end for this project.</p>
+        <p className="narrowSection mainCaption">Yalla is an events-centric social network focused on communities. It integrates 
+        with existing cloud based calendar workflows. The system enables users to search for nearby events and RSVP to 
+        them. I lead the design and coded the front-end for the startup.</p>
         <img className='fullWidth thinBorder' src='images/developer/YallaBlueLogin.png' />
-        <p className="narrowSection">SVGs were used throughout Yalla to maximize compatibility accross screen resolutions and to minimize file sizes . PNG fallblacks were implemented for older systems.
-        The login screen consisted of a loading animation through CSS and SVG properties.</p>
-        <img className="fullWidth" src='images/developer/YallaBrowserMockup.png' />
-        <p className="narrowSection">Yalla consists of a 3 pane interface which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once.
+        <p className="narrowSection">SVGs were used throughout Yalla to maximize compatibility across 
+        screen densities and to minimize file sizes.  PNG fallbacks were 
+        implemented to support older systems. Yalla consisted of a blue and 
+        white base color pallet.
+        </p>
+        <p className="narrowSection">Yalla consists of a 3-pane interface, which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once.
         For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive.</p>
+        <img className="fullWidth" src='images/developer/YallaBrowserMockup.png' />
+        <p className="narrowSection">Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate.
+        The menu intentionally does not cover the whole screen to remind the user that they can swipe back to the pain events panel.</p>
         <img className="thirdWidth left thinBorder" src='images/developer/Yallamobile1.jpg' />
         <img className="thirdWidth thinBorder" src='images/developer/Yallamobile2.jpg' />
         <img className="thirdWidth right thinBorder" src='images/developer/Yallamobile3.jpg' />
-        <p className="narrowSection">Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate.
-        The menu intentionally does not cover the whole sreen to remind the user that they can swipe back to the pain events panel.</p>
-        <img className="halfWidth thinBorder" src="images/developer/YallaEventCreation.jpg"/>
         <p className="narrowSection">When users try to create a new event, the right panel updates to the create event screen.</p>
+        <img className="halfWidth thinBorder" src="images/developer/YallaEventCreation.jpg"/>
         <p className="narrowSection">I also worked with the designer on the team to help create the logo.</p>
         <img className="fullWidth thinBorder" src="images/developer/YallaLogoCompilation.jpg" />
       </div>
@@ -271,13 +275,13 @@ var WellSense = React.createClass({
       <div>
           <h2>WellSense</h2>
           <h3>3rd Place Winner at 2014 Hackathon for Social Good in the Arab world</h3>
-          <p className="narrowSection">WellSense is a cost-effective web- & hardware solution for well monitoring, to benefit NGOs and local populations.
-          I was in charge of designing and front-ending the interface.  I worked with parsing data for disaplying the graphs using the Google Charts API.</p>
+          <p className="narrowSection mainCaption">WellSense is a cost-effective web and hardware solution for well monitoring, to benefit NGOs and local populations. I was in charge of designing and front-ending the interface.
+          I also worked with parsing data for displaying the graphs via the Google Charts API.</p>
           <img className='halfWidth thinBorder' src="images/developer/WellSense.jpg" />
-          <p className='narrowSection'>The icons for well monitoring were designed be able to be distinguished based on color.</p>
+          <p className='narrowSection'>The icons for well monitoring were designed to be able to be distinguished by color.</p>
           <img className='fullWidth' src='images/developer/WellSenseIcons.jpg' />
-          <p>The project was completed in a span of 48 hours. The team conisted of faculty advisors from NYU and CMU Qatar as well as students from NYU Abu Dhabi
-          and Carnegie Mellon University</p>
+          <p className="narrowSection">The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar
+          as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon.</p>
           <img className='fullWidth bottomMargin' src='images/developer/WellSenseGroupshot.jpg' />
           <a className="button" href="http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html" target="_blank"><i className="fa fa-laptop"></i>Hackathon Info</a>
           <a className="button" href="https://github.com/lingz/wellSense" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
@@ -292,12 +296,13 @@ var StudentVoice = React.createClass({
       <div>
         <h2>Student Voice</h2>
         <h3>Online feedback sytem developed for NYUAD Student Government</h3>
-        <p>Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system.</p> 
+        <p className="narrowSection mainCaption">Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics 
+        ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system.</p> 
         <img className='fullWidth thinBorder' src='images/developer/StudentVoiceFeed.jpg' />
-        <p>Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed
+        <p className="narrowSection">Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed
         the details page is rendered where they can comment on the issue at hand.</p>
         <img className='fullWidth' src='images/developer/StudentVoiceDetails.jpg' />
-        <p>Users have the ability to tag their issues on the submit issue page. The website is created fully responsive.</p>
+        <p className="narrowSection">Users have the ability to tag their issues on the submit issue page. The website is created fully responsive.</p>
         <img className='fullWidth bottomMargin' src='images/developer/StudentVoiceCreateIssue.jpg' />
         <a className="button" href="https://github.com/lingz/nyu-student-voice" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
 
@@ -313,8 +318,8 @@ var MiscDev = React.createClass({
         <div id="HideAndSeak">
           <h2>Hide and Seak</h2>
           <h3>Final Project for Intro to Computer Science coded in Python</h3>
-          <p className='narrowSection'>The game was developed in a group of two. I was responsible mainly for the implementation
-          of GUI using pygame.  All graphics and pygame implementations are done by me.</p>
+          <p className='narrowSection mainCaption'>The game was developed in a group of two. I was responsible mainly 
+          for the implementation of GUI using the pygame module.  I also made all the graphics for this project.</p>
           <div className='halfWidthContainer'>
             <img className='halfWidth left thinBorder' src='images/developer/HideAndSeakMain.jpg' />
             <img className='halfWidth thinBorder' src='images/developer/HideAndSeakAttack.jpg' />
@@ -323,14 +328,31 @@ var MiscDev = React.createClass({
             <img className='halfWidth left' src='images/developer/HideAndSeakVictory.jpg' />
             <img className='halfWidth' src='images/developer/HideAndSeakDead.jpg' />
           </div>
-          <p>The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you
-          or reaches your homebase.</p>
+          <p className='narrowSection'>The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you
+          or reaches your home base.  The man illustrated with the burger king hat was our lovely intro professor as he always liked to include "The end is nigh" in his slide decks.</p>
           <a className="button" href="https://github.com/kohterai/HideAndSeak" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
         </div>
         <div className="dividerLine"></div>
+        <div id="Architecture">
+          <h2>Architectural Design</h2>
+          <h3>Architectural models from IB Visual Arts</h3>
+          <p className='narrowSection mainCaption'>During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs.  
+          I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead.  
+          The paper dimension was 11" X 15" with a circulation of over 150.</p>
+          <img className='fullWidth' src='images/developer/Architect-1.jpg' />
+          <img className='halfWidth left' src='images/developer/Architect-2.jpg' />
+          <img className='halfWidth' src='images/developer/Architect-3.jpg' />
+          <img className='halfWidth left' src='images/developer/Architect-4.jpg' />
+          <img className='halfWidth' src='images/developer/Architect-5.jpg' />
+          <img className='fullWidth' src='images/developer/Architect-6.jpg' />
+        </div>
+        <div className="dividerLine"></div>
         <div id="DiplomatLayout">
-          <h2>The Diplomat Layout Editor</h2>
+          <h2>Newspaper Layout Editor</h2>
           <h3>Complete resdesign of high school newspaper</h3>
+          <p className='narrowSection mainCaption'>During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs.  
+          I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead.  
+          The paper dimension was 11" X 15" with a circulation of over 150.</p>
           <img className='thirdWidth left thinBorder' src='images/developer/Diplomat-1v48issue2-1.jpg' />
           <img className='thirdWidth thinBorder' src='images/developer/Diplomat-2v47issue10-1.jpg' />
           <img className='thirdWidth right thinBorder' src='images/developer/Diplomat-3v47issue10-2.jpg' />
@@ -338,13 +360,13 @@ var MiscDev = React.createClass({
           <img className='thirdWidth left thinBorder' src='images/developer/Diplomat-4v47issue9.jpg' />
           <img className='thirdWidth thinBorder' src='images/developer/Diplomat-5v47issue10-3.jpg' />
           <img className='thirdWidth right thinBorder' src='images/developer/Diplomat-6v48issue1-1.jpg' />
-
+          <p className='narrowSection'>In my efforts to increase readership though a much more approachable newspaper design, I made an effort
+          to make the middle spread as eye-catching as possible.  In collaboration with the editors we created special content that spanned about the middle spread.</p>
           <img className='halfWidth thinBorder left' src='images/developer/Diplomatv48issue2-2.jpg' />
           <img className='halfWidth thinBorder right' src='images/developer/Diplomatv48issue2-3.jpg' />
           <img className='halfWidth thinBorder left' src='images/developer/Diplomatv48issue3-3.jpg' />
           <img className='halfWidth thinBorder right' src='images/developer/Diplomatv48issue3-4.jpg' />
-
-
+          <div className="dividerLine"></div>
         </div>
       </div>
       )
