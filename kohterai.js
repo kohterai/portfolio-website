@@ -42,6 +42,14 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
       mode: this.props.mode,
     };
   },
+  showMenu: function() {
+    menu = document.getElementById("menu")
+    if (menu.classList.contains('active')){
+      menu.classList.remove('active');
+    } else {
+      menu.classList.add('active');
+    }
+  },
   aboutClicked: function() {
     menuCircle = document.getElementById("projectMenuCirlce")
     menuCircle.style.opacity = 0
@@ -60,9 +68,9 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     }
     return(
       React.createElement("div", null, 
-        React.createElement("div", {id: "showmenu"}, React.createElement("i", {id: "menuBar", className: "fa fa-bars"})), 
+        React.createElement("div", {onClick: this.showMenu, id: "showmenu"}, React.createElement("i", {id: "menuBar", className: "fa fa-bars"})), 
         React.createElement("div", {id: "projectElements"}, 
-          React.createElement("div", {id: "menu"}, 
+          React.createElement("div", {id: "menu", className: "pull-menu"}, 
             React.createElement("div", {id: "menuKohHeading", onClick: this.aboutClicked}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
             React.createElement(ProjectsMenu, {menuList: menuList})
           ), 
@@ -136,6 +144,11 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
     menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
     menuCircle.style.opacity = 1
+    //If we are in mobile mode, automatically hide menu if user clicks on project
+    menu = document.getElementById("menu")
+    if (menu.classList.contains('active')){
+      menu.classList.remove('active');
+    }
   },
   render: function() {
     return(
@@ -180,7 +193,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("p", {className: "smallMargin"}, "download (doesnt work right now)")
+        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
       )
 
     )
@@ -397,6 +410,44 @@ var Portraits = React.createClass({displayName: 'Portraits',
   }
 })
 
+var Georgia = React.createClass({displayName: 'Georgia',
+  render: function() {
+    return(
+      React.createElement("div", {id: "portraits"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-1.jpg"}), 
+        React.createElement("p", null, "The mountains of Kazbegi roll through the greatest days."), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-4.jpg"})
+      )
+    )
+  }
+})
+
+var Sports = React.createClass({displayName: 'Sports',
+  render: function() {
+    return(
+      React.createElement("div", {id: "portraits"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sport-bball-1.jpg"}), 
+        React.createElement("img", {className: "halfWidth left", src: "images/photo/sport-bball-2.jpg"}), 
+        React.createElement("img", {className: "halfWidth", src: "images/photo/sport-bball-3.jpg"})
+      )
+    )
+  }
+})
+
+var Cinema = React.createClass({displayName: 'Cinema',
+  render: function() {
+    return(
+      React.createElement("div", {id: "portraits"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sport-bball-1.jpg"}), 
+        React.createElement("img", {className: "halfWidth left", src: "images/photo/sport-bball-2.jpg"}), 
+        React.createElement("img", {className: "halfWidth", src: "images/photo/sport-bball-3.jpg"})
+      )
+    )
+  }
+})
+
 //Title is what shows up in the menu list
 var DeveloperDetails = [
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
@@ -407,11 +458,11 @@ var DeveloperDetails = [
 ];
 
 var PhotoDetails = [
-  {title: 'About', description: 'Kohs portfolio website', keyword:'aboutphoto'},
   {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
-  {title: 'Sports', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
   {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
-  {title: 'Georgia', description: 'Voting Service', keyword: 'portraits'}
+  {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
+  {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];
 
 //name must be identical to the keyword inside menu keyword
@@ -429,6 +480,9 @@ var routes = (
     ), 
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "portraits", handler: Portraits}), 
+      React.createElement(Route, {name: "georgia", handler: Georgia}), 
+      React.createElement(Route, {name: "sports", handler: Sports}), 
+      React.createElement(Route, {name: "cinema", handler: Cinema}), 
       React.createElement(DefaultRoute, {name: "aboutphoto", handler: AboutPhoto})
     )
   )

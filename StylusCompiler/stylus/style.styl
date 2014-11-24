@@ -13,12 +13,6 @@ body
 
 html
   height 100%
-
-#container
-  max-width: 1000px
-  margin-left: auto
-  margin-right: auto
-  padding: 30px 40px
   
 .clear
   clear both
@@ -67,6 +61,7 @@ li
 
 //Project title
 h2
+  font-family: Lato
   margin: -10px
   font-size 3em
   font-weight: 700
@@ -96,20 +91,21 @@ p
 
 
 //******FOR THE PROJECTS MENU******//
-#menu
+.pull-menu
   position: fixed
   top 17%
-  transition: all 0.2s linear;
+  transition: margin padding background-color 0.2s linear;
 
 #showmenu
+  cursor pointer 
   transition: all 0.2s linear;
-  margin-left -100px
-  display none
+  margin-top -40px
   position: fixed
   height 40px
   width 50px
   background-color darkerblack
   top 0
+  z-index 1000
   #menuBar
     color white
     font-size 1.6em
@@ -122,7 +118,7 @@ p
 
 #menuKohHeading
   font-size 1.7em
-  font-weight 200
+  font-weight 300
   top 15%
   .active
     color blue
@@ -138,7 +134,7 @@ p
 
 a
   color lightestGray
-  font-weight 200
+  font-weight 300
   line-height 1.8em
   font-size 1.1em
   transition: color 0.1s linear;
@@ -169,8 +165,8 @@ a
   
 #projectsFooter
   padding 0px 30px
-  margin-top 100px
-  margin-bottom 70px
+  margin-top 70px
+  margin-bottom 50px
   padding-top 20px
   border-top: 1px solid evenLighterGray;
   color lighterblack
@@ -180,7 +176,10 @@ a
 
 //****FOR PROJECTS*****//
 #projectElements
-  width 100%
+  max-width: 1000px
+  margin-left: auto
+  margin-right: auto
+  padding: 30px 40px
 
 .blue
   color blue
@@ -279,26 +278,40 @@ td
 }
 
 @media screen and (max-width: 900px)
+  a
+    &.active
+      color blue
   .projectDetail
     padding-left 0
-  #menu
+  #projectHeading
+    display none
+  .pull-menu
     margin-left -170px
+    &.active
+      margin-top -30px
+      height 100%
+      top 0px
+      padding-top 80px
+      background-color #414141
+      margin-left -40px
+      padding-right 30px
+      padding-left 15px
   #showmenu
-    margin-left -40px
-    display block
+    margin-top 0px
   .left
     float none
   .right
     float none
   #projectsFooter
     text-align center
-    margin-bottom 10px
+    margin-bottom 50px
     margin-top 30px
   #projectMenuCirlce
     display none
 
 @media screen and (max-width: 600px)
-  #container
+  #projectElements
     padding 30px 10px
-  #showmenu
-    margin-left -10px
+  .pull-menu
+    &.active
+      margin-left -10px

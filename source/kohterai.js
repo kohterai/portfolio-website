@@ -41,6 +41,14 @@ var ProjectDisplay = React.createClass({
       mode: this.props.mode,
     };
   },
+  showMenu: function() {
+    menu = document.getElementById("menu")
+    if (menu.classList.contains('active')){
+      menu.classList.remove('active');
+    } else {
+      menu.classList.add('active');
+    }
+  },
   aboutClicked: function() {
     menuCircle = document.getElementById("projectMenuCirlce")
     menuCircle.style.opacity = 0
@@ -59,9 +67,9 @@ var ProjectDisplay = React.createClass({
     }
     return(
       <div>
-        <div id="showmenu"><i id="menuBar" className="fa fa-bars"></i></div>
+        <div onClick={this.showMenu} id="showmenu"><i id="menuBar" className="fa fa-bars"></i></div>
         <div id="projectElements">
-          <div id="menu">
+          <div id="menu" className="pull-menu">
             <div id="menuKohHeading" onClick={this.aboutClicked}><Link to="aboutdev">Koh Terai</Link></div>
             <ProjectsMenu menuList={menuList}/>
           </div>
@@ -135,6 +143,11 @@ var ProjectMenuItem = React.createClass({
     menuCircle.style.top = String(menuItemCoords.top-menuListCoords.top+104)+'px';
     menuCircle.style.left = String(menuItemCoords.left-menuListCoords.left-15)+'px';
     menuCircle.style.opacity = 1
+    //If we are in mobile mode, automatically hide menu if user clicks on project
+    menu = document.getElementById("menu")
+    if (menu.classList.contains('active')){
+      menu.classList.remove('active');
+    }
   },
   render: function() {
     return(
@@ -179,7 +192,7 @@ var AboutDev = React.createClass({
         <h4>Contact</h4>
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
-        <p className="smallMargin">download (doesnt work right now)</p>
+        <a href="downloads/CV-PD.pdf"><p className="smallMargin">view resume</p></a>
       </div>
 
     )
@@ -396,6 +409,44 @@ var Portraits = React.createClass({
   }
 })
 
+var Georgia = React.createClass({
+  render: function() {
+    return(
+      <div id="portraits">
+        <img className='fullWidth' src='images/photo/Georgia-1.jpg' />
+        <p>The mountains of Kazbegi roll through the greatest days.</p>
+        <img className='fullWidth' src='images/photo/Georgia-2.jpg' />
+        <img className='fullWidth' src='images/photo/Georgia-3.jpg' />
+        <img className='fullWidth' src='images/photo/Georgia-4.jpg' />
+      </div>
+    )
+  }
+})
+
+var Sports = React.createClass({
+  render: function() {
+    return(
+      <div id="portraits">
+        <img className='fullWidth' src='images/photo/sport-bball-1.jpg' />
+        <img className='halfWidth left' src='images/photo/sport-bball-2.jpg' />
+        <img className='halfWidth' src='images/photo/sport-bball-3.jpg' />
+      </div>
+    )
+  }
+})
+
+var Cinema = React.createClass({
+  render: function() {
+    return(
+      <div id="portraits">
+        <img className='fullWidth' src='images/photo/sport-bball-1.jpg' />
+        <img className='halfWidth left' src='images/photo/sport-bball-2.jpg' />
+        <img className='halfWidth' src='images/photo/sport-bball-3.jpg' />
+      </div>
+    )
+  }
+})
+
 //Title is what shows up in the menu list
 var DeveloperDetails = [
   {title: 'NYU Vote', description: 'Voting Service', keyword: 'nyuvote'},
@@ -406,11 +457,11 @@ var DeveloperDetails = [
 ];
 
 var PhotoDetails = [
-  {title: 'About', description: 'Kohs portfolio website', keyword:'aboutphoto'},
   {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
-  {title: 'Sports', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
   {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
-  {title: 'Georgia', description: 'Voting Service', keyword: 'portraits'}
+  {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
+  {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];
 
 //name must be identical to the keyword inside menu keyword
@@ -428,6 +479,9 @@ var routes = (
     </Route>
     <Route path="/photo" name="photographer" mode={"Photographer"} handler={ProjectDisplay}>
       <Route name="portraits" handler={Portraits} />
+      <Route name="georgia" handler={Georgia} />
+      <Route name="sports" handler={Sports} />
+      <Route name="cinema" handler={Cinema} />
       <DefaultRoute name="aboutphoto" handler={AboutPhoto} />
     </Route>
   </Routes>
