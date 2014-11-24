@@ -89,7 +89,7 @@ var ProjectFooter = React.createClass({
   render: function() {
     return(
       <div id="projectsFooter">
-        <div className="left"><i className="fa fa-paper-plane-o"></i>koh.terai@nyu.edu</div>
+        <div className="left"><a href="mailto:koh.terai@nyu.edu"><i className="fa fa-paper-plane-o"></i>koh.terai@nyu.edu</a></div>
         <div className="right"><a href={this.props.cvLink}><i className="fa fa-paperclip"></i>Download CV</a></div>
       </div>
       )
@@ -201,6 +201,8 @@ var AboutDev = React.createClass({
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
         <a href="downloads/CV-PD.pdf"><p className="smallMargin">view resume</p></a>
+        <h4>About This Webiste</h4>
+        <p className="smallMargin">koh.terai@nyu.edu</p>
       </div>
 
     )

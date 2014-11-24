@@ -90,7 +90,7 @@ var ProjectFooter = React.createClass({displayName: 'ProjectFooter',
   render: function() {
     return(
       React.createElement("div", {id: "projectsFooter"}, 
-        React.createElement("div", {className: "left"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu"), 
+        React.createElement("div", {className: "left"}, React.createElement("a", {href: "mailto:koh.terai@nyu.edu"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu")), 
         React.createElement("div", {className: "right"}, React.createElement("a", {href: this.props.cvLink}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV"))
       )
       )
@@ -201,7 +201,9 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
+        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume")), 
+        React.createElement("h4", null, "About This Webiste"), 
+        React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu")
       )
 
     )
