@@ -60,6 +60,7 @@ var ProjectDisplay = React.createClass({
     switch (this.state.mode){
       case "Developer":
         var menuList = DeveloperDetails
+        var CVLink = "downloads/CV-PD.pdf"
         break;
       case "Photographer":
         var menuList = PhotoDetails
@@ -78,15 +79,22 @@ var ProjectDisplay = React.createClass({
           </div>
         </div>
         <div className="clear"></div>
-        <div id="projectsFooter">
-            <div className="left"><i className="fa fa-paper-plane-o"></i>koh.terai@nyu.edu</div>
-            <div className="right"><i className="fa fa-paperclip"></i>Download CV</div>
-        </div>
+        <ProjectFooter cvLink={CVLink} />
       </div>
     );
   }
 })
 
+var ProjectFooter = React.createClass({
+  render: function() {
+    return(
+      <div id="projectsFooter">
+        <div className="left"><i className="fa fa-paper-plane-o"></i>koh.terai@nyu.edu</div>
+        <div className="right"><a href={this.props.cvLink}><i className="fa fa-paperclip"></i>Download CV</a></div>
+      </div>
+      )
+  }
+})
 
 /*ProjectsMenu is created from the projects constant set
 which set to choose from is determined by this.state.mode*/

@@ -61,6 +61,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     switch (this.state.mode){
       case "Developer":
         var menuList = DeveloperDetails
+        var CVLink = "downloads/CV-PD.pdf"
         break;
       case "Photographer":
         var menuList = PhotoDetails
@@ -79,15 +80,22 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
           )
         ), 
         React.createElement("div", {className: "clear"}), 
-        React.createElement("div", {id: "projectsFooter"}, 
-            React.createElement("div", {className: "left"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu"), 
-            React.createElement("div", {className: "right"}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV")
-        )
+        React.createElement(ProjectFooter, {cvLink: CVLink})
       )
     );
   }
 })
 
+var ProjectFooter = React.createClass({displayName: 'ProjectFooter',
+  render: function() {
+    return(
+      React.createElement("div", {id: "projectsFooter"}, 
+        React.createElement("div", {className: "left"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu"), 
+        React.createElement("div", {className: "right"}, React.createElement("a", {href: this.props.cvLink}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV"))
+      )
+      )
+  }
+})
 
 /*ProjectsMenu is created from the projects constant set
 which set to choose from is determined by this.state.mode*/
