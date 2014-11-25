@@ -66,6 +66,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
         break;
       case "Photographer":
         var menuList = PhotoDetails
+        var CVLink = "downloads/CV-Photo.pdf"
         var aboutLink ="aboutphoto"
         break;
     }
@@ -94,7 +95,7 @@ var ProjectFooter = React.createClass({displayName: 'ProjectFooter',
     return(
       React.createElement("div", {id: "projectsFooter"}, 
         React.createElement("div", {className: "left"}, React.createElement("a", {href: "mailto:koh.terai@nyu.edu"}, React.createElement("i", {className: "fa fa-paper-plane-o"}), "koh.terai@nyu.edu")), 
-        React.createElement("div", {className: "right"}, React.createElement("a", {href: this.props.cvLink}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV"))
+        React.createElement("div", {className: "right"}, React.createElement("a", {href: this.props.cvLink, target: "_blank"}, React.createElement("i", {className: "fa fa-paperclip"}), "Download CV"))
       )
       )
   }
@@ -176,14 +177,19 @@ var ProjectMenuItem = React.createClass({displayName: 'ProjectMenuItem',
 var AboutDev = React.createClass({displayName: 'AboutDev',
   render: function() {
     return(
-      React.createElement("div", {className: "narrowSection"}, 
+      React.createElement("div", {className: "aboutMenu narrowSection"}, 
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohApple-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Developer"), 
-        React.createElement("p", null, "I am currently studying computer science at ", React.createElement("b", null, "New York University Abu Dhabi"), ". I’ve been keen on technology" + ' ' +
-        "since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade." + ' ' +
-        "I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful" + ' ' +
-        "looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs."), 
+        React.createElement("p", null, "Hi, I’m Koh and currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
+        "Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan." + ' ' +
+        "I’ve been keen on technology since a young age and even made a presentation about", React.createElement("a", {href: "https://www.facebook.com/video.php?v=202823495000undefined77727382889", target: "_blank"}, React.createElement("b", null, " SMS Technology")), " at an apple store when I was in elementary school.", 
+        React.createElement("a", null, React.createElement("b", null, " Producing beautiful products")), " is my passion and in the recent years I have been able to do this through web and software development." + ' ' +  
+        "I am incredibly keen on writing clean and reusable code and pay close attention to details."
+        ), 
+        React.createElement("p", null, 
+        "I’m also an avid ", React.createElement(Link, {to: "photographer", target: "_blank"}, React.createElement("b", null, "photographer and cinematographer")), " so please do take a look at my photographic work if you have a chance to." 
+        ), 
         React.createElement("h4", null, "Skills"), 
         React.createElement("table", {className: "skillsTable"}, 
           React.createElement("tr", null, 
@@ -225,7 +231,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("a", {href: "downloads/CV-PD.pdf"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
+        React.createElement("a", {href: "downloads/CV-PD.pdf", target: "_blank"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
       )
 
     )
@@ -550,9 +556,8 @@ var DeveloperDetails = [
 ];
 
 var PhotoDetails = [
-  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
-  {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
   {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];

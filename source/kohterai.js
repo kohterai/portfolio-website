@@ -65,6 +65,7 @@ var ProjectDisplay = React.createClass({
         break;
       case "Photographer":
         var menuList = PhotoDetails
+        var CVLink = "downloads/CV-Photo.pdf"
         var aboutLink ="aboutphoto"
         break;
     }
@@ -93,7 +94,7 @@ var ProjectFooter = React.createClass({
     return(
       <div id="projectsFooter">
         <div className="left"><a href="mailto:koh.terai@nyu.edu"><i className="fa fa-paper-plane-o"></i>koh.terai@nyu.edu</a></div>
-        <div className="right"><a href={this.props.cvLink}><i className="fa fa-paperclip"></i>Download CV</a></div>
+        <div className="right"><a href={this.props.cvLink} target="_blank"><i className="fa fa-paperclip"></i>Download CV</a></div>
       </div>
       )
   }
@@ -175,14 +176,19 @@ var ProjectMenuItem = React.createClass({
 var AboutDev = React.createClass({
   render: function() {
     return(
-      <div className="narrowSection">
+      <div className="aboutMenu narrowSection">
         <img className="circularPhotoSmall" src="images/KohApple-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Developer</h3>
-        <p>I am currently studying computer science at <b>New York University Abu Dhabi</b>. I’ve been keen on technology
-        since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade.
-        I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful
-        looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs.</p>
+        <p>Hi, I’m Koh and currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
+        Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.
+        I’ve been keen on technology since a young age and even made a presentation about<a href="https://www.facebook.com/video.php?v=202823495000&l=8839472477727382889" target="_blank"><b> SMS Technology</b></a> at an apple store when I was in elementary school.
+        <a><b> Producing beautiful products</b></a> is my passion and in the recent years I have been able to do this through web and software development.  
+        I am incredibly keen on writing clean and reusable code and pay close attention to details.
+        </p>
+        <p>
+        I’m also an avid <Link to="photographer" target="_blank"><b>photographer and cinematographer</b></Link> so please do take a look at my photographic work if you have a chance to. 
+        </p>
         <h4>Skills</h4>
         <table className="skillsTable">
           <tr>
@@ -224,7 +230,7 @@ var AboutDev = React.createClass({
         <h4>Contact</h4>
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
-        <a href="downloads/CV-PD.pdf"><p className="smallMargin">view resume</p></a>
+        <a href="downloads/CV-PD.pdf" target="_blank"><p className="smallMargin">view resume</p></a>
       </div>
 
     )
@@ -549,9 +555,8 @@ var DeveloperDetails = [
 ];
 
 var PhotoDetails = [
-  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
-  {title: 'Journalism', description: 'Voting Service', keyword: 'portraits'},
+  {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
   {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];
