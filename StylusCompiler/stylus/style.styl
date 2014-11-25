@@ -87,8 +87,31 @@ p
   font-weight: 300
   color: lighterblack
 
+table
+  margin-left auto
+  margin-right auto
+
 //******GENERAL USE STYLING******//
 
+
+
+//***Home Button***//
+#homeButton
+  cursor: pointer
+  position fixed
+  top 35px
+  transition: color 0.2s linear;
+  a
+    color evenLighterGray
+    &:hover
+      color lighterblack
+    
+#homeIcon
+  font-size 3em
+#homeText
+  font-weight 300
+  margin-top -5px
+  
 
 //******FOR THE PROJECTS MENU******//
 .pull-menu
@@ -106,6 +129,8 @@ p
   background-color darkerblack
   top 0
   z-index 1000
+  &:hover
+    background-color lighterblack
   #menuBar
     color white
     font-size 1.6em
@@ -306,23 +331,25 @@ td
       margin-top -30px
       height 100%
       top 0px
-      padding-top 80px
+      padding-top 120px
       background-color #414141
       margin-left -40px
       padding-right 30px
       padding-left 15px
   #showmenu
     margin-top 0px
-  .left
-    float none
-  .right
-    float none
   #projectsFooter
     text-align center
     margin-bottom 50px
     margin-top 30px
+    .left
+      float none
+    .right
+      float none
   #projectMenuCirlce
     display none
+  #homeButton
+    top 46px
 
 @media screen and (max-width: 600px)
   #projectElements

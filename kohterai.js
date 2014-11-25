@@ -62,9 +62,11 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
       case "Developer":
         var menuList = DeveloperDetails
         var CVLink = "downloads/CV-PD.pdf"
+        var aboutLink ="aboutdev"
         break;
       case "Photographer":
         var menuList = PhotoDetails
+        var aboutLink ="aboutphoto"
         break;
     }
     return(
@@ -72,7 +74,8 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
         React.createElement("div", {onClick: this.showMenu, id: "showmenu"}, React.createElement("i", {id: "menuBar", className: "fa fa-bars"})), 
         React.createElement("div", {id: "projectElements"}, 
           React.createElement("div", {id: "menu", className: "pull-menu"}, 
-            React.createElement("div", {id: "menuKohHeading", onClick: this.aboutClicked}, React.createElement(Link, {to: "aboutdev"}, "Koh Terai")), 
+            React.createElement("div", {id: "homeButton"}, React.createElement(Link, {to: "home"}, React.createElement("i", {className: "fa fa-home", id: "homeIcon"}), React.createElement("div", {id: "homeText"}))), 
+            React.createElement("div", {id: "menuKohHeading", onClick: this.aboutClicked}, React.createElement(Link, {to: aboutLink}, "Koh Terai")), 
             React.createElement(ProjectsMenu, {menuList: menuList})
           ), 
           React.createElement("div", {className: "projectDetail "}, 
@@ -174,7 +177,6 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
   render: function() {
     return(
       React.createElement("div", {className: "narrowSection"}, 
-        React.createElement("i", {className: "fa fa-home"}), 
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohApple-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Developer"), 
@@ -199,6 +201,27 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
             React.createElement("td", null, "CSS")
           )
         ), 
+        React.createElement("h4", null, "Course Work"), 
+        React.createElement("table", {className: "skillsTable"}, 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Intro to Computer Science")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Discrete Math")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Algorithms")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Data Structures")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Computer Systems Organisations")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Foundations of Computer Graphics")
+          )
+        ), 
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
@@ -215,7 +238,7 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
       React.createElement("div", null, 
         React.createElement("h2", null, "NYU Vote"), 
         React.createElement("h3", null, "Target audience of 20,000 over the NYU Global Network"), 
-        React.createElement("p", {className: "narrowSection mainCaption"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin interface. The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively." + ' ' +
+        React.createElement("p", {className: "narrowSection mainCaption"}, "NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin panel. The target audience was 20,000 students from NYU New York, NYU Abu Dhabi, and NYU Shanghai." + ' ' +
         "I lead the design and coded the front-end for this project."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/VoteHome.png"}), 
         React.createElement("p", {className: "narrowSection"}, "The app was designed mobile first to accommodate high volumes of students voting through mobile devices. NYU Vote is built with a responsive design and runs seamlessly across tablets, mobile, and desktop computers."), 
@@ -249,20 +272,19 @@ var Yalla = React.createClass({displayName: 'Yalla',
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaBlueLogin.png"}), 
         React.createElement("p", {className: "narrowSection"}, "SVGs were used throughout Yalla to maximize compatibility across" + ' ' + 
         "screen densities and to minimize file sizes.  PNG fallbacks were" + ' ' + 
-        "implemented to support older systems. Yalla consisted of a blue and" + ' ' + 
-        "white base color pallet."
+        "implemented to support older systems."
         ), 
-        React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3-pane interface, which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
-        "For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive."), 
+        React.createElement("p", {className: "narrowSection"}, "Yalla consists of a 3-pane interface, which is updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once." + ' ' +
+        "For tablets, two panes can be displayed at once. For mobile, only one pane is displayed. The app is fully responsive."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/YallaBrowserMockup.png"}), 
-        React.createElement("p", {className: "narrowSection"}, "Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate." + ' ' +
-        "The menu intentionally does not cover the whole screen to remind the user that they can swipe back to the pain events panel."), 
+        React.createElement("p", {className: "narrowSection"}, "The images below show how the three panels would appear on a mobile device.  The right two panels in the Yalla interface take up the full length of the screen to maximize screen real estate." + ' ' +
+        "The menu intentionally does not cover the whole screen to remind the user that one can swipe back to the main events panel."), 
         React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Yallamobile1.jpg"}), 
         React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Yallamobile2.jpg"}), 
         React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Yallamobile3.jpg"}), 
-        React.createElement("p", {className: "narrowSection"}, "When users try to create a new event, the right panel updates to the create event screen."), 
+        React.createElement("p", {className: "narrowSection"}, "When users try to create a new event, the right panel updates to the \"create event\" screen."), 
         React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/YallaEventCreation.jpg"}), 
-        React.createElement("p", {className: "narrowSection"}, "I also worked with the designer on the team to help create the logo."), 
+        React.createElement("p", {className: "narrowSection"}, "I oversaw the logo creation process."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/YallaLogoCompilation.jpg"})
       )
       )
@@ -276,10 +298,10 @@ var WellSense = React.createClass({displayName: 'WellSense',
       React.createElement("div", null, 
           React.createElement("h2", null, "WellSense"), 
           React.createElement("h3", null, "3rd Place Winner at 2014 Hackathon for Social Good in the Arab world"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "WellSense is a cost-effective web and hardware solution for well monitoring, to benefit NGOs and local populations. I was in charge of designing and front-ending the interface." + ' ' +
-          "I also worked with parsing data for displaying the graphs via the Google Charts API."), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "WellSense is a cost-effective web and hardware solution for well management benefit NGOs and local populations." + ' ' +
+          "I was in charge of designing and front-ending the interface. I also worked with parsing data for displaying the graphs via the Google Charts API."), 
           React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/WellSense.jpg"}), 
-          React.createElement("p", {className: "narrowSection"}, "The icons for well monitoring were designed to be able to be distinguished by color."), 
+          React.createElement("p", {className: "narrowSection"}, "The icons for well monitoring are designed to be able to be distinguished by color."), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/WellSenseIcons.jpg"}), 
           React.createElement("p", {className: "narrowSection"}, "The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar" + ' ' +
           "as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon."), 
@@ -297,13 +319,13 @@ var StudentVoice = React.createClass({displayName: 'StudentVoice',
       React.createElement("div", null, 
         React.createElement("h2", null, "Student Voice"), 
         React.createElement("h3", null, "Online feedback sytem developed for NYUAD Student Government"), 
-        React.createElement("p", {className: "narrowSection mainCaption"}, "Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics" + ' ' + 
-        "ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system."), 
+        React.createElement("p", {className: "narrowSection mainCaption"}, "Student Voice is a public platform in which students can suggest ways to improve the NYU Global Community." + ' ' +
+        "Topics range from school specific to the entire Global Network Univerty.  I was a part of the team that designed and front-ended the system."), 
         React.createElement("img", {className: "fullWidth thinBorder", src: "images/developer/StudentVoiceFeed.jpg"}), 
-        React.createElement("p", {className: "narrowSection"}, "Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed" + ' ' +
-        "the details page is rendered where they can comment on the issue at hand."), 
+        React.createElement("p", {className: "narrowSection"}, "The background gradation is evocative of the design trends of the past. When users click on a particular issue from the feed," + ' ' +
+        "the details page is rendered."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/StudentVoiceDetails.jpg"}), 
-        React.createElement("p", {className: "narrowSection"}, "Users have the ability to tag their issues on the submit issue page. The website is created fully responsive."), 
+        React.createElement("p", {className: "narrowSection"}, "Users have the ability to tag their issues on the \"submit issue\" page. The website is fully responsive."), 
         React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/StudentVoiceCreateIssue.jpg"}), 
         React.createElement("a", {className: "button", href: "https://github.com/lingz/nyu-student-voice", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
 
@@ -319,8 +341,8 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
         React.createElement("div", {id: "HideAndSeak"}, 
           React.createElement("h2", null, "Hide and Seak"), 
           React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "The game was developed in a group of two. I was responsible mainly" + ' ' + 
-          "for the implementation of GUI using the pygame module.  I also made all the graphics for this project."), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "The game was developed with a partner. I was mainly responsible" + ' ' +  
+          "for the implementation of GUI using the pygame module.  I also in charge all the graphics for this project."), 
           React.createElement("div", {className: "halfWidthContainer"}, 
             React.createElement("img", {className: "halfWidth left thinBorder", src: "images/developer/HideAndSeakMain.jpg"}), 
             React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/HideAndSeakAttack.jpg"})
@@ -330,28 +352,26 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
             React.createElement("img", {className: "halfWidth", src: "images/developer/HideAndSeakDead.jpg"})
           ), 
           React.createElement("p", {className: "narrowSection"}, "The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you" + ' ' +
-          "or reaches your home base.  The man illustrated with the burger king hat was our lovely intro professor as he always liked to include \"The end is nigh\" in his slide decks."), 
+          "or reaches your home base.  The man featured with the burger king hat was our lovely professor as he always liked to include \"The end is nigh\" in his slide decks."), 
           React.createElement("a", {className: "button", href: "https://github.com/kohterai/HideAndSeak", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
         ), 
         React.createElement("div", {className: "dividerLine"}), 
         React.createElement("div", {id: "Architecture"}, 
           React.createElement("h2", null, "Architectural Design"), 
-          React.createElement("h3", null, "Architectural models from IB Visual Arts"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs." + ' ' +  
-          "I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead." + ' ' +  
-          "The paper dimension was 11\" X 15\" with a circulation of over 150."), 
+          React.createElement("h3", null, "Architectural models for IB Visual Arts"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "AIOSJDIOSAJDIOAJSIODJASIOJDIOASJIDJASOIJDO"), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-1.jpg"}), 
           React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-2.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/developer/Architect-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-3.jpg"}), 
           React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-4.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/developer/Architect-5.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-5.jpg"}), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-6.jpg"})
         ), 
         React.createElement("div", {className: "dividerLine"}), 
         React.createElement("div", {id: "DiplomatLayout"}, 
           React.createElement("h2", null, "Newspaper Layout Editor"), 
-          React.createElement("h3", null, "Complete resdesign of high school newspaper"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs." + ' ' +  
+          React.createElement("h3", null, "Complete resdesign of The Diplomat"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "I completely redesigned The Diplomat, my high school newspaper for its final year with print runs before digitizaton." + ' ' +  
           "I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead." + ' ' +  
           "The paper dimension was 11\" X 15\" with a circulation of over 150."), 
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-1v48issue2-1.jpg"}), 
@@ -361,8 +381,8 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-4v47issue9.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-5v47issue10-3.jpg"}), 
           React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-6v48issue1-1.jpg"}), 
-          React.createElement("p", {className: "narrowSection"}, "In my efforts to increase readership though a much more approachable newspaper design, I made an effort" + ' ' +
-          "to make the middle spread as eye-catching as possible.  In collaboration with the editors we created special content that spanned about the middle spread."), 
+          React.createElement("p", {className: "narrowSection"}, "In my efforts to increase readership though a more approachable newspaper design, I strived" + ' ' + 
+          "to make the middle spread as eye-catching as possible."), 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue2-2.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue2-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
@@ -418,25 +438,29 @@ var Portraits = React.createClass({displayName: 'Portraits',
       React.createElement("div", {id: "portraits"}, 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-izumi-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-izumi-2.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-izumi-2.jpg"})
         ), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-yabui-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-yabui-2.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-yabui-2.jpg"})
         ), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-KP-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-KP-2.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-KP-2.jpg"})
         ), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-grad-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-grad-2.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-grad-2.jpg"})
         ), 
         React.createElement("div", {className: "halfWidthContainer"}, 
           React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-band-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-band-2.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-band-2.jpg"})
         ), 
-        React.createElement("img", {className: "halfWidth", src: "images/photo/portrait-alistair-1.jpg"})
+        React.createElement("img", {className: "fullWidth", src: "images/photo/portrait-james-1.jpg"}), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/portrait-JP-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/portrait-alistair-1.jpg"})
+        )
       )
     )
   }
@@ -445,12 +469,23 @@ var Portraits = React.createClass({displayName: 'Portraits',
 var Georgia = React.createClass({displayName: 'Georgia',
   render: function() {
     return(
-      React.createElement("div", {id: "portraits"}, 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-1.jpg"}), 
-        React.createElement("p", null, "The mountains of Kazbegi roll through the greatest days."), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-2.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-3.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/Georgia-4.jpg"})
+      React.createElement("div", {id: "georgia"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-4.jpg"}), 
+        React.createElement("img", {className: "halfWidth left", src: "images/photo/georgia/georgia-5.jpg"}), 
+        React.createElement("img", {className: "halfWidth right", src: "images/photo/georgia/georgia-5-5.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-6.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-7.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-8.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-9.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-10.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/georgia/georgia-11.jpg"}), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/georgia/georgia-12.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/georgia/georgia-13.jpg"})
+        )
       )
     )
   }
@@ -459,10 +494,25 @@ var Georgia = React.createClass({displayName: 'Georgia',
 var Sports = React.createClass({displayName: 'Sports',
   render: function() {
     return(
-      React.createElement("div", {id: "portraits"}, 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/sport-bball-1.jpg"}), 
-        React.createElement("img", {className: "halfWidth left", src: "images/photo/sport-bball-2.jpg"}), 
-        React.createElement("img", {className: "halfWidth", src: "images/photo/sport-bball-3.jpg"})
+      React.createElement("div", {id: "sports"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-bball-1.jpg"}), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/sports/sport-bball-2.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/sports/sport-bball-3.jpg"})
+        ), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-wrestling-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-swimming-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-xc-1.jpg"}), 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/sports/sport-tennis-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/sports/sport-track-1.jpg"})
+        ), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-tennis-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-tennis-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-baseball-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-soccer-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-soccer-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/sports/sport-baseball-2.jpg"})
       )
     )
   }
@@ -472,9 +522,19 @@ var Cinema = React.createClass({displayName: 'Cinema',
   render: function() {
     return(
       React.createElement("div", {id: "portraits"}, 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/sport-bball-1.jpg"}), 
-        React.createElement("img", {className: "halfWidth left", src: "images/photo/sport-bball-2.jpg"}), 
-        React.createElement("img", {className: "halfWidth", src: "images/photo/sport-bball-3.jpg"})
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-4.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-4.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-5.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-4.jpg"})
       )
     )
   }
@@ -501,7 +561,7 @@ var PhotoDetails = [
 //we use the ProjectDisplay component but with the mode parameter as Photographer
 var routes = (
   React.createElement(Routes, {location: "hash"}, 
-    React.createElement(Route, {path: "/", handler: SelectMode}), 
+    React.createElement(Route, {path: "/", name: "home", handler: SelectMode}), 
     React.createElement(Route, {path: "/dev", name: "developer", mode: "Developer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "nyuvote", handler: NYUVote}), 
       React.createElement(Route, {name: "yalla", handler: Yalla}), 

@@ -61,9 +61,11 @@ var ProjectDisplay = React.createClass({
       case "Developer":
         var menuList = DeveloperDetails
         var CVLink = "downloads/CV-PD.pdf"
+        var aboutLink ="aboutdev"
         break;
       case "Photographer":
         var menuList = PhotoDetails
+        var aboutLink ="aboutphoto"
         break;
     }
     return(
@@ -71,7 +73,8 @@ var ProjectDisplay = React.createClass({
         <div onClick={this.showMenu} id="showmenu"><i id="menuBar" className="fa fa-bars"></i></div>
         <div id="projectElements">
           <div id="menu" className="pull-menu">
-            <div id="menuKohHeading" onClick={this.aboutClicked}><Link to="aboutdev">Koh Terai</Link></div>
+            <div id="homeButton"><Link to="home"><i className="fa fa-home" id="homeIcon"></i><div id="homeText"></div></Link></div>
+            <div id="menuKohHeading" onClick={this.aboutClicked}><Link to={aboutLink}>Koh Terai</Link></div>
             <ProjectsMenu menuList={menuList}/>
           </div>
           <div className="projectDetail ">
@@ -173,7 +176,6 @@ var AboutDev = React.createClass({
   render: function() {
     return(
       <div className="narrowSection">
-        <i className="fa fa-home"></i>
         <img className="circularPhotoSmall" src="images/KohApple-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Developer</h3>
@@ -198,6 +200,27 @@ var AboutDev = React.createClass({
             <td>CSS</td>
           </tr>
         </table>
+        <h4>Course Work</h4>
+        <table className="skillsTable">
+          <tr>
+            <td>Intro to Computer Science</td>
+          </tr>
+          <tr>          
+            <td>Discrete Math</td>
+          </tr>
+          <tr>
+            <td>Algorithms</td>
+          </tr>
+          <tr>
+            <td>Data Structures</td>
+          </tr>
+          <tr>
+            <td>Computer Systems Organisations</td>
+          </tr>
+          <tr>
+            <td>Foundations of Computer Graphics</td>
+          </tr>
+        </table>
         <h4>Contact</h4>
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
@@ -214,7 +237,7 @@ var NYUVote = React.createClass({
       <div>
         <h2>NYU Vote</h2>
         <h3>Target audience of 20,000 over the NYU Global Network</h3>
-        <p className="narrowSection mainCaption">NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin interface. The target audience was 20,000 students from NYU New York, Abu Dhabi, and Shanghai collectively.
+        <p className="narrowSection mainCaption">NYU Vote is an open source live voting platform designed to be the union of capability and simplicity. It has an ultra simple user-facing ballot interface, as well as a minimalistic admin panel. The target audience was 20,000 students from NYU New York, NYU Abu Dhabi, and NYU Shanghai.
         I lead the design and coded the front-end for this project.</p>
         <img className='fullWidth' src='images/developer/VoteHome.png' />
         <p className="narrowSection">The app was designed mobile first to accommodate high volumes of students voting through mobile devices. NYU Vote is built with a responsive design and runs seamlessly across tablets, mobile, and desktop computers.</p>
@@ -248,20 +271,19 @@ var Yalla = React.createClass({
         <img className='fullWidth thinBorder' src='images/developer/YallaBlueLogin.png' />
         <p className="narrowSection">SVGs were used throughout Yalla to maximize compatibility across 
         screen densities and to minimize file sizes.  PNG fallbacks were 
-        implemented to support older systems. Yalla consisted of a blue and 
-        white base color pallet.
+        implemented to support older systems.
         </p>
-        <p className="narrowSection">Yalla consists of a 3-pane interface, which gets updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once.
-        For tablets, two panes can be displayed at once and for mobile, only one pane is displayed.  The app is fully responsive.</p>
+        <p className="narrowSection">Yalla consists of a 3-pane interface, which is updated according to the user's actions. For desktops and devices with large screens, all three panes are shown at once.
+        For tablets, two panes can be displayed at once. For mobile, only one pane is displayed. The app is fully responsive.</p>
         <img className="fullWidth" src='images/developer/YallaBrowserMockup.png' />
-        <p className="narrowSection">Above is shown how the three panels would look on a mobile device.  The right two panels takes up the full length of the screen to maximize screen real estate.
-        The menu intentionally does not cover the whole screen to remind the user that they can swipe back to the pain events panel.</p>
+        <p className="narrowSection">The images below show how the three panels would appear on a mobile device.  The right two panels in the Yalla interface take up the full length of the screen to maximize screen real estate.
+        The menu intentionally does not cover the whole screen to remind the user that one can swipe back to the main events panel.</p>
         <img className="thirdWidth left thinBorder" src='images/developer/Yallamobile1.jpg' />
         <img className="thirdWidth thinBorder" src='images/developer/Yallamobile2.jpg' />
         <img className="thirdWidth right thinBorder" src='images/developer/Yallamobile3.jpg' />
-        <p className="narrowSection">When users try to create a new event, the right panel updates to the create event screen.</p>
+        <p className="narrowSection">When users try to create a new event, the right panel updates to the "create event" screen.</p>
         <img className="halfWidth thinBorder" src="images/developer/YallaEventCreation.jpg"/>
-        <p className="narrowSection">I also worked with the designer on the team to help create the logo.</p>
+        <p className="narrowSection">I oversaw the logo creation process.</p>
         <img className="fullWidth thinBorder" src="images/developer/YallaLogoCompilation.jpg" />
       </div>
       )
@@ -275,10 +297,10 @@ var WellSense = React.createClass({
       <div>
           <h2>WellSense</h2>
           <h3>3rd Place Winner at 2014 Hackathon for Social Good in the Arab world</h3>
-          <p className="narrowSection mainCaption">WellSense is a cost-effective web and hardware solution for well monitoring, to benefit NGOs and local populations. I was in charge of designing and front-ending the interface.
-          I also worked with parsing data for displaying the graphs via the Google Charts API.</p>
+          <p className="narrowSection mainCaption">WellSense is a cost-effective web and hardware solution for well management benefit NGOs and local populations.
+          I was in charge of designing and front-ending the interface. I also worked with parsing data for displaying the graphs via the Google Charts API.</p>
           <img className='halfWidth thinBorder' src="images/developer/WellSense.jpg" />
-          <p className='narrowSection'>The icons for well monitoring were designed to be able to be distinguished by color.</p>
+          <p className='narrowSection'>The icons for well monitoring are designed to be able to be distinguished by color.</p>
           <img className='fullWidth' src='images/developer/WellSenseIcons.jpg' />
           <p className="narrowSection">The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar
           as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon.</p>
@@ -296,13 +318,13 @@ var StudentVoice = React.createClass({
       <div>
         <h2>Student Voice</h2>
         <h3>Online feedback sytem developed for NYUAD Student Government</h3>
-        <p className="narrowSection mainCaption">Student Voice is a social platform for discussion of how students can improve the global NYU Community. It is a forum for topics 
-        ranging from those affecting specific schools, to the entire GNU.  I was a part of the team that designed and front-ended this system.</p> 
+        <p className="narrowSection mainCaption">Student Voice is a public platform in which students can suggest ways to improve the NYU Global Community.
+        Topics range from school specific to the entire Global Network Univerty.  I was a part of the team that designed and front-ended the system.</p> 
         <img className='fullWidth thinBorder' src='images/developer/StudentVoiceFeed.jpg' />
-        <p className="narrowSection">Gradations were used for the background since there was a time they were hip. When users click on a particular issue from the feed
-        the details page is rendered where they can comment on the issue at hand.</p>
+        <p className="narrowSection">The background gradation is evocative of the design trends of the past. When users click on a particular issue from the feed,
+        the details page is rendered.</p>
         <img className='fullWidth' src='images/developer/StudentVoiceDetails.jpg' />
-        <p className="narrowSection">Users have the ability to tag their issues on the submit issue page. The website is created fully responsive.</p>
+        <p className="narrowSection">Users have the ability to tag their issues on the "submit issue" page. The website is fully responsive.</p>
         <img className='fullWidth bottomMargin' src='images/developer/StudentVoiceCreateIssue.jpg' />
         <a className="button" href="https://github.com/lingz/nyu-student-voice" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
 
@@ -318,8 +340,8 @@ var MiscDev = React.createClass({
         <div id="HideAndSeak">
           <h2>Hide and Seak</h2>
           <h3>Final Project for Intro to Computer Science coded in Python</h3>
-          <p className='narrowSection mainCaption'>The game was developed in a group of two. I was responsible mainly 
-          for the implementation of GUI using the pygame module.  I also made all the graphics for this project.</p>
+          <p className='narrowSection mainCaption'>The game was developed with a partner. I was mainly responsible  
+          for the implementation of GUI using the pygame module.  I also in charge all the graphics for this project.</p>
           <div className='halfWidthContainer'>
             <img className='halfWidth left thinBorder' src='images/developer/HideAndSeakMain.jpg' />
             <img className='halfWidth thinBorder' src='images/developer/HideAndSeakAttack.jpg' />
@@ -329,28 +351,26 @@ var MiscDev = React.createClass({
             <img className='halfWidth' src='images/developer/HideAndSeakDead.jpg' />
           </div>
           <p className='narrowSection'>The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you
-          or reaches your home base.  The man illustrated with the burger king hat was our lovely intro professor as he always liked to include "The end is nigh" in his slide decks.</p>
+          or reaches your home base.  The man featured with the burger king hat was our lovely professor as he always liked to include "The end is nigh" in his slide decks.</p>
           <a className="button" href="https://github.com/kohterai/HideAndSeak" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
         </div>
         <div className="dividerLine"></div>
         <div id="Architecture">
           <h2>Architectural Design</h2>
-          <h3>Architectural models from IB Visual Arts</h3>
-          <p className='narrowSection mainCaption'>During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs.  
-          I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead.  
-          The paper dimension was 11" X 15" with a circulation of over 150.</p>
+          <h3>Architectural models for IB Visual Arts</h3>
+          <p className='narrowSection mainCaption'>AIOSJDIOSAJDIOAJSIODJASIOJDIOASJIDJASOIJDO</p>
           <img className='fullWidth' src='images/developer/Architect-1.jpg' />
           <img className='halfWidth left' src='images/developer/Architect-2.jpg' />
-          <img className='halfWidth' src='images/developer/Architect-3.jpg' />
+          <img className='halfWidth right' src='images/developer/Architect-3.jpg' />
           <img className='halfWidth left' src='images/developer/Architect-4.jpg' />
-          <img className='halfWidth' src='images/developer/Architect-5.jpg' />
+          <img className='halfWidth right' src='images/developer/Architect-5.jpg' />
           <img className='fullWidth' src='images/developer/Architect-6.jpg' />
         </div>
         <div className="dividerLine"></div>
         <div id="DiplomatLayout">
           <h2>Newspaper Layout Editor</h2>
-          <h3>Complete resdesign of high school newspaper</h3>
-          <p className='narrowSection mainCaption'>During high school I had the opportunity to completely redesign the school newspaper for our last year with print runs.  
+          <h3>Complete resdesign of The Diplomat</h3>
+          <p className='narrowSection mainCaption'>I completely redesigned The Diplomat, my high school newspaper for its final year with print runs before digitizaton.  
           I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead.  
           The paper dimension was 11" X 15" with a circulation of over 150.</p>
           <img className='thirdWidth left thinBorder' src='images/developer/Diplomat-1v48issue2-1.jpg' />
@@ -360,8 +380,8 @@ var MiscDev = React.createClass({
           <img className='thirdWidth left thinBorder' src='images/developer/Diplomat-4v47issue9.jpg' />
           <img className='thirdWidth thinBorder' src='images/developer/Diplomat-5v47issue10-3.jpg' />
           <img className='thirdWidth right thinBorder' src='images/developer/Diplomat-6v48issue1-1.jpg' />
-          <p className='narrowSection'>In my efforts to increase readership though a much more approachable newspaper design, I made an effort
-          to make the middle spread as eye-catching as possible.  In collaboration with the editors we created special content that spanned about the middle spread.</p>
+          <p className='narrowSection'>In my efforts to increase readership though a more approachable newspaper design, I strived 
+          to make the middle spread as eye-catching as possible.</p>
           <img className='halfWidth thinBorder left' src='images/developer/Diplomatv48issue2-2.jpg' />
           <img className='halfWidth thinBorder right' src='images/developer/Diplomatv48issue2-3.jpg' />
           <img className='halfWidth thinBorder left' src='images/developer/Diplomatv48issue3-3.jpg' />
@@ -417,25 +437,29 @@ var Portraits = React.createClass({
       <div id="portraits">
         <div className='halfWidthContainer'>
           <img className='halfWidth left' src='images/photo/portrait-izumi-1.jpg' />
-          <img className='halfWidth' src='images/photo/portrait-izumi-2.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-izumi-2.jpg' />
         </div>
         <div className='halfWidthContainer'>
           <img className='halfWidth left' src='images/photo/portrait-yabui-1.jpg' />
-          <img className='halfWidth' src='images/photo/portrait-yabui-2.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-yabui-2.jpg' />
         </div>
         <div className='halfWidthContainer'>
           <img className='halfWidth left' src='images/photo/portrait-KP-1.jpg' />
-          <img className='halfWidth' src='images/photo/portrait-KP-2.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-KP-2.jpg' />
         </div>
         <div className='halfWidthContainer'>
           <img className='halfWidth left' src='images/photo/portrait-grad-1.jpg' />
-          <img className='halfWidth' src='images/photo/portrait-grad-2.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-grad-2.jpg' />
         </div>
         <div className='halfWidthContainer'>
           <img className='halfWidth left' src='images/photo/portrait-band-1.jpg' />
-          <img className='halfWidth' src='images/photo/portrait-band-2.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-band-2.jpg' />
         </div>
-        <img className='halfWidth' src='images/photo/portrait-alistair-1.jpg' />
+        <img className='fullWidth' src='images/photo/portrait-james-1.jpg' />
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/portrait-JP-1.jpg' />
+          <img className='halfWidth right' src='images/photo/portrait-alistair-1.jpg' />
+        </div>
       </div>
     )
   }
@@ -444,12 +468,23 @@ var Portraits = React.createClass({
 var Georgia = React.createClass({
   render: function() {
     return(
-      <div id="portraits">
-        <img className='fullWidth' src='images/photo/Georgia-1.jpg' />
-        <p>The mountains of Kazbegi roll through the greatest days.</p>
-        <img className='fullWidth' src='images/photo/Georgia-2.jpg' />
-        <img className='fullWidth' src='images/photo/Georgia-3.jpg' />
-        <img className='fullWidth' src='images/photo/Georgia-4.jpg' />
+      <div id="georgia">
+        <img className='fullWidth' src='images/photo/georgia/georgia-1.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-2.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-3.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-4.jpg' />
+        <img className='halfWidth left' src='images/photo/georgia/georgia-5.jpg' />
+        <img className='halfWidth right' src='images/photo/georgia/georgia-5-5.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-6.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-7.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-8.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-9.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-10.jpg' />
+        <img className='fullWidth' src='images/photo/georgia/georgia-11.jpg' />
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/georgia/georgia-12.jpg' />
+          <img className='halfWidth right' src='images/photo/georgia/georgia-13.jpg' />
+        </div>
       </div>
     )
   }
@@ -458,10 +493,25 @@ var Georgia = React.createClass({
 var Sports = React.createClass({
   render: function() {
     return(
-      <div id="portraits">
-        <img className='fullWidth' src='images/photo/sport-bball-1.jpg' />
-        <img className='halfWidth left' src='images/photo/sport-bball-2.jpg' />
-        <img className='halfWidth' src='images/photo/sport-bball-3.jpg' />
+      <div id="sports">
+        <img className='fullWidth' src='images/photo/sports/sport-bball-1.jpg' />
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/sports/sport-bball-2.jpg' />
+          <img className='halfWidth right' src='images/photo/sports/sport-bball-3.jpg' />
+        </div>
+        <img className='fullWidth' src='images/photo/sports/sport-wrestling-1.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-swimming-1.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-xc-1.jpg' />
+        <div className='halfWidthContainer'>
+          <img className='halfWidth left' src='images/photo/sports/sport-tennis-1.jpg' />
+          <img className='halfWidth right' src='images/photo/sports/sport-track-1.jpg' />
+        </div>
+        <img className='fullWidth' src='images/photo/sports/sport-tennis-2.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-tennis-3.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-baseball-1.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-soccer-1.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-soccer-2.jpg' />
+        <img className='fullWidth' src='images/photo/sports/sport-baseball-2.jpg' />
       </div>
     )
   }
@@ -471,9 +521,19 @@ var Cinema = React.createClass({
   render: function() {
     return(
       <div id="portraits">
-        <img className='fullWidth' src='images/photo/sport-bball-1.jpg' />
-        <img className='halfWidth left' src='images/photo/sport-bball-2.jpg' />
-        <img className='halfWidth' src='images/photo/sport-bball-3.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/return-1.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/return-2.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/return-3.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/return-4.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/james-1.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/james-2.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/james-3.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/james-4.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/james-5.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/hamda-1.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/hamda-2.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/hamda-3.jpg' />
+        <img className='fullWidth' src='images/photo/cinema/hamda-4.jpg' />
       </div>
     )
   }
@@ -500,7 +560,7 @@ var PhotoDetails = [
 //we use the ProjectDisplay component but with the mode parameter as Photographer
 var routes = (
   <Routes location="hash">
-    <Route path="/" handler={SelectMode} />
+    <Route path="/" name="home" handler={SelectMode} />
     <Route path="/dev" name="developer" mode={"Developer"} handler={ProjectDisplay}>
       <Route name="nyuvote" handler={NYUVote} />
       <Route name="yalla" handler={Yalla} />
