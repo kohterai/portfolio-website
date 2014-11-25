@@ -190,20 +190,26 @@ var AboutDev = React.createClass({
         I’m also an avid <Link to="photographer" target="_blank"><b>photographer and cinematographer</b></Link> so please do take a look at my photographic work if you have a chance to. 
         </p>
         <h4>Skills</h4>
-        <table className="skillsTable">
+        <table id="skills" className="skillsTable">
           <tr>
             <td>Python</td>
             <td>MongoDB</td>
-            <td>C++</td>
-            <td>C</td>
-            <td>HTML</td>
           </tr>
           <tr>
-            <td>InDesign</td>
+            <td>C++</td>
+            <td>C</td>
+          </tr>
+          <tr>
+            <td>HTML</td>
+            <td>CSS</td>
+          </tr>
+          <tr>
             <td>Photoshop</td>
             <td>Illustrator</td>
+          </tr>
+          <tr>
             <td>Keynote</td>
-            <td>CSS</td>
+            <td>InDesign</td>
           </tr>
         </table>
         <h4>Course Work</h4>

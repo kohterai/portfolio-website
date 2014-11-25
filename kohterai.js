@@ -191,20 +191,26 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         "I’m also an avid ", React.createElement(Link, {to: "photographer", target: "_blank"}, React.createElement("b", null, "photographer and cinematographer")), " so please do take a look at my photographic work if you have a chance to." 
         ), 
         React.createElement("h4", null, "Skills"), 
-        React.createElement("table", {className: "skillsTable"}, 
+        React.createElement("table", {id: "skills", className: "skillsTable"}, 
           React.createElement("tr", null, 
             React.createElement("td", null, "Python"), 
-            React.createElement("td", null, "MongoDB"), 
-            React.createElement("td", null, "C++"), 
-            React.createElement("td", null, "C"), 
-            React.createElement("td", null, "HTML")
+            React.createElement("td", null, "MongoDB")
           ), 
           React.createElement("tr", null, 
-            React.createElement("td", null, "InDesign"), 
-            React.createElement("td", null, "Photoshop"), 
-            React.createElement("td", null, "Illustrator"), 
-            React.createElement("td", null, "Keynote"), 
+            React.createElement("td", null, "C++"), 
+            React.createElement("td", null, "C")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "HTML"), 
             React.createElement("td", null, "CSS")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Photoshop"), 
+            React.createElement("td", null, "Illustrator")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Keynote"), 
+            React.createElement("td", null, "InDesign")
           )
         ), 
         React.createElement("h4", null, "Course Work"), 
