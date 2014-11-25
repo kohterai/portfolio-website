@@ -363,9 +363,15 @@ td
   #projectMenuCirlce
     display none
   #homeButton
-    top 55px
+    top 60px
+    background-color transparent
+    padding 0
+    margin 0
   #homeIcon
+    color lightestGray
     font-size 2em
+    &:hover
+      color darkerblack
 
 @media screen and (max-width: 600px)
   #projectElements
@@ -373,3 +379,8 @@ td
   .pull-menu
     &.active
       margin-left -10px
+@media screen and (max-width: 400px)
+  .button
+    &.double
+      font-size 0.9em
+      padding 5px

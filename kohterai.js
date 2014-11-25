@@ -258,8 +258,8 @@ var NYUVote = React.createClass({displayName: 'NYUVote',
         React.createElement("p", {className: "narrowSection"}, "Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button were used to guide the user through process."), 
         React.createElement("img", {className: "fullWidth", src: "images/developer/VoteButtonFlow.png"}), 
         React.createElement("div", {className: "center"}, 
-          React.createElement("a", {className: "button", href: "https://vote.nyuapps.com/", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "View Website"), 
-          React.createElement("a", {className: "button", href: "https://github.com/hackAD/nyu-vote", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+          React.createElement("a", {className: "button double", href: "https://vote.nyuapps.com/", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "View Website"), 
+          React.createElement("a", {className: "button double", href: "https://github.com/hackAD/nyu-vote", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
         )
       )
     )
@@ -312,8 +312,10 @@ var WellSense = React.createClass({displayName: 'WellSense',
           React.createElement("p", {className: "narrowSection"}, "The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar" + ' ' +
           "as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon."), 
           React.createElement("img", {className: "fullWidth bottomMargin", src: "images/developer/WellSenseGroupshot.jpg"}), 
-          React.createElement("a", {className: "button", href: "http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "Hackathon Info"), 
-          React.createElement("a", {className: "button", href: "https://github.com/lingz/wellSense", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+          React.createElement("div", {className: "center"}, 
+            React.createElement("a", {className: "button double", href: "http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html", target: "_blank"}, React.createElement("i", {className: "fa fa-laptop"}), "Hackathon Info"), 
+            React.createElement("a", {className: "button double", href: "https://github.com/lingz/wellSense", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
+          )
       )
       )
   }
@@ -403,35 +405,40 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
 var AboutPhoto = React.createClass({displayName: 'AboutPhoto',
   render: function() {
     return(
-      React.createElement("div", {className: "narrowSection"}, 
+      React.createElement("div", {className: "aboutMenu narrowSection"}, 
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohCamera-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Photographer"), 
-        React.createElement("p", null, "I am currently studying computer science at ", React.createElement("b", null, "New York University Abu Dhabi"), ". I’ve been keen on technology" + ' ' +
-        "since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade." + ' ' +
-        "I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful" + ' ' +
-        "looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs."), 
-        React.createElement("h4", null, "Skills"), 
+                React.createElement("p", null, "Hi, I’m Koh and currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
+        "Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.  I’ve been photographing events for several years now and specialize" + ' ' + 
+        "in environmental portraits and photojournalistic event coverage.  I have also served as the director of photography on film sets and have completed shooting two senior thesis" + ' ' + 
+        "films at university this year.  Recently, a short film that I was the DP for was screened at the Abu Dhabi International Film Festival.  Please do contact me if you have" + ' ' +
+        "any photographic or cinematographic work in mind.  I am interested in exapanding my editorial work."), 
+        React.createElement("p", null, 
+        "I’m also an avid ", React.createElement(Link, {to: "developer", target: "_blank"}, React.createElement("b", null, "developer")), " so please do take a look at my other work if you have a chance to." 
+        ), 
+        React.createElement("h4", null, "Published By"), 
         React.createElement("table", {className: "skillsTable"}, 
           React.createElement("tr", null, 
-            React.createElement("td", null, "Python"), 
-            React.createElement("td", null, "MongoDB"), 
-            React.createElement("td", null, "C++"), 
-            React.createElement("td", null, "C"), 
-            React.createElement("td", null, "HTML")
+            React.createElement("td", null, React.createElement("a", {href: "http://www.halleonard.com"}, "Hal Leonard Corporation"))
           ), 
           React.createElement("tr", null, 
-            React.createElement("td", null, "InDesign"), 
-            React.createElement("td", null, "Photoshop"), 
-            React.createElement("td", null, "Illustrator"), 
-            React.createElement("td", null, "Keynote"), 
-            React.createElement("td", null, "CSS")
+            React.createElement("td", null, React.createElement("a", {href: "http://www.stripes.com/"}, "Stars and Stripes"))
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, React.createElement("a", {href: "http://www.tokyoweekender.com/"}, "Tokyo Weekender"))
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, React.createElement("a", {href: "http://www.thenational.ae/"}, "The National"))
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, React.createElement("a", {href: "http://www.onyahsa.org/"}, "YMCA Camp Onyahsa"))
           )
         ), 
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("p", {className: "smallMargin"}, "download (doesnt work right now)")
+        React.createElement("a", {href: "downloads/CV-Photo.pdf", target: "_blank"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
       )
 
     )

@@ -257,8 +257,8 @@ var NYUVote = React.createClass({
         <p className="narrowSection">Extra emphasis was put into making the casting of the ballots as unambiguous as possible. The changing prompts and colors of the progress bar button were used to guide the user through process.</p>
         <img className='fullWidth' src='images/developer/VoteButtonFlow.png' />
         <div className='center'>
-          <a className="button" href="https://vote.nyuapps.com/" target="_blank"><i className="fa fa-laptop"></i>View Website</a>
-          <a className="button" href="https://github.com/hackAD/nyu-vote" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
+          <a className="button double" href="https://vote.nyuapps.com/" target="_blank"><i className="fa fa-laptop"></i>View Website</a>
+          <a className="button double" href="https://github.com/hackAD/nyu-vote" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
         </div>
       </div>
     )
@@ -311,8 +311,10 @@ var WellSense = React.createClass({
           <p className="narrowSection">The project was completed in a span of 48 hours.  The team consisted of faculty advisors from NYU and CMU Qatar
           as well as students from NYU Abu Dhabi and Carnegie Mellon University.  We were able to place 3rd at the hackathon.</p>
           <img className='fullWidth bottomMargin' src='images/developer/WellSenseGroupshot.jpg' />
-          <a className="button" href="http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html" target="_blank"><i className="fa fa-laptop"></i>Hackathon Info</a>
-          <a className="button" href="https://github.com/lingz/wellSense" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
+          <div className='center'>
+            <a className="button double" href="http://nyuad.nyu.edu/en/news-events/conferences/nyuad-hackathon.html" target="_blank"><i className="fa fa-laptop"></i>Hackathon Info</a>
+            <a className="button double" href="https://github.com/lingz/wellSense" target="_blank"><i className="fa fa-code"></i>Examine Code</a>
+          </div>
       </div>
       )
   }
@@ -402,35 +404,40 @@ var MiscDev = React.createClass({
 var AboutPhoto = React.createClass({
   render: function() {
     return(
-      <div className="narrowSection">
+      <div className="aboutMenu narrowSection">
         <img className="circularPhotoSmall" src="images/KohCamera-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Photographer</h3>
-        <p>I am currently studying computer science at <b>New York University Abu Dhabi</b>. I’ve been keen on technology
-        since a young age and even made a presentation about SMS Technology at an apple store when I was in 6th grade.
-        I have been able to apply my strong sense of asthetics that I have cultivated over the years to develop beautiful
-        looking interfaces that makes users smile. Functionality is not an afterthought but a prerequisites for all his designs.</p>
-        <h4>Skills</h4>
+                <p>Hi, I’m Koh and currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
+        Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.  I’ve been photographing events for several years now and specialize 
+        in environmental portraits and photojournalistic event coverage.  I have also served as the director of photography on film sets and have completed shooting two senior thesis 
+        films at university this year.  Recently, a short film that I was the DP for was screened at the Abu Dhabi International Film Festival.  Please do contact me if you have
+        any photographic or cinematographic work in mind.  I am interested in exapanding my editorial work.</p>
+        <p>
+        I’m also an avid <Link to="developer" target="_blank"><b>developer</b></Link> so please do take a look at my other work if you have a chance to. 
+        </p>
+        <h4>Published By</h4>
         <table className="skillsTable">
           <tr>
-            <td>Python</td>
-            <td>MongoDB</td>
-            <td>C++</td>
-            <td>C</td>
-            <td>HTML</td>
+            <td><a href="http://www.halleonard.com">Hal Leonard Corporation</a></td>
+          </tr>
+          <tr>          
+            <td><a href="http://www.stripes.com/">Stars and Stripes</a></td>
           </tr>
           <tr>
-            <td>InDesign</td>
-            <td>Photoshop</td>
-            <td>Illustrator</td>
-            <td>Keynote</td>
-            <td>CSS</td>
+            <td><a href="http://www.tokyoweekender.com/">Tokyo Weekender</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.thenational.ae/">The National</a></td>
+          </tr>
+          <tr>
+            <td><a href="http://www.onyahsa.org/">YMCA Camp Onyahsa</a></td>
           </tr>
         </table>
         <h4>Contact</h4>
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
-        <p className="smallMargin">download (doesnt work right now)</p>
+        <a href="downloads/CV-Photo.pdf" target="_blank"><p className="smallMargin">view resume</p></a>
       </div>
 
     )
