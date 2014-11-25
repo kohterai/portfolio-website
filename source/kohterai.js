@@ -366,7 +366,7 @@ var MiscDev = React.createClass({
         <div id="Architecture">
           <h2>Architectural Design</h2>
           <h3>Architectural models for IB Visual Arts</h3>
-          <p className='narrowSection mainCaption'>AIOSJDIOSAJDIOAJSIODJASIOJDIOASJIDJASOIJDO</p>
+          <p className='narrowSection mainCaption'>Models were first modeled on the computer and then constructed using styrofoam.</p>
           <img className='fullWidth' src='images/developer/Architect-1.jpg' />
           <img className='halfWidth left' src='images/developer/Architect-2.jpg' />
           <img className='halfWidth right' src='images/developer/Architect-3.jpg' />
@@ -538,15 +538,7 @@ var Cinema = React.createClass({
         <img className='fullWidth' src='images/photo/cinema/return-2.jpg' />
         <img className='fullWidth' src='images/photo/cinema/return-3.jpg' />
         <img className='fullWidth' src='images/photo/cinema/return-4.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/james-1.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/james-2.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/james-3.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/james-4.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/james-5.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/hamda-1.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/hamda-2.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/hamda-3.jpg' />
-        <img className='fullWidth' src='images/photo/cinema/hamda-4.jpg' />
+        <p>sorry! cinema page is under construction...</p>
       </div>
     )
   }
