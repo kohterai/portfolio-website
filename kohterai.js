@@ -367,7 +367,7 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
         React.createElement("div", {id: "Architecture"}, 
           React.createElement("h2", null, "Architectural Design"), 
           React.createElement("h3", null, "Architectural models for IB Visual Arts"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "AIOSJDIOSAJDIOAJSIODJASIOJDIOASJIDJASOIJDO"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "Models were first modeled on the computer and then constructed using styrofoam."), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-1.jpg"}), 
           React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-2.jpg"}), 
           React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-3.jpg"}), 
@@ -539,15 +539,7 @@ var Cinema = React.createClass({displayName: 'Cinema',
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-2.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-3.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-4.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-1.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-2.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-3.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-4.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/james-5.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-1.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-2.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-3.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/hamda-4.jpg"})
+        React.createElement("p", null, "sorry! cinema page is under construction...")
       )
     )
   }
