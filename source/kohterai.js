@@ -60,7 +60,7 @@ var ProjectDisplay = React.createClass({
     switch (this.state.mode){
       case "Developer":
         var menuList = DeveloperDetails
-        var CVLink = "downloads/CV-PD.pdf"
+        var CVLink = "downloads/CV-KohTerai-Dev.pdf"
         var aboutLink ="aboutdev"
         break;
       case "Photographer":
@@ -236,7 +236,7 @@ var AboutDev = React.createClass({
         <h4>Contact</h4>
         <p className="smallMargin">koh.terai@nyu.edu</p>
         <h4>CV</h4>
-        <a href="downloads/CV-PD.pdf" target="_blank"><p className="smallMargin">view resume</p></a>
+        <a href="downloads/CV-KohTerai-Dev.pdf" target="_blank"><p className="smallMargin">view resume</p></a>
       </div>
 
     )

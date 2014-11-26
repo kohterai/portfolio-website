@@ -61,7 +61,7 @@ var ProjectDisplay = React.createClass({displayName: 'ProjectDisplay',
     switch (this.state.mode){
       case "Developer":
         var menuList = DeveloperDetails
-        var CVLink = "downloads/CV-PD.pdf"
+        var CVLink = "downloads/CV-KohTerai-Dev.pdf"
         var aboutLink ="aboutdev"
         break;
       case "Photographer":
@@ -237,7 +237,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("h4", null, "Contact"), 
         React.createElement("p", {className: "smallMargin"}, "koh.terai@nyu.edu"), 
         React.createElement("h4", null, "CV"), 
-        React.createElement("a", {href: "downloads/CV-PD.pdf", target: "_blank"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
+        React.createElement("a", {href: "downloads/CV-KohTerai-Dev.pdf", target: "_blank"}, React.createElement("p", {className: "smallMargin"}, "view resume"))
       )
 
     )
