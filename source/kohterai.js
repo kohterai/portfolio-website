@@ -180,7 +180,7 @@ var AboutDev = React.createClass({
         <img className="circularPhotoSmall" src="images/KohApple-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Developer</h3>
-        <p>Hi, I’m Koh and currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
+        <p>Hi, I’m Koh and I currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
         Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.
         I’ve been keen on technology since a young age and even made a presentation about<a href="https://www.facebook.com/video.php?v=202823495000&l=8839472477727382889" target="_blank"><b> SMS Technology</b></a> at an apple store when I was in elementary school.
         <a><b> Producing beautiful products</b></a> is my passion and in the recent years I have been able to do this through web and software development.  
@@ -414,7 +414,7 @@ var AboutPhoto = React.createClass({
         <img className="circularPhotoSmall" src="images/KohCamera-Circular.png"/>
         <h2>Koh Terai</h2>
         <h3 className="blue">as a Photographer</h3>
-                <p>Hi, I’m Koh and currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
+                <p>Hi, I’m Koh and I currently study computer science at <a href="http://nyuad.nyu.edu/en/" target="_blank"><b>New York University Abu Dhabi</b></a>.
         Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.  I’ve been photographing events for several years now and specialize 
         in environmental portraits and photojournalistic event coverage.  I have also served as the director of photography on film sets and have completed shooting two senior thesis 
         films at university this year.  Recently, a short film that I was the DP for was screened at the Abu Dhabi International Film Festival.  Please do contact me if you have

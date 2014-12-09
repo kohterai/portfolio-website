@@ -181,7 +181,7 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohApple-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Developer"), 
-        React.createElement("p", null, "Hi, I’m Koh and currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
+        React.createElement("p", null, "Hi, I’m Koh and I currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
         "Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan." + ' ' +
         "I’ve been keen on technology since a young age and even made a presentation about", React.createElement("a", {href: "https://www.facebook.com/video.php?v=202823495000undefined77727382889", target: "_blank"}, React.createElement("b", null, " SMS Technology")), " at an apple store when I was in elementary school.", 
         React.createElement("a", null, React.createElement("b", null, " Producing beautiful products")), " is my passion and in the recent years I have been able to do this through web and software development." + ' ' +  
@@ -415,7 +415,7 @@ var AboutPhoto = React.createClass({displayName: 'AboutPhoto',
         React.createElement("img", {className: "circularPhotoSmall", src: "images/KohCamera-Circular.png"}), 
         React.createElement("h2", null, "Koh Terai"), 
         React.createElement("h3", {className: "blue"}, "as a Photographer"), 
-                React.createElement("p", null, "Hi, I’m Koh and currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
+                React.createElement("p", null, "Hi, I’m Koh and I currently study computer science at ", React.createElement("a", {href: "http://nyuad.nyu.edu/en/", target: "_blank"}, React.createElement("b", null, "New York University Abu Dhabi")), "." + ' ' +
         "Before my life in Abu Dhabi, I have attended St. Mary’s International School in Tokyo, Japan.  I’ve been photographing events for several years now and specialize" + ' ' + 
         "in environmental portraits and photojournalistic event coverage.  I have also served as the director of photography on film sets and have completed shooting two senior thesis" + ' ' + 
         "films at university this year.  Recently, a short film that I was the DP for was screened at the Abu Dhabi International Film Festival.  Please do contact me if you have" + ' ' +
