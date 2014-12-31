@@ -1,4 +1,4 @@
-Koh's Portfolio Website
+Project Based Portfolio
 ========
 
 The website is geared towards project based portfolios.  It is written in JSX with [Facebook React](http://facebook.github.io/react/).  Each project is its own React component.  As the user clicks on a project in the left menu, the component gets swapped out.  In addition, routing is done with [React-Router](https://github.com/rackt/react-router).
