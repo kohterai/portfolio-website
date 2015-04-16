@@ -544,7 +544,14 @@ var Cinema = React.createClass({displayName: 'Cinema',
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-1.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-2.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-3.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-4.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-1.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-2.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-3.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-5.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-6.jpg"}), 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-7.jpg"}),
         React.createElement("p", null, "sorry! cinema page is under construction...")
       )
     )
