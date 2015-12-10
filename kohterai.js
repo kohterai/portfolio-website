@@ -537,6 +537,23 @@ var Sports = React.createClass({displayName: 'Sports',
   }
 })
 
+var Commercial = React.createClass({displayName: 'Commercial',
+  render: function() {
+    return(
+      React.createElement("div", {id: "sports"}, 
+        React.createElement("div", {className: "halfWidthContainer"}, 
+          React.createElement("img", {className: "halfWidth left", src: "images/photo/commercial/commercial-onyahsa-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/photo/commercial/commercial-fish-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-soccer-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-3.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-2.jpg"})
+        )
+      )
+    )
+  }
+})
+
 var Cinema = React.createClass({displayName: 'Cinema',
   render: function() {
     return(
@@ -551,8 +568,7 @@ var Cinema = React.createClass({displayName: 'Cinema',
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-4.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-5.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-6.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-7.jpg"}),
-        React.createElement("p", null, "sorry! cinema page is under construction...")
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-7.jpg"})
       )
     )
   }
@@ -571,6 +587,7 @@ var PhotoDetails = [
   {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
   {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
+  {title: 'Commercial', description: 'Commercial', keyword: 'commercial'},
   {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];
 
@@ -590,7 +607,8 @@ var routes = (
     React.createElement(Route, {path: "/photo", name: "photographer", mode: "Photographer", handler: ProjectDisplay}, 
       React.createElement(Route, {name: "portraits", handler: Portraits}), 
       React.createElement(Route, {name: "georgia", handler: Georgia}), 
-      React.createElement(Route, {name: "sports", handler: Sports}), 
+      React.createElement(Route, {name: "sports", handler: Sports}),
+      React.createElement(Route, {name: "commercial", handler: Commercial}), 
       React.createElement(Route, {name: "cinema", handler: Cinema}), 
       React.createElement(DefaultRoute, {name: "aboutphoto", handler: AboutPhoto})
     )
