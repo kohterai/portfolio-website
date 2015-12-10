@@ -351,7 +351,20 @@ var StudentVoice = React.createClass({displayName: 'StudentVoice',
 var MiscDev = React.createClass({displayName: 'MiscDev',
   render: function() {
     return(
-      React.createElement("div", null, 
+      React.createElement("div", null,
+        React.createElement("div", {id: "DentalHaptoc"}, 
+          React.createElement("h2", null, "Dental Haptic Simulator"), 
+          React.createElement("h3", null, "Development for NYU Abu Dhabi Applied Interactive Media Lab"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "I was in charge of designing and developing a prototype dental haptic simulator at NYU Abu Dhabi's Applied Interactive Media Lab" + ' ' +  
+          "in collaboration with the NYU College of Dentistry. The prototype was developed using the H3D API and Geomagic Touch."), 
+          React.createElement("div", {className: "halfWidthContainer"}, 
+            React.createElement("video", {className: "fullWidth", src: "images/developer/Dental-1.mp4", preload:"auto", loop: "loop", autoplay: "autoplay", controls: "controls", type: "video/mp4"})
+          ),
+          React.createElement("p", {className: "narrowSection"}, "Transparency toggles, view toggles, tool swapping, as well as haptic recording and playback features have been" + ' ' +
+          "implemented to help dental students learn calculus removal processes."), 
+          React.createElement("a", {className: "button", href: "https://wp.nyu.edu/aimlab/research_projects/haptic_simulator/", target: "_blank"}, React.createElement("i", {className: "fa fa-search"}), "Project Info")
+        ), 
+        React.createElement("div", {className: "dividerLine"}),
         React.createElement("div", {id: "HideAndSeak"}, 
           React.createElement("h2", null, "Hide and Seak"), 
           React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
