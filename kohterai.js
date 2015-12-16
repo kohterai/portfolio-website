@@ -400,7 +400,7 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("h3", null, "Complete resdesign of The Diplomat"), 
           React.createElement("p", {className: "narrowSection mainCaption"}, "I completely redesigned The Diplomat, my high school newspaper for its final year with print runs before digitizaton." + ' ' +  
           "I had full control over everything ranging from the choice of typefaces to the color scheme and the masthead." + ' ' +  
-          "The paper dimension was 11\" X 15\" with a circulation of over 150."), 
+          "The paper dimension was 11\" X 15\" with a circulation of over 150 every 2 months."), 
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/Diplomat-1v48issue2-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/Diplomat-2v47issue10-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/Diplomat-3v47issue10-2.jpg"}), 
@@ -415,6 +415,18 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"}), 
           React.createElement("div", {className: "dividerLine"})
+        ),
+        React.createElement("div", {className: "dividerLine"}),
+        React.createElement("div", {id: "GraphicDesignStudio"}, 
+          React.createElement("h2", null, "Graphic Design Studio"), 
+          React.createElement("h3", null, "Projects from VISAR-AD 121 Graphic Design Studio"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "Models were first modeled on the computer and then constructed using styrofoam."), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-1.jpg"}), 
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-2.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-4.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-5.jpg"}), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-6.jpg"})
         )
       )
       )
