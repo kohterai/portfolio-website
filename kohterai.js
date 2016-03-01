@@ -415,18 +415,6 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"}), 
           React.createElement("div", {className: "dividerLine"})
-        ),
-        React.createElement("div", {className: "dividerLine"}),
-        React.createElement("div", {id: "GraphicDesignStudio"}, 
-          React.createElement("h2", null, "Graphic Design Studio"), 
-          React.createElement("h3", null, "Projects from VISAR-AD 121 Graphic Design Studio"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "Models were first modeled on the computer and then constructed using styrofoam."), 
-          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-1.jpg"}), 
-          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-2.jpg"}), 
-          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-3.jpg"}), 
-          React.createElement("img", {className: "halfWidth left", src: "images/developer/Architect-4.jpg"}), 
-          React.createElement("img", {className: "halfWidth right", src: "images/developer/Architect-5.jpg"}), 
-          React.createElement("img", {className: "fullWidth", src: "images/developer/Architect-6.jpg"})
         )
       )
       )
