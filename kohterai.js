@@ -561,7 +561,10 @@ var Commercial = React.createClass({displayName: 'Commercial',
         React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-soccer-1.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-3.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-1.jpg"}),
-        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-2.jpg"})
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-tray-2.jpg"}),
+        React.createElement("p", {className: "mainCaption"}, "Liwa Desert Panorama at NYU Abu Dhabi Bookstore (3x15m)"),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-liwa-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/commercial/commercial-liwa-2.jpg"})
         )
       )
     )
