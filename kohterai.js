@@ -232,6 +232,12 @@ var AboutDev = React.createClass({displayName: 'AboutDev',
           ), 
           React.createElement("tr", null, 
             React.createElement("td", null, "Foundations of Computer Graphics")
+          ), 
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Large Scale Web Applications")
+          ),
+          React.createElement("tr", null, 
+            React.createElement("td", null, "Computer Networks")
           )
         ), 
         React.createElement("h4", null, "Contact"), 
@@ -401,8 +407,13 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("p", {className: "narrowSection mainCaption"}, "The triangles were first modeled using styrofoam, converted digitally, and cut with a CNC machine."), 
           React.createElement("img", {className: "fullWidth", src: "images/developer/Triangles-1.jpg"}), 
           React.createElement("img", {className: "halfWidth left", src: "images/developer/Triangles-2.jpg"}), 
-          React.createElement("img", {className: "halfWidth right", src: "images/developer/Triangles-3.jpg"})
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Triangles-3.jpg"}),
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/Triangles-5.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/Triangles-6.jpg"}),
+          React.createElement("img", {className: "fullWidth", src: "images/developer/Triangles-4.jpg"})
+
         ),
+        React.createElement("div", {className: "dividerLine"}),
         React.createElement("div", {id: "DiplomatLayout"}, 
           React.createElement("h2", null, "Newspaper Layout Editor"), 
           React.createElement("h3", null, "Complete resdesign of The Diplomat"), 
