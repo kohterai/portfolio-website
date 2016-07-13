@@ -593,7 +593,8 @@ var Commercial = React.createClass({displayName: 'Commercial',
 var Cinema = React.createClass({displayName: 'Cinema',
   render: function() {
     return(
-      React.createElement("div", {id: "portraits"}, 
+      React.createElement("div", {id: "portraits"},
+        React.createElement("p", {className: "mainCaption"}, "Works as Director of Photography"),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-1.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-2.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/return-3.jpg"}), 
@@ -604,7 +605,21 @@ var Cinema = React.createClass({displayName: 'Cinema',
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-4.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-5.jpg"}), 
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-6.jpg"}), 
-        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-7.jpg"})
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/rescue-7.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-2.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-3.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-4.jpg"}),
+        React.createElement("p", {className: "mainCaption"}, "Works as Director"),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-2.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-3.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-5.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-6.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-7.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-8.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-9.jpg"})
       )
     )
   }
