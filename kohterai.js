@@ -603,7 +603,6 @@ var Theater = React.createClass({displayName: 'Theater',
         React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-7.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-8.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-9.jpg"})
-        )
       )
     )
   }
