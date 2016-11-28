@@ -590,6 +590,25 @@ var Commercial = React.createClass({displayName: 'Commercial',
   }
 })
 
+var Theater = React.createClass({displayName: 'Theater',
+  render: function() {
+    return(
+      React.createElement("div", {id: "theater"}, 
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-2.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-3.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-5.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-6.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-7.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-8.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/theater/theater-9.jpg"})
+        )
+      )
+    )
+  }
+})
+
 var Cinema = React.createClass({displayName: 'Cinema',
   render: function() {
     return(
@@ -610,6 +629,13 @@ var Cinema = React.createClass({displayName: 'Cinema',
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-2.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-3.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/khanga-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Mahaa-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Mahaa-2.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Mahaa-3.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Mahaa-4.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Thirty-1.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Thirty-2.jpg"}),
+        React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/Thirty-3.jpg"}),
         React.createElement("p", {className: "mainCaption"}, "Works as Director"),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-1.jpg"}),
         React.createElement("img", {className: "fullWidth", src: "images/photo/cinema/ACORNShort-2.jpg"}),
@@ -638,6 +664,7 @@ var PhotoDetails = [
   {title: 'Sports', description: 'Voting Service', keyword: 'sports'},
   {title: 'Portraits', description: 'Voting Service', keyword: 'portraits'},
   {title: 'Georgia', description: 'Voting Service', keyword: 'georgia'},
+  {title: 'Theater', description: 'Theater Photos', keyword: 'theater'},
   {title: 'Commercial', description: 'Commercial', keyword: 'commercial'},
   {title: 'Cinema', description: 'Cinematography', keyword: 'cinema'}
 ];
@@ -660,6 +687,7 @@ var routes = (
       React.createElement(Route, {name: "georgia", handler: Georgia}), 
       React.createElement(Route, {name: "sports", handler: Sports}),
       React.createElement(Route, {name: "commercial", handler: Commercial}), 
+      React.createElement(Route, {name: "theater", handler: Theater}), 
       React.createElement(Route, {name: "cinema", handler: Cinema}), 
       React.createElement(DefaultRoute, {name: "aboutphoto", handler: AboutPhoto})
     )
