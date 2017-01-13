@@ -414,6 +414,17 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
 
         ),
         React.createElement("div", {className: "dividerLine"}),
+        React.createElement("div", {id: "MetaLang"}, 
+          React.createElement("h2", null, "Product Visualization"), 
+          React.createElement("h3", null, "UX/UI Design of Mobile Application"), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "I worked on the design of a audio recording and searching startup."), 
+          React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/metalang-1.jpg"}), 
+          React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/metalang-2.jpg"}), 
+          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/metalang-3.jpg"}), 
+
+          React.createElement("div", {className: "dividerLine"})
+        ),
+        React.createElement("div", {className: "dividerLine"}),
         React.createElement("div", {id: "DiplomatLayout"}, 
           React.createElement("h2", null, "Newspaper Layout Editor"), 
           React.createElement("h3", null, "Complete resdesign of The Diplomat"), 
@@ -433,17 +444,6 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue2-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder left", src: "images/developer/Diplomatv48issue3-3.jpg"}), 
           React.createElement("img", {className: "halfWidth thinBorder right", src: "images/developer/Diplomatv48issue3-4.jpg"}), 
-          React.createElement("div", {className: "dividerLine"})
-        ),
-        React.createElement("div", {className: "dividerLine"}),
-        React.createElement("div", {id: "MetaLang"}, 
-          React.createElement("h2", null, "Product Visualization"), 
-          React.createElement("h3", null, "UX/UI Design of Mobile Application"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "I worked on the design of a audio recording and searching startup."), 
-          React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/metalang-1.jpg"}), 
-          React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/metalang-2.jpg"}), 
-          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/metalang-3.jpg"}), 
-
           React.createElement("div", {className: "dividerLine"})
         )
       )
