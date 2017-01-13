@@ -417,12 +417,10 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
         React.createElement("div", {id: "MetaLang"}, 
           React.createElement("h2", null, "Product Visualization"), 
           React.createElement("h3", null, "UX/UI Design of Mobile Application"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "I worked on the design of a audio recording and searching startup."), 
+          React.createElement("p", {className: "narrowSection mainCaption"}, "I designed the entire interface of the first version of a conversation recording app for an audio search startup MetaLang."), 
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/metalang-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/metalang-2.jpg"}), 
           React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/metalang-3.jpg"}), 
-
-          React.createElement("div", {className: "dividerLine"})
         ),
         React.createElement("div", {className: "dividerLine"}),
         React.createElement("div", {id: "DiplomatLayout"}, 
