@@ -1,7 +1,7 @@
 body {
-	font-family: "Courier New";
-	color: black;
-	background-color: white;
+	font-family: "chalkboard";
+	color: blue;
+	background-color: yellow;
 }
 
 img {
@@ -9,7 +9,7 @@ img {
 }
 
 a {
-	background-color: red;
+	background-color: black;
 	color: yellow;
 }
 
