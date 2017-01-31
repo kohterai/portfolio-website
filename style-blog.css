@@ -1,0 +1,18 @@
+body {
+	font-family: "Courier New";
+	color: black;
+	background-color: white;
+}
+
+img {
+	width: 100%;
+}
+
+a {
+	background-color: red;
+	color: yellow;
+}
+
+a:hover { 
+    color: white;
+}
