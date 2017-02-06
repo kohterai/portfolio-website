@@ -371,6 +371,28 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("a", {className: "button", href: "https://wp.nyu.edu/aimlab/research_projects/haptic_simulator/", target: "_blank"}, React.createElement("i", {className: "fa fa-search"}), "Project Info")
         ), 
         React.createElement("div", {className: "dividerLine"}),
+
+        React.createElement("div", {id: "CircuitBreakers"}, 
+          React.createElement("h2", null, "Audio Sequencer"), 
+          React.createElement("h3", null, "Final class project for Circuit Breakers. Sequencer modified from audio and LED sequencer from Nicolas Collins \" Handmade Electronic Music\""), 
+          
+          React.createElement("img", {className: "fullWidth", src: "images/developer/CircuitBreakers-1.jpg"}), 
+          React.createElement("img", {className: "fullWidth", src: "images/developer/CircuitBreakers-2.png"}), 
+
+          React.createElement("img", {className: "halfWidth left", src: "images/developer/CircuitBreakers-3.jpg"}), 
+          React.createElement("img", {className: "halfWidth right", src: "images/developer/CircuitBreakers-4.jpg"}), 
+
+          React.createElement("div", {className: "halfWidthContainer"}, 
+            React.createElement("video", {className: "fullWidth", src: "images/developer/CircuitBreakers-5.mp4", preload:"auto", loop: "loop", autoplay: "autoplay", controls: "controls", type: "video/mp4"})
+          ),
+          React.createElement("p", {className: "narrowSection"}, "The device produces different sounds based on variance in resistor and capacitor values. The casing has been laser cut and bulbs modified to work on a 9V battery."), 
+
+          React.createElement("a", {className: "button", href: "http://circuitbreakers.nyuad.im/", target: "_blank"}, React.createElement("i", {className: "fa fa-search"}), "Class Website")
+        ), 
+        React.createElement("div", {className: "dividerLine"}),
+
+
+
         React.createElement("div", {id: "HideAndSeak"}, 
           React.createElement("h2", null, "Hide and Seak"), 
           React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
@@ -420,7 +442,7 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("p", {className: "narrowSection mainCaption"}, "I designed the entire interface of the first version of a conversation recording app for an audio search startup MetaLang."), 
           React.createElement("img", {className: "thirdWidth left thinBorder", src: "images/developer/metalang-1.jpg"}), 
           React.createElement("img", {className: "thirdWidth thinBorder", src: "images/developer/metalang-2.jpg"}), 
-          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/metalang-3.jpg"}), 
+          React.createElement("img", {className: "thirdWidth right thinBorder", src: "images/developer/metalang-3.jpg"})
         ),
         React.createElement("div", {className: "dividerLine"}),
         React.createElement("div", {id: "DiplomatLayout"}, 
