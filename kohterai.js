@@ -386,7 +386,7 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
           React.createElement("div", {className: "halfWidthContainer"}, 
             React.createElement("video", {className: "fullWidth", src: "images/developer/CircuitBreakers-5.mp4", preload:"auto", loop: "loop", autoplay: "autoplay", controls: "controls", type: "video/mp4"})
           ),
-          React.createElement("p", {className: "narrowSection"}, "The device produces different sounds based on variance in resistor and capacitor values. The casing has been laser cut and bulbs modified to work on a 9V battery. The potentiometer on the 40106 IC acts as a control for the speed of the sequencer. A second box using the 4046 IC works as a oscillator to bring the frequency down to a audible pitch."), 
+          React.createElement("p", {className: "narrowSection"}, "The device produces different sounds based on variance in resistor and capacitor values. The casing has been laser cut and bulbs modified to work on a 9V battery."), 
 
           React.createElement("a", {className: "button", href: "http://circuitbreakers.nyuad.im/", target: "_blank"}, React.createElement("i", {className: "fa fa-search"}), "Class Website")
         ), 
