@@ -392,26 +392,6 @@ var MiscDev = React.createClass({displayName: 'MiscDev',
         ), 
         React.createElement("div", {className: "dividerLine"}),
 
-
-
-        React.createElement("div", {id: "HideAndSeak"}, 
-          React.createElement("h2", null, "Hide and Seak"), 
-          React.createElement("h3", null, "Final Project for Intro to Computer Science coded in Python"), 
-          React.createElement("p", {className: "narrowSection mainCaption"}, "The game was developed with a partner. I was mainly responsible" + ' ' +  
-          "for the implementation of GUI using the pygame module.  I also in charge all the graphics for this project."), 
-          React.createElement("div", {className: "halfWidthContainer"}, 
-            React.createElement("img", {className: "halfWidth left thinBorder", src: "images/developer/HideAndSeakMain.jpg"}), 
-            React.createElement("img", {className: "halfWidth thinBorder", src: "images/developer/HideAndSeakAttack.jpg"})
-          ), 
-          React.createElement("div", {className: "halfWidthContainer"}, 
-            React.createElement("img", {className: "halfWidth left", src: "images/developer/HideAndSeakVictory.jpg"}), 
-            React.createElement("img", {className: "halfWidth", src: "images/developer/HideAndSeakDead.jpg"})
-          ), 
-          React.createElement("p", {className: "narrowSection"}, "The game consists of 4 main interfaces.  The objective of the game is to blow up all enemy houses before the enemy slays you" + ' ' +
-          "or reaches your home base.  The man featured with the burger king hat was our lovely professor as he always liked to include \"The end is nigh\" in his slide decks."), 
-          React.createElement("a", {className: "button", href: "https://github.com/kohterai/HideAndSeak", target: "_blank"}, React.createElement("i", {className: "fa fa-code"}), "Examine Code")
-        ), 
-        React.createElement("div", {className: "dividerLine"}), 
         React.createElement("div", {id: "Architecture"}, 
           React.createElement("h2", null, "Architectural Design"), 
           React.createElement("h3", null, "Architectural models for IB Visual Arts"), 
