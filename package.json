@@ -1,28 +1,16 @@
 {
-  "name": "kohterai.github.io",
-  "version": "2.0.0",
-  "description": "Kohs Portfolio Website",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kohterai/kohterai.github.io.git"
-  },
-  "author": "Koh Terai",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/kohterai/kohterai.github.io/issues"
-  },
-  "homepage": "https://github.com/kohterai/kohterai.github.io#readme",
+  "name": "demo-app",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "next": "^3.0.1-beta.13",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-markdown": "^2.5.0"
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
   }
 }
