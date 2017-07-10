@@ -1,4 +1,5 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MainLayout.js'
+import Markdown from 'react-markdown'
 
 export default () => (
     <Layout>

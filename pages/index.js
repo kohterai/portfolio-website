@@ -1,20 +1,15 @@
-import Layout from '../components/MyLayout.js'
+import Layout from '../components/MainLayout.js'
+import SmallThumbnail from '../components/ProjectThumbnail.js'
 import Markdown from 'react-markdown'
+import Link from 'next/link'
 
 export default (props) => (
   <Layout>
-   <h1>{props.url.query.title}</h1>
-   <div className="markdown">
-     <Markdown source={`
-This is our blog post.
-Yes. We can have a [link](/link).
-And we can have a title as well.
+   <h1>Welcome to Kohs Website</h1>
+   <h3>Cinematography Works</h3>
+    <Link prefetch href="/rescue"><a>Rescue</a></Link>
+    <SmallThumbnail link="hungrysnake" title="Hungry Snake" image="../static/design/hungrySnake.jpg"></SmallThumbnail>
 
-### This is a title
-
-And here's the content.
-     `}/>
-   </div>
    <style jsx global>{`
      .markdown {
        font-family: 'Arial';
