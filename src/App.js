@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import Thumbnail from './Thumbnail'
 
 const Home = () => (
   <div>
@@ -51,6 +52,13 @@ const Topics = ({ match }) => (
   </div>
 )
 
+
+const Snake = () => (
+  <div>
+    <h2>I am a snake loaded in the content area</h2>
+  </div>
+)
+
 const BasicExample = () => (
   <Router>
     <div>
@@ -58,6 +66,7 @@ const BasicExample = () => (
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/topics">Topics</Link></li>
+        <Thumbnail title="snake"/>
       </ul>
 
       <hr/>
@@ -65,6 +74,7 @@ const BasicExample = () => (
       <Route exact path="/" component={Home}/>
       <Route path="/about" component={About}/>
       <Route path="/topics" component={Topics}/>
+      <Route path="/projects/snake" component={Snake}/>
     </div>
   </Router>
 )
