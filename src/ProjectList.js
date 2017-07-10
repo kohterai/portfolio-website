@@ -1,9 +1,19 @@
 const projectList = [
   { type: "Design",
-    projects: ["Snake", "Hippo"]
+    projects: [{  title: "Snake",
+                  caption: "Snakes are cute" 
+                },
+                { title: "Hippo",
+                  caption: "Hippos are not cute"
+                }]
   },
   { type: "Cinematography",
-    projects: ["Rescue", "WordCount"]
+    projects: [{  title: "Rescue",
+                  caption: "Desert Storms" 
+                },
+                { title: "Dive",
+                  caption: "Great escape"
+                }]
   }
 ]
 

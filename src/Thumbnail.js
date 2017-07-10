@@ -7,14 +7,14 @@ import {
 
 
 class Thumbnail extends Component {
-	render() {
-		return (
-			<div>
-				<p>Hello I am a thumbnail</p>
-				<Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
-			</div>
-		)
-	}
+  render() {
+    return (
+      <div style={{ backgroundColor: 'lightblue' }}>
+        <Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
+        <p>{this.props.caption}</p>
+      </div>
+    )
+  }
 }
 
 export default Thumbnail
