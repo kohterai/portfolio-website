@@ -17,7 +17,7 @@ class ThumbnailCatalog extends Component {
           <div>
             <h1>{projectList.type}</h1>
             {projectList.projects.map((project, index) => (
-                <Thumbnail title={project.title} caption={project.caption} />
+                <Thumbnail title={project.title} caption={project.caption} thumbnail={project.thumbnail}/>
             ))}
           </div>
         ))}
