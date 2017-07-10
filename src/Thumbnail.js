@@ -11,7 +11,7 @@ class Thumbnail extends Component {
 		return (
 			<div>
 				<p>Hello I am a thumbnail</p>
-				<Link to={`projects/${this.props.title}`}>{this.props.title}</Link>
+				<Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
 			</div>
 		)
 	}

@@ -4,12 +4,13 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Snake from './Projects/Design/Snake'
 import Markdown from 'react-markdown'
+
 import Menu from './Menu'
 import Catalog from './ThumbnailCatalog'
 
-const markdownFiles = require.context('./', true /* search subdirectories */, /\.md$/)
+import Snake from './Projects/Design/Snake'
+
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -17,6 +18,10 @@ const markdownFiles = require.context('./', true /* search subdirectories */, /\
 // path matches the current URL.
 const routes = [
   { path: '/',
+    exact: true,
+    main: Catalog
+  },
+  { path: '/projects',
     exact: true,
     main: Catalog
   },
