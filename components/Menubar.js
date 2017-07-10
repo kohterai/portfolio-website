@@ -4,6 +4,10 @@ const linkStyle = {
   marginRight: 15
 }
 
+const funnyStyle = {
+  marginRight: 150
+}
+
 const Menubar = () => (
     <div>
         <Link href="/about">

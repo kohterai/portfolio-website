@@ -21,43 +21,47 @@ var linkStyle = {
   marginRight: 15
 };
 
+var funnyStyle = {
+  marginRight: 150
+};
+
 var Menubar = function Menubar() {
   return _react2.default.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 12
     }
   }, _react2.default.createElement(_link2.default, { href: "/about", __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 13
     }
   }, _react2.default.createElement("a", { style: linkStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 14
     }
   }, "Design")), _react2.default.createElement(_link2.default, { href: "/", __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 16
     }
   }, _react2.default.createElement("a", { style: linkStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 17
     }
   }, "Cinematography")), _react2.default.createElement(_link2.default, { href: "/about", __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 19
     }
   }, _react2.default.createElement("a", { style: linkStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 20
     }
   }, "Photography")), _react2.default.createElement(_link2.default, { href: "/about", __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 22
     }
   }, _react2.default.createElement("a", { style: linkStyle, __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 23
     }
   }, "Research")));
 };
