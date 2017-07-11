@@ -20,24 +20,29 @@ class Menu extends Component {
       var res = path.split("/")
       // len = 2 means we are on homepage
       if (res.length<3) {
-        return "none"        
+
+        for (let category of projectList) {
+          for (let project of category.projects) {
+              $(document).ready( function () {
+                $(`#menu-${category.type}`).css({ "opacity": "0", "visibility": "hidden"})
+                $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
+              })
+            }
+          }
+          return "none"        
       } else {
         for (let category of projectList) {
           for (let project of category.projects) {
             if (project.path == path & category.type == projType) {
-              console.log(`menu-${category.type}`)
               $(document).ready( function () {
-                $(`#menu-${category.type}`).addClass("activeSubMenu")
                 var subMenuSize = $(`#menu-${category.type}`).height()
-                console.log(subMenuSize)
+                $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                // $(`#menu-title-${category.type}`).animate({ marginBottom: `${subMenuSize}px`}, 1000);
-
-                console.log(`#menu-title-${category.type}`)
+                $(`#menu-${category.type}`).css({"margin-top": `-${subMenuSize}px`})
               })
               return "block"
             } else {
-              $(`#menu-${category.type}`).removeClass("activeSubMenu")
+              $(`#menu-${category.type}`).css({ "opacity": "0", "visibility": "hidden"})
               $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
             }
           }
