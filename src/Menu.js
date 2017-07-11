@@ -6,10 +6,14 @@ import {
 } from 'react-router-dom'
 import projectList from './ProjectList'
 import './menu.css';
+import $ from 'jquery'
 
 
 class Menu extends Component {
   render() {
+    function handleClick(title) {
+    }
+
     return (
       <div className="Menu" style={{
         marginTop: '50px',
@@ -25,7 +29,11 @@ class Menu extends Component {
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
-              <li><Link to="/">{projectList.type}</Link></li>
+              <li>
+                <Link to={'/'} onClick={()=>handleClick(projectList.type)}>
+                  {projectList.type}
+                </Link>
+              </li>
             </div>
           ))}
         </ul>

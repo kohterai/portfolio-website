@@ -25,8 +25,6 @@ const routes = [
   }
 ]
 
-
-
 const Main = () => (
   <Router>
     <div style={{ maxWidth: '1000px',

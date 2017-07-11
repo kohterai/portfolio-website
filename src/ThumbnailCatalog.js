@@ -7,7 +7,6 @@ import {
 import Thumbnail from './Thumbnail'
 import projectList from './ProjectList'
 
-
 class ThumbnailCatalog extends Component {
   render() {
     return (
@@ -18,7 +17,7 @@ class ThumbnailCatalog extends Component {
               textTransform: 'uppercase',
               fontWeight: '600',
               fontSize: '1.2em'}}>
-              {projectList.type}
+              <div id={projectList.type}>{projectList.type}</div>
             </div>
             <div className="thumbnailContainer" style={{
               display: '-webkit-box',
