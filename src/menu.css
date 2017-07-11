@@ -3,3 +3,31 @@
   color: #a3a3a3;
   font-weight: 300;
 }
+
+.Menu .menu-sub{
+	list-style: none;
+	padding-left: 20px;
+}
+
+.Menu .active{
+	color: #000000;
+	font-weight: 600;
+}
+
+
+.Menu .menu-sub {
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 0.2s ease-in-out;
+    position: fixed;
+    display: block;
+}
+
+.Menu .activeSubMenu {
+	opacity: 1;
+	visibility: visible;
+}
+
+.Menu .menu-title {
+	transition: margin 0.2s ease-in-out;
+}

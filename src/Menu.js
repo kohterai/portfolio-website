@@ -25,7 +25,20 @@ class Menu extends Component {
         for (let category of projectList) {
           for (let project of category.projects) {
             if (project.path == path & category.type == projType) {
+              console.log(`menu-${category.type}`)
+              $(document).ready( function () {
+                $(`#menu-${category.type}`).addClass("activeSubMenu")
+                var subMenuSize = $(`#menu-${category.type}`).height()
+                console.log(subMenuSize)
+                $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
+                // $(`#menu-title-${category.type}`).animate({ marginBottom: `${subMenuSize}px`}, 1000);
+
+                console.log(`#menu-title-${category.type}`)
+              })
               return "block"
+            } else {
+              $(`#menu-${category.type}`).removeClass("activeSubMenu")
+              $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
             }
           }
         }        
@@ -49,9 +62,11 @@ class Menu extends Component {
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
               <li>
-                <Link to={'/'} onClick={()=>handleClick(projectList.type)}>
-                  {projectList.type}
-                </Link>
+                <div id={`menu-title-${projectList.type}`} className="menu-title">
+                  <Link  to={'/'} onClick={()=>handleClick(projectList.type)}>
+                    {projectList.type}
+                  </Link>
+                </div>
                 <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
                   display: displaySubmenu(`${location.pathname}`, projectList.type)
                 }}>
