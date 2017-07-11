@@ -11,7 +11,7 @@ import './menu.css';
 class Menu extends Component {
   render() {
     return (
-      <div style={{
+      <div className="Menu" style={{
         padding: '10px',
         marginTop: '50px',
         position: 'fixed'

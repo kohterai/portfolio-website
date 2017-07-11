@@ -9,14 +9,24 @@ import {
 class Thumbnail extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: 'lightblue',
-                    flexGrow: '1',
-                    maxWidth: '33%'}}>
+      <div style={{ flexGrow: '1',
+                    maxWidth: '33%',
+                    textAlign: 'center',
+                    margin: '20px 0px 50px 0px'}}>
         <img style={{ maxWidth: '100%',
                       display: 'block' }}
           src={this.props.thumbnail} />
-        <Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
-        <p>{this.props.caption}</p>
+        <Link style={{ textDecoration: 'none',
+                        color: '#000000',
+                        fontWeight: '600',
+                        fontSize: '0.8em'}}
+                      to={`/projects/${this.props.title}`}>{this.props.title}</Link>
+        <div style={{
+          color:'#a3a3a3',
+          fontSize: '0.6em',
+          fontWeight: '300'
+        }}>
+          {this.props.caption}</div>
       </div>
     )
   }

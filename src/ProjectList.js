@@ -8,8 +8,8 @@ import Hippo from './Projects/Design/Hippo'
 
 const projectList = [
   { type: "Design",
-    projects: [{  title: "Snake",
-                  caption: "Snakes are cute",
+    projects: [{  title: "Hungry Snake",
+                  caption: "Kinetic Sculpture",
                   thumbnail: snake1,
                   path: '/projects/snake',
                   main: Snake

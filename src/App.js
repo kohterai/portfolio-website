@@ -33,7 +33,7 @@ const Main = () => (
                   margin: 'auto' }}>
       <Menu />
 
-      <div id="contentContainer" style={{ flex: 1, paddingLeft: '300px' }}>
+      <div id="contentContainer" style={{ flex: 1, paddingLeft: '200px' }}>
         {routes.map((route, index) => (
           // Render more <Route>s with the same paths as
           // above, but different components this time.
