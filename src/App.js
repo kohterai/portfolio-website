@@ -29,7 +29,8 @@ const Main = () => (
   <Router>
     <div style={{ maxWidth: '1000px',
                   margin: 'auto' }}>
-      <Menu />
+
+      <Route path="/" component={Menu}/>
 
       <div id="contentContainer" style={{ flex: 1,
                                           paddingLeft: '200px',
