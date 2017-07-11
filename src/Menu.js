@@ -16,6 +16,36 @@ class Menu extends Component {
     function handleClick(title) {
     }
 
+    function displaySubmenu(path) {
+      var res = path.split("/")
+      console.log(res)
+      // len = 2 means we are on homepage
+      if (res.length<3) {
+        return "none"        
+      } else {
+        // {projectList.map((projectList, index) => (
+        //   <div key={projectList.type}>
+        //     <li>
+        //       <Link to={'/'} onClick={()=>handleClick(projectList.type)}>
+        //         {projectList.type}
+        //       </Link>
+        //       <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
+        //         display: displaySubmenu(`${location.pathname}`)
+        //       }}>
+        //       {projectList.projects.map((project, index) => (
+        //         <li id={`menu-item-${project.title}`} className="menu-item">
+        //           <Link to={project.path}>
+        //             {project.title}
+        //           </Link>
+        //         </li>
+        //       ))}
+        //       </ul>
+        //     </li>
+        //   </div>
+        // ))}
+      }
+    }
+
     return (
       <div className="Menu" style={{
         marginTop: '50px',
@@ -29,15 +59,15 @@ class Menu extends Component {
           KOH TERAI
           </Link>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <div>You are now at {location.pathname}</div>
-
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
               <li>
                 <Link to={'/'} onClick={()=>handleClick(projectList.type)}>
                   {projectList.type}
                 </Link>
-                <ul id={`menu-${projectList.type}`} className="menu-sub">
+                <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
+                  display: displaySubmenu("")
+                }}>
                 {projectList.projects.map((project, index) => (
                   <li id={`menu-item-${project.title}`} className="menu-item">
                     <Link to={project.path}>

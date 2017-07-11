@@ -30,7 +30,12 @@ const Main = () => (
     <div style={{ maxWidth: '1000px',
                   margin: 'auto' }}>
 
-      <Route path="/" component={Menu}/>
+      <Route path="/" render={ ()  => 
+        <Menu 
+         title={"I am Title"} 
+         status={"Here is my status"}
+         /> }
+      />
 
       <div id="contentContainer" style={{ flex: 1,
                                           paddingLeft: '200px',
