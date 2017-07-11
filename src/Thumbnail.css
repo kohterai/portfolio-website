@@ -1,17 +1,19 @@
 .thumbnail a{
   color: #000000;
   transition: color 0.2s;
+  cursor: pointer;
 }
 
 .thumbnail a:hover{
   color: #888888;
 }
 
-.thumbnail img{
+.thumbnailimage{
+  cursor: pointer;
   opacity: 1;
   transition: opacity 0.2s;
 }
 
-.thumbnail img:hover{
+.thumbnailimage:hover{
   opacity: 0.7;
 }

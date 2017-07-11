@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom'
 import Thumbnail from './Thumbnail'
 import projectList from './ProjectList'
-import './ThumbnailCatalog.css';
 
 
 class ThumbnailCatalog extends Component {
