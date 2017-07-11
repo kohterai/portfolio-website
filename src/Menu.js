@@ -12,7 +12,6 @@ class Menu extends Component {
   render() {
     return (
       <div className="Menu" style={{
-        padding: '10px',
         marginTop: '50px',
         position: 'fixed'
       }}>
@@ -23,7 +22,6 @@ class Menu extends Component {
           KOH TERAI
         </div>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
-          <li><Link to="/">Home</Link></li>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
               <li><Link to="/">{projectList.type}</Link></li>

@@ -33,17 +33,21 @@ const Main = () => (
                   margin: 'auto' }}>
       <Menu />
 
-      <div id="contentContainer" style={{ flex: 1, paddingLeft: '200px' }}>
-        {routes.map((route, index) => (
-          // Render more <Route>s with the same paths as
-          // above, but different components this time.
-          <Route
-            key={index}
-            path={route.path}
-            exact={route.exact}
-            component={route.main}
-          />
-        ))}
+      <div id="contentContainer" style={{ flex: 1,
+                                          paddingLeft: '200px',
+                                          paddingTop: '50px'}}>
+        <div>
+          {routes.map((route, index) => (
+            <div>
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            </div>
+          ))}
+        </div>
         <div>
           {projectList.map((projectList, index) => (
               <div key={index}>

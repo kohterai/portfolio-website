@@ -13,9 +13,12 @@ class Thumbnail extends Component {
                     maxWidth: '33%',
                     textAlign: 'center',
                     margin: '20px 0px 50px 0px'}}>
-        <img style={{ maxWidth: '100%',
-                      display: 'block' }}
-          src={this.props.thumbnail} />
+                    <Link to={`${this.props.path}`}>
+                      <img style={{ maxWidth: '100%',
+                                    display: 'block' }}
+                        src={this.props.thumbnail} />
+                    </Link>
+
         <Link style={{ textDecoration: 'none',
                         color: '#000000',
                         fontWeight: '600',
