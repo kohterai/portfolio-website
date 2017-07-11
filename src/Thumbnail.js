@@ -4,23 +4,23 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import './Thumbnail.css';
 
 
 class Thumbnail extends Component {
   render() {
     return (
-      <div style={{ flexGrow: '1',
+      <div className="thumbnail" style={{ flexGrow: '1',
                     maxWidth: '33%',
                     textAlign: 'center',
                     margin: '20px 0px 50px 0px'}}>
                     <Link to={`${this.props.path}`}>
                       <img style={{ maxWidth: '100%',
-                                    display: 'block' }}
+                                    display: 'block'}}
                         src={this.props.thumbnail} />
                     </Link>
 
         <Link style={{ textDecoration: 'none',
-                        color: '#000000',
                         fontWeight: '600',
                         fontSize: '0.8em'}}
                       to={`${this.props.path}`}>{this.props.title}</Link>

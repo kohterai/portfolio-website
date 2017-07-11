@@ -23,6 +23,7 @@ class ThumbnailCatalog extends Component {
             </div>
             <div className="thumbnailContainer" style={{
               display: 'flex',
+              display: '-webkit-flex',
               flexWrap: 'wrap'}}>
             {projectList.projects.map((project, index) => (
                 <Thumbnail  key={project.title}

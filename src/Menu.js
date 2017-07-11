@@ -15,12 +15,13 @@ class Menu extends Component {
         marginTop: '50px',
         position: 'fixed'
       }}>
-        <div style={{
-          fontSize: '1.5em',
-          fontWeight: '600'
+          <Link to="/" style={{
+            fontSize: '1.5em',
+            fontWeight: '600',
+            color: '#000000'
         }}>
-          KOH TERAI
-        </div>
+            KOH TERAI
+          </Link>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
