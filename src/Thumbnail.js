@@ -9,8 +9,10 @@ import {
 class Thumbnail extends Component {
   render() {
     return (
-      <div style={{ backgroundColor: 'lightblue' }}>
-        <img style={{ maxWidth: '200px',
+      <div style={{ backgroundColor: 'lightblue',
+                    flexGrow: '1',
+                    maxWidth: '33%'}}>
+        <img style={{ maxWidth: '100%',
                       display: 'block' }}
           src={this.props.thumbnail} />
         <Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
