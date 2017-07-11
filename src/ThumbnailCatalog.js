@@ -25,7 +25,11 @@ class ThumbnailCatalog extends Component {
               display: 'flex',
               flexWrap: 'wrap'}}>
             {projectList.projects.map((project, index) => (
-                <Thumbnail key={project.title} title={project.title} caption={project.caption} thumbnail={project.thumbnail}/>
+                <Thumbnail  key={project.title}
+                            title={project.title}
+                            caption={project.caption}
+                            thumbnail={project.thumbnail}
+                            path={project.path}/>
             ))}
             </div>
           </div>

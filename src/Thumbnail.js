@@ -20,7 +20,7 @@ class Thumbnail extends Component {
                         color: '#000000',
                         fontWeight: '600',
                         fontSize: '0.8em'}}
-                      to={`/projects/${this.props.title}`}>{this.props.title}</Link>
+                      to={`${this.props.path}`}>{this.props.title}</Link>
         <div style={{
           color:'#a3a3a3',
           fontSize: '0.6em',
