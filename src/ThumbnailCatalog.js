@@ -14,11 +14,20 @@ class ThumbnailCatalog extends Component {
     return (
       <div>
         {projectList.map((projectList, index) => (
-          <div>
-            <h1>{projectList.type}</h1>
+          <div key={projectList.type} >
+            <div className="thumbnailCategoryTitle" style={{
+              textTransform: 'uppercase',
+              fontWeight: '600',
+              fontSize: '1.2em'}}>
+              {projectList.type}
+            </div>
+            <div className="thumbnailContainer" style={{
+              display: 'flex',
+              flexWrap: 'wrap'}}>
             {projectList.projects.map((project, index) => (
-                <Thumbnail title={project.title} caption={project.caption} thumbnail={project.thumbnail}/>
+                <Thumbnail key={project.title} title={project.title} caption={project.caption} thumbnail={project.thumbnail}/>
             ))}
+            </div>
           </div>
         ))}
 

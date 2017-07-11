@@ -5,6 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 import projectList from './ProjectList'
+import './menu.css';
 
 
 class Menu extends Component {
@@ -12,13 +13,19 @@ class Menu extends Component {
     return (
       <div style={{
         padding: '10px',
-        width: '40%',
-        background: '#f0f0f0'
+        marginTop: '50px',
+        position: 'fixed'
       }}>
+        <div style={{
+          fontSize: '1.5em',
+          fontWeight: '600'
+        }}>
+          KOH TERAI
+        </div>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li><Link to="/">Home</Link></li>
           {projectList.map((projectList, index) => (
-            <div>
+            <div key={projectList.type}>
               <li><Link to="/">{projectList.type}</Link></li>
             </div>
           ))}

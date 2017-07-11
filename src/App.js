@@ -29,10 +29,11 @@ const routes = [
 
 const Main = () => (
   <Router>
-    <div style={{ display: 'flex' }}>
+    <div style={{ maxWidth: '1000px',
+                  margin: 'auto' }}>
       <Menu />
 
-      <div style={{ flex: 1, padding: '10px' }}>
+      <div id="contentContainer" style={{ flex: 1, paddingLeft: '300px' }}>
         {routes.map((route, index) => (
           // Render more <Route>s with the same paths as
           // above, but different components this time.
@@ -45,7 +46,7 @@ const Main = () => (
         ))}
         <div>
           {projectList.map((projectList, index) => (
-              <div>
+              <div key={index}>
               {projectList.projects.map((project, index) => (
                             <Route
                               key={index}

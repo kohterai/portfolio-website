@@ -10,7 +10,9 @@ class Thumbnail extends Component {
   render() {
     return (
       <div style={{ backgroundColor: 'lightblue' }}>
-        <img style={{ width: '200px' }} src={this.props.thumbnail} />
+        <img style={{ maxWidth: '200px',
+                      display: 'block' }}
+          src={this.props.thumbnail} />
         <Link to={`/projects/${this.props.title}`}>{this.props.title}</Link>
         <p>{this.props.caption}</p>
       </div>
