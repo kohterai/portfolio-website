@@ -4,22 +4,31 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import './Thumbnail.css';
+import './Thumbnail.css'
 
 
 class Thumbnail extends Component {
   render() {
     return (
       <div className="thumbnail" style={{ flexGrow: '1',
+                    width: '33%',
                     maxWidth: '33%',
                     textAlign: 'center',
                     margin: '20px 0px 50px 0px'}}>
-                    <Link to={`${this.props.path}`}>
-                      <img style={{ maxWidth: '100%',
-                                    display: 'block'}}
-                        src={this.props.thumbnail} />
-                    </Link>
-
+        <div style={{
+          width: '100%',
+          paddingBottom: '75%',
+          position: 'relative'
+          }}>
+          <div style={{
+            background: `url(${this.props.thumbnail})`,
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            position: 'absolute',
+            top: '0',bottom:'0', left: '0', right: '0'
+          }} />
+        </div>
         <Link style={{ textDecoration: 'none',
                         fontWeight: '600',
                         fontSize: '0.8em'}}

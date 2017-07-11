@@ -6,7 +6,7 @@ import {
 } from 'react-router-dom'
 import Thumbnail from './Thumbnail'
 import projectList from './ProjectList'
-
+import './ThumbnailCatalog.css';
 
 
 class ThumbnailCatalog extends Component {
@@ -22,8 +22,11 @@ class ThumbnailCatalog extends Component {
               {projectList.type}
             </div>
             <div className="thumbnailContainer" style={{
-              display: 'flex',
+              display: '-webkit-box',
+              display: '-moz-box',
+              display: '-ms-flexbox',
               display: '-webkit-flex',
+              display: 'flex',
               flexWrap: 'wrap'}}>
             {projectList.projects.map((project, index) => (
                 <Thumbnail  key={project.title}
