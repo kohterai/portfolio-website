@@ -8,9 +8,7 @@ import Markdown from 'react-markdown'
 
 import Menu from './Menu'
 import Catalog from './ThumbnailCatalog'
-
-import Snake from './Projects/Design/Snake'
-
+import projectList from './ProjectList'
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -24,9 +22,6 @@ const routes = [
   { path: '/projects',
     exact: true,
     main: Catalog
-  },
-  { path: '/projects/snake',
-    main: Snake
   }
 ]
 
@@ -48,6 +43,21 @@ const Main = () => (
             component={route.main}
           />
         ))}
+        <div>
+          {projectList.map((projectList, index) => (
+              <div>
+              {projectList.projects.map((project, index) => (
+                            <Route
+                              key={index}
+                              path={project.path}
+                              exact={true}
+                              component={project.main}
+                            />
+              ))}
+              </div>
+          ))}
+        </div>
+
       </div>
     </div>
   </Router>

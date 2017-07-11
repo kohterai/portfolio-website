@@ -4,6 +4,7 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import projectList from './ProjectList'
 
 
 class Menu extends Component {
@@ -16,10 +17,11 @@ class Menu extends Component {
       }}>
         <ul style={{ listStyleType: 'none', padding: 0 }}>
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/">Design</Link></li>
-          <li><Link to="/">Cinematography</Link></li>
-          <li><Link to="/">Design</Link></li>
-          <li><Link to="/">Research</Link></li>
+          {projectList.map((projectList, index) => (
+            <div>
+              <li><Link to="/">{projectList.type}</Link></li>
+            </div>
+          ))}
         </ul>
       </div>
     )
