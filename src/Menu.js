@@ -16,34 +16,21 @@ class Menu extends Component {
     function handleClick(title) {
     }
 
-    function displaySubmenu(path) {
+    function displaySubmenu(path, projType) {
       var res = path.split("/")
-      console.log(res)
       // len = 2 means we are on homepage
       if (res.length<3) {
         return "none"        
       } else {
-        // {projectList.map((projectList, index) => (
-        //   <div key={projectList.type}>
-        //     <li>
-        //       <Link to={'/'} onClick={()=>handleClick(projectList.type)}>
-        //         {projectList.type}
-        //       </Link>
-        //       <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
-        //         display: displaySubmenu(`${location.pathname}`)
-        //       }}>
-        //       {projectList.projects.map((project, index) => (
-        //         <li id={`menu-item-${project.title}`} className="menu-item">
-        //           <Link to={project.path}>
-        //             {project.title}
-        //           </Link>
-        //         </li>
-        //       ))}
-        //       </ul>
-        //     </li>
-        //   </div>
-        // ))}
+        for (let category of projectList) {
+          for (let project of category.projects) {
+            if (project.path == path & category.type == projType) {
+              return "block"
+            }
+          }
+        }        
       }
+      return "none"
     }
 
     return (
@@ -66,10 +53,12 @@ class Menu extends Component {
                   {projectList.type}
                 </Link>
                 <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
-                  display: displaySubmenu("")
+                  display: displaySubmenu(`${location.pathname}`, projectList.type)
                 }}>
                 {projectList.projects.map((project, index) => (
-                  <li id={`menu-item-${project.title}`} className="menu-item">
+                  <li key={`menu-item-${project.title}`}
+                      id={`menu-item-${project.title}`}
+                      className="menu-item">
                     <Link to={project.path}>
                       {project.title}
                     </Link>

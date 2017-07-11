@@ -30,26 +30,19 @@ const Main = () => (
     <div style={{ maxWidth: '1000px',
                   margin: 'auto' }}>
 
-      <Route path="/" render={ ()  => 
-        <Menu 
-         title={"I am Title"} 
-         status={"Here is my status"}
-         /> }
-      />
+      <Route path="/" component={Menu}/>
 
       <div id="contentContainer" style={{ flex: 1,
                                           paddingLeft: '200px',
                                           paddingTop: '50px'}}>
         <div>
           {routes.map((route, index) => (
-            <div>
-              <Route
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                component={route.main}
-              />
-            </div>
+            <Route
+              key={index}
+              path={route.path}
+              exact={route.exact}
+              component={route.main}
+            />
           ))}
         </div>
         <div>
