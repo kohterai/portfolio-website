@@ -4,7 +4,6 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import Markdown from 'react-markdown'
 
 import Menu from './Menu'
 import Catalog from './ThumbnailCatalog'

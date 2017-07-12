@@ -40,3 +40,9 @@ body {
   max-width: 400px;
   margin: auto;
 }
+
+.project-content .bg-image {
+  padding-top: 66.64%;
+  width: 100%;
+  background-size: contain;
+}

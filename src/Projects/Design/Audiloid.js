@@ -5,14 +5,16 @@ import {
   Link
 } from 'react-router-dom'
 import audio1 from './audio-1.jpg'
-
+import BackgroundImage from 'react-background-image-loader';
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <img className="full" src={audio1} />
+        <BackgroundImage src={audio1} className="bg-image"/>
+
         <div className="text-container">
+
           <h1>Audiloid</h1>
           <h6>Celluloid based Audio Device</h6>
 

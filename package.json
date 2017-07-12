@@ -6,9 +6,10 @@
     "classnames": "^2.2.5",
     "jquery": "^3.2.1",
     "react": "^15.6.1",
+    "react-background-image-loader": "0.0.5",
     "react-dom": "^15.6.1",
-    "react-markdown": "^2.5.0",
-    "react-scripts": "1.0.10"
+    "react-lazyload": "^2.2.7",
+    "react-scripts": "^1.0.10"
   },
   "scripts": {
     "start": "react-scripts start",
