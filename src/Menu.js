@@ -55,11 +55,11 @@ class Menu extends Component {
     }
 
     return (
-      <div className="Menu" style={{ marginTop: '50px', position: 'fixed'}}>
+      <div className="Menu" style={{ marginTop: '100px', position: 'fixed'}}>
           <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
             KOH TERAI
           </Link>
-        <div style={{ listStyleType: 'none', padding: 0 }}>
+        <div style={{ listStyleType: 'none', padding: 0, marginTop: '50px' }}>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
               <MenuTitle category={projectList.type} />

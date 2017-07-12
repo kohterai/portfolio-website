@@ -9,12 +9,13 @@ import audio1 from './audio-1.jpg'
 
 import BackgroundImage from 'react-background-image-loader';
 
+// <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
+        <img src={audio1} className="full"/>
 
         <div className="text-container">
 
@@ -26,6 +27,13 @@ reeled through the device. Based on the colors of each frame and the overall var
 colors within the film, different sounds and notes are produced.</p>
 
         <h2>Concept</h2>
+        <p>The concept of this device began with thinking about ways to utilize old negatives
+        that are stored inside a person''s old storage inside their homes. Creating a device that could
+        produce original ambient music could give old negatives another chance to be brought out.</p>
+
+        <p>The idea evolved into producing sounds from movie negatives from the website <a href="http://thecolorsofmotion.com/films">The Colors of Motion</a>.
+        Each movie has a distinctive color scheme that represents the overall emotional tone of the films.
+        Audiloid attempts to translate such color schemes into ambient music.</p>
         </div>
 
       </div>

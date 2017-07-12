@@ -1,7 +1,6 @@
 import snake1 from './Projects/Design/snake-1.png'
-import audio1 from './Projects/Design/audio-1.jpg'
 import oryx1 from './Projects/Cinematography/oryx-1.png'
-
+import audio1 from './Projects/Design/audio-1.jpg'
 
 import Snake from './Projects/Design/Snake'
 import Audiloid from './Projects/Design/Audiloid'
