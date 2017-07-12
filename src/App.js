@@ -30,6 +30,7 @@ const Main = () => (
                   margin: 'auto' }}>
 
       <Route path="/" component={Menu}/>
+      <div id="horizontal-line"></div>
 
       <div id="contentContainer" style={{ flex: 1,
                                           paddingLeft: '200px',

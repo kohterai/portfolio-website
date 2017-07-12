@@ -67,7 +67,7 @@ class Menu extends Component {
                   display: displaySubmenu(`${location.pathname}`, projectList.type)
                 }}>
                 {projectList.projects.map((project, index) => (
-                  <MenuProject project={project.title} pathName={location.pathname}/>
+                  <MenuProject project={project.title} pathName={project.path}/>
                 ))}
                 </ul>
             </div>

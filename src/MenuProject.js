@@ -9,7 +9,7 @@ class MenuProject extends Component {
   render() {
     return (
       <li id={`menu-item-${this.props.project}`} className="menu-item">
-        <Link to="{`${this.props.pathName}`}">
+        <Link to={`${this.props.pathName}`}>
           {this.props.project}
         </Link>
       </li>

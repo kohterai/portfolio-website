@@ -9,7 +9,8 @@
     "react-background-image-loader": "0.0.5",
     "react-dom": "^15.6.1",
     "react-image": "^1.0.1",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^1.0.10",
+    "react-youtube": "^7.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

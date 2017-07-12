@@ -19,7 +19,6 @@ body {
 .project-content h2 {
   text-align: left;
   font-size: 1.4em;
-  margin-top: 75px;
   margin-bottom: 0px;
 }
 
@@ -29,7 +28,7 @@ body {
   font-size: 0.6em;
   font-weight: 400;
   color: #a3a3a3;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .project-content p {
@@ -48,4 +47,9 @@ body {
   padding-top: 66.64%;
   width: 100%;
   background-size: contain;
+}
+
+.project-content .text-paragraphs {
+ margin-top: 75px;
+ margin-bottom: 75px;
 }
