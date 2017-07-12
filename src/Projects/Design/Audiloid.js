@@ -9,6 +9,7 @@ import audio1 from './audio-1.jpg'
 
 import BackgroundImage from 'react-background-image-loader';
 
+
 class Snake extends Component {
   render() {
     return (
