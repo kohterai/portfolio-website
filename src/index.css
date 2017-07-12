@@ -42,6 +42,7 @@ body {
 }
 
 .project-content .bg-image {
+  transition: background-image 1s ease-in-out;
   padding-top: 66.64%;
   width: 100%;
   background-size: contain;

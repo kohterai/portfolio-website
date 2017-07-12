@@ -4,14 +4,16 @@ import {
   Route,
   Link
 } from 'react-router-dom'
+import preload from './preload.png'
 import audio1 from './audio-1.jpg'
+
 import BackgroundImage from 'react-background-image-loader';
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <BackgroundImage src={audio1} className="bg-image"/>
+        <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
 
         <div className="text-container">
 
