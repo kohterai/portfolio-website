@@ -1,10 +1,10 @@
 import snake1 from './Projects/Design/snake-1.png'
-import audio1 from './Projects/Design/audio-1.png'
+import audio1 from './Projects/Design/audio-1.jpg'
 import oryx1 from './Projects/Cinematography/oryx-1.png'
 
 
 import Snake from './Projects/Design/Snake'
-import Hippo from './Projects/Design/Hippo'
+import Audiloid from './Projects/Design/Audiloid'
 
 const projectList = [
   { type: "Design",
@@ -14,17 +14,17 @@ const projectList = [
                   path: '/projects/snake',
                   main: Snake
                 },
-                { title: "Hippo",
-                  caption: "Hippos are not cute",
+                { title: "Audiloid",
+                  caption: "Celluloid based Audio Player",
                   thumbnail: audio1,
-                  path: '/projects/Hippo',
-                  main: Hippo 
+                  path: '/projects/Audiloid',
+                  main: Audiloid 
                 },
                 { title: "Aligator",
                   caption: "Aligator are Beautiful",
                   thumbnail: audio1,
                   path: '/projects/Aligator',
-                  main: Hippo 
+                  main: Audiloid 
                 }]
   },
   { type: "Cinematography",

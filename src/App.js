@@ -27,7 +27,7 @@ const routes = [
 
 const Main = () => (
   <Router>
-    <div style={{ maxWidth: '1000px',
+    <div style={{ maxWidth: '1100px',
                   margin: 'auto' }}>
 
       <Route path="/" component={Menu}/>
