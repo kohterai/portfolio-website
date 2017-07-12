@@ -7,6 +7,9 @@ import {
 import projectList from './ProjectList'
 import './menu.css';
 import $ from 'jquery'
+import MenuTitle from './MenuTitle'
+import MenuProject from './MenuProject'
+
 
 class Menu extends Component {
 
@@ -52,43 +55,24 @@ class Menu extends Component {
     }
 
     return (
-      <div className="Menu" style={{
-        marginTop: '50px',
-        position: 'fixed'
-      }}>
-          <Link to="/" style={{
-            fontSize: '1.5em',
-            fontWeight: '600',
-            color: '#000000'
-        }}>
-          KOH TERAI
+      <div className="Menu" style={{ marginTop: '50px', position: 'fixed'}}>
+          <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
+            KOH TERAI
           </Link>
-        <ul style={{ listStyleType: 'none', padding: 0 }}>
+        <div style={{ listStyleType: 'none', padding: 0 }}>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
-              <li>
-                <div id={`menu-title-${projectList.type}`} className="menu-title">
-                  <Link  to={'/'} onClick={()=>handleClick(projectList.type)}>
-                    {projectList.type}
-                  </Link>
-                </div>
+              <MenuTitle category={projectList.type} />
                 <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
                   display: displaySubmenu(`${location.pathname}`, projectList.type)
                 }}>
                 {projectList.projects.map((project, index) => (
-                  <li key={`menu-item-${project.title}`}
-                      id={`menu-item-${project.title}`}
-                      className="menu-item">
-                    <Link to={project.path}>
-                      {project.title}
-                    </Link>
-                  </li>
+                  <MenuProject project={project.title} pathName={location.pathname}/>
                 ))}
                 </ul>
-              </li>
             </div>
           ))}
-        </ul>
+        </div>
       </div>
     )
   }
