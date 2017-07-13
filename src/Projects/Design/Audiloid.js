@@ -63,8 +63,6 @@ class Snake extends Component {
             <div className="credit-wrapper">
               <Credits title="Sound Design" name="Garreth Chan" />
               <Credits title="Concept and Build" name="Koh Terai" />
-              <Credits title="Build" name="Koh Terai" />
-              <Credits title="Concsssd" name="Koh Terai" />
             </div>
           </div>
         </div>
