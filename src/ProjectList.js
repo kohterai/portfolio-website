@@ -87,17 +87,16 @@ const projectList = [
   //               }]
   // },
   { type: "Photography",
-    projects: [{  title: "Georgia",
-                  caption: "Journey through Georgia",
-                  thumbnail: georgiaT,
-                  path: '/projects/Georgia',
-                  main: Georgia
-                },
-                { title: "Sports",
+    projects: [{ title: "Sports",
                   caption: "Sports photography",
                   thumbnail: sportT,
                   path: '/projects/Sports',
                   main: Sports
+                },{ title: "Portraits",
+                  caption: "People Photos",
+                  thumbnail: portraitsT,
+                  path: '/projects/Portraits',
+                  main: Portraits
                 },
                 { title: "Theater",
                   caption: "Stills from theater productions",
@@ -111,11 +110,11 @@ const projectList = [
                   path: '/projects/Commercial',
                   main: Commercial
                 },
-                { title: "Portraits",
-                  caption: "People Photos",
-                  thumbnail: portraitsT,
-                  path: '/projects/Portraits',
-                  main: Portraits
+                {  title: "Georgia",
+                  caption: "Journey through Georgia",
+                  thumbnail: georgiaT,
+                  path: '/projects/Georgia',
+                  main: Georgia
                 }]
   },
   // { type: "Research",
