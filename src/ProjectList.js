@@ -23,6 +23,8 @@ import theaterT from './Projects/Photography/photos/theater-thumb.jpg'
 import Commercial from './Projects/Photography/Commercial'
 import commercialT from './Projects/Photography/photos/commercial-thumb.jpg'
 
+import Portraits from './Projects/Photography/Portraits'
+import portraitsT from './Projects/Photography/photos/portrait-thumb.jpg'
 
 
 const projectList = [
@@ -108,6 +110,12 @@ const projectList = [
                   thumbnail: commercialT,
                   path: '/projects/Commercial',
                   main: Commercial
+                },
+                { title: "Portraits",
+                  caption: "People Photos",
+                  thumbnail: portraitsT,
+                  path: '/projects/Portraits',
+                  main: Portraits
                 }]
   },
   // { type: "Research",
