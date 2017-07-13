@@ -9,9 +9,7 @@ import nyuvote1 from './nyuvote-1.jpg'
 import nyuvote2 from './nyuvote-2.jpg'
 import nyuvote3 from './nyuvote-3.jpg'
 import nyuvote4 from './nyuvote-4.jpg'
-
-
-
+import nyuvote5 from './nyuvote-5.jpg'
 
 import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
@@ -59,6 +57,17 @@ class NYUVote extends Component {
         
         <img src={nyuvote3} className="full"/>
         <img src={nyuvote2} className="full"/>
+
+        <div className="text-container">
+          <div className = "text-paragraphs">
+            <h2>Process Flow</h2>
+            <p>Extra emphasis was put into making the casting of the ballots as
+            unambiguous as possible. The changing prompts and colors of the progress
+            bar button were used to guide the user through process.</p>
+          </div>
+        </div>
+
+        <img src={nyuvote5} className="full"/>
 
         <div className="text-container">
           <div className = "text-paragraphs">
