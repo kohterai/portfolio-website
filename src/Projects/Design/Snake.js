@@ -5,12 +5,48 @@ import {
   Link
 } from 'react-router-dom'
 
+import BackgroundImage from 'react-background-image-loader';
+import Credits from '../Credits';
+import BigButton from '../BigButton';
+
+import audiloid1 from './audiloid-2.jpg'
+import audiloid2 from './audiloid-2.jpg'
+
 
 class Snake extends Component {
   render() {
     return (
-      <div>
-        <p>Hello I am the snake project</p>
+      <div className="project-content">
+        <img src={audiloid1} className="full"/>
+
+        <div className="text-container">
+          <h1>Hungry Snake</h1>
+          <h6>Interactive Kinetic Sculpture</h6>
+
+          <p>The hungry snake moves to wherever the icecream is. Users can use a keyboard
+          to move the icecream in front of the snake. wherever the icecream goes, the snake moves to.</p>
+
+        <div className = "text-paragraphs">
+          <h2>Concept</h2>
+          <p>This piece was built at the Kinetic Sculpture Workshop hosted by <a href="http://www.feld.is/">FELD studio</a>.
+          We wanted to create a piece that could be cute and interactive that even children can enjoy.</p>
+          </div>
+        </div>
+
+        <img src={audiloid2} className="full"/>
+
+        <div className="text-container">
+          <h2>Credits</h2>
+          <div className="credit-wrapper">
+            <Credits title="Concept/Build" name="Jennifer Huang" />
+            <Credits title="Concept/Code" name="Koh Terai" />
+            <Credits title="Fader Box" name="FELD Studio" />
+          </div>
+        </div>
+
+        <div className="big-button-wrapper">
+          <BigButton color="black" textColor="white" url="https://github.com/kohterai/Audiloid" title="View Code"/>
+        </div>
       </div>
     )
   }
