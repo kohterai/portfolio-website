@@ -11,6 +11,7 @@ import audiloid2 from './audiloid-2.jpg'
 import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
+import ReactPlayer from 'react-player'
 
 // <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
 
@@ -51,14 +52,20 @@ class Snake extends Component {
           </div>
         </div>
 
+        <div className="project-video-wrapper">
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=E0vhWfU_u_Q' controls="true"
+          youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
+        </div>
 
         <div className="text-container">
-          <h2>Credits</h2>
-          <div className="credit-wrapper">
-            <Credits title="Sound Design" name="Garreth Chan" />
-            <Credits title="Concept and Build" name="Koh Terai" />
-            <Credits title="Build" name="Koh Terai" />
-            <Credits title="Concsssd" name="Koh Terai" />
+          <div className = "text-paragraphs">
+            <h2>Credits</h2>
+            <div className="credit-wrapper">
+              <Credits title="Sound Design" name="Garreth Chan" />
+              <Credits title="Concept and Build" name="Koh Terai" />
+              <Credits title="Build" name="Koh Terai" />
+              <Credits title="Concsssd" name="Koh Terai" />
+            </div>
           </div>
         </div>
 

@@ -51,6 +51,21 @@ body {
 }
 
 .project-content .text-paragraphs {
- margin-top: 75px;
- margin-bottom: 75px;
+ margin-top: 40px;
+ margin-bottom: 40px;
+}
+
+/*Autosize code from: https://github.com/CookPete/react-player/issues/145*/
+
+.project-content .project-video-wrapper{
+  position: relative;
+  padding-top: 56.25%;
+}
+
+.project-video-wrapper .project-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
