@@ -12,13 +12,16 @@ import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
 
 // Photography Projects
 import Georgia from './Projects/Photography/Georgia'
-import georgiaT from './Projects/Photography/georgia-thumb.jpg'
+import georgiaT from './Projects/Photography/photos/georgia-thumb.jpg'
 
 import Sports from './Projects/Photography/Sports'
 import sportT from './Projects/Photography/photos/sport-thumb.jpg'
 
 import Theater from './Projects/Photography/Theater'
 import theaterT from './Projects/Photography/photos/theater-thumb.jpg'
+
+import Commercial from './Projects/Photography/Commercial'
+import commercialT from './Projects/Photography/photos/commercial-thumb.jpg'
 
 
 
@@ -95,10 +98,16 @@ const projectList = [
                   main: Sports
                 },
                 { title: "Theater",
-                  caption: "Stills from Theater Productions",
+                  caption: "Stills from theater productions",
                   thumbnail: theaterT,
                   path: '/projects/Theater',
                   main: Theater
+                },
+                { title: "Commercial",
+                  caption: "Advertisements and posters",
+                  thumbnail: commercialT,
+                  path: '/projects/Commercial',
+                  main: Commercial
                 }]
   },
   // { type: "Research",
