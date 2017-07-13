@@ -6,6 +6,8 @@ import {
 } from 'react-router-dom'
 
 import BackgroundImage from 'react-background-image-loader';
+import ReactPlayer from 'react-player'
+
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 
@@ -36,6 +38,11 @@ class Snake extends Component {
 
         <img src={hungrysnake2} className="full"/>
         <img src={hungrysnake3} className="full"/>
+
+        <div className="project-video-wrapper">
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=wIFDw-clDmI' controls="true"
+          youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
+        </div>
 
         <div className="text-container">
           <div className = "text-paragraphs">

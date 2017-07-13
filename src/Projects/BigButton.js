@@ -12,7 +12,7 @@ class BigButton extends Component {
       <div>
         <div className="button-text" style={{
         textAlign: "center",
-        margin: "30px 0px"}}>
+        margin: "30px 10px"}}>
           <a target="_blank" href={this.props.url} className="button-wrapper" style={{
         textDecoration: "none"}}>
             <div className="button-content">
