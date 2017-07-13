@@ -9,7 +9,8 @@ import audiloid1 from './audiloid-1.jpg'
 import audiloid2 from './audiloid-2.jpg'
 
 import BackgroundImage from 'react-background-image-loader';
-
+import Credits from '../Credits';
+import BigButton from '../BigButton';
 
 // <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
 
@@ -42,28 +43,27 @@ class Snake extends Component {
         <img src={audiloid2} className="full"/>
 
         <div className="text-container">
+          <div className = "text-paragraphs">
+            <h2>Sound</h2>
+            <p>Some paragrph about the sound...The concept of this device began with thinking about ways to utilize old negatives
+            that are stored inside a person''s old storage inside their homes. Creating a device that could
+            produce original ambient music could give old negatives another chance to be brought out.</p>
+          </div>
+        </div>
+
+
+        <div className="text-container">
           <h2>Credits</h2>
           <div className="credit-wrapper">
-
-            <div className="credit-person-wrapper">
-              <div className="credit-title">
-                Sound Design
-              </div>
-              <div className="credit-name">
-                Garreth Chan
-              </div>
-            </div>
-
-            <div className="credit-person-wrapper">
-              <div className="credit-title">
-                Concept and Build
-              </div>
-              <div className="credit-name">
-                Koh Terai
-              </div>
-            </div>
-
+            <Credits title="Sound Design" name="Garreth Chan" />
+            <Credits title="Concept and Build" name="Koh Terai" />
+            <Credits title="Build" name="Koh Terai" />
+            <Credits title="Concsssd" name="Koh Terai" />
           </div>
+        </div>
+
+        <div className="big-button-wrapper">
+          <BigButton color="black" textColor="white" url="https://github.com/kohterai/Audiloid" title="View Code"/>
         </div>
       </div>
     )

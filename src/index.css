@@ -19,7 +19,7 @@ body {
 .project-content h2 {
   text-align: left;
   font-size: 1.4em;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
 }
 
 .project-content h6 {
@@ -32,7 +32,8 @@ body {
 }
 
 .project-content p {
-  margin: 15px auto;
+  margin: 0px auto;
+  margin-bottom: 15px;
   font-size: 0.7em;
   font-weight: 400;
 }

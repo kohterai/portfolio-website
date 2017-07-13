@@ -1,0 +1,12 @@
+.button-content {
+	background-color: black;
+	color: white;
+	display: inline-block;
+	padding: 10px 60px;
+	font-size: 0.7em;
+	transition: background-color 0.2s ease-in;
+}
+
+.button-content:hover {
+	background-color: #333333;
+}

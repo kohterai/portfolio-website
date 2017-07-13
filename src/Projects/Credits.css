@@ -1,0 +1,15 @@
+.credit-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-content .credit-person-wrapper {
+  font-size: 0.7em;
+  padding-right: 20px;
+  flex-grow: 1;
+}
+
+.project-content .credit-title {
+  font-size: 0.6em;
+  font-weight: 700;
+}
