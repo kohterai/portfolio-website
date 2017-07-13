@@ -1,8 +1,11 @@
 import hungrySnakeT from './Projects/Design/hungrysnake-thumb.jpg'
 import audiloidT from './Projects/Design/audiloid-thumb.jpg'
+import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
 
 import Snake from './Projects/Design/Snake'
 import Audiloid from './Projects/Design/Audiloid'
+import NYUVote from './Projects/Design/nyuvote'
+
 
 const projectList = [
   { type: "Design",
@@ -17,6 +20,12 @@ const projectList = [
                   thumbnail: audiloidT,
                   path: '/projects/audiloid',
                   main: Audiloid 
+                },
+                { title: "NYU Vote",
+                  caption: "Voting Platform for NYU",
+                  thumbnail: nyuvoteT,
+                  path: '/projects/nyuvote',
+                  main: NYUVote 
                 }]
   },
   // { type: "Cinematography",
