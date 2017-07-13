@@ -10,6 +10,18 @@ body {
   width: 100%;
 }
 
+.project-content .half {
+  width: 49%;
+  height: 100%;
+  flex-grow: 1;
+  min-width: 200px
+}
+
+.project-content .half-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .project-content h1{
   text-align: center;
   margin-bottom: 0px;
@@ -41,6 +53,7 @@ body {
 .project-content .text-container {
   max-width: 400px;
   margin: auto;
+  margin-bottom: 40px;
 }
 
 .project-content .bg-image {

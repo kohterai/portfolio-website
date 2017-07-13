@@ -1,10 +1,19 @@
-import hungrySnakeT from './Projects/Design/hungrysnake-thumb.jpg'
-import audiloidT from './Projects/Design/audiloid-thumb.jpg'
-import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
+// Design Projects
 
 import Snake from './Projects/Design/Snake'
+import hungrySnakeT from './Projects/Design/hungrysnake-thumb.jpg'
+
 import Audiloid from './Projects/Design/Audiloid'
+import audiloidT from './Projects/Design/audiloid-thumb.jpg'
+
 import NYUVote from './Projects/Design/nyuvote'
+import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
+
+
+// Photography Projects
+import Georgia from './Projects/Photography/Georgia'
+import georgiaT from './Projects/Photography/georgia-thumb.jpg'
+
 
 
 const projectList = [
@@ -66,20 +75,14 @@ const projectList = [
   //                 main: Snake
   //               }]
   // },
-  // { type: "Photography",
-  //   projects: [{  title: "Portrait",
-  //                 caption: "Portraits in the Snow",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Portraits',
-  //                 main: Snake
-  //               },
-  //               { title: "Sports",
-  //                 caption: "Great escape",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Sports',
-  //                 main: Snake
-  //               }]
-  // },
+  { type: "Photography",
+    projects: [{  title: "Georgia",
+                  caption: "Portraits in the Snow",
+                  thumbnail: georgiaT,
+                  path: '/projects/Georgia',
+                  main: Georgia
+                }]
+  },
   // { type: "Research",
   //   projects: [{  title: "Haptic",
   //                 caption: "Dental Simulator with Haptics",
