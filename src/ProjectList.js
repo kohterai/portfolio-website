@@ -19,19 +19,19 @@ import georgiaT from './Projects/Photography/georgia-thumb.jpg'
 const projectList = [
   { type: "Design",
     projects: [{  title: "Hungry Snake",
-                  caption: "Kinetic Sculpture",
+                  caption: "Kinetic sculpture",
                   thumbnail: hungrySnakeT,
                   path: '/projects/snake',
                   main: Snake
                 },
                 { title: "Audiloid",
-                  caption: "Celluloid based Audio Player",
+                  caption: "Celluloid based audio player",
                   thumbnail: audiloidT,
                   path: '/projects/audiloid',
                   main: Audiloid 
                 },
                 { title: "NYU Vote",
-                  caption: "Voting Platform for NYU",
+                  caption: "Voting platform for NYU",
                   thumbnail: nyuvoteT,
                   path: '/projects/nyuvote',
                   main: NYUVote 
@@ -77,7 +77,7 @@ const projectList = [
   // },
   { type: "Photography",
     projects: [{  title: "Georgia",
-                  caption: "Portraits in the Snow",
+                  caption: "Journey through Georgia",
                   thumbnail: georgiaT,
                   path: '/projects/Georgia',
                   main: Georgia
