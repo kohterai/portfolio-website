@@ -27,6 +27,12 @@ import georgia12 from './georgia-12.jpg'
 import georgia13 from './georgia-13.jpg'
 
 
+// <div className="text-container">
+//   <h1>Georgia</h1>
+//   <h6>Photo collection from Georgia</h6>
+
+//   <p>Photographs taken in Tiblisi and Stepantsminda during October 2013.</p>
+// </div>
 
 // <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
 
@@ -34,18 +40,11 @@ class Georgia extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={georgia1} className="full"/>
-
-        <div className="text-container">
-          <h1>Georgia</h1>
-          <h6>Photo collection from Georgia</h6>
-
-          <p>Audiloid is audio device that produces sounds by scanning 35mm film that is 
-          reeled through the device. Based on the colors of each frame and the overall variance of
-          colors within the film, different sounds and notes are produced.</p>
-        </div>
-
         <img src={georgia2} className="full"/>
+
+
+
+        <img src={georgia1} className="full"/>
         <img src={georgia3} className="full"/>
         <img src={georgia4} className="full"/>
         <div className="half-container">

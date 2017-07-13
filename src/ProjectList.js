@@ -14,6 +14,12 @@ import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
 import Georgia from './Projects/Photography/Georgia'
 import georgiaT from './Projects/Photography/georgia-thumb.jpg'
 
+import Sports from './Projects/Photography/Sports'
+import sportT from './Projects/Photography/photos/sport-thumb.jpg'
+
+import Theater from './Projects/Photography/Theater'
+import theaterT from './Projects/Photography/photos/theater-thumb.jpg'
+
 
 
 const projectList = [
@@ -81,6 +87,18 @@ const projectList = [
                   thumbnail: georgiaT,
                   path: '/projects/Georgia',
                   main: Georgia
+                },
+                { title: "Sports",
+                  caption: "Sports photography",
+                  thumbnail: sportT,
+                  path: '/projects/Sports',
+                  main: Sports
+                },
+                { title: "Theater",
+                  caption: "Stills from Theater Productions",
+                  thumbnail: theaterT,
+                  path: '/projects/Theater',
+                  main: Theater
                 }]
   },
   // { type: "Research",
