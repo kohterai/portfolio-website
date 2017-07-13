@@ -9,15 +9,16 @@ import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 
-import audiloid1 from './audiloid-2.jpg'
-import audiloid2 from './audiloid-2.jpg'
+import hungrysnake1 from './hungrysnake-1.jpg'
+import hungrysnake2 from './hungrysnake-2.jpg'
+import hungrysnake3 from './hungrysnake-3.jpg'
 
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={audiloid1} className="full"/>
+        <img src={hungrysnake1} className="full"/>
 
         <div className="text-container">
           <h1>Hungry Snake</h1>
@@ -33,7 +34,8 @@ class Snake extends Component {
           </div>
         </div>
 
-        <img src={audiloid2} className="full"/>
+        <img src={hungrysnake2} className="full"/>
+        <img src={hungrysnake3} className="full"/>
 
         <div className="text-container">
           <h2>Credits</h2>

@@ -1,5 +1,4 @@
-import snake1 from './Projects/Design/snake-1.png'
-import oryx1 from './Projects/Cinematography/oryx-1.png'
+import hungrySnakeT from './Projects/Design/hungrysnake-thumb.jpg'
 import audiloidT from './Projects/Design/audiloid-thumb.jpg'
 
 import Snake from './Projects/Design/Snake'
@@ -9,7 +8,7 @@ const projectList = [
   { type: "Design",
     projects: [{  title: "Hungry Snake",
                   caption: "Kinetic Sculpture",
-                  thumbnail: snake1,
+                  thumbnail: hungrySnakeT,
                   path: '/projects/snake',
                   main: Snake
                 },
