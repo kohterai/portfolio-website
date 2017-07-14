@@ -12,7 +12,7 @@ class ThumbnailCatalog extends Component {
     return (
       <div>
         {projectList.map((projectList, index) => (
-          <div key={projectList.type} >
+          <div key={projectList.type} className="thumb-category-wrapper">
             <div className="thumbnailCategoryTitle" style={{
               textTransform: 'uppercase',
               fontWeight: '600',
