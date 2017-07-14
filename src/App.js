@@ -11,6 +11,7 @@ import projectList from './ProjectList'
 import './App.css';
 import ScrollToTopRoute from './ScrollToTopRoute';
 import ReactPlayer from 'react-player'
+import Footer from './Footer'
 
 
 // Each logical "route" has two components, one for
@@ -78,6 +79,8 @@ const Main = () => (
           }/>
 
         </div>
+
+        <Footer />
       </div>
   </Router>
 )

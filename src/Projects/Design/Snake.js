@@ -54,10 +54,6 @@ class Snake extends Component {
             </div>
           </div>
         </div>
-
-        <div className="big-button-wrapper">
-          <BigButton color="black" textColor="white" url="https://github.com/kohterai/Audiloid" title="View Code"/>
-        </div>
       </div>
     )
   }
