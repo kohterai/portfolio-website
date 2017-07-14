@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
@@ -8,6 +8,9 @@ import {
 import Menu from './Menu'
 import Catalog from './ThumbnailCatalog'
 import projectList from './ProjectList'
+import './App.css';
+import ScrollToTopRoute from './ScrollToTopRoute';
+
 
 // Each logical "route" has two components, one for
 // the sidebar and one for the main area. We want to
@@ -26,42 +29,38 @@ const routes = [
 
 const Main = () => (
   <Router>
-    <div style={{ maxWidth: '1100px',
-                  margin: 'auto' }}>
+      <div id ="main-container">
 
-      <Route path="/" component={Menu}/>
-      <div id="horizontal-line"></div>
+        <Route path="/" component={Menu}/>
 
-      <div id="contentContainer" style={{ flex: 1,
-                                          paddingLeft: '200px',
-                                          paddingTop: '50px'}}>
-        <div>
-          {routes.map((route, index) => (
-            <Route
-              key={index}
-              path={route.path}
-              exact={route.exact}
-              component={route.main}
-            />
-          ))}
+        <div id="content-container">
+          <div>
+            {routes.map((route, index) => (
+              <Route
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            ))}
+          </div>
+          <div>
+            {projectList.map((projectList, index) => (
+                <div key={index}>
+                {projectList.projects.map((project, index) => (
+                              <ScrollToTopRoute
+                                key={index}
+                                path={project.path}
+                                exact={true}
+                                component={project.main}
+                              />
+                ))}
+                </div>
+            ))}
+          </div>
+
         </div>
-        <div>
-          {projectList.map((projectList, index) => (
-              <div key={index}>
-              {projectList.projects.map((project, index) => (
-                            <Route
-                              key={index}
-                              path={project.path}
-                              exact={true}
-                              component={project.main}
-                            />
-              ))}
-              </div>
-          ))}
-        </div>
-
       </div>
-    </div>
   </Router>
 )
 

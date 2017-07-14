@@ -13,8 +13,8 @@ class Thumbnail extends Component {
   render() {
     return (
       <div className="thumbnail" style={{ flexGrow: '1',
-                    width: '33%',
-                    maxWidth: '33%',
+                    width: '33.3%',
+                    maxWidth: '33.3%',
                     textAlign: 'center',
                     margin: '20px 0px 50px 0px'}}>
         

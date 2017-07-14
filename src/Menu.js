@@ -55,7 +55,7 @@ class Menu extends Component {
     }
 
     return (
-      <div className="Menu" style={{ marginTop: '100px', position: 'fixed'}}>
+      <div id="Menu" style={{ marginTop: '150px', position: 'fixed'}}>
           <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
             KOH TERAI
           </Link>
