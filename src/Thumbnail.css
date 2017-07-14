@@ -17,3 +17,30 @@
 .thumbnailimage:hover{
   opacity: 0.7;
 }
+
+.thumbnail {
+    flexGrow: 1;
+    width: 33.3%;
+    max-width: 33.3%;
+    text-align: center;
+    margin: 20px 0px 50px 0px;
+}
+
+@media screen and (max-width: 540px) and (min-width: 400px) {
+  .thumbnail {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .thumbnail {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .thumbnailCategoryTitle {
+    margin-top: 40px;
+  }
+}
