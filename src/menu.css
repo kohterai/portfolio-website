@@ -6,12 +6,18 @@
   text-decoration: none;
   color: #a3a3a3;
   font-weight: 300;
+  transition: all 0.1s ease-out;
+}
+
+#Menu a:hover {
+  color: #000000;
+  margin-left: 10px
 }
 
 #Menu .active{
   color: #000000;
   font-weight: 600;
-  transition: color 0.3 ease-in-out;
+  transition: margin 0.1s ease-in;
 }
 
 #Menu .menu-sub{
