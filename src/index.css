@@ -70,12 +70,12 @@ body {
 
 /*Autosize code from: https://github.com/CookPete/react-player/issues/145*/
 
-.project-content .project-video-wrapper{
+.project-video-wrapper{
   position: relative;
   padding-top: 56.25%;
 }
 
-.project-video-wrapper .project-video {
+.project-video {
   position: absolute;
   top: 0;
   left: 0;

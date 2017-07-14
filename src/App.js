@@ -10,6 +10,7 @@ import Catalog from './ThumbnailCatalog'
 import projectList from './ProjectList'
 import './App.css';
 import ScrollToTopRoute from './ScrollToTopRoute';
+import ReactPlayer from 'react-player'
 
 
 // Each logical "route" has two components, one for
@@ -58,6 +59,23 @@ const Main = () => (
                 </div>
             ))}
           </div>
+
+         <Route exact path="/" render={() => 
+          <div>
+            <div className="thumbnailCategoryTitle" style={{
+              textTransform: 'uppercase',
+              fontWeight: '600',
+              fontSize: '1.2em',
+              marginBottom: '20px'}}>
+              <div>Cinematography</div>
+            </div>
+
+            <div className="project-video-wrapper">
+              <ReactPlayer className="project-video" url='https://vimeo.com/201632847' controls="true"
+              youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
+            </div>
+          </div>
+          }/>
 
         </div>
       </div>

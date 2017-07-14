@@ -72,6 +72,7 @@ class Menu extends Component {
                 </ul>
             </div>
           ))}
+            <MenuTitle category="Cinematography" />
         </div>
       </div>
     )
