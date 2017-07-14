@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link
+  Link,
+  NavLink
 } from 'react-router-dom'
 import './Thumbnail.css'
 
@@ -33,7 +34,7 @@ class Thumbnail extends Component {
             }} />
           </div>
         </Link>
-        <Link style={{ textDecoration: 'none',
+        <Link activeClassName="active" style={{ textDecoration: 'none',
                         fontWeight: '600',
                         fontSize: '0.8em'}}
                       to={`${this.props.path}`}>{this.props.title}</Link>

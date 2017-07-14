@@ -5,29 +5,30 @@
 }
 
 .Menu .menu-sub{
-	list-style: none;
-	padding-left: 20px;
+  list-style: none;
+  padding-left: 20px;
 }
 
 .Menu .active{
-	color: #000000;
-	font-weight: 600;
+  color: #000000;
+  font-weight: 600;
+  transition: color 0.3 ease-in-out;
 }
 
 
 .Menu .menu-sub {
-	visibility: hidden;
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
-    position: fixed;
-    display: block;
+  visibility: hidden;
+  opacity: 0;
+  /*transition: opacity 0.3s ease-in-out;*/
+  position: fixed;
+  display: block;
 }
 
 .Menu .activeSubMenu {
-	opacity: 0.3;
-	visibility: visible;
+  opacity: 0.3;
+  visibility: visible;
 }
 
 .Menu .menu-title {
-	transition: margin 0.3s ease-in-out;
+  /*transition: margin 0.3s ease-in-out;*/
 }
