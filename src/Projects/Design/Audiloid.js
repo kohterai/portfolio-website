@@ -46,9 +46,17 @@ class Snake extends Component {
         <div className="text-container">
           <div className = "text-paragraphs">
             <h2>Sound</h2>
-            <p>Some paragrph about the sound...The concept of this device began with thinking about ways to utilize old negatives
-            that are stored inside a person''s old storage inside their homes. Creating a device that could
-            produce original ambient music could give old negatives another chance to be brought out.</p>
+            <p>The sounds were composed in three categories: red, green, and blue.
+            Each category contained four notes across two different octaves, with four
+            different physical variations to the synthesizer used (i.e. different resonance,
+            introduction of additional FM or sine waves, utilizing analog versus digital
+            processing). That gave each category sixteen notes to utilize in the creation
+            of the soundscape.</p>
+
+            <p>For our demo using the Wall-E film, Red evoked senses of dust, danger and corrosion, requiring an abrasive and
+            metallic texture to the synthesizer. Green evoked senses of life and lushness,
+            requiring a hollow and delicate texture to the synthesizer. Blue evoked senses of
+            mystery and technology, requiring a robotic texture to the synthesizer.</p>
           </div>
         </div>
 
