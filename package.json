@@ -1,7 +1,8 @@
 {
-  "name": "demo-app",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kohterai.github.io/",
   "dependencies": {
     "classnames": "^2.2.5",
     "gh-pages": "^1.0.0",
@@ -11,6 +12,7 @@
     "react-dom": "^15.6.1",
     "react-image": "^1.0.1",
     "react-player": "^0.18.0",
+    "react-router-dom": "^4.1.1",
     "react-scripts": "^1.0.10",
     "react-youtube": "^7.4.0"
   },
@@ -21,6 +23,5 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "homepage": "https://kohterai.github.io/portfolio-website"
+  }
 }
