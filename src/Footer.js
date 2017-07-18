@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
 
-import BackgroundImage from 'react-background-image-loader';
 import CV from './KohTerai-2017CV-JE.pdf'
 
 

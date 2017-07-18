@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
-  Link
 } from 'react-router-dom'
 import Thumbnail from './Thumbnail'
 import projectList from './ProjectList'
@@ -20,10 +17,6 @@ class ThumbnailCatalog extends Component {
               <div id={projectList.type}>{projectList.type}</div>
             </div>
             <div className="thumbnailContainer" style={{
-              display: '-webkit-box',
-              display: '-moz-box',
-              display: '-ms-flexbox',
-              display: '-webkit-flex',
               display: 'flex',
               flexWrap: 'wrap'}}>
             {projectList.projects.map((project, index) => (

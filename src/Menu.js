@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import {
-  BrowserRouter as Router,
-  Route,
   Link
 } from 'react-router-dom'
 import projectList from './ProjectList'
@@ -14,10 +12,7 @@ import MenuProject from './MenuProject'
 class Menu extends Component {
 
   render() {
-    const { match, location, history } = this.props
-
-    function handleClick(title) {
-    }
+    const { location } = this.props
 
     // Function to figure out whether submenu is displayed or not
     // Function should be relocated to somewhere more appropiate (block, none, matters much less now)
@@ -28,18 +23,16 @@ class Menu extends Component {
 
         // On homepage, hide all sub menus
         for (let category of projectList) {
-          for (let project of category.projects) {
-              $(document).ready( function () {
-                $(`#menu-${category.type}`).css({ "opacity": "0", "visibility": "hidden"})
-                $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
-              })
-            }
-          }
-          return "none"        
+          $(document).ready( function () {
+            $(`#menu-${category.type}`).css({ "opacity": "0", "visibility": "hidden"})
+            $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
+          })
+        }
+        return "none"        
       } else {
         for (let category of projectList) {
           for (let project of category.projects) {
-            if (project.path == path & category.type == projType) {
+            if (project.path === path & category.type === projType) {
               $(document).ready( function () {
                 // var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuSize = $(`#menu-${category.type}`).height()
