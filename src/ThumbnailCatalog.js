@@ -6,7 +6,6 @@ import {
 } from 'react-router-dom'
 import Thumbnail from './Thumbnail'
 import projectList from './ProjectList'
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 class ThumbnailCatalog extends Component {
   render() {
@@ -14,12 +13,12 @@ class ThumbnailCatalog extends Component {
       <div>
         {projectList.map((projectList, index) => (
           <div key={projectList.type} className="thumb-category-wrapper">
-            <ScrollableAnchor id={projectList.type} className="thumbnailCategoryTitle" style={{
+            <div className="thumbnailCategoryTitle" style={{
               textTransform: 'uppercase',
               fontWeight: '600',
               fontSize: '1.2em'}}>
-                <div>{projectList.type}</div>
-            </ScrollableAnchor>
+              <div id={projectList.type}>{projectList.type}</div>
+            </div>
             <div className="thumbnailContainer" style={{
               display: '-webkit-box',
               display: '-moz-box',
