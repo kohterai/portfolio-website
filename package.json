@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kohterai.github.io/portfolio-website",
+  "homepage": "https://kohterai.github.io/",
   "dependencies": {
     "classnames": "^2.2.5",
     "gh-pages": "^1.0.0",
