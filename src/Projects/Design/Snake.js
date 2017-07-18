@@ -11,16 +11,23 @@ import ReactPlayer from 'react-player'
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 
+
 import hungrysnake1 from './hungrysnake-1.jpg'
 import hungrysnake2 from './hungrysnake-2.jpg'
 import hungrysnake3 from './hungrysnake-3.jpg'
+import LazyLoad from 'react-lazy-load';
+import ProgressiveImage from 'react-progressive-bg-image';
+import preload from '../preload.png'
+import ImageLoader from '../ImageLoader';
+
+          // <img src={hungrysnake1} className="full"/>
 
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={hungrysnake1} className="full"/>
+        <ImageLoader source={hungrysnake1} />
 
         <div className="text-container">
           <h1>Hungry Snake</h1>
@@ -37,8 +44,9 @@ class Snake extends Component {
           </div>
         </div>
 
-        <img src={hungrysnake2} className="full"/>
-        <img src={hungrysnake3} className="full"/>
+        <ImageLoader source={hungrysnake2} />
+
+        <ImageLoader source={hungrysnake3} />
 
         <div className="project-video-wrapper">
           <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=wIFDw-clDmI' controls="true"

@@ -4,7 +4,6 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import preload from './preload.png'
 import nyuvote1 from './nyuvote-1.jpg'
 import nyuvote2 from './nyuvote-2.jpg'
 import nyuvote3 from './nyuvote-3.jpg'

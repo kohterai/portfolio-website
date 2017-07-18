@@ -4,7 +4,6 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import preload from './preload.png'
 import audiloid1 from './audiloid-1.jpg'
 import audiloid2 from './audiloid-2.jpg'
 

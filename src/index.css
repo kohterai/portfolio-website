@@ -50,6 +50,17 @@ body {
   font-weight: 400;
 }
 
+.project-content p a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.project-content p a:hover {
+  text-decoration: underline;
+}
+
 .project-content .text-container {
   max-width: 400px;
   margin: auto;
