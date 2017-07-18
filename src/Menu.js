@@ -39,10 +39,12 @@ class Menu extends Component {
           for (let project of category.projects) {
             if (project.path == path & category.type == projType) {
               $(document).ready( function () {
+                // var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuSize = $(`#menu-${category.type}`).height()
+                var subMenuLoc = $(`#menu-title-${category.type}`).position()
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                $(`#menu-${category.type}`).css({"margin-top": `-${subMenuSize}px`})
+                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+160}px`})
               })
               return "block"
             }

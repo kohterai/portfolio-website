@@ -6,7 +6,8 @@
   text-decoration: none;
   color: #a3a3a3;
   font-weight: 300;
-  transition: all 0.1s ease-out;
+  transition: color 0.1s ease-out;
+  transition: margin 0.1s ease-out;
 }
 
 #Menu a:hover {
@@ -35,6 +36,7 @@
   position: fixed;
   display: block;
   transition: margin 0.1s ease-in;
+  transition: opacity 0.4s ease-out;
 }
 
 #Menu .activeSubMenu {
@@ -43,9 +45,10 @@
 }
 
 #Menu .menu-title {
- margin: 5px 0px;
+  margin: 5px 0px;
+  transition: margin 0.3s ease-out;
 }
 
 #Menu .menu-item {
- margin: 5px 0px;
+  margin: 5px 0px;
 }
