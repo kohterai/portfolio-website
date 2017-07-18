@@ -31,7 +31,8 @@ class Snake extends Component {
 
         <div className = "text-paragraphs">
           <h2>Concept</h2>
-          <p>This piece was built at the Kinetic Sculpture Workshop hosted by <a href="http://www.feld.is/">FELD studio</a>.
+          <p>This piece was built at the <a target="_blank" href="http://www.hardmood.info/lib/exe/detail.php?id=start&media=kinetic_sculptures_workshop_feld.jpg">Kinetic Sculpture Workshop</a> hosted
+          by <a target="_blank" href="http://www.felix-beck.de">Felix Beck</a> and <a target="_blank" href="http://www.feld.is/">FELD studio Berlin</a>.
           We wanted to create a piece that could be cute and interactive that even children can enjoy.</p>
           </div>
         </div>
