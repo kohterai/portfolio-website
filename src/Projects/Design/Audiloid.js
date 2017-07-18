@@ -7,18 +7,17 @@ import {
 import audiloid1 from './audiloid-1.jpg'
 import audiloid2 from './audiloid-2.jpg'
 
-import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
 
-// <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
+import ImageLoader from '../ImageLoader'
 
 class Snake extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={audiloid1} className="full"/>
+        <ImageLoader source={audiloid1} />
 
         <div className="text-container">
           <h1>Audiloid</h1>
@@ -41,7 +40,7 @@ class Snake extends Component {
           </div>
         </div>
 
-        <img src={audiloid2} className="full"/>
+        <ImageLoader source={audiloid2} />
 
         <div className="text-container">
           <div className = "text-paragraphs">
@@ -61,7 +60,7 @@ class Snake extends Component {
         </div>
 
         <div className="project-video-wrapper">
-          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=E0vhWfU_u_Q' controls="true"
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=E0vhWfU_u_Q' controls={true}
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 

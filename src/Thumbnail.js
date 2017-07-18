@@ -27,7 +27,7 @@ class Thumbnail extends Component {
             }} />
           </div>
         </Link>
-        <Link activeClassName="active" style={{ textDecoration: 'none',
+        <Link style={{ textDecoration: 'none',
                         fontWeight: '600',
                         fontSize: '0.8em'}}
                       to={`${this.props.path}`}>{this.props.title}</Link>

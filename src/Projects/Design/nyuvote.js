@@ -10,18 +10,18 @@ import nyuvote3 from './nyuvote-3.jpg'
 import nyuvote4 from './nyuvote-4.jpg'
 import nyuvote5 from './nyuvote-5.jpg'
 
-import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
 
-// <BackgroundImage src={audio1} placeholder={preload} className="bg-image"/>
+import ImageLoader from '../ImageLoader'
+
 
 class NYUVote extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={nyuvote1} className="full"/>
+        <ImageLoader source={nyuvote1} />
 
         <div className="text-container">
           <h1>NYU Vote</h1>
@@ -43,7 +43,7 @@ class NYUVote extends Component {
           </div>
         </div>
         
-        <img src={nyuvote4} className="full"/>
+        <ImageLoader source={nyuvote4} />
         
         <div className="text-container">
           <div className = "text-paragraphs">
@@ -54,8 +54,8 @@ class NYUVote extends Component {
           </div>
         </div>
         
-        <img src={nyuvote3} className="full"/>
-        <img src={nyuvote2} className="full"/>
+        <ImageLoader source={nyuvote3} />
+        <ImageLoader source={nyuvote2} />
 
         <div className="text-container">
           <div className = "text-paragraphs">
@@ -66,7 +66,7 @@ class NYUVote extends Component {
           </div>
         </div>
 
-        <img src={nyuvote5} className="full"/>
+        <ImageLoader source={nyuvote5} />
 
         <div className="text-container">
           <div className = "text-paragraphs">

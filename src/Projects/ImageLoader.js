@@ -14,7 +14,7 @@ class ImageLoader extends Component {
           src={this.props.source}
           placeholder= {preload}
           className="full bg-image"
-          blur = "0"
+          blur = {0}
           transition="none"
           style={{
             backgroundSize: 'contain',
