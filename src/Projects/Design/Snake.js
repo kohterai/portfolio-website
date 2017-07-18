@@ -15,12 +15,8 @@ import BigButton from '../BigButton';
 import hungrysnake1 from './hungrysnake-1.jpg'
 import hungrysnake2 from './hungrysnake-2.jpg'
 import hungrysnake3 from './hungrysnake-3.jpg'
-import LazyLoad from 'react-lazy-load';
-import ProgressiveImage from 'react-progressive-bg-image';
-import preload from '../preload.png'
-import ImageLoader from '../ImageLoader';
 
-          // <img src={hungrysnake1} className="full"/>
+import ImageLoader from '../ImageLoader'
 
 
 class Snake extends Component {
