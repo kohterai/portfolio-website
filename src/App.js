@@ -33,12 +33,12 @@ const Main = () => (
   <Router>
       <div id ="main-container">
 
-        <Route path="/" component={Menu}/>
+        <ScrollToTopRoute path="/" component={Menu}/>
 
         <div id="content-container">
           <div>
             {routes.map((route, index) => (
-              <Route
+              <ScrollToTopRoute
                 key={index}
                 path={route.path}
                 exact={route.exact}

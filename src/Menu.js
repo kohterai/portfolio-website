@@ -19,6 +19,8 @@ class Menu extends Component {
     function handleClick(title) {
     }
 
+    // Function to figure out whether submenu is displayed or not
+    // Function should be relocated to somewhere more appropiate (block, none, matters much less now)
     function displaySubmenu(path, projType) {
       var res = path.split("/")
       // len = 2 means we are on homepage

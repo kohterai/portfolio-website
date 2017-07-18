@@ -9,9 +9,9 @@ class MenuTitle extends Component {
   render() {
     return (
       <div id={`menu-title-${this.props.category}`} className="menu-title">
-        <Link  to={'/'}>
+        <a href={`/#/#${this.props.category}`}>
           {this.props.category}
-        </Link>
+        </a>
       </div>
     )
   }
