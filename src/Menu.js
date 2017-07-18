@@ -24,6 +24,7 @@ class Menu extends Component {
       // len = 2 means we are on homepage
       if (res.length<3) {
 
+        // On homepage, hide all sub menus
         for (let category of projectList) {
           for (let project of category.projects) {
               $(document).ready( function () {
@@ -44,12 +45,9 @@ class Menu extends Component {
                 $(`#menu-${category.type}`).css({"margin-top": `-${subMenuSize}px`})
               })
               return "block"
-            } else {
-              $(`#menu-${category.type}`).css({ "opacity": "0", "visibility": "hidden"})
-              $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
             }
           }
-        }        
+        }
       }
       return "none"
     }

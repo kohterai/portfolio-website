@@ -11,13 +11,20 @@
 
 #Menu a:hover {
   color: #000000;
-  margin-left: 10px
+  margin-left: 10px;
+  font-weight: 300;
 }
 
 #Menu .active{
   color: #000000;
   font-weight: 600;
   transition: margin 0.1s ease-in;
+}
+
+#Menu .active:hover {
+  color: #000000;
+  margin-left: 10px;
+  font-weight: 600;
 }
 
 #Menu .menu-sub{
@@ -27,6 +34,7 @@
   opacity: 0;
   position: fixed;
   display: block;
+  transition: margin 0.1s ease-in;
 }
 
 #Menu .activeSubMenu {
