@@ -9,13 +9,13 @@ import preload from './preload.png'
 class ImageLoader extends Component {
   render() {
     return (
-      <LazyLoad offsetVertical={1000}>
+      <LazyLoad offsetVertical={500}>
         <ProgressiveImage
           src={this.props.source}
           placeholder= {preload}
           className="full bg-image"
           blur = "0"
-          transition="opacity 0.5s ease-out"
+          transition="none"
           style={{
             backgroundSize: 'contain',
             backgroundPosition: 'center center',
