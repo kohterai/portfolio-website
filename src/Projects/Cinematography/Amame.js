@@ -23,6 +23,12 @@ class Amame extends Component {
   render() {
     return (
       <div className="project-content">
+
+        <div className="project-video-wrapper">
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=NtiSkCwQTZM' controls={true}
+          youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
+        </div>
+
         <ImageLoader source={hungrysnake1} />
 
         <div className="text-container">
@@ -44,18 +50,12 @@ class Amame extends Component {
 
         <ImageLoader source={hungrysnake3} />
 
-        <div className="project-video-wrapper">
-          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=wIFDw-clDmI' controls={true}
-          youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
-        </div>
-
         <div className="text-container">
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Concept/Build" name="Jennifer Huang" />
-              <Credits title="Concept/Code" name="Koh Terai" />
-              <Credits title="Fader Box" name="FELD" />
+              <Credits title="Music" name="Jules Bello" />
+              <Credits title="Cinematography" name="Koh Terai" />
             </div>
           </div>
         </div>

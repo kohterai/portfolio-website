@@ -70,6 +70,14 @@
     width: 50%;
     max-width: 50%;
   }
+
+  .thumbnail-long-left {
+    display: none;
+  }
+  .thumbnail-long {
+    width: 50%;
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -81,5 +89,18 @@
 
   .thumb-category-wrapper {
     margin-bottom: 40px;
+  }
+
+  .thumbnail-long-left {
+    display: none;
+  }
+
+  .thumbnail-long-right {
+    display: none;
+  }
+
+  .thumbnail-long {
+    width: 100%;
+    max-width: 100%;
   }
 }

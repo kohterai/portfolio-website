@@ -11,7 +11,7 @@ class Thumbnail extends Component {
     return (
       <div style={{width: "100%"}}>
       <div className="thumbnail-long-wrapper">
-        <div className="thumbnail-long">
+        <div className="thumbnail-long thumbnail-long-left">
           <Link to={`${this.props.path}`}>
             <div style={{
               width: '100%',
@@ -48,7 +48,7 @@ class Thumbnail extends Component {
           </Link>
         </div>
         
-        <div className="thumbnail-long">
+        <div className="thumbnail-long thumbnail-long-right">
           <Link to={`${this.props.path}`}>
             <div style={{
               width: '100%',
