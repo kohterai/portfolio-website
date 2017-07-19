@@ -4,6 +4,7 @@ import {
 import Thumbnail from './Thumbnail'
 import ThumbnailLong from './ThumbnailLong'
 import projectList from './ProjectList'
+import ReactPlayer from 'react-player'
 
 class ThumbnailCatalog extends Component {
   render() {
@@ -20,6 +21,10 @@ class ThumbnailCatalog extends Component {
 
 
             {projectList.longThumb ? (
+              <div>
+              <div className="project-video-wrapper" style={{marginTop: "20px"}}>
+                <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
+              </div>
               <div className="thumbnailContainer" style={{
                               display: 'flex',
                               flexWrap: 'wrap'}}>
@@ -32,6 +37,7 @@ class ThumbnailCatalog extends Component {
                               thumbnail3={project.thumbnail3}
                               path={project.path}/>
                 ))}
+              </div>
               </div>
             ) : (
               <div className="thumbnailContainer" style={{

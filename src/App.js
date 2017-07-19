@@ -77,10 +77,10 @@ const Main = () => (
          //      <div>Cinematography</div>
          //    </div>
 
-         //    <div className="project-video-wrapper">
-         //      <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
-         //    </div>
-         //  </div>
+          //   <div className="project-video-wrapper">
+          //     <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
+          //   </div>
+          // </div>
          //  }/>
 
 
