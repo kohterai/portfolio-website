@@ -29,6 +29,7 @@ import portraitsT from './Projects/Photography/photos/portrait-thumb.jpg'
 
 const projectList = [
   { type: "Design",
+    longThumb: false,
     projects: [{  title: "Hungry Snake",
                   caption: "Kinetic sculpture",
                   thumbnail: hungrySnakeT,
@@ -48,45 +49,8 @@ const projectList = [
                   main: NYUVote 
                 }]
   },
-  // { type: "Cinematography",
-  //   projects: [{  title: "Rescue",
-  //                 caption: "Desert Storms",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Rescue',
-  //                 main: Snake
-  //               },
-  //               { title: "Dive",
-  //                 caption: "Great escape",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Dive',
-  //                 main: Snake
-  //               },
-  //               { title: "Boat ride",
-  //                 caption: "Great escape",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Dive',
-  //                 main: Snake
-  //               },
-  //               {  title: "Rescue 2",
-  //                 caption: "Desert Storms",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Rescue',
-  //                 main: Snake
-  //               },
-  //               { title: "Dive 2",
-  //                 caption: "Great escape",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Dive',
-  //                 main: Snake
-  //               },
-  //               { title: "Boat ride 2",
-  //                 caption: "Great escape",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Dive',
-  //                 main: Snake
-  //               }]
-  // },
   { type: "Photography",
+    longThumb: false,
     projects: [{ title: "Sports",
                   caption: "Sports photography",
                   thumbnail: sportT,
@@ -115,6 +79,15 @@ const projectList = [
                   thumbnail: georgiaT,
                   path: '/projects/Georgia',
                   main: Georgia
+                }]
+  },
+  { type: "Cinematography",
+    longThumb: true,
+    projects: [{ title: "Sports",
+                  caption: "Sports photography",
+                  thumbnail: sportT,
+                  path: '/projects/Sports',
+                  main: Sports
                 }]
   },
   // { type: "Research",

@@ -60,27 +60,28 @@ const Main = () => (
             ))}
           </div>
 
-         <Route exact path="/" render={() => 
-          <div>
-            <div className="thumbnailCategoryTitle" style={{
-              textTransform: 'uppercase',
-              fontWeight: '600',
-              fontSize: '1.2em',
-              marginBottom: '20px'}}>
-              <div>Cinematography</div>
-            </div>
-
-            <div className="project-video-wrapper">
-              <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
-            </div>
-          </div>
-          }/>
-
         </div>
 
         <Footer />
       </div>
   </Router>
 )
+
+         // <Route exact path="/" render={() => 
+         //  <div>
+         //    <div className="thumbnailCategoryTitle" style={{
+         //      textTransform: 'uppercase',
+         //      fontWeight: '600',
+         //      fontSize: '1.2em',
+         //      marginBottom: '20px'}}>
+         //      <div>Cinematography</div>
+         //    </div>
+
+         //    <div className="project-video-wrapper">
+         //      <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
+         //    </div>
+         //  </div>
+         //  }/>
+
 
 export default Main
