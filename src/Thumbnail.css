@@ -26,6 +26,45 @@
     margin: 20px 0px 50px 0px;
 }
 
+/* For Thumbnail long*/
+
+.thumbnail-long-wrapper {
+    width: 100%;
+    display: flex;
+    transition: opacity 0.2s;
+}
+
+.thumbnail-long-caption{
+  text-align: center;
+}
+
+.thumbnail-long-caption a{
+  color: #000000;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.thumbnail-long-caption a:hover{
+  color: #888888;
+}
+
+.thumbnail-long-wrapper:hover{
+  opacity: 0.7;
+}
+
+.thumbnailimage-long{
+  cursor: pointer;
+  opacity: 1;
+}
+
+.thumbnail-long {
+    flexGrow: 1;
+    width: 33.3%;
+    max-width: 33.3%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
 @media screen and (max-width: 540px) and (min-width: 400px) {
   .thumbnail {
     width: 50%;

@@ -26,6 +26,12 @@ import commercialT from './Projects/Photography/photos/commercial-thumb.jpg'
 import Portraits from './Projects/Photography/Portraits'
 import portraitsT from './Projects/Photography/photos/portrait-thumb.jpg'
 
+// Cinematography Projects
+import Amame from './Projects/Cinematography/Amame'
+import AmameT1 from './Projects/Cinematography/photos/amame-thumb1.jpg'
+import AmameT2 from './Projects/Cinematography/photos/amame-thumb2.jpg'
+import AmameT3 from './Projects/Cinematography/photos/amame-thumb3.jpg'
+
 
 const projectList = [
   { type: "Design",
@@ -83,11 +89,13 @@ const projectList = [
   },
   { type: "Cinematography",
     longThumb: true,
-    projects: [{ title: "Sports",
-                  caption: "Sports photography",
-                  thumbnail: sportT,
-                  path: '/projects/Sports',
-                  main: Sports
+    projects: [{ title: "Ámame como Amas",
+                  caption: "Music Video",
+                  thumbnail1: AmameT1,
+                  thumbnail2: AmameT2,
+                  thumbnail3: AmameT3,
+                  path: '/projects/Amame',
+                  main: Amame
                 }]
   },
   // { type: "Research",
