@@ -12,9 +12,9 @@ import Credits from '../Credits';
 import BigButton from '../BigButton';
 
 
-import hungrysnake1 from './photos/amame-1.jpg'
-import hungrysnake2 from './photos/amame-2.jpg'
-import hungrysnake3 from './photos/amame-3.jpg'
+import amame1 from './photos/amame-1.jpg'
+import amame2 from './photos/amame-2.jpg'
+import amame3 from './photos/amame-3.jpg'
 
 import ImageLoader from '../ImageLoader'
 
@@ -29,7 +29,7 @@ class Amame extends Component {
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 
-        <ImageLoader source={hungrysnake1} />
+        <ImageLoader source={amame1} ratio="r235"/>
 
         <div className="text-container">
           <h1>Hungry Snake</h1>
@@ -46,9 +46,9 @@ class Amame extends Component {
           </div>
         </div>
 
-        <ImageLoader source={hungrysnake2} />
+        <ImageLoader source={amame2} ratio="r235"/>
 
-        <ImageLoader source={hungrysnake3} />
+        <ImageLoader source={amame3} ratio="r235"/>
 
         <div className="text-container">
           <div className = "text-paragraphs">

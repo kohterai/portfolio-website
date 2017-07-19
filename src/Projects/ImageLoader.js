@@ -5,6 +5,7 @@ import {
 import LazyLoad from 'react-lazy-load';
 import ProgressiveImage from 'react-progressive-bg-image';
 import preload from './preload.png'
+import preload235 from './preload235.png'
 
       // <LazyLoad offsetVertical={500}>
 
@@ -12,11 +13,18 @@ import preload from './preload.png'
 
 class ImageLoader extends Component {
   render() {
+
+    var placeholderRatio = 0
+    if (this.props.ratio == "r235") {
+      placeholderRatio = preload235
+    } else {
+      placeholderRatio = preload
+    }
     return (
       <ProgressiveImage
         src={this.props.source}
-        placeholder= {preload}
-        className="full bg-image"
+        placeholder = {placeholderRatio}
+        className={`full bg-image ${this.props.ratio}`}
         blur = {0}
         transition="all 0.3s linear"
         style={{
