@@ -9,7 +9,7 @@ import './Thumbnail.css'
 class Thumbnail extends Component {
   render() {
     return (
-      <div style={{width: "100%"}}>
+      <div className="thumbnail-long-wrapper-wrapper">
       <div className="thumbnail-long-wrapper">
         <div className="thumbnail-long thumbnail-long-left">
           <Link to={`${this.props.path}`}>

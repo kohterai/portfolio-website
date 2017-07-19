@@ -25,13 +25,13 @@ import amame9 from './photos/amame-9.jpg'
 import ImageLoader from '../ImageLoader'
 
 
-class Amame extends Component {
+class CinematographyWorkshop extends Component {
   render() {
     return (
       <div className="project-content">
 
         <div className="project-video-wrapper">
-          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=NtiSkCwQTZM' controls={true}
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=ZJbmMQp45JY&list=PLK-Ssgo2mo27eGt-vQXhf9x7c_Af_6LFN' controls={true}
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 
@@ -78,4 +78,4 @@ class Amame extends Component {
   }
 }
 
-export default Amame
+export default CinematographyWorkshop

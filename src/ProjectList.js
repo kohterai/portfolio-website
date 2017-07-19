@@ -32,6 +32,11 @@ import AmameT1 from './Projects/Cinematography/photos/amame-thumb1.jpg'
 import AmameT2 from './Projects/Cinematography/photos/amame-thumb2.jpg'
 import AmameT3 from './Projects/Cinematography/photos/amame-thumb3.jpg'
 
+import CinematographyWorkshop from './Projects/Cinematography/CinematographyWorkshop'
+// import AmameT1 from './Projects/Cinematography/photos/amame-thumb1.jpg'
+// import AmameT2 from './Projects/Cinematography/photos/amame-thumb2.jpg'
+// import AmameT3 from './Projects/Cinematography/photos/amame-thumb3.jpg'
+
 
 const projectList = [
   { type: "Design",
@@ -89,14 +94,24 @@ const projectList = [
   },
   { type: "Cinematography",
     longThumb: true,
-    projects: [{ title: "Ámame",
+    projects: [
+                // { title: "Workshops",
+                //   caption: "Cinematography Workshops",
+                //   thumbnail1: AmameT1,
+                //   thumbnail2: AmameT2,
+                //   thumbnail3: AmameT3,
+                //   path: '/projects/CinematographyWorkshop',
+                //   main: CinematographyWorkshop
+                // },
+                { title: "Ámame",
                   caption: "Music Video",
                   thumbnail1: AmameT1,
                   thumbnail2: AmameT2,
                   thumbnail3: AmameT3,
                   path: '/projects/Amame',
                   main: Amame
-                }]
+                }
+                ]
   },
   // { type: "Research",
   //   projects: [{  title: "Haptic",

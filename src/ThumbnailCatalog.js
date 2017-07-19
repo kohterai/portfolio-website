@@ -22,7 +22,7 @@ class ThumbnailCatalog extends Component {
 
             {projectList.longThumb ? (
               <div>
-              <div className="project-video-wrapper" style={{marginTop: "20px"}}>
+              <div className="project-video-wrapper" style={{marginTop: "20px", marginBottom: "40px"}}>
                 <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
               </div>
               <div className="thumbnailContainer" style={{
