@@ -30,6 +30,7 @@ class ImageLoader extends Component {
         style={{
           backgroundSize: 'contain',
           backgroundPosition: 'center center',
+          margin: "30px 0px"
         }}
       />
     )

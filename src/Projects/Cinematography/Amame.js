@@ -15,6 +15,12 @@ import BigButton from '../BigButton';
 import amame1 from './photos/amame-1.jpg'
 import amame2 from './photos/amame-2.jpg'
 import amame3 from './photos/amame-3.jpg'
+import amame4 from './photos/amame-4.jpg'
+import amame5 from './photos/amame-5.jpg'
+import amame6 from './photos/amame-6.jpg'
+import amame7 from './photos/amame-7.jpg'
+import amame8 from './photos/amame-8.jpg'
+import amame9 from './photos/amame-9.jpg'
 
 import ImageLoader from '../ImageLoader'
 
@@ -29,26 +35,33 @@ class Amame extends Component {
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 
-        <ImageLoader source={amame1} ratio="r235"/>
 
         <div className="text-container">
-          <h1>Hungry Snake</h1>
-          <h6>Interactive Kinetic Sculpture</h6>
+          <h1>Ámame como Amas</h1>
+          <h6>Music Video in Abu Dhabi</h6>
 
           <p>The hungry snake moves to wherever the icecream is. Users can use a keyboard
           to move the icecream in front of the snake. wherever the icecream goes, the snake moves to.</p>
 
-        <div className = "text-paragraphs">
-          <h2>Concept</h2>
-          <p>This piece was built at the <a target="_blank" href="http://www.hardmood.info/lib/exe/detail.php?id=start&media=kinetic_sculptures_workshop_feld.jpg">Kinetic Sculpture Workshop</a> hosted
-          by <a target="_blank" href="http://www.felix-beck.de">Felix Beck</a> and <a target="_blank" href="http://www.feld.is/">FELD studio Berlin</a>.
-          We wanted to create a piece that could be cute and interactive that even children can enjoy.</p>
-          </div>
         </div>
+
+        <ImageLoader source={amame1} ratio="r235"/>
 
         <ImageLoader source={amame2} ratio="r235"/>
 
         <ImageLoader source={amame3} ratio="r235"/>
+
+        <ImageLoader source={amame4} ratio="r235"/>
+
+        <ImageLoader source={amame5} ratio="r235"/>
+
+        <ImageLoader source={amame6} ratio="r235"/>
+
+        <ImageLoader source={amame7} ratio="r235"/>
+
+        <ImageLoader source={amame8} ratio="r235"/>
+
+        <ImageLoader source={amame9} ratio="r235"/>
 
         <div className="text-container">
           <div className = "text-paragraphs">

@@ -89,7 +89,7 @@ const projectList = [
   },
   { type: "Cinematography",
     longThumb: true,
-    projects: [{ title: "Ámame como Amas",
+    projects: [{ title: "Ámame",
                   caption: "Music Video",
                   thumbnail1: AmameT1,
                   thumbnail2: AmameT2,
