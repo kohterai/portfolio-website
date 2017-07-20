@@ -12,9 +12,9 @@ import Credits from '../Credits';
 import BigButton from '../BigButton';
 
 
-import hungrysnake1 from './hungrysnake-1.jpg'
-import hungrysnake2 from './hungrysnake-2.jpg'
-import hungrysnake3 from './hungrysnake-3.jpg'
+import hungrysnake1 from './photos/hungrysnake-1.jpg'
+import hungrysnake2 from './photos/hungrysnake-2.jpg'
+import hungrysnake3 from './photos/hungrysnake-3.jpg'
 
 import ImageLoader from '../ImageLoader'
 

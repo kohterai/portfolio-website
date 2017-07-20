@@ -4,11 +4,11 @@ import {
   Route,
   Link
 } from 'react-router-dom'
-import nyuvote1 from './nyuvote-1.jpg'
-import nyuvote2 from './nyuvote-2.jpg'
-import nyuvote3 from './nyuvote-3.jpg'
-import nyuvote4 from './nyuvote-4.jpg'
-import nyuvote5 from './nyuvote-5.jpg'
+import nyuvote1 from './photos/nyuvote-1.jpg'
+import nyuvote2 from './photos/nyuvote-2.jpg'
+import nyuvote3 from './photos/nyuvote-3.jpg'
+import nyuvote4 from './photos/nyuvote-4.jpg'
+import nyuvote5 from './photos/nyuvote-5.jpg'
 
 import Credits from '../Credits';
 import BigButton from '../BigButton';

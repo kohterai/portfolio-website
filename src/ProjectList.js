@@ -1,13 +1,13 @@
 // Design Projects
 
 import Snake from './Projects/Design/Snake'
-import hungrySnakeT from './Projects/Design/hungrysnake-thumb.jpg'
+import hungrySnakeT from './Projects/Design/photos/hungrysnake-thumb.jpg'
 
 import Audiloid from './Projects/Design/Audiloid'
-import audiloidT from './Projects/Design/audiloid-thumb.jpg'
+import audiloidT from './Projects/Design/photos/audiloid-thumb.jpg'
 
 import NYUVote from './Projects/Design/nyuvote'
-import nyuvoteT from './Projects/Design/nyuvote-thumb.jpg'
+import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 
 
 // Photography Projects

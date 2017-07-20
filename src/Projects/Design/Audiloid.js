@@ -8,8 +8,8 @@ import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
 
-import audiloid1 from './audiloid-1.jpg'
-import audiloid2 from './audiloid-2.jpg'
+import audiloid1 from './photos/audiloid-1.jpg'
+import audiloid2 from './photos/audiloid-2.jpg'
 
 import ImageLoader from '../ImageLoader'
 
