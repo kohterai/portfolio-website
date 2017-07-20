@@ -53,7 +53,7 @@ class Snake extends Component {
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Concept/Build" name="Jennifer Huang" />
+              <Credits title="Concept/Build" name="Jennifer Ziyuan Huang" />
               <Credits title="Concept/Code" name="Koh Terai" />
               <Credits title="Fader Box" name="FELD" />
             </div>

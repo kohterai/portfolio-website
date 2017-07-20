@@ -9,6 +9,9 @@ import audiloidT from './Projects/Design/photos/audiloid-thumb.jpg'
 import NYUVote from './Projects/Design/nyuvote'
 import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 
+import FocusEye from './Projects/Design/FocusEye'
+import focuseyeT from './Projects/Design/photos/focuseye-thumb.jpg'
+
 
 // Photography Projects
 import Georgia from './Projects/Photography/Georgia'
@@ -63,6 +66,12 @@ const projectList = [
                   thumbnail: nyuvoteT,
                   path: '/projects/nyuvote',
                   main: NYUVote 
+                },
+                { title: "FocusEye",
+                  caption: "Follow Focus Reimagined",
+                  thumbnail: focuseyeT,
+                  path: '/projects/FocusEye',
+                  main: FocusEye 
                 }]
   },
   { type: "Photography",
