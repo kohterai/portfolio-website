@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.0238cb61.css",
   "main.css.map": "static/css/main.0238cb61.css.map",
-  "main.js": "static/js/main.c891dbd3.js",
-  "main.js.map": "static/js/main.c891dbd3.js.map",
+  "main.js": "static/js/main.7db1ebfa.js",
+  "main.js.map": "static/js/main.7db1ebfa.js.map",
   "static/media/KohTerai-2017CV-JE.pdf": "static/media/KohTerai-2017CV-JE.61afe141.pdf",
   "static/media/amame-1.jpg": "static/media/amame-1.cb0c0ae0.jpg",
   "static/media/amame-2.jpg": "static/media/amame-2.5b62c884.jpg",
@@ -93,5 +93,18 @@
   "static/media/theater-7.jpg": "static/media/theater-7.0d1c0e7d.jpg",
   "static/media/theater-8.jpg": "static/media/theater-8.51df77aa.jpg",
   "static/media/theater-9.jpg": "static/media/theater-9.e55f9b23.jpg",
-  "static/media/theater-thumb.jpg": "static/media/theater-thumb.20e95b1c.jpg"
+  "static/media/theater-thumb.jpg": "static/media/theater-thumb.20e95b1c.jpg",
+  "static/media/workshop-1.jpg": "static/media/workshop-1.6d565207.jpg",
+  "static/media/workshop-10.jpg": "static/media/workshop-10.ac672a72.jpg",
+  "static/media/workshop-12.jpg": "static/media/workshop-12.00294d44.jpg",
+  "static/media/workshop-13.jpg": "static/media/workshop-13.3fd3ef1f.jpg",
+  "static/media/workshop-14.jpg": "static/media/workshop-14.1a17186a.jpg",
+  "static/media/workshop-15.jpg": "static/media/workshop-15.258b54c3.jpg",
+  "static/media/workshop-3.jpg": "static/media/workshop-3.d27ced6b.jpg",
+  "static/media/workshop-4.jpg": "static/media/workshop-4.80db94c1.jpg",
+  "static/media/workshop-8.jpg": "static/media/workshop-8.1f9f5593.jpg",
+  "static/media/workshop-9.jpg": "static/media/workshop-9.1c91f727.jpg",
+  "static/media/workshop-thumb1.jpg": "static/media/workshop-thumb1.4a2cc9b8.jpg",
+  "static/media/workshop-thumb2.jpg": "static/media/workshop-thumb2.7c48b082.jpg",
+  "static/media/workshop-thumb3.jpg": "static/media/workshop-thumb3.4df4cbd9.jpg"
 }
