@@ -37,6 +37,11 @@ import workshopT1 from './Projects/Cinematography/photos/workshop-thumb1.jpg'
 import workshopT2 from './Projects/Cinematography/photos/workshop-thumb2.jpg'
 import workshopT3 from './Projects/Cinematography/photos/workshop-thumb3.jpg'
 
+import Rescue from './Projects/Cinematography/Rescue'
+import rescueT1 from './Projects/Cinematography/photos/rescue-thumb1.jpg'
+import rescueT2 from './Projects/Cinematography/photos/rescue-thumb2.jpg'
+import rescueT3 from './Projects/Cinematography/photos/rescue-thumb3.jpg'
+
 
 const projectList = [
   { type: "Design",
@@ -110,6 +115,14 @@ const projectList = [
                   thumbnail3: AmameT3,
                   path: '/projects/Amame',
                   main: Amame
+                },
+                { title: "Rescue",
+                  caption: "Space Sci-Fi",
+                  thumbnail1: rescueT1,
+                  thumbnail2: rescueT2,
+                  thumbnail3: rescueT3,
+                  path: '/projects/Rescue',
+                  main: Rescue
                 }
                 ]
   },
