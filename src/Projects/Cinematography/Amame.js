@@ -40,8 +40,8 @@ class Amame extends Component {
           <h1>Ámame como Amas</h1>
           <h6>Music Video in Abu Dhabi</h6>
 
-          <p>The hungry snake moves to wherever the icecream is. Users can use a keyboard
-          to move the icecream in front of the snake. wherever the icecream goes, the snake moves to.</p>
+          <p>Ámame como Amas is a cover of Love Me Like You Do by Ellie Goulding. The music video is about
+          a girl leaving Abu Dhabi, reflecting on her nostalgic moments in the city.</p>
 
         </div>
 
