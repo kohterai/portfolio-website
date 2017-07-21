@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.473d19e4.css",
   "main.css.map": "static/css/main.473d19e4.css.map",
-  "main.js": "static/js/main.f7509c09.js",
-  "main.js.map": "static/js/main.f7509c09.js.map",
+  "main.js": "static/js/main.948df50d.js",
+  "main.js.map": "static/js/main.948df50d.js.map",
   "static/media/KohTerai-2017CV-JE.pdf": "static/media/KohTerai-2017CV-JE.61afe141.pdf",
   "static/media/amame-1.jpg": "static/media/amame-1.cb0c0ae0.jpg",
   "static/media/amame-2.jpg": "static/media/amame-2.5b62c884.jpg",
@@ -132,5 +132,12 @@
   "static/media/workshop-9.jpg": "static/media/workshop-9.1c91f727.jpg",
   "static/media/workshop-thumb1.jpg": "static/media/workshop-thumb1.87eac071.jpg",
   "static/media/workshop-thumb2.jpg": "static/media/workshop-thumb2.7c48b082.jpg",
-  "static/media/workshop-thumb3.jpg": "static/media/workshop-thumb3.4df4cbd9.jpg"
+  "static/media/workshop-thumb3.jpg": "static/media/workshop-thumb3.4df4cbd9.jpg",
+  "static/media/yalla-1.jpg": "static/media/yalla-1.ac81b437.jpg",
+  "static/media/yalla-2.jpg": "static/media/yalla-2.ede29074.jpg",
+  "static/media/yalla-3.jpg": "static/media/yalla-3.13b79fba.jpg",
+  "static/media/yalla-4.jpg": "static/media/yalla-4.d36a47cd.jpg",
+  "static/media/yalla-5.jpg": "static/media/yalla-5.c31a17c4.jpg",
+  "static/media/yalla-6.jpg": "static/media/yalla-6.fc44fb8d.jpg",
+  "static/media/yalla-thumb.jpg": "static/media/yalla-thumb.102c0986.jpg"
 }
