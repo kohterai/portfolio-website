@@ -9,6 +9,9 @@ import audiloidT from './Projects/Design/photos/audiloid-thumb.jpg'
 import NYUVote from './Projects/Design/nyuvote'
 import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 
+import Yalla from './Projects/Design/Yalla'
+import yallaT from './Projects/Design/photos/yalla-thumb.jpg'
+
 // Research Projects
 
 import FocusEye from './Projects/Research/FocusEye'
@@ -52,42 +55,7 @@ import rescueT3 from './Projects/Cinematography/photos/rescue-thumb3.jpg'
 
 
 const projectList = [
-  { type: "Design",
-    longThumb: false,
-    projects: [{  title: "Hungry Snake",
-                  caption: "Kinetic sculpture",
-                  thumbnail: hungrySnakeT,
-                  path: '/projects/snake',
-                  main: Snake
-                },
-                { title: "Audiloid",
-                  caption: "Celluloid based audio player",
-                  thumbnail: audiloidT,
-                  path: '/projects/audiloid',
-                  main: Audiloid 
-                },
-                { title: "NYU Vote",
-                  caption: "Voting platform for NYU",
-                  thumbnail: nyuvoteT,
-                  path: '/projects/nyuvote',
-                  main: NYUVote 
-                }]
-  },
-  { type: "Research",
-    longThumb: false,
-    projects: [  { title: "FocusEye",
-                  caption: "Follow Focus Reimagined",
-                  thumbnail: focuseyeT,
-                  path: '/projects/FocusEye',
-                  main: FocusEye 
-                },
-                  { title: "Triangles",
-                  caption: "Wooden Sculpture",
-                  thumbnail: TrianglesT,
-                  path: '/projects/Triangles',
-                  main: Triangles 
-                }]
-  },
+
     { type: "Cinematography",
     longThumb: true,
     projects: [
@@ -117,8 +85,7 @@ const projectList = [
                 }
                 ]
   },
-  
-  { type: "Photography",
+    { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
                   caption: "Sports photography",
@@ -150,6 +117,51 @@ const projectList = [
                   main: Georgia
                 }]
   },
+  { type: "Design",
+    longThumb: false,
+    projects: [
+                { title: "NYU Vote",
+                  caption: "Voting platform for NYU",
+                  thumbnail: nyuvoteT,
+                  path: '/projects/nyuvote',
+                  main: NYUVote 
+                },
+                { title: "Yalla",
+                  caption: "Social Events Web App",
+                  thumbnail: yallaT,
+                  path: '/projects/Yalla',
+                  main: Yalla 
+                },
+                {  title: "Hungry Snake",
+                  caption: "Kinetic sculpture",
+                  thumbnail: hungrySnakeT,
+                  path: '/projects/snake',
+                  main: Snake
+                },
+                { title: "Audiloid",
+                  caption: "Celluloid based audio player",
+                  thumbnail: audiloidT,
+                  path: '/projects/audiloid',
+                  main: Audiloid 
+                }
+                ]
+  },
+  { type: "Research",
+    longThumb: false,
+    projects: [  { title: "FocusEye",
+                  caption: "Follow Focus Reimagined",
+                  thumbnail: focuseyeT,
+                  path: '/projects/FocusEye',
+                  main: FocusEye 
+                },
+                  { title: "Triangles",
+                  caption: "Wooden Sculpture",
+                  thumbnail: TrianglesT,
+                  path: '/projects/Triangles',
+                  main: Triangles 
+                }]
+  },
+
 
   // { type: "Research",
   //   projects: [{  title: "Haptic",
