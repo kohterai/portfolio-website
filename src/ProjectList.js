@@ -37,6 +37,9 @@ import commercialT from './Projects/Photography/photos/commercial-thumb.jpg'
 import Portraits from './Projects/Photography/Portraits'
 import portraitsT from './Projects/Photography/photos/portrait-thumb.jpg'
 
+import Burj from './Projects/Photography/Burj'
+import burjT from './Projects/Photography/photos/burj-thumb.jpg'
+
 // Cinematography Projects
 import Amame from './Projects/Cinematography/Amame'
 import AmameT1 from './Projects/Cinematography/photos/amame-thumb1.jpg'
@@ -115,6 +118,12 @@ const projectList = [
                   thumbnail: georgiaT,
                   path: '/projects/Georgia',
                   main: Georgia
+                },
+                {  title: "Burj Shadow",
+                  caption: "Burj Khalifa Timelapse",
+                  thumbnail: burjT,
+                  path: '/projects/Burj',
+                  main: Burj
                 }]
   },
   { type: "Design",
