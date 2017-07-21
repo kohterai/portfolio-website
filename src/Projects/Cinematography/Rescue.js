@@ -11,7 +11,7 @@ import ReactPlayer from 'react-player'
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 
-
+import rescue0 from './photos/rescue-0.jpg'
 import rescue1 from './photos/rescue-1.jpg'
 import rescue2 from './photos/rescue-2.jpg'
 import rescue3 from './photos/rescue-3.jpg'
@@ -28,7 +28,7 @@ class Rescue extends Component {
     return (
       <div className="project-content">
 
-        <ImageLoader source={rescue1} ratio="r235"/>
+        <ImageLoader source={rescue0} />
 
         <div className="text-container">
           <h1>Rescue</h1>
@@ -37,6 +37,8 @@ class Rescue extends Component {
           <p>Space Sci-Fi about a spaceship that crashed landed in a desert planet. Shot in Abu Dhabi.</p>
 
         </div>
+
+        <ImageLoader source={rescue1} ratio="r235"/>
 
         <ImageLoader source={rescue2} ratio="r235"/>
 
@@ -57,6 +59,8 @@ class Rescue extends Component {
             <div className="credit-wrapper">
               <Credits title="Director" name="James Hosken" />
               <Credits title="Cinematography" name="Koh Terai" />
+              <Credits title="1st AC" name="Ben Marcus Willers" />
+              <Credits title="Gaffer/DP Mentor" name="Cristian Carretero" />
             </div>
           </div>
         </div>
