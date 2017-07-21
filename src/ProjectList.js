@@ -9,8 +9,13 @@ import audiloidT from './Projects/Design/photos/audiloid-thumb.jpg'
 import NYUVote from './Projects/Design/nyuvote'
 import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 
-import FocusEye from './Projects/Design/FocusEye'
-import focuseyeT from './Projects/Design/photos/focuseye-thumb.jpg'
+// Research Projects
+
+import FocusEye from './Projects/Research/FocusEye'
+import focuseyeT from './Projects/Research/photos/focuseye-thumb.jpg'
+
+import Triangles from './Projects/Research/Triangles'
+import TrianglesT from './Projects/Research/photos/triangles-thumb.jpg'
 
 
 // Photography Projects
@@ -66,12 +71,21 @@ const projectList = [
                   thumbnail: nyuvoteT,
                   path: '/projects/nyuvote',
                   main: NYUVote 
-                },
-                { title: "FocusEye",
+                }]
+  },
+  { type: "Research",
+    longThumb: false,
+    projects: [  { title: "FocusEye",
                   caption: "Follow Focus Reimagined",
                   thumbnail: focuseyeT,
                   path: '/projects/FocusEye',
                   main: FocusEye 
+                },
+                  { title: "Triangles",
+                  caption: "Wooden Sculpture",
+                  thumbnail: TrianglesT,
+                  path: '/projects/Triangles',
+                  main: Triangles 
                 }]
   },
   { type: "Photography",
