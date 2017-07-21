@@ -88,6 +88,36 @@ const projectList = [
                   main: Triangles 
                 }]
   },
+    { type: "Cinematography",
+    longThumb: true,
+    projects: [
+                { title: "Workshops",
+                  caption: "Cinematography Workshops at NYU Abu Dhabi",
+                  thumbnail1: workshopT1,
+                  thumbnail2: workshopT2,
+                  thumbnail3: workshopT3,
+                  path: '/projects/CinematographyWorkshop',
+                  main: CinematographyWorkshop
+                },
+                { title: "Ámame",
+                  caption: "Music Video",
+                  thumbnail1: AmameT1,
+                  thumbnail2: AmameT2,
+                  thumbnail3: AmameT3,
+                  path: '/projects/Amame',
+                  main: Amame
+                },
+                { title: "Rescue",
+                  caption: "Space Sci-Fi",
+                  thumbnail1: rescueT1,
+                  thumbnail2: rescueT2,
+                  thumbnail3: rescueT3,
+                  path: '/projects/Rescue',
+                  main: Rescue
+                }
+                ]
+  },
+  
   { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
@@ -120,35 +150,7 @@ const projectList = [
                   main: Georgia
                 }]
   },
-  { type: "Cinematography",
-    longThumb: true,
-    projects: [
-                { title: "Workshops",
-                  caption: "Cinematography Workshops at NYU Abu Dhabi",
-                  thumbnail1: workshopT1,
-                  thumbnail2: workshopT2,
-                  thumbnail3: workshopT3,
-                  path: '/projects/CinematographyWorkshop',
-                  main: CinematographyWorkshop
-                },
-                { title: "Ámame",
-                  caption: "Music Video",
-                  thumbnail1: AmameT1,
-                  thumbnail2: AmameT2,
-                  thumbnail3: AmameT3,
-                  path: '/projects/Amame',
-                  main: Amame
-                },
-                { title: "Rescue",
-                  caption: "Space Sci-Fi",
-                  thumbnail1: rescueT1,
-                  thumbnail2: rescueT2,
-                  thumbnail3: rescueT3,
-                  path: '/projects/Rescue',
-                  main: Rescue
-                }
-                ]
-  },
+
   // { type: "Research",
   //   projects: [{  title: "Haptic",
   //                 caption: "Dental Simulator with Haptics",
