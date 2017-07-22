@@ -4,6 +4,7 @@ import {
 } from 'react-router-dom'
 
 class MenuProject extends Component {
+
   render() {
     return (
       <li id={`menu-item-${this.props.project}`} className="menu-item">

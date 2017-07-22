@@ -77,7 +77,6 @@ class Menu extends Component {
       <div>
           <div id="menu-bar">
             <div id="menu-icon">
-
               <HamburgerMenu
                   isOpen={this.state.open}
                   menuClicked={this.handleClick.bind(this)}
@@ -91,7 +90,6 @@ class Menu extends Component {
               />
             </div>
           </div>
-
         <AnimatedMenu className={this.isMenuOpen()}
                       customBurgerIcon={ false }
                       customCrossIcon={ false }
