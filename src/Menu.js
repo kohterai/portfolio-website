@@ -11,6 +11,7 @@ import HamburgerMenu from 'react-hamburger-menu'
 import { slide as AnimatedMenu } from 'react-burger-menu'
 import Headroom from 'react-headroom'
 
+
 class Menu extends Component {
 
   constructor(props) {
@@ -30,7 +31,6 @@ class Menu extends Component {
 
   render() {
     const { location } = this.props
-
     // Function to figure out whether submenu is displayed or not
     // Function should be relocated to somewhere more appropiate (block, none, matters much less now)
     function displaySubmenu(path, projType) {
@@ -55,7 +55,7 @@ class Menu extends Component {
                 var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuLoc = $(`#menu-title-${category.type}`).position()
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+160}px`})
+                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+218}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
               })
               return "block"
@@ -68,25 +68,23 @@ class Menu extends Component {
 
     return (
       <div>
-        <div id="menu-icon"
-              style={{ position: "fixed",
-                      zIndex: "100",
-                      top: "30px",
-                      cursor: "pointer"}}>
-          <Headroom>
-          <HamburgerMenu
-              isOpen={this.state.open}
-              menuClicked={this.handleClick.bind(this)}
-              width={18}
-              height={15}
-              strokeWidth={2}
-              rotate={0}
-              color='black'
-              borderRadius={0}
-              animationDuration={0.5}
-          />
-          </Headroom>
-        </div>
+          <div id="menu-bar">
+            <div id="menu-icon">
+
+              <HamburgerMenu
+                  isOpen={this.state.open}
+                  menuClicked={this.handleClick.bind(this)}
+                  width={18}
+                  height={15}
+                  strokeWidth={2}
+                  rotate={0}
+                  color='black'
+                  borderRadius={0}
+                  animationDuration={0.5}
+              />
+            </div>
+          </div>
+
         <AnimatedMenu className={this.isMenuOpen()}
                       customBurgerIcon={ false }
                       customCrossIcon={ false }
@@ -99,7 +97,7 @@ class Menu extends Component {
               KOH TERAI
             </Link>
 
-          <div style={{ listStyleType: 'none', padding: 0, marginTop: '50px' }}>
+          <div id="menu-list">
             {projectList.map((projectList, index) => (
               <div key={projectList.type}>
                 <MenuTitle category={projectList.type} />
