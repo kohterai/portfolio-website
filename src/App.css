@@ -53,6 +53,7 @@
   #menu-icon {
     visibility: visible;
     opacity: 1;
+    left: 20px;
   }
 
   #main-container {
@@ -60,7 +61,7 @@
   }
   #content-container {
     padding-left: 0px;
-    padding-top: 15px;
+    padding-top: 45px;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3) !important;
