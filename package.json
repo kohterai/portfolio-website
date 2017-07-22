@@ -12,6 +12,7 @@
     "react-burger-menu": "^2.1.4",
     "react-dom": "^15.6.1",
     "react-hamburger-menu": "0.0.4",
+    "react-headroom": "^2.1.6",
     "react-image": "^1.0.1",
     "react-lazy-load": "^3.0.12",
     "react-player": "^0.18.0",

@@ -9,6 +9,7 @@ import MenuTitle from './MenuTitle'
 import MenuProject from './MenuProject'
 import HamburgerMenu from 'react-hamburger-menu'
 import { slide as AnimatedMenu } from 'react-burger-menu'
+import Headroom from 'react-headroom'
 
 class Menu extends Component {
 
@@ -17,7 +18,7 @@ class Menu extends Component {
     this.state = {open: false};
   }
 
-  handleClick() {
+  handleClick = () => {
     this.setState({
       open: !this.state.open
     });
@@ -72,6 +73,7 @@ class Menu extends Component {
                       zIndex: "100",
                       top: "30px",
                       cursor: "pointer"}}>
+          <Headroom>
           <HamburgerMenu
               isOpen={this.state.open}
               menuClicked={this.handleClick.bind(this)}
@@ -83,12 +85,14 @@ class Menu extends Component {
               borderRadius={0}
               animationDuration={0.5}
           />
+          </Headroom>
         </div>
         <AnimatedMenu className={this.isMenuOpen()}
                       customBurgerIcon={ false }
                       customCrossIcon={ false }
                       id="Menu"
                       width={ 170 }
+                      onStateChange={ this.state.stateChange }
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
             <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
