@@ -23,6 +23,10 @@ class Menu extends Component {
     });
   }
 
+  isMenuOpen() {
+    return (this.state.open) ? "menu-open" : "menu-closed"
+  }
+
   render() {
     const { location } = this.props
 
@@ -63,7 +67,8 @@ class Menu extends Component {
 
     return (
       <div>
-        <div id="menu-icon" style={{ position: "fixed",
+        <div id="menu-icon"
+              style={{ position: "fixed",
                       zIndex: "100",
                       top: "30px",
                       cursor: "pointer"}}>
@@ -79,7 +84,8 @@ class Menu extends Component {
               animationDuration={0.5}
           />
         </div>
-        <AnimatedMenu customBurgerIcon={ false }
+        <AnimatedMenu className={this.isMenuOpen()}
+                      customBurgerIcon={ false }
                       customCrossIcon={ false }
                       id="Menu"
                       width={ 170 }

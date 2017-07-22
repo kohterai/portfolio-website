@@ -1,3 +1,7 @@
+.menu-open {
+  margin-left: 0px !important;
+}
+
 #Menu {
   transition: all 0.2s ease-out !important;
   background-color: transparent;
