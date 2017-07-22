@@ -25,6 +25,9 @@
 
 /* Hamburger menu appears at this point */
 @media screen and (max-width: 740px) {
+  .bm-item-list {
+    margin-top: 60px;
+  }
   #Menu {
     background-color: white;
     /*transform: translate3d(-100%, 0px, 0px) !important;*/
