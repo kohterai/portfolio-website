@@ -8,6 +8,7 @@ import $ from 'jquery'
 import MenuTitle from './MenuTitle'
 import MenuProject from './MenuProject'
 import HamburgerMenu from 'react-hamburger-menu'
+import { slide as AnimatedMenu } from 'react-burger-menu'
 
 class Menu extends Component {
 
@@ -61,37 +62,42 @@ class Menu extends Component {
     }
 
     return (
-      <div id="Menu" style={{ marginTop: '150px', position: 'fixed'}}>
-          <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
-            KOH TERAI
-          </Link>
-          
-          <HamburgerMenu
-          isOpen={this.state.open}
-          menuClicked={this.handleClick.bind(this)}
-          width={18}
-          height={15}
-          strokeWidth={1}
-          rotate={0}
-          color='black'
-          borderRadius={0}
-          animationDuration={0.5}
-          />
+      <div>
+        <HamburgerMenu
+            isOpen={this.state.open}
+            menuClicked={this.handleClick.bind(this)}
+            width={18}
+            height={15}
+            strokeWidth={1}
+            rotate={0}
+            color='black'
+            borderRadius={0}
+            animationDuration={0.5}
+        />
+        <AnimatedMenu customBurgerIcon={ false }
+                      customCrossIcon={ false }
+                      id="Menu"
+                      isOpen={this.state.open}
+                      style={{ marginTop: '150px', position: 'fixed'}}>
+            <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
+              KOH TERAI
+            </Link>
 
-        <div style={{ listStyleType: 'none', padding: 0, marginTop: '50px' }}>
-          {projectList.map((projectList, index) => (
-            <div key={projectList.type}>
-              <MenuTitle category={projectList.type} />
-                <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
-                  display: displaySubmenu(`${location.pathname}`, projectList.type)
-                }}>
-                {projectList.projects.map((project, index) => (
-                  <MenuProject project={project.title} pathName={project.path}/>
-                ))}
-                </ul>
-            </div>
-          ))}
-        </div>
+          <div style={{ listStyleType: 'none', padding: 0, marginTop: '50px' }}>
+            {projectList.map((projectList, index) => (
+              <div key={projectList.type}>
+                <MenuTitle category={projectList.type} />
+                  <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
+                    display: displaySubmenu(`${location.pathname}`, projectList.type)
+                  }}>
+                  {projectList.projects.map((project, index) => (
+                    <MenuProject project={project.title} pathName={project.path}/>
+                  ))}
+                  </ul>
+              </div>
+            ))}
+          </div>
+        </AnimatedMenu>
       </div>
     )
   }
