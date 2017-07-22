@@ -18,6 +18,7 @@
     "react-player": "^0.18.0",
     "react-progressive-bg-image": "^2.0.4",
     "react-router-dom": "^4.1.1",
+    "react-router-hash-link": "^1.1.0",
     "react-scripts": "^1.0.10",
     "react-scrollable-anchor": "^0.4.2",
     "react-youtube": "^7.4.0",

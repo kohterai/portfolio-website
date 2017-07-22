@@ -98,7 +98,7 @@ class Menu extends Component {
                       onStateChange={ this.state.stateChange }
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
-            <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
+            <Link to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
               KOH TERAI
             </Link>
 
