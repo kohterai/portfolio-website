@@ -50,7 +50,7 @@ class Menu extends Component {
                 var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuLoc = $(`#menu-title-${category.type}`).position()
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+10}px`})
+                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+160}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
               })
               return "block"

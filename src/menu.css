@@ -1,6 +1,7 @@
 #Menu {
-  transition: all 0.2s ease-out;
+  transition: margin 0.2s ease-out !important;
   background-color: transparent;
+  transform: none !important;
 }
 
 #Menu a {
@@ -56,4 +57,11 @@
 
 .bm-item-list {
   margin-top: 150px;
+  position: fixed;
+}
+
+#menu-icon {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
 }
