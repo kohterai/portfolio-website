@@ -17,7 +17,7 @@
 #menu-list {
   list-style-type: none;
   padding: 0;
-  margin-top: 25px;
+  margin-top: 20px;
   position: absolute;
 }
 
@@ -36,8 +36,8 @@
     margin-top: 60px;
   }
 
-  .menu-sub {
-    margin-top: -75px;
+  #Menu .menu-sub {
+    margin-top:  -75px;
   }
 
   #Menu {

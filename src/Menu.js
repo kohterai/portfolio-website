@@ -23,6 +23,8 @@ class Menu extends Component {
     this.setState({
       open: !this.state.open
     });
+    console.log("handle click")
+    $("#menu-bar").css({"background-color":"#FFF"})
   }
 
   isMenuOpen() {
