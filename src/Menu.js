@@ -7,9 +7,20 @@ import './menu.css';
 import $ from 'jquery'
 import MenuTitle from './MenuTitle'
 import MenuProject from './MenuProject'
-
+import HamburgerMenu from 'react-hamburger-menu'
 
 class Menu extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {open: false};
+  }
+
+  handleClick() {
+    this.setState({
+      open: !this.state.open
+    });
+  }
 
   render() {
     const { location } = this.props
@@ -54,6 +65,19 @@ class Menu extends Component {
           <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
             KOH TERAI
           </Link>
+          
+          <HamburgerMenu
+          isOpen={this.state.open}
+          menuClicked={this.handleClick.bind(this)}
+          width={18}
+          height={15}
+          strokeWidth={1}
+          rotate={0}
+          color='black'
+          borderRadius={0}
+          animationDuration={0.5}
+          />
+
         <div style={{ listStyleType: 'none', padding: 0, marginTop: '50px' }}>
           {projectList.map((projectList, index) => (
             <div key={projectList.type}>
