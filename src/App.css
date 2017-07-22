@@ -27,7 +27,8 @@
 @media screen and (max-width: 740px) {
   #Menu {
     background-color: white;
-    transform: translate3d(-100%, 0px, 0px) !important;
+    /*transform: translate3d(-100%, 0px, 0px) !important;*/
+    margin-left: auto;
   }
   
   #menu-icon {
@@ -41,9 +42,6 @@
   #content-container {
     padding-left: 0px;
     padding-top: 20px;
-  }
-  #Menu {
-    margin-left: -200px;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3) !important;

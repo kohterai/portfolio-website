@@ -82,6 +82,7 @@ class Menu extends Component {
         <AnimatedMenu customBurgerIcon={ false }
                       customCrossIcon={ false }
                       id="Menu"
+                      width={ 170 }
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
             <Link to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
