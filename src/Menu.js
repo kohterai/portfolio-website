@@ -50,7 +50,7 @@ class Menu extends Component {
                 var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuLoc = $(`#menu-title-${category.type}`).position()
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+160}px`})
+                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+10}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
               })
               return "block"
@@ -63,17 +63,22 @@ class Menu extends Component {
 
     return (
       <div>
-        <HamburgerMenu
-            isOpen={this.state.open}
-            menuClicked={this.handleClick.bind(this)}
-            width={18}
-            height={15}
-            strokeWidth={1}
-            rotate={0}
-            color='black'
-            borderRadius={0}
-            animationDuration={0.5}
-        />
+        <div id="menu-icon" style={{ position: "fixed",
+                      zIndex: "100",
+                      top: "30px",
+                      cursor: "pointer"}}>
+          <HamburgerMenu
+              isOpen={this.state.open}
+              menuClicked={this.handleClick.bind(this)}
+              width={18}
+              height={15}
+              strokeWidth={2}
+              rotate={0}
+              color='black'
+              borderRadius={0}
+              animationDuration={0.5}
+          />
+        </div>
         <AnimatedMenu customBurgerIcon={ false }
                       customCrossIcon={ false }
                       id="Menu"

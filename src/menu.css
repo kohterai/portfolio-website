@@ -1,5 +1,6 @@
 #Menu {
   transition: all 0.2s ease-out;
+  background-color: transparent;
 }
 
 #Menu a {
@@ -51,4 +52,8 @@
 
 #Menu .menu-item {
   margin: 5px 0px;
+}
+
+.bm-item-list {
+  margin-top: 150px;
 }
