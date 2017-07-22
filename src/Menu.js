@@ -19,12 +19,17 @@ class Menu extends Component {
     this.state = {open: false};
   }
 
-  handleClick = () => {
+  handleClick() {
     this.setState({
       open: !this.state.open
-    });
-    console.log("handle click")
-    $("#menu-bar").css({"background-color":"#FFF"})
+    })
+    console.log("hey")
+    if (!this.state.open) {
+      $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0)"})
+    } else {
+      $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
+    }
+    
   }
 
   isMenuOpen() {
@@ -57,7 +62,7 @@ class Menu extends Component {
                 var subMenuSize = $(`#menu-${category.type}`).height()
                 var subMenuLoc = $(`#menu-title-${category.type}`).position()
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
-                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+218}px`})
+                $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+215}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
               })
               return "block"
