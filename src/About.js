@@ -6,7 +6,7 @@ import {
 import CV from './KohTerai-2017CV-JE.pdf'
 
 
-class Footer extends Component {
+class About extends Component {
   render() {
     return (
       <div id="footer">
@@ -25,4 +25,4 @@ class Footer extends Component {
   }
 }
 
-export default Footer
+export default About

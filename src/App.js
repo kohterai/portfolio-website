@@ -11,6 +11,8 @@ import './App.css';
 import ScrollToTopRoute from './ScrollToTopRoute';
 import ReactPlayer from 'react-player'
 import Footer from './Footer'
+import About from './About'
+
 
 
 // Each logical "route" has two components, one for
@@ -25,6 +27,10 @@ const routes = [
   { path: '/projects',
     exact: true,
     main: Catalog
+  },
+  { path: '/about',
+    exact: true,
+    main: About
   }
 ]
 

@@ -23,7 +23,7 @@ class Menu extends Component {
     this.setState({
       open: !this.state.open
     })
-    console.log("hey")
+
     if (!this.state.open) {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0)"})
     } else {

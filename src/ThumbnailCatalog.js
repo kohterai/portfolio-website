@@ -5,8 +5,12 @@ import Thumbnail from './Thumbnail'
 import ThumbnailLong from './ThumbnailLong'
 import projectList from './ProjectList'
 import ReactPlayer from 'react-player'
+import $ from 'jquery'
 
 class ThumbnailCatalog extends Component {
+
+
+
   render() {
     return (
       <div>
