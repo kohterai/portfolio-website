@@ -9,15 +9,13 @@ import CV from './KohTerai-2017CV-JE.pdf'
 class About extends Component {
   render() {
     return (
-      <div id="footer">
-        <div style={{textAlign: "center", color: "#a3a3a3", fontWeight: "300"}}>
-                    <Link to="/about">
-                      about
-                    </Link>
-                    &nbsp;&nbsp;&sdot;&nbsp;&nbsp;
-                    <a target="_blank" href={CV}>CV</a>
-                    &nbsp;&nbsp;&sdot;&nbsp;&nbsp;
-                    <a href="mailto:koh.terai@gmail.com?Subject=Hello" target="_top">contact</a>
+      <div id="about">
+        <div className="text-container">
+          <h1>Koh Terai</h1>
+          <h6>Works in progress</h6>
+
+          <p>Ámame como Amas is a cover of Love Me Like You Do by Ellie Goulding. The music video is about
+          a girl leaving Abu Dhabi, reflecting on her nostalgic moments in the city.</p>
 
         </div>
       </div>

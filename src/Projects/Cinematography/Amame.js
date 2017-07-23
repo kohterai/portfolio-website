@@ -68,6 +68,7 @@ class Amame extends Component {
             <h2>Credits</h2>
             <div className="credit-wrapper">
               <Credits title="Music" name="Jules Bello" />
+              <Credits title="Editor" name="Michael Ray" />
               <Credits title="Cinematography" name="Koh Terai" />
             </div>
           </div>
