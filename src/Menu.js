@@ -27,8 +27,10 @@ class Menu extends Component {
 
     if (!this.state.open) {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0)"})
+      $("#cover").css({"display":"block"})
     } else {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
+      $("#cover").css({"display":"none"})
     }
   }
 
@@ -38,12 +40,20 @@ class Menu extends Component {
         open: !this.state.open
       })
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
+      $("#cover").css({"display":"none"})
     }
   }
   
 
   isMenuOpen() {
     return (this.state.open) ? "menu-open" : "menu-closed"
+  }
+
+  componentDidMount() {
+    // $(".bm-overlay").click() {
+    // console.log('component did mount - stuff to clean up later');
+
+    // }
   }
 
   render() {
@@ -85,6 +95,14 @@ class Menu extends Component {
 
     return (
       <div>
+          <div id="cover" 
+          onClick={this.closeMenu.bind(this)}
+          style={{
+              height: "100%",
+              width: "100%",
+              position: "fixed",
+              zIndex: "3"
+            }}/>
           <div id="menu-bar">
             <div id="menu-icon">
               <HamburgerMenu

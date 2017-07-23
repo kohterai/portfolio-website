@@ -9,6 +9,9 @@
     opacity: 0;
 }
 
+#cover {
+  display: none;
+}
 
 .hide{
 
@@ -27,7 +30,7 @@
 
 #Menu {
   transition: all 0.2s ease-out !important;
-
+  z-index: 5 !important;
   background-color: transparent;
   /*transform: none !important;*/
   margin-left: 175px;
