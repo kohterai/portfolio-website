@@ -4,7 +4,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 class MenuTitle extends Component {
   render() {
     return (
-      <div id={`menu-title-${this.props.category}`} className="menu-title">
+      <div onClick={this.props.menuClicked} id={`menu-title-${this.props.category}`} className="menu-title">
         <Link to={`/#${this.props.category}`}>{this.props.category}</Link>
       </div>
     )

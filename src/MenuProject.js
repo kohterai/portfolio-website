@@ -7,7 +7,7 @@ class MenuProject extends Component {
 
   render() {
     return (
-      <li id={`menu-item-${this.props.project}`} className="menu-item">
+      <li onClick={this.props.menuClicked} id={`menu-item-${this.props.project}`} className="menu-item">
         <NavLink to={`${this.props.pathName}`}>
           {this.props.project}
         </NavLink>

@@ -14,10 +14,11 @@ class Footer extends Component {
                     <Link to="/about">
                       about
                     </Link>
-                    &nbsp;&nbsp;&sdot;&nbsp;&nbsp;
+                    &nbsp;&nbsp;-&nbsp;&nbsp;
+                    <a href="mailto:koh.terai@gmail.com?Subject=Hello" target="_top">koh.terai@gmail.com</a>
+
+                    &nbsp;&nbsp;-&nbsp;&nbsp;
                     <a target="_blank" href={CV}>CV</a>
-                    &nbsp;&nbsp;&sdot;&nbsp;&nbsp;
-                    <a href="mailto:koh.terai@gmail.com?Subject=Hello" target="_top">contact</a>
 
         </div>
       </div>

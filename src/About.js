@@ -12,10 +12,16 @@ class About extends Component {
       <div id="about">
         <div className="text-container">
           <h1>Koh Terai</h1>
-          <h6>Works in progress</h6>
+          <h6>Difference </h6>
 
-          <p>Ámame como Amas is a cover of Love Me Like You Do by Ellie Goulding. The music video is about
-          a girl leaving Abu Dhabi, reflecting on her nostalgic moments in the city.</p>
+          <p>St. Marys International School Tokyo</p>
+          <p>Track and Field Captain</p>
+          <p>Cross Country Captain</p>
+          <p>Student Council President</p>
+
+          <p>New York University Abu Dhabi</p>
+          <p>B.S. Computer Science</p>
+          <p>The Gazelle Design Director</p>
 
         </div>
       </div>

@@ -20,6 +20,7 @@ class Menu extends Component {
   }
 
   handleClick() {
+    console.log("handleClick")
     this.setState({
       open: !this.state.open
     })
@@ -29,8 +30,17 @@ class Menu extends Component {
     } else {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
     }
-    
   }
+
+  closeMenu() {
+    if (this.state.open) {
+      this.setState({
+        open: !this.state.open
+      })
+      $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
+    }
+  }
+  
 
   isMenuOpen() {
     return (this.state.open) ? "menu-open" : "menu-closed"
@@ -98,19 +108,19 @@ class Menu extends Component {
                       onStateChange={ this.state.stateChange }
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
-            <Link to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
+            <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
               KOH TERAI
             </Link>
 
           <div id="menu-list">
             {projectList.map((projectList, index) => (
               <div key={projectList.type}>
-                <MenuTitle category={projectList.type} />
+                <MenuTitle menuClicked={this.closeMenu.bind(this)} category={projectList.type} />
                   <ul id={`menu-${projectList.type}`} className="menu-sub" style={{
                     display: displaySubmenu(`${location.pathname}`, projectList.type)
                   }}>
                   {projectList.projects.map((project, index) => (
-                    <MenuProject project={project.title} pathName={project.path}/>
+                    <MenuProject menuClicked={this.closeMenu.bind(this)} project={project.title} pathName={project.path}/>
                   ))}
                   </ul>
               </div>
