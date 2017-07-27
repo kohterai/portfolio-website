@@ -20,7 +20,6 @@ class Menu extends Component {
   }
 
   handleClick() {
-    console.log("handleClick")
     this.setState({
       open: !this.state.open
     })
@@ -42,20 +41,11 @@ class Menu extends Component {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
       $("#cover").css({"display":"none"})
     }
-
-    console.log("close menu called")
   }
   
 
   isMenuOpen() {
     return (this.state.open) ? "menu-open" : "menu-closed"
-  }
-
-  componentDidMount() {
-    // $(".bm-overlay").click() {
-    // console.log('component did mount - stuff to clean up later');
-
-    // }
   }
 
   render() {
