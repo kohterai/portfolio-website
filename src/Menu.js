@@ -42,6 +42,8 @@ class Menu extends Component {
       $("#menu-bar").css({"background-color":"rgba(255, 255, 255, 0.92)"})
       $("#cover").css({"display":"none"})
     }
+
+    console.log("close menu called")
   }
   
 
