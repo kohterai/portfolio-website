@@ -7,7 +7,7 @@
 #content-container {
   flex: 1;
   padding-left: 200px;
-  padding-top: 50px;
+  /*padding-top: 50px;*/
   transition: all 0.2s ease-out;
 }
 .bm-overlay {
@@ -60,7 +60,7 @@
   }
   #content-container {
     padding-left: 0px;
-    padding-top: 45px;
+    padding-top: 10px;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3) !important;
