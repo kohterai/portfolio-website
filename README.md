@@ -6,18 +6,18 @@ The website is geared towards project based portfolios.  It is built with [Faceb
 This is a complete redesign (code and experience) from the v1 Portfolio Website.
 
 <h2>Development/Deployment</h2>
-To start a local server, run
-`npm start`
+To start a local server, run `npm start`
 
-To deploy to github pages, run
-`npm run deploy`
+To deploy to github pages, run `npm run deploy`
 
 Since this project is based on Create React App, more information about deploying
 can be found on their [documentation](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment).
 
 <h2>Code Structure</h2>
+
 All relevant code is under the src folder. In order to create a new project, there are 3 steps.
 Each project is its own react component.
+
 <ol>
 	<li>Create a new Javascript file to hold our component. You can use `src/Projects/project-template.js` as a template.</li>
 	<li>In `/src/ProjectList.js` import newly added component, and thumbnail images`</li>
@@ -25,7 +25,9 @@ Each project is its own react component.
 </ol>
 
 <h2>projectList structure</h2>
+
 The `projectList` array inside `/src/ProjectList.js` is the central catalog for all projects that get loaded into the thumbnail page. Each project is its own react component, and is referenced inside `/src/ProjectList.js`.
+
 
 | Field        | Value           | Description  |
 | ------------- |:-------------:| -----:|
