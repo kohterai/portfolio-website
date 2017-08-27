@@ -20,7 +20,7 @@ class ThumbnailCatalog extends Component {
               textTransform: 'uppercase',
               fontWeight: '600',
               fontSize: '1.2em'}}>
-              <div style={{paddingTop: "35px"}} id={projectList.type}>{projectList.type}</div>
+              <div style={{marginTop: "30px"}} id={projectList.type}>{projectList.type}</div>
             </div>
 
 

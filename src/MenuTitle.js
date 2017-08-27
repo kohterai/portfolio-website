@@ -10,7 +10,7 @@ class MenuTitle extends Component {
   scrollToSection(id) {
     $(document).ready(function(){
         $(document.body).animate({
-        'scrollTop':   $(`#${id}`).offset().top
+        'scrollTop':   $(`#${id}`).offset().top-30
         }, 400);        
     })
   }

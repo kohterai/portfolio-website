@@ -6,6 +6,7 @@ The website is geared towards project based portfolios.  It is built with [Faceb
 This is a complete redesign (code and experience) from the v1 Portfolio Website.
 
 <h2>Development/Deployment</h2>
+
 To start a local server, run `npm start`
 
 To deploy to github pages, run `npm run deploy`
