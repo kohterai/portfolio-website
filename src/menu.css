@@ -114,6 +114,15 @@
 }
 
 #menu-ball {
+/*  animation-name: ballEntrance;
+  animation-duration: 1s;*/
+  margin-top: 66px;
   transition: all 0.2s ease-out;
   margin-left: -15px;
 }
+/*
+@keyframes ballEntrance {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+*/

@@ -13,16 +13,16 @@ class ThumbnailCatalog extends Component {
 
 
   _enterSection(msg) {
-    // this.setState({ message: msg });
-    console.log(msg)
-    console.log(`#menu-title-a-${msg}`)
-    $(".menu-title-a").each(function() {
-      $(this).removeClass("active")
-    });
-    $(`#menu-title-a-${msg}`).addClass("active")
-    console.log($(`#menu-title-a-${msg}`).position().top)
-    var ballPos = $(`#menu-title-a-${msg}`).position().top + 61
-    $("#menu-ball").css({marginTop: ballPos})
+
+    // While window is scrolling from click on menu, dont activate titles inbetween
+    if ($("#menu-ball").hasClass("scrolling") == false) {
+      $(".menu-title-a").each(function() {
+        $(this).removeClass("active")
+      });
+      $(`#menu-title-a-${msg}`).addClass("active")
+      var ballPos = $(`#menu-title-a-${msg}`).position().top + 61
+      $("#menu-ball").css({marginTop: ballPos})
+    }
   }
 
   render() {

@@ -10,6 +10,7 @@ import MenuProject from './MenuProject'
 import HamburgerMenu from 'react-hamburger-menu'
 import { slide as AnimatedMenu } from 'react-burger-menu'
 import Headroom from 'react-headroom'
+import MenuBall from './MenuBall'
 
 class Menu extends Component {
 
@@ -120,13 +121,7 @@ class Menu extends Component {
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
 
-            <div id="menu-ball" style={{
-            height: "6px",
-            width: "6px",
-            backgroundColor: "#81a8c5",
-            position: "fixed",
-            borderRadius: "50%"
-            }}/>
+            <MenuBall />
             <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
               KOH TERAI
             </Link>

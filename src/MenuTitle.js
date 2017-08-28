@@ -9,15 +9,24 @@ import $ from 'jquery'
 class MenuTitle extends Component {
   scrollToSection(id) {
     $(document).ready(function(){
+
+        $(".menu-title-a").each(function() {
+          $(this).removeClass("active")
+        });
+        $(`#menu-title-a-${id}`).addClass("active")
+
+        // offset calculation, 61px
+        var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+        $("#menu-ball").css({marginTop: ballPos})
+        $("#menu-ball").addClass("scrolling")
+
         $(document.body).animate({
         'scrollTop':   $(`#${id}`).offset().top-35
-        }, 400);        
+        }, 400,function(){
+          // call back after scroll animation is completed
+          $("#menu-ball").removeClass("scrolling")
+        });
     })
-
-    $(`#menu-title-a-${id}`).addClass("active")
-    console.log($(`#menu-title-a-${id}`).position().top)
-    var ballPos = $(`#menu-title-a-${id}`).position().top + 61
-    $("#menu-ball").css({marginTop: ballPos})
   }
 
 
