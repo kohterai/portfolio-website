@@ -41,8 +41,9 @@
   text-decoration: none;
   color: #a3a3a3;
   font-weight: 300;
-  transition: color 0.1s ease-out;
-  transition: margin 0.1s ease-out;
+  transition: all 0.1s ease-out;
+  /*transition: margin 0.1s ease-out;*/
+
 }
 
 #Menu a:hover {
@@ -54,12 +55,13 @@
 #Menu .active{
   color: #000000;
   font-weight: 600;
+  /*margin-left: 5px;*/
   transition: margin 0.1s ease-in;
 }
 
 #Menu .active:hover {
   color: #000000;
-  margin-left: 10px;
+  margin-left: 5px;
   font-weight: 600;
 }
 
@@ -109,4 +111,9 @@
     top: 12px;
     left: 12px;
   cursor: pointer;
+}
+
+#menu-ball {
+  transition: all 0.2s ease-out;
+  margin-left: -15px;
 }

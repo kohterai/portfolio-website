@@ -20,13 +20,9 @@ class ThumbnailCatalog extends Component {
       $(this).removeClass("active")
     });
     $(`#menu-title-a-${msg}`).addClass("active")
-  }
-
-  _leaveSection(msg) {
-    // this.setState({ message: msg });
-    console.log(msg)
-    console.log(`#menu-title-a-${msg}`)
-    $(`#menu-title-a-${msg}`).removeClass("active")
+    console.log($(`#menu-title-a-${msg}`).position().top)
+    var ballPos = $(`#menu-title-a-${msg}`).position().top + 61
+    $("#menu-ball").css({marginTop: ballPos})
   }
 
   render() {

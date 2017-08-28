@@ -119,6 +119,14 @@ class Menu extends Component {
                       onStateChange={ this.state.stateChange }
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
+
+            <div id="menu-ball" style={{
+            height: "6px",
+            width: "6px",
+            backgroundColor: "#81a8c5",
+            position: "fixed",
+            borderRadius: "50%"
+            }}/>
             <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
               KOH TERAI
             </Link>

@@ -13,6 +13,11 @@ class MenuTitle extends Component {
         'scrollTop':   $(`#${id}`).offset().top-35
         }, 400);        
     })
+
+    $(`#menu-title-a-${id}`).addClass("active")
+    console.log($(`#menu-title-a-${id}`).position().top)
+    var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+    $("#menu-ball").css({marginTop: ballPos})
   }
 
 
