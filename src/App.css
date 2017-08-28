@@ -37,7 +37,7 @@
   }
 
   #Menu .menu-sub {
-    margin-top:  -75px;
+    margin-top:  -45px;
   }
 
   #menu-bar {
@@ -48,6 +48,8 @@
     background-color: white;
     /*transform: translate3d(-100%, 0px, 0px) !important;*/
     margin-left: -30%;
+    margin-top: -30px;
+    padding-top: 30px;
   }
   
   #menu-icon {
