@@ -21,7 +21,7 @@ class MenuTitle extends Component {
     return (
       <div onClick={()=>{this.scrollToSection(`${this.props.category}`); {this.props.menuClicked()}}}
        id={`menu-title-${this.props.category}`} className="menu-title">
-        <Link to={`/#${this.props.category}`}>{this.props.category}</Link>
+        <Link to={`/#${this.props.category}`} className={`menu-title-a`} id={`menu-title-a-${this.props.category}`}>{this.props.category}</Link>
       </div>
     )
   }

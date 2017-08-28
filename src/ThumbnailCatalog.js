@@ -6,22 +6,46 @@ import ThumbnailLong from './ThumbnailLong'
 import projectList from './ProjectList'
 import ReactPlayer from 'react-player'
 import $ from 'jquery'
+import Waypoint from 'react-waypoint'
+
 
 class ThumbnailCatalog extends Component {
 
 
+  _enterSection(msg) {
+    // this.setState({ message: msg });
+    console.log(msg)
+    console.log(`#menu-title-a-${msg}`)
+    $(".menu-title-a").each(function() {
+      $(this).removeClass("active")
+    });
+    $(`#menu-title-a-${msg}`).addClass("active")
+  }
+
+  _leaveSection(msg) {
+    // this.setState({ message: msg });
+    console.log(msg)
+    console.log(`#menu-title-a-${msg}`)
+    $(`#menu-title-a-${msg}`).removeClass("active")
+  }
 
   render() {
     return (
       <div>
         {projectList.map((projectList, index) => (
+
           <div key={projectList.type} className="thumb-category-wrapper">
+                      <Waypoint
+            onEnter={this._enterSection.bind(this, `${projectList.type}`)}
+            // onLeave={this._leaveSection.bind(this, `${projectList.type}`)}
+          >
             <div className="thumbnailCategoryTitle" style={{
               textTransform: 'uppercase',
               fontWeight: '600',
               fontSize: '1.2em'}}>
               <div style={{marginTop: "30px"}} id={projectList.type}>{projectList.type}</div>
             </div>
+            </Waypoint>
 
 
             {projectList.longThumb ? (
@@ -56,7 +80,7 @@ class ThumbnailCatalog extends Component {
                 ))}
               </div>
             )}
-          </div>
+          </div>          
         ))}
       </div>
     )

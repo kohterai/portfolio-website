@@ -11,7 +11,6 @@ import HamburgerMenu from 'react-hamburger-menu'
 import { slide as AnimatedMenu } from 'react-burger-menu'
 import Headroom from 'react-headroom'
 
-
 class Menu extends Component {
 
   constructor(props) {
@@ -47,6 +46,8 @@ class Menu extends Component {
   isMenuOpen() {
     return (this.state.open) ? "menu-open" : "menu-closed"
   }
+
+
 
   render() {
     const { location } = this.props
