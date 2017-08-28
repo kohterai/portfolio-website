@@ -78,6 +78,13 @@ class Menu extends Component {
                 $(`#menu-title-${category.type}`).css({"margin-bottom": `${subMenuSize}px`})
                 $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+215}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
+
+
+                // Deal with the active class for category title in menu
+                $(".menu-title-a").each(function() {
+                  $(this).removeClass("active")
+                })
+                $(`#menu-title-a-${category.type}`).addClass("active")
               })
               return "block"
             }
