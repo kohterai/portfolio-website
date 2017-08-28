@@ -126,21 +126,6 @@ const projectList = [
                   main: Burj
                 }]
   },
-  { type: "Research",
-    longThumb: false,
-    projects: [  { title: "FocusEye",
-                  caption: "Follow Focus Reimagined",
-                  thumbnail: focuseyeT,
-                  path: '/projects/FocusEye',
-                  main: FocusEye 
-                },
-                  { title: "Triangles",
-                  caption: "Wooden Sculpture",
-                  thumbnail: TrianglesT,
-                  path: '/projects/Triangles',
-                  main: Triangles 
-                }]
-  },
   { type: "Design",
     longThumb: false,
     projects: [
@@ -170,7 +155,21 @@ const projectList = [
                 }
                 ]
   },
-
+  { type: "Research",
+    longThumb: false,
+    projects: [  { title: "FocusEye",
+                  caption: "Follow Focus Reimagined",
+                  thumbnail: focuseyeT,
+                  path: '/projects/FocusEye',
+                  main: FocusEye 
+                },
+                  { title: "Triangles",
+                  caption: "Wooden Sculpture",
+                  thumbnail: TrianglesT,
+                  path: '/projects/Triangles',
+                  main: Triangles 
+                }]
+  },
 
   // { type: "Research",
   //   projects: [{  title: "Haptic",

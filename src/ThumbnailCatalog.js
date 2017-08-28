@@ -37,6 +37,7 @@ class ThumbnailCatalog extends Component {
           <div key={projectList.type} className="thumb-category-wrapper">
                       <Waypoint
             onEnter={this._enterSection.bind(this, `${projectList.type}`)}
+            bottomOffset='40%'
             // onLeave={this._leaveSection.bind(this, `${projectList.type}`)}
           >
             <div className="thumbnailCategoryTitle" style={{
