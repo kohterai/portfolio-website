@@ -48,6 +48,45 @@ class Menu extends Component {
     return (this.state.open) ? "menu-open" : "menu-closed"
   }
 
+  getBallBack() {
+    var that = this;
+    $("#menu-list")
+      .delay(100)
+
+      .queue(function (next) { 
+        console.log("made it here1")
+        that.ballRecover();
+        next();
+      })
+  }
+
+  ballRecover() {
+    if ($("#menu-list").hasClass("collapsing")) {
+      console.log("made it here")
+      $("#menu-ball")
+        .delay(260)
+        .queue(function (next) { 
+          var ballPos = $(`#menu-title-a-${projectList[0].type}`).position().top + 61
+          //temporarily disable transitions while we reposition the ball instantly
+          $("#menu-ball").addClass("no-transition")
+
+          $("#menu-ball").css({marginTop: ballPos})
+          $("#menu-list").removeClass("collapsing")
+          $("#menu-list").addClass("collapsed")
+
+          //bring ball back in after collapse is completed
+          $("#menu-ball").removeClass("ball-exit")
+          $("#menu-ball").addClass("ball-enter")
+          next();               
+        })
+        .delay(100)
+        .queue(function (next) {
+          $("#menu-ball").removeClass("no-transition")
+          next();
+        })
+    }
+  }
+
   // changeMenuState() {
   //   this.setState({
   //     subMenuIsOpen: !this.state.subMenuIsOpen
@@ -162,8 +201,8 @@ class Menu extends Component {
 
             <MenuBall className={menuBallAnimate(`${location.pathname}`)}/>
 
-            <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
-              className="active-title">
+            <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
+            className="active-title">
               KOH TERAI
             </Link>
 
