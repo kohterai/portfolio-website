@@ -82,6 +82,11 @@ class Menu extends Component {
                 $(".menu-title-a").each(function() {
                   $(this).removeClass("active")
                 })
+
+                $(".menu-title").each(function() {
+                  $(this).removeClass("active-title")
+                })
+                $(`#menu-title-${category.type}`).addClass("active-title")
                 $(`#menu-title-a-${category.type}`).addClass("active")
               })
               return "block"

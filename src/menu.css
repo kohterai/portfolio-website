@@ -46,9 +46,9 @@
 
 }
 
-#Menu a:hover {
+#Menu .menu-title:hover {
   color: #000000;
-  margin-left: 10px;
+  padding-left: 10px;
   font-weight: 300;
 }
 
@@ -61,7 +61,13 @@
 
 #Menu .active:hover {
   color: #000000;
-  margin-left: 5px;
+  /*padding-left: 5px;*/
+  font-weight: 600;
+}
+
+#Menu .active-title:hover {
+  color: #000000;
+  padding-left: 5px;
   font-weight: 600;
 }
 
@@ -83,7 +89,7 @@
 
 #Menu .menu-title {
   margin: 5px 0px;
-  transition: margin 0.3s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 #Menu .menu-item {

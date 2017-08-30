@@ -13,6 +13,11 @@ class MenuTitle extends Component {
         $(".menu-title-a").each(function() {
           $(this).removeClass("active")
         });
+        $(".menu-title").each(function() {
+          $(this).removeClass("active-title")
+        });
+
+        $(`#menu-title-${id}`).addClass("active-title")
         $(`#menu-title-a-${id}`).addClass("active")
 
         // offset calculation, 61px
