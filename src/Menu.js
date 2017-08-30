@@ -48,8 +48,6 @@ class Menu extends Component {
     return (this.state.open) ? "menu-open" : "menu-closed"
   }
 
-
-
   render() {
     const { location } = this.props
     // Function to figure out whether submenu is displayed or not
@@ -58,7 +56,6 @@ class Menu extends Component {
       var res = path.split("/")
       // len = 2 means we are on homepage
       if (res.length<3) {
-
         // On homepage, hide all sub menus
         for (let category of projectList) {
           $(document).ready( function () {
@@ -68,6 +65,7 @@ class Menu extends Component {
         }
         return "none"        
       } else {
+        // Display correct submenu based on which project we are on
         for (let category of projectList) {
           for (let project of category.projects) {
             if (project.path === path & category.type === projType) {
@@ -92,6 +90,21 @@ class Menu extends Component {
         }
       }
       return "none"
+    }
+
+    function menuBallPos(path) {
+      $( document ).ready(function() {
+        console.log(path);
+        if (path == "/") {
+          console.log("Root")
+          $("#menu-ball").removeClass("ball-exit")
+          $("#menu-ball").addClass("ball-enter")
+        } else {
+          console.log("Inside project view")
+          $("#menu-ball").removeClass("ball-enter")
+          $("#menu-ball").addClass("ball-exit")
+        }
+      });
     }
 
     return (
@@ -128,7 +141,8 @@ class Menu extends Component {
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
 
-            <MenuBall />
+            <MenuBall className={menuBallPos(`${location.pathname}`)}/>
+
             <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
               KOH TERAI
             </Link>
