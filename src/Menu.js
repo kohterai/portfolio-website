@@ -148,7 +148,8 @@ class Menu extends Component {
 
             <MenuBall className={menuBallPos(`${location.pathname}`)}/>
 
-            <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}>
+            <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
+              className="active-title">
               KOH TERAI
             </Link>
 
