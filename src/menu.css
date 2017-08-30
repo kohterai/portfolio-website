@@ -90,6 +90,7 @@
 #Menu .menu-title {
   margin: 5px 0px;
   transition: all 0.1s ease-out;
+  cursor: pointer;
 }
 
 #Menu .menu-item {

@@ -19,7 +19,11 @@ class ThumbnailCatalog extends Component {
       $(".menu-title-a").each(function() {
         $(this).removeClass("active")
       });
+      $(".menu-title").each(function() {
+        $(this).removeClass("active-title")
+      });
       $(`#menu-title-a-${msg}`).addClass("active")
+      $(`#menu-title-${msg}`).addClass("active-title")
       var ballPos = $(`#menu-title-a-${msg}`).position().top + 61
       $("#menu-ball").css({marginTop: ballPos})
     }
