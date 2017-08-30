@@ -89,7 +89,7 @@
 
 #Menu .menu-title {
   margin: 5px 0px;
-  transition: all 0.1s ease-out;
+  transition: margin 0.3s ease-out, padding 0.1s ease-out;
   cursor: pointer;
 }
 
@@ -139,7 +139,7 @@
 
 .ball-enter {
   animation-name: ballEnter;
-  animation-duration: 0.3s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
@@ -147,7 +147,7 @@
 
 @keyframes ballEnter {
     from {opacity: 0;
-        margin-left: -25px;}
+        margin-left: 10px;}
     to {opacity: 1;
           margin-left: -15px;}
 }
@@ -156,5 +156,5 @@
     from {opacity: 1;
           margin-left: -15px;}
     to {opacity: 0;
-        margin-left: -25px;}
+        margin-left: 10px;}
 }

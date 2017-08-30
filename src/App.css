@@ -21,6 +21,10 @@
   position: absolute;
 }
 
+.no-transition {
+  transition: none !important;
+}
+
 @media screen and (max-width: 1100px) and (min-width: 740px) {
   #main-container {
     padding: 0 30px;

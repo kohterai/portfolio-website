@@ -15,7 +15,6 @@ class MenuTitle extends Component {
           $("#menu-ball").addClass("second-scroll");
         }
 
-
         $(".menu-title-a").each(function() {
           $(this).removeClass("active")
         });
@@ -26,21 +25,61 @@ class MenuTitle extends Component {
         $(`#menu-title-${id}`).addClass("active-title")
         $(`#menu-title-a-${id}`).addClass("active")
 
-        // offset calculation, 61px
-        var ballPos = $(`#menu-title-a-${id}`).position().top + 61
-        $("#menu-ball").css({marginTop: ballPos})
-        $("#menu-ball").addClass("scrolling")
+        // offset calculation, 61px for ball position
+        // delaying ball fade away, if submenu is being hidden
+        if ($("#menu-list").hasClass("collapsing")) {
+          $("#menu-ball")
+            .delay(260)
+            .queue(function (next) { 
+              var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+              //temporarily disable transitions while we reposition the ball instantly
+              $("#menu-ball").addClass("no-transition")
 
-        $(document.body).animate({
-        'scrollTop':   $(`#${id}`).offset().top-35
-        }, 400,function(){
-          // call back after scroll animation is completed
-          if ($("#menu-ball").hasClass("second-scroll")) {
-            $("#menu-ball").removeClass("second-scroll")
-          } else {
-            $("#menu-ball").removeClass("scrolling")
-          }
-        });
+              $("#menu-ball").css({marginTop: ballPos})
+              $("#menu-list").removeClass("collapsing")
+              $("#menu-list").addClass("collapsed")
+
+              //bring ball back in after collapse is completed
+              $("#menu-ball").removeClass("ball-exit")
+              $("#menu-ball").addClass("ball-enter")
+              next();               
+            })
+            .delay(100)
+            .queue(function (next) {
+              $("#menu-ball").removeClass("no-transition")
+              next();
+            })
+          $("#menu-ball").addClass("scrolling")
+
+          //dont scroll if you are coming to thumbnail page from project page
+
+          $(document.body).animate({
+            'scrollTop':   $(`#${id}`).offset().top-35
+            }, 0,function(){
+              // call back after scroll animation is completed
+              if ($("#menu-ball").hasClass("second-scroll")) {
+                $("#menu-ball").removeClass("second-scroll")
+              } else {
+                $("#menu-ball").removeClass("scrolling")
+              }
+            });
+        } else {
+          var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+          $("#menu-ball").css({marginTop: ballPos})
+          $("#menu-ball").addClass("scrolling")
+
+          $(document.body).animate({
+          'scrollTop':   $(`#${id}`).offset().top-35
+          }, 400,function(){
+            // call back after scroll animation is completed
+            if ($("#menu-ball").hasClass("second-scroll")) {
+              $("#menu-ball").removeClass("second-scroll")
+            } else {
+              $("#menu-ball").removeClass("scrolling")
+            }
+          });
+
+        }
     })
   }
 

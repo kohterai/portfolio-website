@@ -48,6 +48,12 @@ class Menu extends Component {
     return (this.state.open) ? "menu-open" : "menu-closed"
   }
 
+  // changeMenuState() {
+  //   this.setState({
+  //     subMenuIsOpen: !this.state.subMenuIsOpen
+  //   })
+  // }
+
   render() {
     const { location } = this.props
     // Function to figure out whether submenu is displayed or not
@@ -56,6 +62,13 @@ class Menu extends Component {
       var res = path.split("/")
       // len = 2 means we are on homepage
       if (res.length<3) {
+        if ($("#menu-list").hasClass("expanded")) {
+          //we are collapsing the menu
+          $("#menu-list").removeClass("expanded")
+          $("#menu-list").addClass("collapsing")
+          //we will turn .collapsing into .collapsed inside MenuTitle component
+        }
+
         // On homepage, hide all sub menus
         for (let category of projectList) {
           $(document).ready( function () {
@@ -63,6 +76,7 @@ class Menu extends Component {
             $(`#menu-title-${category.type}`).css({"margin-bottom": "0px"})
           })
         }
+
         return "none"        
       } else {
         // Display correct submenu based on which project we are on
@@ -88,6 +102,9 @@ class Menu extends Component {
                 })
                 $(`#menu-title-${category.type}`).addClass("active-title")
                 $(`#menu-title-a-${category.type}`).addClass("active")
+                
+                $("#menu-list").removeClass("collapsed")
+                $("#menu-list").addClass("expanded")
               })
               return "block"
             }
@@ -97,15 +114,12 @@ class Menu extends Component {
       return "none"
     }
 
-    function menuBallPos(path) {
+    function menuBallAnimate(path) {
       $( document ).ready(function() {
-        console.log(path);
-        if (path == "/") {
-          console.log("Root")
+        if (path == "/" && !($("#menu-list").hasClass("collapsing"))) {
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
         } else {
-          console.log("Inside project view")
           $("#menu-ball").removeClass("ball-enter")
           $("#menu-ball").addClass("ball-exit")
         }
@@ -146,7 +160,7 @@ class Menu extends Component {
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
 
-            <MenuBall className={menuBallPos(`${location.pathname}`)}/>
+            <MenuBall className={menuBallAnimate(`${location.pathname}`)}/>
 
             <Link onClick={this.closeMenu.bind(this)} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
               className="active-title">

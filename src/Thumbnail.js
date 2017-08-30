@@ -7,15 +7,11 @@ import './Thumbnail.css'
 // https://stackoverflow.com/questions/1495407/maintain-the-aspect-ratio-of-a-div-with-css
 
 class Thumbnail extends Component {
-  handleClick() {
-    console.log("clicked")
-  }
-
   render() {
     return (
       <div className="thumbnail">
         
-        <Link onClick={this.handleClick} to={`${this.props.path}`}>
+        <Link to={`${this.props.path}`}>
           <div style={{
             width: '100%',
             paddingBottom: '60%',
