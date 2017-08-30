@@ -147,7 +147,7 @@
 
 @keyframes ballEnter {
     from {opacity: 0;
-        margin-left: 10px;}
+        margin-left: -25px;}
     to {opacity: 1;
           margin-left: -15px;}
 }
@@ -156,5 +156,5 @@
     from {opacity: 1;
           margin-left: -15px;}
     to {opacity: 0;
-        margin-left: 10px;}
+        margin-left: -25px;}
 }

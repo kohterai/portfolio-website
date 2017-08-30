@@ -9,6 +9,12 @@ import $ from 'jquery'
 class MenuTitle extends Component {
   scrollToSection(id) {
     $(document).ready(function(){
+        // .second-scroll prevents the ball from getting confused when a user tries to click another title while scrolling.
+        // if user is superhuman and can click three times during the scroll, scroll will get confused.
+        if ($("#menu-ball").hasClass("scrolling")) {
+          $("#menu-ball").addClass("second-scroll");
+        }
+
 
         $(".menu-title-a").each(function() {
           $(this).removeClass("active")
@@ -29,7 +35,11 @@ class MenuTitle extends Component {
         'scrollTop':   $(`#${id}`).offset().top-35
         }, 400,function(){
           // call back after scroll animation is completed
-          $("#menu-ball").removeClass("scrolling")
+          if ($("#menu-ball").hasClass("second-scroll")) {
+            $("#menu-ball").removeClass("second-scroll")
+          } else {
+            $("#menu-ball").removeClass("scrolling")
+          }
         });
     })
   }
