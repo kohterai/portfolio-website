@@ -31,16 +31,14 @@ class MenuTitle extends Component {
         // 2) show menu-ball after delay
         if ($("#menu-list").hasClass("collapsing")) {
           $("#menu-ball")
+            .delay(10)
             .queue(function (next) { 
-              var ballPos = $(`#menu-title-a-${id}`).position().top + 61
-              //temporarily disable transitions while we reposition the ball instantly
-              // $("#menu-ball-sub").addClass("no-transition")
               // hide sub-menu-ball
               $("#menu-ball-sub").removeClass("ball-enter-sub")
               $("#menu-ball-sub").addClass("ball-exit-sub")
               next();               
             })
-            .delay(260)
+            .delay(250)
             .queue(function (next) { 
               var ballPos = $(`#menu-title-a-${id}`).position().top + 61
               //temporarily disable transitions while we reposition the ball instantly

@@ -169,7 +169,7 @@
 
 .ball-exit-sub {
   animation-name: ballExitSub;
-  animation-duration: 0.2s;
+  animation-duration: 0.15s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
@@ -207,5 +207,5 @@
     from {opacity: 1;
           margin-left: 5px;}
     to {opacity: 0;
-        margin-left: 35px;}
+        margin-left: 25px;}
 }

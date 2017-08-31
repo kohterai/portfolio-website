@@ -66,6 +66,7 @@ class Menu extends Component {
           var ballPos = $(`#menu-title-a-${projectList[0].type}`).position().top + 61
           //temporarily disable transitions while we reposition the ball instantly
           $("#menu-ball").addClass("no-transition")
+          $("#menu-ball-sub").addClass("no-transition")
 
           $("#menu-ball").css({marginTop: ballPos})
           $("#menu-list").removeClass("collapsing")
@@ -74,11 +75,15 @@ class Menu extends Component {
           //bring ball back in after collapse is completed
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
+
+          $("#menu-ball-sub").removeClass("ball-enter-sub")
+          $("#menu-ball-sub").addClass("ball-exit-sub")
           next();               
         })
         .delay(100)
         .queue(function (next) {
           $("#menu-ball").removeClass("no-transition")
+          $("#menu-ball-sub").removeClass("no-transition")
           next();
         })
     }
@@ -145,9 +150,23 @@ class Menu extends Component {
 
                 $(`#menu-item-${project.ref}`).addClass("active-item")
 
-                // sub-ball position
+
+                // make appear, menu-ball-sub
                 var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
                 $("#menu-ball-sub").css({marginTop: ballPosSub})
+
+                // sub-ball position
+                // $("#menu-ball-sub")
+                //   .queue(function (next) {
+                //     $("#menu-ball-sub").addClass("no-transition")
+                //     var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                //     $("#menu-ball-sub").css({marginTop: ballPosSub})
+                //   })
+                //   .delay(100)
+                //   .queue(function (next) {
+                //     $("#menu-ball-sub").removeClass("no-transition")
+                //     next();
+                //   })
 
                 $("#menu-list").removeClass("collapsed")
                 $("#menu-list").addClass("expanded")
@@ -170,10 +189,12 @@ class Menu extends Component {
           $("#menu-ball-sub").removeClass("ball-enter-sub")
           $("#menu-ball-sub").addClass("ball-exit-sub")
         } else {
+          // Goes inside here while "collapsing" or not "/"
           $("#menu-ball").removeClass("ball-enter")
           $("#menu-ball").addClass("ball-exit")
 
           $("#menu-ball-sub").removeClass("ball-exit-sub")
+          console.log("calling enter ball")
           $("#menu-ball-sub").addClass("ball-enter-sub")
         }
       });
@@ -214,7 +235,7 @@ class Menu extends Component {
                       style={{ marginTop: '150px', position: 'fixed'}}>
 
             <MenuBall idName={"menu-ball"} className={menuBallAnimate(`${location.pathname}`)}/>
-            <MenuBall idName={"menu-ball-sub"} className={menuBallAnimate(`${location.pathname}`)}/>
+            <MenuBall idName={"menu-ball-sub"} />
 
 
             <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
