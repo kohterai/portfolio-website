@@ -142,13 +142,14 @@ class Menu extends Component {
                 })
                 
                 $(`#menu-title-${category.type}`).addClass("active-title")
-                $(`#menu-item-${project.title}`).addClass("active-item")
                 $(`#menu-title-a-${category.type}`).addClass("active")
-                
+
+                $(`#menu-item-${project.ref}`).addClass("active-item")
+                                
 
                 console.log("Current Project:")
                 console.log(project.title)
-                console.log(`#menu-item-${project.title}`)
+                console.log(`#menu-item-${project.ref}`)
 
                 $("#menu-list").removeClass("collapsed")
                 $("#menu-list").addClass("expanded")

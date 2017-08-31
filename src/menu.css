@@ -111,6 +111,7 @@
   margin: 5px 0px;
   transition: margin 0.3s ease-out, padding 0.1s ease-out;
   cursor: pointer;
+  display: list-item;
 }
 
 .bm-item-list {
