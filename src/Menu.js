@@ -53,7 +53,6 @@ class Menu extends Component {
     $("#menu-list")
       .delay(5)
       .queue(function (next) { 
-        console.log("made it here1")
         that.ballRecover();
         next();
       })
@@ -145,11 +144,10 @@ class Menu extends Component {
                 $(`#menu-title-a-${category.type}`).addClass("active")
 
                 $(`#menu-item-${project.ref}`).addClass("active-item")
-                                
 
-                console.log("Current Project:")
-                console.log(project.title)
-                console.log(`#menu-item-${project.ref}`)
+                // sub-ball position
+                var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                $("#menu-ball-sub").css({marginTop: ballPosSub})
 
                 $("#menu-list").removeClass("collapsed")
                 $("#menu-list").addClass("expanded")
@@ -162,14 +160,21 @@ class Menu extends Component {
       return "none"
     }
 
+    // get ball when loading landing page path: "/"
     function menuBallAnimate(path) {
       $( document ).ready(function() {
         if (path == "/" && !($("#menu-list").hasClass("collapsing"))) {
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
+
+          $("#menu-ball-sub").removeClass("ball-enter-sub")
+          $("#menu-ball-sub").addClass("ball-exit-sub")
         } else {
           $("#menu-ball").removeClass("ball-enter")
           $("#menu-ball").addClass("ball-exit")
+
+          $("#menu-ball-sub").removeClass("ball-exit-sub")
+          $("#menu-ball-sub").addClass("ball-enter-sub")
         }
       });
     }
