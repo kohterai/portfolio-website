@@ -51,8 +51,7 @@ class Menu extends Component {
   getBallBack() {
     var that = this;
     $("#menu-list")
-      .delay(100)
-
+      .delay(5)
       .queue(function (next) { 
         console.log("made it here1")
         that.ballRecover();
@@ -62,9 +61,8 @@ class Menu extends Component {
 
   ballRecover() {
     if ($("#menu-list").hasClass("collapsing")) {
-      console.log("made it here")
       $("#menu-ball")
-        .delay(260)
+        .delay(10)
         .queue(function (next) { 
           var ballPos = $(`#menu-title-a-${projectList[0].type}`).position().top + 61
           //temporarily disable transitions while we reposition the ball instantly
@@ -130,7 +128,6 @@ class Menu extends Component {
                 $(`#menu-${category.type}`).css({"top": `${subMenuLoc.top+215}px`})
                 $(`#menu-${category.type}`).css({ "opacity": "1", "visibility": "visible"})
 
-
                 // Deal with the active class for category title in menu
                 $(".menu-title-a").each(function() {
                   $(this).removeClass("active")
@@ -139,9 +136,20 @@ class Menu extends Component {
                 $(".menu-title").each(function() {
                   $(this).removeClass("active-title")
                 })
+                
+                $(".menu-item").each(function() {
+                  $(this).removeClass("active-item")
+                })
+                
                 $(`#menu-title-${category.type}`).addClass("active-title")
+                $(`#menu-item-${project.title}`).addClass("active-item")
                 $(`#menu-title-a-${category.type}`).addClass("active")
                 
+
+                console.log("Current Project:")
+                console.log(project.title)
+                console.log(`#menu-item-${project.title}`)
+
                 $("#menu-list").removeClass("collapsed")
                 $("#menu-list").addClass("expanded")
               })
@@ -199,7 +207,9 @@ class Menu extends Component {
                       isOpen={this.state.open}
                       style={{ marginTop: '150px', position: 'fixed'}}>
 
-            <MenuBall className={menuBallAnimate(`${location.pathname}`)}/>
+            <MenuBall idName={"menu-ball"} className={menuBallAnimate(`${location.pathname}`)}/>
+            <MenuBall idName={"menu-ball-sub"} className={menuBallAnimate(`${location.pathname}`)}/>
+
 
             <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
             className="active-title">

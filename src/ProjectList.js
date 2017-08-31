@@ -57,12 +57,15 @@ import rescueT2 from './Projects/Cinematography/photos/rescue-thumb2.jpg'
 import rescueT3 from './Projects/Cinematography/photos/rescue-thumb3.jpg'
 
 
+// ref is for reference for ID, since cant have space
+
 const projectList = [
 
     { type: "Cinematography",
     longThumb: true,
     projects: [
                 { title: "Workshops",
+                  ref: "workshops",
                   caption: "Cinematography Workshops at NYU Abu Dhabi",
                   thumbnail1: workshopT1,
                   thumbnail2: workshopT2,
@@ -71,6 +74,7 @@ const projectList = [
                   main: CinematographyWorkshop
                 },
                 { title: "Ámame",
+                  ref: "amame",
                   caption: "Music Video",
                   thumbnail1: AmameT1,
                   thumbnail2: AmameT2,
@@ -79,6 +83,7 @@ const projectList = [
                   main: Amame
                 },
                 { title: "Rescue",
+                  ref: "rescue",
                   caption: "Space Sci-Fi",
                   thumbnail1: rescueT1,
                   thumbnail2: rescueT2,
@@ -91,35 +96,41 @@ const projectList = [
     { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
+                  ref: "sports",
                   caption: "Sports photography",
                   thumbnail: sportT,
                   path: '/projects/Sports',
                   main: Sports
                 },{ title: "Portraits",
+                  ref: "portraits",
                   caption: "People Photos",
                   thumbnail: portraitsT,
                   path: '/projects/Portraits',
                   main: Portraits
                 },
                 { title: "Theater",
+                  ref: "theater",
                   caption: "Stills from theater productions",
                   thumbnail: theaterT,
                   path: '/projects/Theater',
                   main: Theater
                 },
                 { title: "Commercial",
+                  ref: "commercial",
                   caption: "Advertisements and posters",
                   thumbnail: commercialT,
                   path: '/projects/Commercial',
                   main: Commercial
                 },
                 {  title: "Georgia",
+                  ref: "georgia",
                   caption: "Journey through Georgia",
                   thumbnail: georgiaT,
                   path: '/projects/Georgia',
                   main: Georgia
                 },
                 {  title: "Burj Shadow",
+                  ref: "burj",
                   caption: "Burj Khalifa Timelapse",
                   thumbnail: burjT,
                   path: '/projects/Burj',
@@ -130,24 +141,28 @@ const projectList = [
     longThumb: false,
     projects: [
                 { title: "NYU Vote",
+                  ref: "nyuvote",
                   caption: "Voting platform for NYU",
                   thumbnail: nyuvoteT,
                   path: '/projects/nyuvote',
                   main: NYUVote 
                 },
                 { title: "Yalla",
+                  ref: "yalla",
                   caption: "Social Events Web App",
                   thumbnail: yallaT,
                   path: '/projects/Yalla',
                   main: Yalla 
                 },
                 {  title: "Hungry Snake",
+                  ref: "hungrysnake",
                   caption: "Kinetic sculpture",
                   thumbnail: hungrySnakeT,
                   path: '/projects/snake',
                   main: Snake
                 },
                 { title: "Audiloid",
+                  ref: "audiloid",
                   caption: "Celluloid based audio player",
                   thumbnail: audiloidT,
                   path: '/projects/audiloid',
@@ -158,12 +173,14 @@ const projectList = [
   { type: "Research",
     longThumb: false,
     projects: [  { title: "FocusEye",
+                  ref: "focuseye",
                   caption: "Follow Focus Reimagined",
                   thumbnail: focuseyeT,
                   path: '/projects/FocusEye',
                   main: FocusEye 
                 },
                   { title: "Triangles",
+                  ref: "triangles",
                   caption: "Wooden Sculpture",
                   thumbnail: TrianglesT,
                   path: '/projects/Triangles',

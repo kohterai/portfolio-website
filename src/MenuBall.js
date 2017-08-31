@@ -11,7 +11,7 @@ class MenuBall extends Component {
 
   render() {
     return (
-      <div id="menu-ball" style={{
+      <div id={this.props.idName} style={{
       height: "6px",
       width: "6px",
       backgroundColor: "#81a8c5",

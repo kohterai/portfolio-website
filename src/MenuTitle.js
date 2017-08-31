@@ -27,8 +27,19 @@ class MenuTitle extends Component {
 
         // offset calculation, 61px for ball position
         // delaying ball fade away, if submenu is being hidden
+        // 1) hide menu-ball-sub
+        // 2) show menu-ball after delay
         if ($("#menu-list").hasClass("collapsing")) {
           $("#menu-ball")
+            .queue(function (next) { 
+              var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+              //temporarily disable transitions while we reposition the ball instantly
+              // $("#menu-ball-sub").addClass("no-transition")
+              // hide sub-menu-ball
+              $("#menu-ball-sub").removeClass("ball-enter-sub")
+              $("#menu-ball-sub").addClass("ball-exit-sub")
+              next();               
+            })
             .delay(260)
             .queue(function (next) { 
               var ballPos = $(`#menu-title-a-${id}`).position().top + 61
@@ -82,8 +93,6 @@ class MenuTitle extends Component {
         }
     })
   }
-
-
 
   render() {
     return (

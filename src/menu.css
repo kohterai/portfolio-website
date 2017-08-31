@@ -52,6 +52,12 @@
   font-weight: 300;
 }
 
+#Menu .menu-item:hover {
+  color: #000000;
+  padding-left: 10px;
+  font-weight: 300;
+}
+
 #Menu .active{
   color: #000000;
   font-weight: 600;
@@ -71,6 +77,13 @@
   font-weight: 600;
 }
 
+#Menu .active-item:hover {
+  color: #000000;
+  padding-left: 5px;
+  font-weight: 600;
+}
+
+
 #Menu .menu-sub{
   list-style: none;
   padding-left: 20px;
@@ -87,6 +100,7 @@
   visibility: visible;
 }
 
+/* These are the wrappers for <a> for the menu items*/
 #Menu .menu-title {
   margin: 5px 0px;
   transition: margin 0.3s ease-out, padding 0.1s ease-out;
@@ -95,6 +109,8 @@
 
 #Menu .menu-item {
   margin: 5px 0px;
+  transition: margin 0.3s ease-out, padding 0.1s ease-out;
+  cursor: pointer;
 }
 
 .bm-item-list {
@@ -129,16 +145,36 @@
   z-index: -200;
 }
 
+#menu-ball-sub {
+  margin-top: 150px;
+  transition: all 0.2s ease-out;
+  margin-left: 5px;
+  z-index: -200; 
+}
+
 .ball-exit {
   animation-name: ballExit;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
-  /*animation-iteration-count: infinite;*/
 }
 
 .ball-enter {
   animation-name: ballEnter;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+.ball-exit-sub {
+  animation-name: ballExitSub;
+  animation-duration: 0.2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+.ball-enter-sub {
+  animation-name: ballEnterSub;
   animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
@@ -157,4 +193,18 @@
           margin-left: -15px;}
     to {opacity: 0;
         margin-left: 10px;}
+}
+
+@keyframes ballEnterSub {
+    from {opacity: 0;
+        margin-left: 35px;}
+    to {opacity: 1;
+          margin-left: 5px;}
+}
+
+@keyframes ballExitSub {
+    from {opacity: 1;
+          margin-left: 5px;}
+    to {opacity: 0;
+        margin-left: 35px;}
 }
