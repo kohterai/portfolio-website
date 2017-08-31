@@ -152,8 +152,22 @@ class Menu extends Component {
 
 
                 // make appear, menu-ball-sub
-                var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
-                $("#menu-ball-sub").css({marginTop: ballPosSub})
+                // var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                // $("#menu-ball-sub").css({marginTop: ballPosSub})
+
+                $("#menu-ball-sub")
+                  .delay(10)
+                  .queue(function (next) {
+                    $("#menu-ball-sub").addClass("no-transition")
+                    var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                    $("#menu-ball-sub").css({marginTop: ballPosSub})
+                    next();               
+                  })
+                  .delay(300)
+                  .queue(function (next) {
+                    $("#menu-ball-sub").removeClass("no-transition")
+                    next();
+                  })
 
                 // sub-ball position
                 // $("#menu-ball-sub")
