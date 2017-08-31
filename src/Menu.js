@@ -224,7 +224,7 @@ class Menu extends Component {
                     display: displaySubmenu(`${location.pathname}`, projectList.type)
                   }}>
                   {projectList.projects.map((project, index) => (
-                    <MenuProject menuClicked={this.closeMenu.bind(this)} project={project.title} pathName={project.path}/>
+                    <MenuProject menuClicked={this.closeMenu.bind(this)} refName={project.ref} project={project.title} pathName={project.path}/>
                   ))}
                   </ul>
               </div>
