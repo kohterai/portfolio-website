@@ -207,9 +207,6 @@ class Menu extends Component {
         if (path == "/" && !($("#menu-list").hasClass("collapsing"))) {
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
-
-          $("#menu-ball-sub").removeClass("ball-enter-sub")
-          $("#menu-ball-sub").addClass("ball-exit-sub")
         } else {
           // Goes inside here while "collapsing" or not "/"
           $("#menu-ball").removeClass("ball-enter")
