@@ -155,20 +155,28 @@ class Menu extends Component {
                 // var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
                 // $("#menu-ball-sub").css({marginTop: ballPosSub})
 
-                $("#menu-ball-sub")
-                  .delay(10)
-                  .queue(function (next) {
-                    $("#menu-ball-sub").addClass("no-transition")
-                    var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
-                    $("#menu-ball-sub").css({marginTop: ballPosSub})
-                    next();               
-                  })
-                  .delay(300)
-                  .queue(function (next) {
-                    $("#menu-ball-sub").removeClass("no-transition")
-                    next();
-                  })
+          
 
+                // temporarily disable transition if menu is being expanded, so ball doesnt jump from previous position
+                if (!($("#menu-list").hasClass("expanded"))) {
+                  $("#menu-ball-sub")
+                    .delay(10)
+                    .queue(function (next) {
+                      $("#menu-ball-sub").addClass("no-transition")
+                      var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                      $("#menu-ball-sub").css({marginTop: ballPosSub})
+                      next();               
+                    })
+                    .delay(50)
+                    .queue(function (next) {
+                      $("#menu-ball-sub").removeClass("no-transition")
+                      next();
+                    })
+                } else {
+                  // move ball without disabling transition
+                  var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
+                  $("#menu-ball-sub").css({marginTop: ballPosSub})
+                }
                 // sub-ball position
                 // $("#menu-ball-sub")
                 //   .queue(function (next) {
