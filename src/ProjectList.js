@@ -56,6 +56,11 @@ import rescueT1 from './Projects/Cinematography/photos/rescue-thumb1.jpg'
 import rescueT2 from './Projects/Cinematography/photos/rescue-thumb2.jpg'
 import rescueT3 from './Projects/Cinematography/photos/rescue-thumb3.jpg'
 
+import Oryx from './Projects/Cinematography/Oryx'
+import oryxT1 from './Projects/Cinematography/photos/oryx-thumb1.jpg'
+import oryxT2 from './Projects/Cinematography/photos/oryx-thumb2.jpg'
+import oryxT3 from './Projects/Cinematography/photos/oryx-thumb3.jpg'
+
 
 // ref is for reference for ID, since cant have space
 
@@ -90,6 +95,15 @@ const projectList = [
                   thumbnail3: rescueT3,
                   path: '/projects/Rescue',
                   main: Rescue
+                },
+                { title: "Insān",
+                  ref: "insan",
+                  caption: "Oryx Chimeras Mockumentary",
+                  thumbnail1: oryxT1,
+                  thumbnail2: oryxT2,
+                  thumbnail3: oryxT3,
+                  path: '/projects/Oryx',
+                  main: Oryx
                 }
                 ]
   },

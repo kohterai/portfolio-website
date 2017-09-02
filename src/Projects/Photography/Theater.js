@@ -9,6 +9,7 @@ import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
+import ImageLoader from '../ImageLoader'
 
 // Image imports
 import theater1 from './photos/theater-1.jpg'
@@ -27,20 +28,15 @@ class Sports extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={theater1} className="full"/>
-
-        <img src={theater2} className="full"/>
-        <img src={theater3} className="full"/>
-
-        <img src={theater4} className="full"/>
-        <img src={theater5} className="full"/>
-        <img src={theater6} className="full"/>
-
-        <img src={theater7} className="full"/>
-        <img src={theater8} className="full"/>
-
-        <img src={theater9} className="full"/>
-
+        <ImageLoader source={theater1} />
+        <ImageLoader source={theater2} />
+        <ImageLoader source={theater3} />
+        <ImageLoader source={theater4} />
+        <ImageLoader source={theater5} />
+        <ImageLoader source={theater6} />
+        <ImageLoader source={theater7} />
+        <ImageLoader source={theater8} />
+        <ImageLoader source={theater9} />
       </div>
     )
   }

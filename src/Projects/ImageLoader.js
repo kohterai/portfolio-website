@@ -6,6 +6,7 @@ import LazyLoad from 'react-lazy-load';
 import ProgressiveImage from 'react-progressive-bg-image';
 import preload from './preload.png'
 import preload235 from './preload235.png'
+import preload169 from './preload16-9.png'
 
       // <LazyLoad offsetVertical={500}>
 
@@ -17,6 +18,8 @@ class ImageLoader extends Component {
     var placeholderRatio = 0
     if (this.props.ratio == "r235") {
       placeholderRatio = preload235
+    } else if (this.props.ratio == "r169") {
+      placeholderRatio = preload169
     } else {
       placeholderRatio = preload
     }

@@ -9,6 +9,7 @@ import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
+import ImageLoader from '../ImageLoader'
 
 // Image imports
 import georgia1 from './photos/georgia-1.jpg'

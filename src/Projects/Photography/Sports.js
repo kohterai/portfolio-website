@@ -9,6 +9,7 @@ import BackgroundImage from 'react-background-image-loader';
 import Credits from '../Credits';
 import BigButton from '../BigButton';
 import ReactPlayer from 'react-player'
+import ImageLoader from '../ImageLoader'
 
 // Image imports
 import sport1 from './photos/sport-1.jpg'
@@ -32,30 +33,28 @@ class Sports extends Component {
   render() {
     return (
       <div className="project-content">
-        <img src={sport1} className="full"/>
+        <ImageLoader source={sport1} />
+
         
         <div className="half-container">
           <img src={sport2} className="half"/>
           <img src={sport3} className="half"/>
         </div>
 
-        <img src={sport4} className="full"/>
-        <div className="half-container">
-          <img src={sport5} className="half"/>
-        </div>
-        <img src={sport6} className="full"/>
+        <ImageLoader source={sport4} />
 
+        <ImageLoader source={sport5} />
+        <ImageLoader source={sport6} />
         <div className="half-container">
           <img src={sport7} className="half"/>
           <img src={sport8} className="half"/>
         </div>
 
-
-        <img src={sport9} className="full"/>
-        <img src={sport10} className="full"/>
-        <img src={sport11} className="full"/>
-        <img src={sport12} className="full"/>
-        <img src={sport13} className="full"/>
+        <ImageLoader source={sport9} />
+        <ImageLoader source={sport10} />
+        <ImageLoader source={sport11} />
+        <ImageLoader source={sport12} />
+        <ImageLoader source={sport13} />
       </div>
     )
   }
