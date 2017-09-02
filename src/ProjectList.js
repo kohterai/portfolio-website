@@ -98,7 +98,7 @@ const projectList = [
                 },
                 { title: "Insān",
                   ref: "insan",
-                  caption: "Oryx Chimeras Mockumentary",
+                  caption: "Short Film",
                   thumbnail1: oryxT1,
                   thumbnail2: oryxT2,
                   thumbnail3: oryxT3,

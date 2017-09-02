@@ -34,9 +34,9 @@ class Oryx extends Component {
 
         <div className="text-container">
           <h1>Insān</h1>
-          <h6>Oryx Chimeras Mockumentary</h6>
+          <h6>Short Film</h6>
 
-          <p>Insān is a Mockumentary about an Emirati man that can communicate with the Oryx.
+          <p>Insān is a about an Emirati man that can communicate with the Oryx.
           Oryx footage was captured in the Arabian Protected Area bordering Saudi Arabia.</p>
 
         </div>
