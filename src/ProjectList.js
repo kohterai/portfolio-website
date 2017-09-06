@@ -61,6 +61,11 @@ import oryxT1 from './Projects/Cinematography/photos/oryx-thumb1.jpg'
 import oryxT2 from './Projects/Cinematography/photos/oryx-thumb2.jpg'
 import oryxT3 from './Projects/Cinematography/photos/oryx-thumb3.jpg'
 
+import DRC from './Projects/Cinematography/DRC'
+import drcT1 from './Projects/Cinematography/photos/drc-thumb1.jpg'
+import drcT2 from './Projects/Cinematography/photos/drc-thumb2.jpg'
+import drcT3 from './Projects/Cinematography/photos/drc-thumb3.jpg'
+
 
 // ref is for reference for ID, since cant have space
 
@@ -104,6 +109,15 @@ const projectList = [
                   thumbnail3: oryxT3,
                   path: '/projects/Oryx',
                   main: Oryx
+                },
+                { title: "Field Work DRC",
+                  ref: "drc",
+                  caption: "Documentary on Social Science Research",
+                  thumbnail1: drcT2,
+                  thumbnail2: drcT1,
+                  thumbnail3: drcT3,
+                  path: '/projects/DRC',
+                  main: DRC
                 }
                 ]
   },
