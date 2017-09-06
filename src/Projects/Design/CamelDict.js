@@ -17,7 +17,7 @@ import cameldict4 from './photos/cameldict-4.jpg'
 
 import ImageLoader from '../ImageLoader'
 
-class MiscDesign extends Component {
+class CamelDict extends Component {
   render() {
     return (
       <div className="project-content">
@@ -88,4 +88,4 @@ class MiscDesign extends Component {
   }
 }
 
-export default MiscDesign
+export default CamelDict

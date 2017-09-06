@@ -12,7 +12,7 @@ import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 import Yalla from './Projects/Design/Yalla'
 import yallaT from './Projects/Design/photos/yalla-thumb.jpg'
 
-import MiscDesign from './Projects/Design/MiscDesign'
+import CamelDict from './Projects/Design/CamelDict'
 import cameldictT from './Projects/Design/photos/cameldict-thumb.jpg'
 
 
@@ -191,7 +191,7 @@ const projectList = [
                   caption: "Minimalist Arabic Dictionary",
                   thumbnail: cameldictT,
                   path: '/projects/cameldict',
-                  main: MiscDesign
+                  main: CamelDict
                 },
                 {  title: "Hungry Snake",
                   ref: "hungrysnake",
