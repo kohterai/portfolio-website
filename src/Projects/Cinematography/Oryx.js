@@ -37,7 +37,7 @@ class Oryx extends Component {
           <h6>Short Film</h6>
 
           <p>Insān is a about an Emirati man that can communicate with the Oryx.
-          Oryx footage was captured in the Arabian Protected Area bordering Saudi Arabia.</p>
+          Oryx footage was captured in the Arabian Oryx Protected Area bordering Saudi Arabia.</p>
 
         </div>
 

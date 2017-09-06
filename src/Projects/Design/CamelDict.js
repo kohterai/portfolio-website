@@ -50,28 +50,21 @@ class CamelDict extends Component {
 
         <div className="text-container">
           <div className = "text-paragraphs">
-            <h2>Mobile</h2>
+            <h2>Interaction</h2>
             <p>The two pane interface for desktop and tablets can be easily converted for mobile. Individual words can be
             marked with tags such as "common", "old", "new"  to help language learners understand their significance.</p>
-          </div>
-        </div>
-
-        <ImageLoader source={cameldict1} />
-
-
-        <div className="text-container">
-          <div className = "text-paragraphs">
-            <h2>Interaction</h2>
+          
             <p>The search textbox can take Arabic and English inputs. Matched words update instantaneously on the screen.
             When the search query is in English, the transliteration of words get displayed above the Arabic text. When 
             the search query is in Arabic, the Arabic text is displayed above the English transliteration.</p>
 
             <p>Since Arabic text flows from right to left, when the query is in Arabic, the result words are displayed right aligned.</p>
+
           </div>
         </div>
-
-
         <ImageLoader source={cameldict3} />
+
+        <ImageLoader source={cameldict1} />
 
         <div className="text-container">
           <div className = "text-paragraphs">

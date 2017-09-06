@@ -15,6 +15,9 @@ import yallaT from './Projects/Design/photos/yalla-thumb.jpg'
 import CamelDict from './Projects/Design/CamelDict'
 import cameldictT from './Projects/Design/photos/cameldict-thumb.jpg'
 
+import Callscribe from './Projects/Design/Callscribe'
+import callscribeT from './Projects/Design/photos/callscribe-thumb.jpg'
+
 
 // Research Projects
 
@@ -192,6 +195,13 @@ const projectList = [
                   thumbnail: cameldictT,
                   path: '/projects/cameldict',
                   main: CamelDict
+                },
+                { title: "Callscribe",
+                  ref: "callscribe",
+                  caption: "Call Transcription and Recording App",
+                  thumbnail: callscribeT,
+                  path: '/projects/callscribe',
+                  main: Callscribe
                 },
                 {  title: "Hungry Snake",
                   ref: "hungrysnake",
