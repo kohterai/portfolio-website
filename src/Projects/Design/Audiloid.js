@@ -35,8 +35,7 @@ class Snake extends Component {
 
           <p>The idea evolved into producing sounds from movie negatives from the website <a target="_blank" href="http://thecolorsofmotion.com/films">The Colors of Motion</a>.
           Each movie has a distinctive color scheme that represents the overall emotional tone of the films.
-          Audiloid attempts to translate such color schemes into ambient music. This project was produced as a part of
-          <a target="_blank" href="http://www.felix-beck.de/nyuad/teaching/doku.php?id=utilitas_venustas_firmitas">Utilitas, Venustas, Firmitas</a> - Spring 2017.</p>
+          Audiloid attempts to translate such color schemes into ambient music. This project was produced as a part of <a target="_blank" href="http://www.felix-beck.de/nyuad/teaching/doku.php?id=utilitas_venustas_firmitas">Utilitas, Venustas, Firmitas</a> - Spring 2017.</p>
           </div>
         </div>
 

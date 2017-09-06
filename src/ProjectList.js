@@ -12,6 +12,10 @@ import nyuvoteT from './Projects/Design/photos/nyuvote-thumb.jpg'
 import Yalla from './Projects/Design/Yalla'
 import yallaT from './Projects/Design/photos/yalla-thumb.jpg'
 
+import MiscDesign from './Projects/Design/MiscDesign'
+import cameldictT from './Projects/Design/photos/cameldict-thumb.jpg'
+
+
 // Research Projects
 
 import FocusEye from './Projects/Research/FocusEye'
@@ -101,15 +105,6 @@ const projectList = [
                   path: '/projects/Rescue',
                   main: Rescue
                 },
-                { title: "Insān",
-                  ref: "insan",
-                  caption: "Short Film",
-                  thumbnail1: oryxT1,
-                  thumbnail2: oryxT2,
-                  thumbnail3: oryxT3,
-                  path: '/projects/Oryx',
-                  main: Oryx
-                },
                 { title: "Field Work DRC",
                   ref: "drc",
                   caption: "Documentary on Social Science Research",
@@ -118,6 +113,15 @@ const projectList = [
                   thumbnail3: drcT3,
                   path: '/projects/DRC',
                   main: DRC
+                },
+                { title: "Insān",
+                  ref: "insan",
+                  caption: "Short Film",
+                  thumbnail1: oryxT1,
+                  thumbnail2: oryxT2,
+                  thumbnail3: oryxT3,
+                  path: '/projects/Oryx',
+                  main: Oryx
                 }
                 ]
   },
@@ -181,6 +185,13 @@ const projectList = [
                   thumbnail: yallaT,
                   path: '/projects/Yalla',
                   main: Yalla 
+                },
+                { title: "Camel Dictionary",
+                  ref: "cameldict",
+                  caption: "Minimalist Arabic Dictionary",
+                  thumbnail: cameldictT,
+                  path: '/projects/cameldict',
+                  main: MiscDesign
                 },
                 {  title: "Hungry Snake",
                   ref: "hungrysnake",
