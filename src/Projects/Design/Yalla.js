@@ -87,7 +87,7 @@ class Yalla extends Component {
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Lead Engineer" name="Lingliang Zhang" />
+              <Credits title="Lead Engineer" name="Ling Zhang" />
               <Credits title="Business" name="Brett Bolton" />
               <Credits title="Design/Front-end" name="Koh Terai" />
               <Credits title="Logo" name="Mariko Kuroda" />

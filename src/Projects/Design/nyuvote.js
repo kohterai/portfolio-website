@@ -72,7 +72,7 @@ class NYUVote extends Component {
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Lead Engineer" name="Lingliang Zhang" />
+              <Credits title="Lead Engineer" name="Ling Zhang" />
               <Credits title="Design/Front-end" name="Koh Terai" />
               <Credits title="Technical Support" name="Moiri Gamboni" />
             </div>

@@ -59,7 +59,7 @@ class Rescue extends Component {
             <div className="credit-wrapper">
               <Credits title="Director" name="James Hosken" />
               <Credits title="Cinematography" name="Koh Terai" />
-              <Credits title="1st AC" name="Ben Marcus Willers" />
+              <Credits title="1st AC" name="Ben Marcus-Willers" />
               <Credits title="Gaffer/DP Mentor" name="Cristian Carretero" />
             </div>
           </div>

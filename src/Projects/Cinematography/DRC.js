@@ -59,7 +59,7 @@ class DRC extends Component {
               <Credits title="Director" name="Peter van der Windt" />
               <Credits title="Cinematography" name="Koh Terai" />
               <Credits title="Sound" name="Garreth Chan" />
-              <Credits title="Producer" name="Kim Nyugen" />
+              <Credits title="Producer" name="Kim Nguyen" />
             </div>
           </div>
         </div>

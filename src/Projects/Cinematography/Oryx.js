@@ -65,7 +65,7 @@ class Oryx extends Component {
             <div className="credit-wrapper">
               <Credits title="Director" name="Alexis Gambis" />
               <Credits title="Cinematography" name="Koh Terai" />
-              <Credits title="1st AC" name="Rowland Folkmayer" />
+              <Credits title="1st AC" name="Roland Folkmayer" />
               <Credits title="Gaffer" name="Sam Ridgeway" />
               <Credits title="Producer" name="Amal Al Gergawi" />
             </div>

@@ -68,7 +68,7 @@ class CinematographyWorkshop extends Component {
         </div>
 
         <div className="project-video-wrapper">
-          <ReactPlayer className="project-video" url='https://youtu.be/ow4v9hI7Sqs' controls={true}
+          <ReactPlayer className="project-video" url='https://youtu.be/br12LaTkZIc' controls={true}
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 
@@ -121,7 +121,7 @@ class CinematographyWorkshop extends Component {
             <h2>Credits</h2>
             <div className="credit-wrapper">
               <Credits title="Equipment" name="NYUAD Equipment Center" />
-              <Credits title="Sound Stage" name="Mhairhi" />
+              <Credits title="Sound Stage" name="Mhairhi Burton" />
             </div>
           </div>
         </div>
