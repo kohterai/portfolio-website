@@ -13,6 +13,10 @@ img {
   height:300px;
 }
 
+h1 {
+  margin-bottom: 0px;
+}
+
 
 .book-info-container {
   display: flex;
@@ -31,5 +35,9 @@ img {
 }
 
 hr {
-  margin-top: 30px;
+  margin-top: 40px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
