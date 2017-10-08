@@ -11,10 +11,7 @@ img {
   text-align: center;
   margin: auto;
   height:300px;
-}
-
-h1 {
-  margin-bottom: 0px;
+  border: #e6e6e6 solid 1px;
 }
 
 
@@ -26,18 +23,38 @@ h1 {
   /*flex-direction: row-reverse;*/
 }
 
+.movie-container {
+  margin: 15px 10px;
+  width: 210px;
+
+}
+
+
 .book-titles {
   margin-left: 30px;
 }
 
-.book-image {
-  border: #e6e6e6 solid 1px;
+.movie-list {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+h1 {
+  font-size: 1.2em;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 0.9em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+
+
 hr {
-  margin-top: 40px;
-  border: 0;
-  height: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: 30px;
 }
