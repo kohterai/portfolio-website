@@ -9,6 +9,8 @@ import $ from 'jquery'
 class MenuTitle extends Component {
   scrollToSection(id) {
     $(document).ready(function(){
+        // console.log("scroll")
+
         // .second-scroll prevents the ball from getting confused when a user tries to click another title while scrolling.
         // if user is superhuman and can click three times during the scroll, scroll will get confused.
         if ($("#menu-ball").hasClass("scrolling")) {
@@ -62,7 +64,7 @@ class MenuTitle extends Component {
 
           //dont scroll if you are coming to thumbnail page from project page
 
-          $(document.body).animate({
+          $("html,body").animate({
             'scrollTop':   $(`#${id}`).offset().top-35
             }, 0,function(){
               // call back after scroll animation is completed
@@ -77,7 +79,10 @@ class MenuTitle extends Component {
           $("#menu-ball").css({marginTop: ballPos})
           $("#menu-ball").addClass("scrolling")
 
-          $(document.body).animate({
+
+          console.log("scroll function")
+          console.log($(`#${id}`).offset().top)
+          $("html,body").animate({
           'scrollTop':   $(`#${id}`).offset().top-35
           }, 400,function(){
             // call back after scroll animation is completed
