@@ -36,9 +36,9 @@ class Oryx extends Component {
           <h1>Insān</h1>
           <h6>Short Film</h6>
 
-          <p>Insān is a about an Emirati man that can communicate with the Oryx.
-          Oryx footage was captured in the Arabian Oryx Protected Area bordering Saudi Arabia.</p>
-
+          <p>Insān is a about an Emirati man that shares with us the story of the first speaking Arabian Oryx "Mozaik" that changed the course of his
+          life and for that matter the future of humankind.
+          Insān was shot in the UAE with the oryx footage captured in the Arabian Oryx Protected Area bordering Saudi Arabia.</p>
         </div>
 
         <ImageLoader source={oryx1} ratio="r169"/>
