@@ -73,105 +73,15 @@ import drcT1 from './Projects/Cinematography/photos/drc-thumb1.jpg'
 import drcT2 from './Projects/Cinematography/photos/drc-thumb2.jpg'
 import drcT3 from './Projects/Cinematography/photos/drc-thumb3.jpg'
 
+import Monarchs from './Projects/Cinematography/Monarchs'
+import monarchsT1 from './Projects/Cinematography/photos/monarchs-thumb1.jpg'
+import monarchsT2 from './Projects/Cinematography/photos/monarchs-thumb2.jpg'
+import monarchsT3 from './Projects/Cinematography/photos/monarchs-thumb3.jpg'
 
 // ref is for reference for ID, since cant have space
 
 const projectList = [
 
-    { type: "Cinematography",
-    longThumb: true,
-    projects: [
-                { title: "Workshops",
-                  ref: "workshops",
-                  caption: "Cinematography Workshops at NYU Abu Dhabi",
-                  thumbnail1: workshopT1,
-                  thumbnail2: workshopT2,
-                  thumbnail3: workshopT3,
-                  path: '/projects/CinematographyWorkshop',
-                  main: CinematographyWorkshop
-                },
-                { title: "Ámame",
-                  ref: "amame",
-                  caption: "Music Video",
-                  thumbnail1: AmameT1,
-                  thumbnail2: AmameT2,
-                  thumbnail3: AmameT3,
-                  path: '/projects/Amame',
-                  main: Amame
-                },
-                { title: "Rescue",
-                  ref: "rescue",
-                  caption: "Space Sci-Fi",
-                  thumbnail1: rescueT1,
-                  thumbnail2: rescueT2,
-                  thumbnail3: rescueT3,
-                  path: '/projects/Rescue',
-                  main: Rescue
-                },
-                { title: "Field Work DRC",
-                  ref: "drc",
-                  caption: "Documentary on Social Science Research",
-                  thumbnail1: drcT2,
-                  thumbnail2: drcT1,
-                  thumbnail3: drcT3,
-                  path: '/projects/DRC',
-                  main: DRC
-                },
-                { title: "Insān",
-                  ref: "insan",
-                  caption: "Short Film",
-                  thumbnail1: oryxT1,
-                  thumbnail2: oryxT2,
-                  thumbnail3: oryxT3,
-                  path: '/projects/Oryx',
-                  main: Oryx
-                }
-                ]
-  },
-    { type: "Photography",
-    longThumb: false,
-    projects: [{ title: "Sports",
-                  ref: "sports",
-                  caption: "Sports photography",
-                  thumbnail: sportT,
-                  path: '/projects/Sports',
-                  main: Sports
-                },{ title: "Portraits",
-                  ref: "portraits",
-                  caption: "People Photos",
-                  thumbnail: portraitsT,
-                  path: '/projects/Portraits',
-                  main: Portraits
-                },
-                { title: "Theater",
-                  ref: "theater",
-                  caption: "Stills from theater productions",
-                  thumbnail: theaterT,
-                  path: '/projects/Theater',
-                  main: Theater
-                },
-                { title: "Commercial",
-                  ref: "commercial",
-                  caption: "Advertisements and posters",
-                  thumbnail: commercialT,
-                  path: '/projects/Commercial',
-                  main: Commercial
-                },
-                {  title: "Georgia",
-                  ref: "georgia",
-                  caption: "Journey through Georgia",
-                  thumbnail: georgiaT,
-                  path: '/projects/Georgia',
-                  main: Georgia
-                },
-                {  title: "Burj Shadow",
-                  ref: "burj",
-                  caption: "Burj Khalifa Timelapse",
-                  thumbnail: burjT,
-                  path: '/projects/Burj',
-                  main: Burj
-                }]
-  },
   { type: "Design",
     longThumb: false,
     projects: [
@@ -235,6 +145,108 @@ const projectList = [
                   path: '/projects/Triangles',
                   main: Triangles 
                 }]
+  },
+    { type: "Photography",
+    longThumb: false,
+    projects: [{ title: "Sports",
+                  ref: "sports",
+                  caption: "Sports photography",
+                  thumbnail: sportT,
+                  path: '/projects/Sports',
+                  main: Sports
+                },{ title: "Portraits",
+                  ref: "portraits",
+                  caption: "People Photos",
+                  thumbnail: portraitsT,
+                  path: '/projects/Portraits',
+                  main: Portraits
+                },
+                { title: "Theater",
+                  ref: "theater",
+                  caption: "Stills from theater productions",
+                  thumbnail: theaterT,
+                  path: '/projects/Theater',
+                  main: Theater
+                },
+                { title: "Commercial",
+                  ref: "commercial",
+                  caption: "Advertisements and posters",
+                  thumbnail: commercialT,
+                  path: '/projects/Commercial',
+                  main: Commercial
+                },
+                {  title: "Georgia",
+                  ref: "georgia",
+                  caption: "Journey through Georgia",
+                  thumbnail: georgiaT,
+                  path: '/projects/Georgia',
+                  main: Georgia
+                },
+                {  title: "Burj Shadow",
+                  ref: "burj",
+                  caption: "Burj Khalifa Timelapse",
+                  thumbnail: burjT,
+                  path: '/projects/Burj',
+                  main: Burj
+                }]
+  },{ type: "Cinematography",
+    longThumb: true,
+    projects: [
+                { title: "Workshops",
+                  ref: "workshops",
+                  caption: "Cinematography Workshops at NYU Abu Dhabi",
+                  thumbnail1: workshopT1,
+                  thumbnail2: workshopT2,
+                  thumbnail3: workshopT3,
+                  path: '/projects/CinematographyWorkshop',
+                  main: CinematographyWorkshop
+                },
+                { title: "Ámame",
+                  ref: "amame",
+                  caption: "Music Video",
+                  thumbnail1: AmameT1,
+                  thumbnail2: AmameT2,
+                  thumbnail3: AmameT3,
+                  path: '/projects/Amame',
+                  main: Amame
+                },
+                { title: "Rescue",
+                  ref: "rescue",
+                  caption: "Space Sci-Fi",
+                  thumbnail1: rescueT1,
+                  thumbnail2: rescueT2,
+                  thumbnail3: rescueT3,
+                  path: '/projects/Rescue',
+                  main: Rescue
+                },
+                { title: "Field Work DRC",
+                  ref: "drc",
+                  caption: "Documentary on Social Science Research",
+                  thumbnail1: drcT2,
+                  thumbnail2: drcT1,
+                  thumbnail3: drcT3,
+                  path: '/projects/DRC',
+                  main: DRC
+                },
+                { title: "Insān",
+                  ref: "insan",
+                  caption: "Short Film",
+                  thumbnail1: oryxT1,
+                  thumbnail2: oryxT2,
+                  thumbnail3: oryxT3,
+                  path: '/projects/Oryx',
+                  main: Oryx
+                },
+                { title: "Monarcas",
+                  ref: "monarchs",
+                  caption: "Short Film",
+                  thumbnail1: monarchsT1,
+                  thumbnail2: monarchsT2,
+                  thumbnail3: monarchsT3,
+                  path: '/projects/Monarchs',
+                  main: Monarchs
+                }
+                ]
   },
 
   // { type: "Research",

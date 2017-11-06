@@ -80,8 +80,8 @@ class MenuTitle extends Component {
           $("#menu-ball").addClass("scrolling")
 
 
-          console.log("scroll function")
-          console.log($(`#${id}`).offset().top)
+          // console.log("scroll function")
+          // console.log($(`#${id}`).offset().top)
           $("html,body").animate({
           'scrollTop':   $(`#${id}`).offset().top-35
           }, 400,function(){

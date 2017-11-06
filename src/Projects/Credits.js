@@ -14,7 +14,7 @@ class Credits extends Component {
           {this.props.title}
         </div>
         <div className="credit-name">
-          {this.props.name}
+          <a target="_blank" href={this.props.url}>{this.props.name}</a>
         </div>
       </div>
     )
