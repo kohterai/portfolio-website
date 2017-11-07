@@ -65,6 +65,8 @@ class Monarchs extends Component {
               <Credits title="Director" name="Alexis Gambis" url="http://alexisgambis.com"/>
               <Credits title="Cinematography" name="Koh Terai" />
               <Credits title="Producer" name="Abraham Dayan" url="http://www.phoenixfilms.info"/>
+              <Credits title="Butterfly" name="Gaby Munoz" url="https://www.chulatheclown.mx/"/>
+              <Credits title="Butterfly" name="Sampo Kurppa" url="http://agitcirk.com/fin/en/info/sampo-kurppa/"/>
               <Credits title="Production" name="Imaginal Disc" url="http://www.imaginaldisc.com/"/>
             </div>
           </div>
