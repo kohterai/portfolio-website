@@ -34,10 +34,12 @@ img {
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .one-video{
   margin: 0px 10px;
+  margin-bottom: 10px;
 }
 
 video {
