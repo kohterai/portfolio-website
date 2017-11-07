@@ -10,7 +10,7 @@ body {
 img {
   text-align: center;
   margin: auto;
-  height:405px;
+  /*height:405px;*/
   border: #e6e6e6 solid 1px;
 }
 
@@ -34,10 +34,12 @@ img {
   justify-content: center;
   margin-bottom: 30px;
   margin-top: 30px;
+  flex-wrap: wrap;
 }
 
 .one-video{
   margin: 0px 10px;
+  margin-bottom: 10px;
 }
 
 video {
