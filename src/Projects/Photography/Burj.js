@@ -42,7 +42,7 @@ class Burj extends Component {
 
           <p>Commisioned project, chasing the Burj Khalifa shadow from Sunrise to Sunset.
           Project still in post-production. Led by Roberto Casati and Goffredo Puccetti.
-          More details to follow.</p>
+          More details to follow. The project was selected to be a part of the <a href="http://www.globalgradshow.com/projects/burj-shadow/" target="_blank">Global Grad Show 2017</a>.</p>
 
         </div>
         <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/15168931_1027285450732867_3666809875744094507_o.jpg?oh=4ef5fe657625f6cb71e0bc6033998c45&oe=5A0700B3" className="full"/>
@@ -52,6 +52,10 @@ class Burj extends Component {
         <img src={burj3} className="full"/>
         <img src={burj4} className="full"/>
 
+        <div className="big-button-wrapper">
+          <BigButton color="black" textColor="white" url="http://gulfnews.com/xpress/news/nyu-ad-students-scale-new-heights-track-burj-shadow-1.2117082" title="Press"/>
+          <BigButton color="black" textColor="white" url="http://www.globalgradshow.com/projects/burj-shadow/" title="Global Grad Show"/>
+        </div>
       </div>
     )
   }
