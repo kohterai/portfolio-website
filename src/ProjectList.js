@@ -81,7 +81,6 @@ import monarchsT3 from './Projects/Cinematography/photos/monarchs-thumb3.jpg'
 // ref is for reference for ID, since cant have space
 
 const projectList = [
-
   { type: "Design",
     longThumb: false,
     projects: [
@@ -146,6 +145,66 @@ const projectList = [
                   main: Triangles 
                 }]
   },
+{ type: "Cinematography",
+    longThumb: true,
+    projects: [
+                
+                { title: "Monarcas",
+                  ref: "monarchs",
+                  caption: "Short Film",
+                  thumbnail1: monarchsT1,
+                  thumbnail2: monarchsT2,
+                  thumbnail3: monarchsT3,
+                  path: '/projects/Monarchs',
+                  main: Monarchs
+                },
+                { title: "Insān",
+                  ref: "insan",
+                  caption: "Short Film",
+                  thumbnail1: oryxT1,
+                  thumbnail2: oryxT2,
+                  thumbnail3: oryxT3,
+                  path: '/projects/Oryx',
+                  main: Oryx
+                },
+                { title: "Field Work DRC",
+                  ref: "drc",
+                  caption: "Documentary on Social Science Research",
+                  thumbnail1: drcT2,
+                  thumbnail2: drcT1,
+                  thumbnail3: drcT3,
+                  path: '/projects/DRC',
+                  main: DRC
+                },
+                { title: "Rescue",
+                  ref: "rescue",
+                  caption: "Space Sci-Fi",
+                  thumbnail1: rescueT1,
+                  thumbnail2: rescueT2,
+                  thumbnail3: rescueT3,
+                  path: '/projects/Rescue',
+                  main: Rescue
+                },
+                { title: "Ámame",
+                  ref: "amame",
+                  caption: "Music Video",
+                  thumbnail1: AmameT1,
+                  thumbnail2: AmameT2,
+                  thumbnail3: AmameT3,
+                  path: '/projects/Amame',
+                  main: Amame
+                },
+                { title: "Workshops",
+                  ref: "workshops",
+                  caption: "Cinematography Workshops at NYU Abu Dhabi",
+                  thumbnail1: workshopT1,
+                  thumbnail2: workshopT2,
+                  thumbnail3: workshopT3,
+                  path: '/projects/CinematographyWorkshop',
+                  main: CinematographyWorkshop
+                }
+                ]
+  },
     { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
@@ -189,64 +248,6 @@ const projectList = [
                   path: '/projects/Burj',
                   main: Burj
                 }]
-  },{ type: "Cinematography",
-    longThumb: true,
-    projects: [
-                { title: "Workshops",
-                  ref: "workshops",
-                  caption: "Cinematography Workshops at NYU Abu Dhabi",
-                  thumbnail1: workshopT1,
-                  thumbnail2: workshopT2,
-                  thumbnail3: workshopT3,
-                  path: '/projects/CinematographyWorkshop',
-                  main: CinematographyWorkshop
-                },
-                { title: "Ámame",
-                  ref: "amame",
-                  caption: "Music Video",
-                  thumbnail1: AmameT1,
-                  thumbnail2: AmameT2,
-                  thumbnail3: AmameT3,
-                  path: '/projects/Amame',
-                  main: Amame
-                },
-                { title: "Rescue",
-                  ref: "rescue",
-                  caption: "Space Sci-Fi",
-                  thumbnail1: rescueT1,
-                  thumbnail2: rescueT2,
-                  thumbnail3: rescueT3,
-                  path: '/projects/Rescue',
-                  main: Rescue
-                },
-                { title: "Field Work DRC",
-                  ref: "drc",
-                  caption: "Documentary on Social Science Research",
-                  thumbnail1: drcT2,
-                  thumbnail2: drcT1,
-                  thumbnail3: drcT3,
-                  path: '/projects/DRC',
-                  main: DRC
-                },
-                { title: "Insān",
-                  ref: "insan",
-                  caption: "Short Film",
-                  thumbnail1: oryxT1,
-                  thumbnail2: oryxT2,
-                  thumbnail3: oryxT3,
-                  path: '/projects/Oryx',
-                  main: Oryx
-                },
-                { title: "Monarcas",
-                  ref: "monarchs",
-                  caption: "Short Film",
-                  thumbnail1: monarchsT1,
-                  thumbnail2: monarchsT2,
-                  thumbnail3: monarchsT3,
-                  path: '/projects/Monarchs',
-                  main: Monarchs
-                }
-                ]
   },
 
   // { type: "Research",

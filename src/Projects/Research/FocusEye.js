@@ -11,6 +11,7 @@ import focuseye4 from './photos/focuseye-4.jpg'
 import focuseye5 from './photos/focuseye-5.jpg'
 import focuseye6 from './photos/focuseye-6.jpg'
 import focuseye7 from './photos/focuseye-7.jpg'
+import focuseye8 from './photos/focuseye-8.jpg'
 
 
 import BackgroundImage from 'react-background-image-loader';
@@ -26,7 +27,7 @@ class focuseye extends Component {
   render() {
     return (
       <div className="project-content">
-        <ImageLoader source={focuseye1} />
+        <ImageLoader source={focuseye8} />
 
         <div className="text-container">
           <h1>Focus Eye</h1>
@@ -48,6 +49,7 @@ class focuseye extends Component {
           </div>
         </div>
         
+        <ImageLoader source={focuseye1} />
         <ImageLoader source={focuseye2} />
         <ImageLoader source={focuseye3} />
 
