@@ -10,7 +10,8 @@ body {
 img {
   text-align: center;
   margin: auto;
-  height:300px;
+  max-height: 300px;
+  max-width: 200px;
 }
 
 h1 {
