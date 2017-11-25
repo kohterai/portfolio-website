@@ -78,6 +78,11 @@ import monarchsT1 from './Projects/Cinematography/photos/monarchs-thumb1.jpg'
 import monarchsT2 from './Projects/Cinematography/photos/monarchs-thumb2.jpg'
 import monarchsT3 from './Projects/Cinematography/photos/monarchs-thumb3.jpg'
 
+import Ookami from './Projects/Cinematography/Ookami'
+import ookamiT1 from './Projects/Cinematography/photos/ookami-thumb1.jpg'
+import ookamiT2 from './Projects/Cinematography/photos/ookami-thumb2.jpg'
+import ookamiT3 from './Projects/Cinematography/photos/ookami-thumb3.jpg'
+
 // ref is for reference for ID, since cant have space
 
 const projectList = [
@@ -184,6 +189,15 @@ const projectList = [
                   thumbnail3: rescueT3,
                   path: '/projects/Rescue',
                   main: Rescue
+                },
+                { title: "Ookami Shonen",
+                  ref: "ookami",
+                  caption: "Short Film",
+                  thumbnail1: ookamiT1,
+                  thumbnail2: ookamiT2,
+                  thumbnail3: ookamiT3,
+                  path: '/projects/Ookami',
+                  main: Ookami
                 },
                 { title: "Ámame",
                   ref: "amame",

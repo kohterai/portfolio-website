@@ -27,8 +27,7 @@ class Rescue extends Component {
   render() {
     return (
       <div className="project-content">
-
-        <ImageLoader source={rescue0} />
+        <ImageLoader source={rescue1} ratio="r235"/>
 
         <div className="text-container">
           <h1>Rescue</h1>
@@ -38,7 +37,6 @@ class Rescue extends Component {
 
         </div>
 
-        <ImageLoader source={rescue1} ratio="r235"/>
 
         <ImageLoader source={rescue2} ratio="r235"/>
 
