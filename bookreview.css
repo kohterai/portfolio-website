@@ -29,6 +29,10 @@ h3 {
   font-size: 0.8em;
   margin-top: 0px;
 }
+/*
+p {
+  text-align: justify;
+}*/
 
 .book-info-container {
   display: flex;
