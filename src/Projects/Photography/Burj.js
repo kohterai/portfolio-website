@@ -45,7 +45,6 @@ class Burj extends Component {
           More details to follow. The project was selected to be a part of the <a href="http://www.globalgradshow.com/projects/burj-shadow/" target="_blank">Global Grad Show 2017</a>.</p>
 
         </div>
-        <img src="https://scontent-nrt1-1.xx.fbcdn.net/v/t31.0-8/15168931_1027285450732867_3666809875744094507_o.jpg?oh=4ef5fe657625f6cb71e0bc6033998c45&oe=5A0700B3" className="full"/>
 
         <img src={burj2} className="full"/>
         <img src={burj1} className="full"/>
