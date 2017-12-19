@@ -18,6 +18,9 @@ import cameldictT from './Projects/Design/photos/cameldict-thumb.jpg'
 import Callscribe from './Projects/Design/Callscribe'
 import callscribeT from './Projects/Design/photos/callscribe-thumb.jpg'
 
+import CCSAD from './Projects/Design/CCSAD'
+import ccsadT from './Projects/Design/photos/ccsad-thumb.jpg'
+
 
 // Research Projects
 
@@ -158,7 +161,7 @@ const projectList = [
                 }
                 ]
   },
-    { type: "Photography",
+  { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
                   ref: "sports",
@@ -245,7 +248,14 @@ const projectList = [
                   thumbnail: audiloidT,
                   path: '/projects/audiloid',
                   main: Audiloid 
-                }
+                },
+                // { title: "Cyber Security",
+                //   ref: "ccsad",
+                //   caption: "Website Redesign Center for Cyber Security",
+                //   thumbnail: ccsadT,
+                //   path: '/projects/CCSAD',
+                //   main: CCSAD 
+                // }
                 ]
   },
   { type: "Research",
@@ -272,21 +282,6 @@ const projectList = [
                   main: Dental 
                 }]
   },
-
-  // { type: "Research",
-  //   projects: [{  title: "Haptic",
-  //                 caption: "Dental Simulator with Haptics",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/Haptic',
-  //                 main: Snake
-  //               },
-  //               { title: "VR",
-  //                 caption: "Escape into a rich persons house",
-  //                 thumbnail: oryx1,
-  //                 path: '/projects/VR',
-  //                 main: Snake
-  //               }]
-  // }
 ]
 
 export default projectList
