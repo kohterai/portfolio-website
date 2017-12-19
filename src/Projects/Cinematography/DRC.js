@@ -35,7 +35,7 @@ class DRC extends Component {
 
           <p>Field Work DRC (untitled) is a series of short documentaries uncovering
           how social scientists do research out in the field. Several villages in the
-          Democratic Republic of Congo is used as a case study.</p>
+          Democratic Republic of Congo are used as a case study.</p>
 
         </div>
 

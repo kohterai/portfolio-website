@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.eca7604c.css",
   "main.css.map": "static/css/main.eca7604c.css.map",
-  "main.js": "static/js/main.5885bff9.js",
-  "main.js.map": "static/js/main.5885bff9.js.map",
+  "main.js": "static/js/main.ffe621df.js",
+  "main.js.map": "static/js/main.ffe621df.js.map",
   "static/media/KohTerai-2017CV-JE.pdf": "static/media/KohTerai-2017CV-JE.61afe141.pdf",
   "static/media/amame-1.jpg": "static/media/amame-1.cb0c0ae0.jpg",
   "static/media/amame-2.jpg": "static/media/amame-2.5b62c884.jpg",
@@ -36,6 +36,7 @@
   "static/media/cameldict-3.jpg": "static/media/cameldict-3.da268177.jpg",
   "static/media/cameldict-4.jpg": "static/media/cameldict-4.b2e3508b.jpg",
   "static/media/cameldict-thumb.jpg": "static/media/cameldict-thumb.ac4b5ac0.jpg",
+  "static/media/ccsad-thumb.jpg": "static/media/ccsad-thumb.90e2d94f.jpg",
   "static/media/commercial-1.jpg": "static/media/commercial-1.9d71bc4a.jpg",
   "static/media/commercial-2.jpg": "static/media/commercial-2.55322ecf.jpg",
   "static/media/commercial-3.jpg": "static/media/commercial-3.f1bb2d93.jpg",

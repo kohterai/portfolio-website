@@ -120,6 +120,8 @@ class Menu extends Component {
 
         return "none"        
       } else {
+        console.log("printing res")
+        console.log(res)
         // Display correct submenu based on which project we are on
         for (let category of projectList) {
           for (let project of category.projects) {
@@ -204,16 +206,40 @@ class Menu extends Component {
     // get ball when loading landing page path: "/"
     function menuBallAnimate(path) {
       $( document ).ready(function() {
+        // console.log(path)
         if (path == "/" && !($("#menu-list").hasClass("collapsing"))) {
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
+        } else if (path=="/about") {
+          console.log("in about")
+          // Hide both balls
+
+          $("#menu-ball").addClass("ball-exit")
+          $("#menu-ball").removeClass("ball-enter")
+
+          $("#menu-ball-sub").removeClass("ball-enter-sub")
+          $("#menu-ball-sub").addClass("ball-exit-sub")
+
+          // Make sure that non of the category menu items are bolded
+          $(".menu-title-a").each(function() {
+            $(this).removeClass("active")
+          })
+
+          $(".menu-title").each(function() {
+            $(this).removeClass("active-title")
+          })
+          
+          $(".menu-item").each(function() {
+            $(this).removeClass("active-item")
+          })
+
+
         } else {
           // Goes inside here while "collapsing" or not "/"
           $("#menu-ball").removeClass("ball-enter")
           $("#menu-ball").addClass("ball-exit")
 
           $("#menu-ball-sub").removeClass("ball-exit-sub")
-          console.log("calling enter ball")
           $("#menu-ball-sub").addClass("ball-enter-sub")
         }
       });

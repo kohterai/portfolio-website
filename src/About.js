@@ -4,16 +4,28 @@ import {
 } from 'react-router-dom'
 
 import CV from './KohTerai-2017CV-JE.pdf'
+import portrait from './photos/portrait.jpg'
+import portrait2 from './photos/portrait2.jpg'
+import portrait3 from './photos/portrait3.jpg'
+
+
+import ImageLoader from './Projects/ImageLoader'
+
 
 class About extends Component {
   render() {
     return (
       <div id="about">
-        <div className="text-container">
-          <h1>Koh Terai</h1>
-          <h6>St. Marys International School Tokyo '13</h6>
-          <h6>New York University Abu Dhabi '17</h6>
-          <h6>Contact: koh.terai@gmail.com</h6>
+        <div style={{textAlign: 'center'}} className="text-container">
+          <div>
+            <img style={{height: '300px', width: '300px', marginTop: '50px'}} src={portrait3} />
+            <div>
+              <p style={{fontSize: '0.8em', fontWeight: '600'}}>I’m currently a freelance design consultant and visual storyteller.</p>
+
+              <p style={{fontSize: '0.8em'}}>I always strive to bring beauty and excellence to my work.</p>
+
+            </div>
+          </div>
         </div>
       </div>
     )
@@ -21,3 +33,19 @@ class About extends Component {
 }
 
 export default About
+
+
+          // <div className="resumeItem">
+          //   <div className="resumeItemTitle">New York University Abu Dhabi</div>
+          //   <div className="resumeItemCaption">Class of 2017 - Computer Science with a concentration in Economics</div>
+          // </div>
+
+          // <div className="resumeItem">
+          //   <div className="resumeItemTitle">St. Marys International School, Tokyo</div>
+          //   <div className="resumeItemCaption">Graduated as a part of Class of 2013</div>
+          // </div>
+
+          //           <h2>Resume</h2>
+          // <p style={{fontSize: '0.8em'}}>I am a graduate of <a target="_blank" href="https://nyuad.nyu.edu">NYU Abu Dhabi</a> in Computer Science with a concentration in Economics.</p>
+          // <p style={{fontSize: '0.8em'}}>I've interned at Oliver Wyman and Takram Design Engineering</p>
+          // <p style={{fontSize: '0.8em'}}>I've shot films and photographs in the desert, in the snow, in the forest, in the rain, and on the water.</p>
