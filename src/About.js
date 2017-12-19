@@ -4,8 +4,6 @@ import {
 } from 'react-router-dom'
 
 import CV from './KohTerai-2017CV-JE.pdf'
-import portrait from './photos/portrait.jpg'
-import portrait2 from './photos/portrait2.jpg'
 import portrait3 from './photos/portrait3.jpg'
 
 
