@@ -5,6 +5,8 @@ import {
 
 import CV from './KohTerai-2017CV-JE.pdf'
 import portrait3 from './photos/portrait3.jpg'
+import portrait1 from './photos/rescue-0.jpg'
+
 
 
 import ImageLoader from './Projects/ImageLoader'
@@ -16,7 +18,9 @@ class About extends Component {
       <div id="about">
         <div style={{textAlign: 'center'}} className="text-container">
           <div>
-            <img style={{height: '300px', width: '300px', marginTop: '50px'}} src={portrait3} />
+            <div style={{minHeight: '500px', height:'500px', width: '100%'}}>
+              <ImageLoader source={portrait1} />
+            </div>
             <div>
               <p style={{fontSize: '0.8em', fontWeight: '600'}}>I’m currently a freelance design consultant and visual storyteller.</p>
 
@@ -29,6 +33,8 @@ class About extends Component {
     )
   }
 }
+            // <img style={{height: '300px', width: '300px', marginTop: '50px'}} src={portrait1} />
+
 
 export default About
 
