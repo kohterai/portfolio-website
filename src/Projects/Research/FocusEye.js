@@ -90,8 +90,9 @@ class focuseye extends Component {
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Product Designer/Engineer" name="Shunsuke Kasahara" />
+              <Credits title="Product Designer/Engineer" name="Shunsuke Kasahara" url="http://shunsukekasahara.com" />
               <Credits title="Concept/Software" name="Koh Terai" />
+              <Credits title="Mentor" name="Saurabh Ray" url="https://nyuad.nyu.edu/en/academics/divisions/science/faculty/saurabh-ray.html" />
             </div>
           </div>
         </div>
