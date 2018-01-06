@@ -39,6 +39,7 @@ p {
   align-items: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  /*flex-wrap: wrap;*/
   /*flex-direction: row-reverse;*/
 }
 
