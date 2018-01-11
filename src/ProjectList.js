@@ -33,6 +33,9 @@ import TrianglesT from './Projects/Research/photos/triangles-thumb.jpg'
 import Dental from './Projects/Research/Dental'
 import DentalT from './Projects/Research/photos/dental-thumb.jpg'
 
+import Architect from './Projects/Research/Architecture'
+import ArchitectT from './Projects/Research/photos/Architect-thumb.jpg'
+
 
 // Photography Projects
 import Georgia from './Projects/Photography/Georgia'
@@ -92,6 +95,91 @@ import ookamiT3 from './Projects/Cinematography/photos/ookami-thumb3.jpg'
 // ref is for reference for ID, since cant have space
 
 const projectList = [
+  { type: "Design",
+    longThumb: false,
+    projects: [
+                { title: "NYU Vote",
+                  ref: "nyuvote",
+                  caption: "Voting platform for NYU",
+                  thumbnail: nyuvoteT,
+                  path: '/projects/nyuvote',
+                  main: NYUVote 
+                },
+                { title: "Yalla",
+                  ref: "yalla",
+                  caption: "Social Events Web App",
+                  thumbnail: yallaT,
+                  path: '/projects/Yalla',
+                  main: Yalla 
+                },
+                { title: "Camel Dictionary",
+                  ref: "cameldict",
+                  caption: "Minimalist Arabic Dictionary",
+                  thumbnail: cameldictT,
+                  path: '/projects/cameldict',
+                  main: CamelDict
+                },
+                { title: "Callscribe",
+                  ref: "callscribe",
+                  caption: "Call Transcription and Recording App",
+                  thumbnail: callscribeT,
+                  path: '/projects/callscribe',
+                  main: Callscribe
+                },
+                {  title: "Hungry Snake",
+                  ref: "hungrysnake",
+                  caption: "Kinetic sculpture",
+                  thumbnail: hungrySnakeT,
+                  path: '/projects/snake',
+                  main: Snake
+                },
+                { title: "Audiloid",
+                  ref: "audiloid",
+                  caption: "Celluloid based audio player",
+                  thumbnail: audiloidT,
+                  path: '/projects/audiloid',
+                  main: Audiloid 
+                },
+                // { title: "Cyber Security",
+                //   ref: "ccsad",
+                //   caption: "Website Redesign Center for Cyber Security",
+                //   thumbnail: ccsadT,
+                //   path: '/projects/CCSAD',
+                //   main: CCSAD 
+                // }
+                ]
+  },
+  { type: "Research",
+    longThumb: false,
+    projects: [  { title: "FocusEye",
+                  ref: "focuseye",
+                  caption: "Follow focus reimagined",
+                  thumbnail: focuseyeT,
+                  path: '/projects/FocusEye',
+                  main: FocusEye 
+                },
+                  { title: "Triangles",
+                  ref: "triangles",
+                  caption: "Wooden sculpture",
+                  thumbnail: TrianglesT,
+                  path: '/projects/Triangles',
+                  main: Triangles 
+                },
+                  { title: "Architecture",
+                  ref: "architecture",
+                  caption: "Architectural Design",
+                  thumbnail: ArchitectT,
+                  path: '/projects/Architect',
+                  main: Architect
+                },
+                  { title: "Haptic Simulator",
+                  ref: "dental",
+                  caption: "Haptic-based periodontal training",
+                  thumbnail: DentalT,
+                  path: '/projects/Dental',
+                  main: Dental 
+                }]
+  },
   { type: "Cinematography",
     longThumb: true,
     projects: [
@@ -203,84 +291,6 @@ const projectList = [
                   thumbnail: burjT,
                   path: '/projects/Burj',
                   main: Burj
-                }]
-  },
-  { type: "Design",
-    longThumb: false,
-    projects: [
-                { title: "NYU Vote",
-                  ref: "nyuvote",
-                  caption: "Voting platform for NYU",
-                  thumbnail: nyuvoteT,
-                  path: '/projects/nyuvote',
-                  main: NYUVote 
-                },
-                { title: "Yalla",
-                  ref: "yalla",
-                  caption: "Social Events Web App",
-                  thumbnail: yallaT,
-                  path: '/projects/Yalla',
-                  main: Yalla 
-                },
-                { title: "Camel Dictionary",
-                  ref: "cameldict",
-                  caption: "Minimalist Arabic Dictionary",
-                  thumbnail: cameldictT,
-                  path: '/projects/cameldict',
-                  main: CamelDict
-                },
-                { title: "Callscribe",
-                  ref: "callscribe",
-                  caption: "Call Transcription and Recording App",
-                  thumbnail: callscribeT,
-                  path: '/projects/callscribe',
-                  main: Callscribe
-                },
-                {  title: "Hungry Snake",
-                  ref: "hungrysnake",
-                  caption: "Kinetic sculpture",
-                  thumbnail: hungrySnakeT,
-                  path: '/projects/snake',
-                  main: Snake
-                },
-                { title: "Audiloid",
-                  ref: "audiloid",
-                  caption: "Celluloid based audio player",
-                  thumbnail: audiloidT,
-                  path: '/projects/audiloid',
-                  main: Audiloid 
-                },
-                // { title: "Cyber Security",
-                //   ref: "ccsad",
-                //   caption: "Website Redesign Center for Cyber Security",
-                //   thumbnail: ccsadT,
-                //   path: '/projects/CCSAD',
-                //   main: CCSAD 
-                // }
-                ]
-  },
-  { type: "Research",
-    longThumb: false,
-    projects: [  { title: "FocusEye",
-                  ref: "focuseye",
-                  caption: "Follow focus reimagined",
-                  thumbnail: focuseyeT,
-                  path: '/projects/FocusEye',
-                  main: FocusEye 
-                },
-                  { title: "Triangles",
-                  ref: "triangles",
-                  caption: "Wooden sculpture",
-                  thumbnail: TrianglesT,
-                  path: '/projects/Triangles',
-                  main: Triangles 
-                },
-                  { title: "Haptic Simulator",
-                  ref: "dental",
-                  caption: "Haptic-based periodontal training",
-                  thumbnail: DentalT,
-                  path: '/projects/Dental',
-                  main: Dental 
                 }]
   }
 ]
