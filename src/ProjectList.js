@@ -165,13 +165,6 @@ const projectList = [
                   path: '/projects/Triangles',
                   main: Triangles 
                 },
-                  { title: "Architecture",
-                  ref: "architecture",
-                  caption: "Architectural Design",
-                  thumbnail: ArchitectT,
-                  path: '/projects/Architect',
-                  main: Architect
-                },
                   { title: "Haptic Simulator",
                   ref: "dental",
                   caption: "Haptic-based periodontal training",
