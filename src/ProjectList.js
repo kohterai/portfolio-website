@@ -140,18 +140,7 @@ const projectList = [
                   path: '/projects/audiloid',
                   main: Audiloid 
                 },
-                // { title: "Cyber Security",
-                //   ref: "ccsad",
-                //   caption: "Website Redesign Center for Cyber Security",
-                //   thumbnail: ccsadT,
-                //   path: '/projects/CCSAD',
-                //   main: CCSAD 
-                // }
-                ]
-  },
-  { type: "Research",
-    longThumb: false,
-    projects: [  { title: "FocusEye",
+                { title: "FocusEye",
                   ref: "focuseye",
                   caption: "Follow focus reimagined",
                   thumbnail: focuseyeT,
@@ -171,7 +160,15 @@ const projectList = [
                   thumbnail: DentalT,
                   path: '/projects/Dental',
                   main: Dental 
-                }]
+                }
+                // { title: "Cyber Security",
+                //   ref: "ccsad",
+                //   caption: "Website Redesign Center for Cyber Security",
+                //   thumbnail: ccsadT,
+                //   path: '/projects/CCSAD',
+                //   main: CCSAD 
+                // }
+                ]
   },
   { type: "Cinematography",
     longThumb: true,
