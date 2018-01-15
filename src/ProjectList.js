@@ -105,12 +105,12 @@ const projectList = [
                   path: '/projects/nyuvote',
                   main: NYUVote 
                 },
-                { title: "Yalla",
-                  ref: "yalla",
-                  caption: "Social Events Web App",
-                  thumbnail: yallaT,
-                  path: '/projects/Yalla',
-                  main: Yalla 
+                { title: "Callscribe",
+                  ref: "callscribe",
+                  caption: "Call Transcription and Recording App",
+                  thumbnail: callscribeT,
+                  path: '/projects/callscribe',
+                  main: Callscribe
                 },
                 { title: "Camel Dictionary",
                   ref: "cameldict",
@@ -119,12 +119,12 @@ const projectList = [
                   path: '/projects/cameldict',
                   main: CamelDict
                 },
-                { title: "Callscribe",
-                  ref: "callscribe",
-                  caption: "Call Transcription and Recording App",
-                  thumbnail: callscribeT,
-                  path: '/projects/callscribe',
-                  main: Callscribe
+                { title: "Yalla",
+                  ref: "yalla",
+                  caption: "Social Events Web App",
+                  thumbnail: yallaT,
+                  path: '/projects/Yalla',
+                  main: Yalla 
                 },
                 {  title: "Hungry Snake",
                   ref: "hungrysnake",
