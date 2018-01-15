@@ -29,8 +29,8 @@ class Snake extends Component {
           <h1>Hungry Snake</h1>
           <h6>Interactive Kinetic Sculpture</h6>
 
-          <p>The hungry snake moves to wherever the icecream is. Users can use a keyboard
-          to move the icecream in front of the snake. wherever the icecream goes, the snake moves to.</p>
+          <p>The Hungry Snake is an interactive kinetic sculpture. The black ice cream at the front can be moved left and right using a keyboard.
+          Wherever the ice cream moves, the snake chases it in a slithering motion.</p>
 
         <div className = "text-paragraphs">
           <h2>Concept</h2>

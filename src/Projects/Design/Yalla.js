@@ -61,34 +61,24 @@ class Yalla extends Component {
         </div>
       </div>
 
-        <ImageLoader source={yalla5} />
         <ImageLoader source={yalla3} />
 
       <div className="project-content">
         <div className="text-container">
           <h2>Event Creation</h2>
-          <p>When users try to create a new event, the right panel updates to the "create event" screen.</p>
+          <p>When users try to create a new event, the right panel updates to the "create event" screen.
+          Users can drag images into the browser on Desktop and tap to upload images on mobile.</p>
         </div>
       </div>
 
         <ImageLoader source={yalla6} />
 
-      <div className="project-content">
-        <div className="text-container">
-          <h2>Logo</h2>
-          <p>I oversaw the logo creation process. We imagined the logo to be constructed of 
-          straight lines, resemblant of hands on a clock.</p>
-        </div>
-      </div>
-
-        <ImageLoader source={yalla4} />
-
         <div className="text-container">
           <div className = "text-paragraphs">
             <h2>Credits</h2>
             <div className="credit-wrapper">
-              <Credits title="Lead Engineer" name="Ling Zhang" />
-              <Credits title="Business" name="Brett Bolton" />
+              <Credits title="Lead Engineer" url="https://angel.co/ling-zhang-1" name="Ling Zhang" />
+              <Credits title="Business" url="https://www.linkedin.com/in/brett-bolton-75904753/" name="Brett Bolton" />
               <Credits title="Design/Front-end" name="Koh Terai" />
               <Credits title="Logo" name="Mariko Kuroda" />
             </div>
