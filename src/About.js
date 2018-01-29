@@ -22,10 +22,7 @@ class About extends Component {
               <ImageLoader source={portrait1} />
             </div>
             <div>
-              <p style={{fontSize: '0.8em', fontWeight: '600'}}>I’m currently a freelance designer and visual storyteller.</p>
-              <p style={{fontSize: '0.8em'}}>I graduated <a href="https://nyuad.nyu.edu/en/">NYU Abu Dhabi</a> in 2017.</p>
-
-              <p style={{fontSize: '0.8em'}}>I always strive to bring beauty and excellence to my work.</p>
+              <p style={{fontSize: '0.8em'}}>I strive to bring beauty and excellence to my work.</p>
 
             </div>
           </div>
