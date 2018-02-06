@@ -92,6 +92,11 @@ import ookamiT1 from './Projects/Cinematography/photos/ookami-thumb1.jpg'
 import ookamiT2 from './Projects/Cinematography/photos/ookami-thumb2.jpg'
 import ookamiT3 from './Projects/Cinematography/photos/ookami-thumb3.jpg'
 
+import PenShikoku from './Projects/Cinematography/PenShikoku'
+import penShikokuT1 from './Projects/Cinematography/photos/penshikoku-thumb1.jpg'
+import penShikokuT2 from './Projects/Cinematography/photos/penshikoku-thumb2.jpg'
+import penShikokuT3 from './Projects/Cinematography/photos/penshikoku-thumb3.jpg'
+
 // ref is for reference for ID, since cant have space
 
 const projectList = [
@@ -173,7 +178,15 @@ const projectList = [
   { type: "Cinematography",
     longThumb: true,
     projects: [
-                
+                { title: "PenShikoku",
+                  ref: "penshikoku",
+                  caption: "Short Film",
+                  thumbnail1: penShikokuT1,
+                  thumbnail2: penShikokuT2,
+                  thumbnail3: penShikokuT3,
+                  path: '/projects/PenShikoku',
+                  main: PenShikoku
+                },
                 { title: "Monarcas",
                   ref: "monarchs",
                   caption: "Short Film",
