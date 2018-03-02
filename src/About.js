@@ -5,7 +5,7 @@ import {
 
 import CV from './KohTerai-2017CV-JE.pdf'
 import portrait3 from './photos/portrait3.jpg'
-import portrait1 from './photos/rescue-0.jpg'
+import portrait1 from './photos/koh-5.jpg'
 
 
 
@@ -18,8 +18,8 @@ class About extends Component {
       <div id="about">
         <div style={{textAlign: 'center'}} className="text-container">
           <div>
-            <div style={{minHeight: '500px', height:'500px', width: '100%'}}>
-              <ImageLoader source={portrait1} />
+            <div style={{width: '100%'}}>
+              <img style={{width: '350px'}} src={portrait1} />
             </div>
             <div>
               <p style={{fontSize: '0.8em'}}>I strive to bring beauty and excellence to my work.</p>
