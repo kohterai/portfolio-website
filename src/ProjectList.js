@@ -100,81 +100,6 @@ import penShikokuT3 from './Projects/Cinematography/photos/penshikoku-thumb3.jpg
 // ref is for reference for ID, since cant have space
 
 const projectList = [
-  { type: "Design",
-    longThumb: false,
-    projects: [
-                { title: "NYU Vote",
-                  ref: "nyuvote",
-                  caption: "Voting platform for NYU",
-                  thumbnail: nyuvoteT,
-                  path: '/projects/nyuvote',
-                  main: NYUVote 
-                },
-                { title: "Callscribe",
-                  ref: "callscribe",
-                  caption: "Call Transcription and Recording App",
-                  thumbnail: callscribeT,
-                  path: '/projects/callscribe',
-                  main: Callscribe
-                },
-                { title: "Camel Dictionary",
-                  ref: "cameldict",
-                  caption: "Minimalist Arabic Dictionary",
-                  thumbnail: cameldictT,
-                  path: '/projects/cameldict',
-                  main: CamelDict
-                },
-                { title: "Yalla",
-                  ref: "yalla",
-                  caption: "Social Events Web App",
-                  thumbnail: yallaT,
-                  path: '/projects/Yalla',
-                  main: Yalla 
-                },
-                {  title: "Hungry Snake",
-                  ref: "hungrysnake",
-                  caption: "Kinetic sculpture",
-                  thumbnail: hungrySnakeT,
-                  path: '/projects/snake',
-                  main: Snake
-                },
-                { title: "Audiloid",
-                  ref: "audiloid",
-                  caption: "Celluloid based audio player",
-                  thumbnail: audiloidT,
-                  path: '/projects/audiloid',
-                  main: Audiloid 
-                },
-                { title: "FocusEye",
-                  ref: "focuseye",
-                  caption: "Follow focus reimagined",
-                  thumbnail: focuseyeT,
-                  path: '/projects/FocusEye',
-                  main: FocusEye 
-                },
-                  { title: "Triangles",
-                  ref: "triangles",
-                  caption: "Wooden sculpture",
-                  thumbnail: TrianglesT,
-                  path: '/projects/Triangles',
-                  main: Triangles 
-                },
-                  { title: "Haptic Simulator",
-                  ref: "dental",
-                  caption: "Haptic-based periodontal training",
-                  thumbnail: DentalT,
-                  path: '/projects/Dental',
-                  main: Dental 
-                }
-                // { title: "Cyber Security",
-                //   ref: "ccsad",
-                //   caption: "Website Redesign Center for Cyber Security",
-                //   thumbnail: ccsadT,
-                //   path: '/projects/CCSAD',
-                //   main: CCSAD 
-                // }
-                ]
-  },
   { type: "Cinematography",
     longThumb: true,
     projects: [
@@ -250,6 +175,81 @@ const projectList = [
                   path: '/projects/CinematographyWorkshop',
                   main: CinematographyWorkshop
                 }
+                ]
+  },
+  { type: "Design",
+    longThumb: false,
+    projects: [
+                { title: "NYU Vote",
+                  ref: "nyuvote",
+                  caption: "Voting platform for NYU",
+                  thumbnail: nyuvoteT,
+                  path: '/projects/nyuvote',
+                  main: NYUVote 
+                },
+                { title: "Callscribe",
+                  ref: "callscribe",
+                  caption: "Call Transcription and Recording App",
+                  thumbnail: callscribeT,
+                  path: '/projects/callscribe',
+                  main: Callscribe
+                },
+                { title: "Camel Dictionary",
+                  ref: "cameldict",
+                  caption: "Minimalist Arabic Dictionary",
+                  thumbnail: cameldictT,
+                  path: '/projects/cameldict',
+                  main: CamelDict
+                },
+                { title: "Yalla",
+                  ref: "yalla",
+                  caption: "Social Events Web App",
+                  thumbnail: yallaT,
+                  path: '/projects/Yalla',
+                  main: Yalla 
+                },
+                {  title: "Hungry Snake",
+                  ref: "hungrysnake",
+                  caption: "Kinetic sculpture",
+                  thumbnail: hungrySnakeT,
+                  path: '/projects/snake',
+                  main: Snake
+                },
+                { title: "Audiloid",
+                  ref: "audiloid",
+                  caption: "Celluloid based audio player",
+                  thumbnail: audiloidT,
+                  path: '/projects/audiloid',
+                  main: Audiloid 
+                },
+                { title: "FocusEye",
+                  ref: "focuseye",
+                  caption: "Follow focus reimagined",
+                  thumbnail: focuseyeT,
+                  path: '/projects/FocusEye',
+                  main: FocusEye 
+                },
+                  { title: "Triangles",
+                  ref: "triangles",
+                  caption: "Wooden sculpture",
+                  thumbnail: TrianglesT,
+                  path: '/projects/Triangles',
+                  main: Triangles 
+                },
+                  { title: "Haptic Simulator",
+                  ref: "dental",
+                  caption: "Haptic-based periodontal training",
+                  thumbnail: DentalT,
+                  path: '/projects/Dental',
+                  main: Dental 
+                }
+                // { title: "Cyber Security",
+                //   ref: "ccsad",
+                //   caption: "Website Redesign Center for Cyber Security",
+                //   thumbnail: ccsadT,
+                //   path: '/projects/CCSAD',
+                //   main: CCSAD 
+                // }
                 ]
   },
   { type: "Photography",
