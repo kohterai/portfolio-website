@@ -64,8 +64,8 @@
 
 .thumbnail-long {
     flexGrow: 1;
-    width: 33.3%;
-    max-width: 33.3%;
+    width: 33.5%;
+    max-width: 33.5%;
     text-align: center;
     margin: 20px 0px 0px 0px;
 }
