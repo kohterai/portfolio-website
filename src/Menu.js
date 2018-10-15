@@ -42,7 +42,7 @@ class Menu extends Component {
       $("#cover").css({"display":"none"})
     }
   }
-  
+
 
   isMenuOpen() {
     return (this.state.open) ? "menu-open" : "menu-closed"
@@ -52,7 +52,7 @@ class Menu extends Component {
     var that = this;
     $("#menu-list")
       .delay(5)
-      .queue(function (next) { 
+      .queue(function (next) {
         that.ballRecover();
         next();
       })
@@ -62,7 +62,7 @@ class Menu extends Component {
     if ($("#menu-list").hasClass("collapsing")) {
       $("#menu-ball")
         .delay(10)
-        .queue(function (next) { 
+        .queue(function (next) {
           var ballPos = $(`#menu-title-a-${projectList[0].type}`).position().top + 61
           //temporarily disable transitions while we reposition the ball instantly
           $("#menu-ball").addClass("no-transition")
@@ -78,7 +78,7 @@ class Menu extends Component {
 
           $("#menu-ball-sub").removeClass("ball-enter-sub")
           $("#menu-ball-sub").addClass("ball-exit-sub")
-          next();               
+          next();
         })
         .delay(100)
         .queue(function (next) {
@@ -118,10 +118,8 @@ class Menu extends Component {
           })
         }
 
-        return "none"        
+        return "none"
       } else {
-        console.log("printing res")
-        console.log(res)
         // Display correct submenu based on which project we are on
         for (let category of projectList) {
           for (let project of category.projects) {
@@ -142,11 +140,11 @@ class Menu extends Component {
                 $(".menu-title").each(function() {
                   $(this).removeClass("active-title")
                 })
-                
+
                 $(".menu-item").each(function() {
                   $(this).removeClass("active-item")
                 })
-                
+
                 $(`#menu-title-${category.type}`).addClass("active-title")
                 $(`#menu-title-a-${category.type}`).addClass("active")
 
@@ -157,7 +155,7 @@ class Menu extends Component {
                 // var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
                 // $("#menu-ball-sub").css({marginTop: ballPosSub})
 
-          
+
 
                 // temporarily disable transition if menu is being expanded, so ball doesnt jump from previous position
                 if (!($("#menu-list").hasClass("expanded"))) {
@@ -167,7 +165,7 @@ class Menu extends Component {
                       $("#menu-ball-sub").addClass("no-transition")
                       var ballPosSub = $(`#menu-item-${project.ref}`).position().top + 89 + $(`#menu-title-a-${category.type}`).position().top
                       $("#menu-ball-sub").css({marginTop: ballPosSub})
-                      next();               
+                      next();
                     })
                     .delay(50)
                     .queue(function (next) {
@@ -228,7 +226,7 @@ class Menu extends Component {
           $(".menu-title").each(function() {
             $(this).removeClass("active-title")
           })
-          
+
           $(".menu-item").each(function() {
             $(this).removeClass("active-item")
           })
@@ -247,7 +245,7 @@ class Menu extends Component {
 
     return (
       <div>
-          <div id="cover" 
+          <div id="cover"
           onClick={this.closeMenu.bind(this)}
           style={{
               height: "100%",

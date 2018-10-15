@@ -102,14 +102,30 @@ import GrandBouquetT1 from './Projects/Cinematography/photos/haptic-thumb1.jpg'
 import GrandBouquetT2 from './Projects/Cinematography/photos/haptic-thumb2.jpg'
 import GrandBouquetT3 from './Projects/Cinematography/photos/haptic-thumb3.jpg'
 
+import Munsingwear from './Projects/Cinematography/Munsingwear'
+import MunsingwearT1 from './Projects/Cinematography/photos/heatnavi-thumb1.jpg'
+import MunsingwearT2 from './Projects/Cinematography/photos/heatnavi-thumb2.jpg'
+import MunsingwearT3 from './Projects/Cinematography/photos/heatnavi-thumb3.jpg'
+import MunsingwearT4 from './Projects/Cinematography/photos/heatnavi-thumb4.jpg'
+
+
 // ref is for reference for ID, since cant have space
 
 const projectList = [
   { type: "Cinematography",
     longThumb: true,
     projects: [
+                { title: "Munsingwear",
+                  ref: "munsing",
+                  caption: "Commercial",
+                  thumbnail1: MunsingwearT1,
+                  thumbnail2: MunsingwearT4,
+                  thumbnail3: MunsingwearT2,
+                  path: '/projects/Munsingwear',
+                  main: Munsingwear
+                },
                 { title: "Grand Bouquet",
-                  ref: "penshikoku",
+                  ref: "grandbouquet",
                   caption: "Short Film",
                   thumbnail1: GrandBouquetT1,
                   thumbnail2: GrandBouquetT2,
