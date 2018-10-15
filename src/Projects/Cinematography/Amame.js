@@ -31,7 +31,7 @@ class Amame extends Component {
       <div className="project-content">
 
         <div className="project-video-wrapper">
-          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=4opmZz97q6s' controls={true}
+          <ReactPlayer className="project-video" url='https://www.youtube.com/watch?v=NtiSkCwQTZM' controls={true}
           youtubeConfig={{modestbranding: 1}} width='100%' height='100%'/>
         </div>
 
