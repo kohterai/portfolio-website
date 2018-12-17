@@ -108,6 +108,11 @@ import MunsingwearT2 from './Projects/Cinematography/photos/heatnavi-thumb2.jpg'
 import MunsingwearT3 from './Projects/Cinematography/photos/heatnavi-thumb3.jpg'
 import MunsingwearT4 from './Projects/Cinematography/photos/heatnavi-thumb4.jpg'
 
+import Pear from './Projects/Cinematography/Pear'
+import PearT1 from './Projects/Cinematography/photos/pearfang-thumb1.jpg'
+import PearT2 from './Projects/Cinematography/photos/pearfang-thumb2.jpg'
+import PearT3 from './Projects/Cinematography/photos/pearfang-thumb3.jpg'
+
 
 // ref is for reference for ID, since cant have space
 
@@ -116,6 +121,7 @@ const projectList = [
     longThumb: false,
     projects: [
                 { title: "NYU Vote",
+                  menutitle: "NYU Vote",
                   ref: "nyuvote",
                   caption: "Voting platform for NYU",
                   thumbnail: nyuvoteT,
@@ -123,6 +129,7 @@ const projectList = [
                   main: NYUVote
                 },
                 { title: "Callscribe",
+                  menutitle: "Callscribe",
                   ref: "callscribe",
                   caption: "Call Transcription and Recording App",
                   thumbnail: callscribeT,
@@ -130,6 +137,7 @@ const projectList = [
                   main: Callscribe
                 },
                 { title: "Camel Dictionary",
+                  menutitle: "Camel Dictionary",
                   ref: "cameldict",
                   caption: "Minimalist Arabic Dictionary",
                   thumbnail: cameldictT,
@@ -137,6 +145,7 @@ const projectList = [
                   main: CamelDict
                 },
                 { title: "Yalla",
+                  menutitle: "Yalla",
                   ref: "yalla",
                   caption: "Social Events Web App",
                   thumbnail: yallaT,
@@ -144,6 +153,7 @@ const projectList = [
                   main: Yalla
                 },
                 {  title: "Hungry Snake",
+                  menutitle: "Hungry Snake",
                   ref: "hungrysnake",
                   caption: "Kinetic sculpture",
                   thumbnail: hungrySnakeT,
@@ -151,6 +161,7 @@ const projectList = [
                   main: Snake
                 },
                 { title: "Audiloid",
+                  menutitle: "Audiloid",
                   ref: "audiloid",
                   caption: "Celluloid based audio player",
                   thumbnail: audiloidT,
@@ -158,6 +169,7 @@ const projectList = [
                   main: Audiloid
                 },
                 { title: "FocusEye",
+                  menutitle: "FocusEye",
                   ref: "focuseye",
                   caption: "Follow focus reimagined",
                   thumbnail: focuseyeT,
@@ -165,6 +177,7 @@ const projectList = [
                   main: FocusEye
                 },
                   { title: "Triangles",
+                  menutitle: "Triangles",
                   ref: "triangles",
                   caption: "Wooden sculpture",
                   thumbnail: TrianglesT,
@@ -172,6 +185,7 @@ const projectList = [
                   main: Triangles
                 },
                   { title: "Haptic Simulator",
+                  menutitle: "Haptic Simulator",
                   ref: "dental",
                   caption: "Haptic-based periodontal training",
                   thumbnail: DentalT,
@@ -190,7 +204,18 @@ const projectList = [
   { type: "Cinematography",
     longThumb: true,
     projects: [
+                { title: "A Fang and a Pear's Journey",
+                  menutitle: "Fang and a Pear",
+                  ref: "pear",
+                  caption: "Short Film",
+                  thumbnail1: PearT1,
+                  thumbnail2: PearT2,
+                  thumbnail3: PearT3,
+                  path: '/projects/Pear',
+                  main: Pear
+                },
                 { title: "Munsingwear",
+                  menutitle: "Munsingwear",
                   ref: "munsing",
                   caption: "Commercial",
                   thumbnail1: MunsingwearT1,
@@ -200,6 +225,7 @@ const projectList = [
                   main: Munsingwear
                 },
                 { title: "Grand Bouquet",
+                  menutitle: "Grand Bouquet",
                   ref: "grandbouquet",
                   caption: "Short Film",
                   thumbnail1: GrandBouquetT1,
@@ -208,7 +234,8 @@ const projectList = [
                   path: '/projects/GrandBouquet',
                   main: GrandBouquet
                 },
-                { title: "Shikoku",
+                { title: "25 Hours in Shikoku",
+                  menutitle: "Shikoku",
                   ref: "penshikoku",
                   caption: "Short Film",
                   thumbnail1: penShikokuT1,
@@ -217,7 +244,8 @@ const projectList = [
                   path: '/projects/PenShikoku',
                   main: PenShikoku
                 },
-                { title: "Monarcas",
+                { title: "Los Mimos Monarcas",
+                  menutitle: "Monarcas",
                   ref: "monarchs",
                   caption: "Short Film",
                   thumbnail1: monarchsT1,
@@ -227,6 +255,7 @@ const projectList = [
                   main: Monarchs
                 },
                 { title: "Insān",
+                  menutitle: "Insān",
                   ref: "insan",
                   caption: "Short Film",
                   thumbnail1: oryxT1,
@@ -236,6 +265,7 @@ const projectList = [
                   main: Oryx
                 },
                 { title: "Field Work DRC",
+                  menutitle: "Field Work DRC",
                   ref: "drc",
                   caption: "Documentary on social science research",
                   thumbnail1: drcT2,
@@ -245,6 +275,7 @@ const projectList = [
                   main: DRC
                 },
                 { title: "Rescue",
+                  menutitle: "Rescue",
                   ref: "rescue",
                   caption: "Space sci-Fi",
                   thumbnail1: rescueT1,
@@ -253,16 +284,8 @@ const projectList = [
                   path: '/projects/Rescue',
                   main: Rescue
                 },
-                { title: "Ookami Shonen",
-                  ref: "ookami",
-                  caption: "Short Film",
-                  thumbnail1: ookamiT1,
-                  thumbnail2: ookamiT2,
-                  thumbnail3: ookamiT3,
-                  path: '/projects/Ookami',
-                  main: Ookami
-                },
-                { title: "Ámame",
+                { title: "Ámame como Amas",
+                  menutitle: "Ámame",
                   ref: "amame",
                   caption: "Music video",
                   thumbnail1: AmameT1,
@@ -271,7 +294,8 @@ const projectList = [
                   path: '/projects/Amame',
                   main: Amame
                 },
-                { title: "Workshops",
+                { title: "Cinematography Workshops",
+                  menutitle: "Workshops",
                   ref: "workshops",
                   caption: "Cinematography workshops at NYU Abu Dhabi",
                   thumbnail1: workshopT1,
@@ -285,12 +309,14 @@ const projectList = [
   { type: "Photography",
     longThumb: false,
     projects: [{ title: "Sports",
+                  menutitle: "Sports",
                   ref: "sports",
                   caption: "Sports photography",
                   thumbnail: sportT,
                   path: '/projects/Sports',
                   main: Sports
                 },{ title: "Portraits",
+                  menutitle: "Portraits",
                   ref: "portraits",
                   caption: "People Photos",
                   thumbnail: portraitsT,
@@ -298,6 +324,7 @@ const projectList = [
                   main: Portraits
                 },
                 { title: "Theater",
+                  menutitle: "Theater",
                   ref: "theater",
                   caption: "Stills from theater productions",
                   thumbnail: theaterT,
@@ -305,6 +332,7 @@ const projectList = [
                   main: Theater
                 },
                 { title: "Commercial",
+                  menutitle: "Commercial",
                   ref: "commercial",
                   caption: "Advertisements and posters",
                   thumbnail: commercialT,
@@ -312,6 +340,7 @@ const projectList = [
                   main: Commercial
                 },
                 {  title: "Georgia",
+                  menutitle: "Georgia",
                   ref: "georgia",
                   caption: "Journey through Georgia",
                   thumbnail: georgiaT,
@@ -319,6 +348,7 @@ const projectList = [
                   main: Georgia
                 },
                 {  title: "Burj Shadow",
+                  menutitle: "Burj Shadow",
                   ref: "burj",
                   caption: "Burj Khalifa Timelapse",
                   thumbnail: burjT,
