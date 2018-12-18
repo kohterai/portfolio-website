@@ -92,6 +92,7 @@ class Pear extends Component {
               <Credits title="1st AC" name="Seki Rui" />
               <Credits title="2nd AC" name="Amon Ryu" />
               <Credits title="Gaffer" name="Kato Daiki" url="http://picpot.net/kato.html" />
+              <Credits title="Production Designer" name="Kato Koyuki" />
             </div>
           </div>
         </div>

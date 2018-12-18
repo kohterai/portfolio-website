@@ -77,6 +77,7 @@ class GrandBouquet extends Component {
               <Credits title="2nd AC" name="Seki Rui" />
               <Credits title="Gaffer" name="Seiji Nakane" />
               <Credits title="Best Boy Electric" name="Satoshi Tani" />
+              <Credits title="Production Designer" name="Kato Koyuki" />
             </div>
           </div>
         </div>
