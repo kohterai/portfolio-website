@@ -30,8 +30,8 @@ class GrandBouquet extends Component {
     return (
       <div className="project-content">
 
-        <div className="project-video-wrapper" style={{marginTop: "-20px", marginBottom: "-20px", backgroundColor: "white"}}>
-          <ReactPlayer className="project-video" url='https://vimeo.com/275477101' width='100%' height='100%'/>
+        <div className="project-video-wrapper" style={{marginTop: "-10px", marginBottom: "-10px", backgroundColor: "white"}}>
+          <ReactPlayer className="project-video" url='https://vimeo.com/332540317' width='100%' height='100%' />
         </div>
 
         <div className="text-container">

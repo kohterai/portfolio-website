@@ -37,7 +37,9 @@ class Pear extends Component {
     return (
       <div className="project-content">
 
-        <ImageLoader source={pearfang1} ratio="r169"/>
+        <div className="project-video-wrapper" style={{marginTop: "10px", marginBottom: "40px", backgroundColor: "white"}}>
+          <ReactPlayer className="project-video" url='https://vimeo.com/308238873' width='100%' height='100%'/>
+        </div>
 
         <div className="text-container">
           <h1>A Fang and a Pear's Journey</h1>
@@ -48,6 +50,8 @@ class Pear extends Component {
           <p><i>A Fang and a Pear's Journey</i> premiered at Kyoto International Film Festival</p>
         </div>
 
+
+        <ImageLoader source={pearfang1} ratio="r169"/>
 
         <ImageLoader source={pearfang2} ratio="r169"/>
 
