@@ -113,6 +113,11 @@ import PearT1 from './Projects/Cinematography/photos/pearfang-thumb1.jpg'
 import PearT2 from './Projects/Cinematography/photos/pearfang-thumb2.jpg'
 import PearT3 from './Projects/Cinematography/photos/pearfang-thumb3.jpg'
 
+import Baycrew from './Projects/Cinematography/Baycrew'
+import BaycrewT1 from './Projects/Cinematography/photos/baycrew-thumb1.jpg'
+import BaycrewT2 from './Projects/Cinematography/photos/baycrew-thumb2.jpg'
+import BaycrewT3 from './Projects/Cinematography/photos/baycrew-thumb3.jpg'
+
 
 // ref is for reference for ID, since cant have space
 
@@ -214,6 +219,16 @@ const projectList = [
                   path: '/projects/Pear',
                   main: Pear
                 },
+                { title: "Grand Bouquet",
+                  menutitle: "Grand Bouquet",
+                  ref: "grandbouquet",
+                  caption: "Short Film",
+                  thumbnail1: GrandBouquetT1,
+                  thumbnail2: GrandBouquetT2,
+                  thumbnail3: GrandBouquetT3,
+                  path: '/projects/GrandBouquet',
+                  main: GrandBouquet
+                },
                 { title: "Munsingwear",
                   menutitle: "Munsingwear",
                   ref: "munsing",
@@ -224,15 +239,15 @@ const projectList = [
                   path: '/projects/Munsingwear',
                   main: Munsingwear
                 },
-                { title: "Grand Bouquet",
-                  menutitle: "Grand Bouquet",
-                  ref: "grandbouquet",
-                  caption: "Short Film",
-                  thumbnail1: GrandBouquetT1,
-                  thumbnail2: GrandBouquetT2,
-                  thumbnail3: GrandBouquetT3,
-                  path: '/projects/GrandBouquet',
-                  main: GrandBouquet
+                { title: "Baycrew's",
+                  menutitle: "Baycrew's",
+                  ref: "baycrew",
+                  caption: "Commercial",
+                  thumbnail1: BaycrewT1,
+                  thumbnail2: BaycrewT2,
+                  thumbnail3: BaycrewT3,
+                  path: '/projects/Baycrew',
+                  main: Baycrew
                 },
                 { title: "25 Hours in Shikoku",
                   menutitle: "Shikoku",

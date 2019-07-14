@@ -3,7 +3,7 @@ import {
   Link
 } from 'react-router-dom'
 
-import CV from './KohTerai-2017CV-JE.pdf'
+// import CV from './KohTerai-2017CV-JE.pdf'
 import portrait3 from './photos/portrait3.jpg'
 import portrait1 from './photos/koh-5.jpg'
 

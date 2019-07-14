@@ -3,7 +3,7 @@ import {
   Link
 } from 'react-router-dom'
 
-import CV from './KohTerai-2017CV-JE.pdf'
+// import CV from './KohTerai-2017CV-JE.pdf'
 // import About from './About'
 
 class Footer extends Component {
@@ -19,8 +19,8 @@ class Footer extends Component {
                     &nbsp;&nbsp;-&nbsp;&nbsp;
                     <a href="mailto:koh.terai@gmail.com?Subject=Hello" target="_top">koh.terai@gmail.com</a>
 
-                    &nbsp;&nbsp;-&nbsp;&nbsp;
-                    <a target="_blank" href={CV}>CV</a>
+                    {/* &nbsp;&nbsp;-&nbsp;&nbsp;
+                    <a target="_blank" href={CV}>CV</a> */}
 
         </div>
       </div>
