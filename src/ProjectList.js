@@ -118,6 +118,11 @@ import BaycrewT1 from './Projects/Cinematography/photos/baycrew-thumb1.jpg'
 import BaycrewT2 from './Projects/Cinematography/photos/baycrew-thumb2.jpg'
 import BaycrewT3 from './Projects/Cinematography/photos/baycrew-thumb3.jpg'
 
+import Intersection from './Projects/Cinematography/Intersection'
+import IntersectionT1 from './Projects/Cinematography/photos/intersection-thumb-1.jpg'
+import IntersectionT2 from './Projects/Cinematography/photos/intersection-thumb-2.jpg'
+import IntersectionT3 from './Projects/Cinematography/photos/intersection-thumb-3.jpg'
+
 
 // ref is for reference for ID, since cant have space
 
@@ -239,6 +244,16 @@ const projectList = [
                   path: '/projects/Munsingwear',
                   main: Munsingwear
                 },
+                { title: "Intersection",
+                menutitle: "Intersection",
+                ref: "intersection",
+                caption: "Music Video",
+                thumbnail1: IntersectionT1,
+                thumbnail2: IntersectionT2,
+                thumbnail3: IntersectionT3,
+                path: '/projects/Intersection',
+                main: Intersection
+                },
                 { title: "Baycrew's",
                   menutitle: "Baycrew's",
                   ref: "baycrew",
@@ -308,17 +323,17 @@ const projectList = [
                   thumbnail3: AmameT3,
                   path: '/projects/Amame',
                   main: Amame
-                },
-                { title: "Cinematography Workshops",
-                  menutitle: "Workshops",
-                  ref: "workshops",
-                  caption: "Cinematography workshops at NYU Abu Dhabi",
-                  thumbnail1: workshopT1,
-                  thumbnail2: workshopT2,
-                  thumbnail3: workshopT3,
-                  path: '/projects/CinematographyWorkshop',
-                  main: CinematographyWorkshop
                 }
+                // { title: "Cinematography Workshops",
+                //   menutitle: "Workshops",
+                //   ref: "workshops",
+                //   caption: "Cinematography workshops at NYU Abu Dhabi",
+                //   thumbnail1: workshopT1,
+                //   thumbnail2: workshopT2,
+                //   thumbnail3: workshopT3,
+                //   path: '/projects/CinematographyWorkshop',
+                //   main: CinematographyWorkshop
+                // }
                 ]
   },
   { type: "Photography",
