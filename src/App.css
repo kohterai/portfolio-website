@@ -12,6 +12,7 @@
   transition: all 0.2s ease-out;
 }
 .bm-overlay {
+  z-index: 1 !important;
   background: transparent !important;
 }
 
