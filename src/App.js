@@ -36,61 +36,62 @@ const routes = [
 
 
 const Main = () => (
-  <div id="welcome-message">
-    <div><b>Koh Terai</b></div>
+  // Minimal version
+  // <div id="welcome-message">
+  //   <div><b>Koh Terai</b></div>
     
-    <div><a id="welcome-email" href="mailto:koh.terai@gmail.com">koh.terai@gmail.com</a></div>
-    {/* <br></br>
-    <div>Current Projects:</div>
-    <div>Designing Financial inclusion in emerging markets</div>
-    <div>Designing healthcare in Singapore</div> 
-    <br></br>
-    <div>Past Projects:</div>
-    <div>Burj Shadow</div>
-    <div>Grand Bouquet</div>
-    <div>Berita Harian</div> */}
+  //   <div><a id="welcome-email" href="mailto:koh.terai@gmail.com">koh.terai@gmail.com</a></div>
+  //   {/* <br></br>
+  //   <div>Current Projects:</div>
+  //   <div>Designing Financial inclusion in emerging markets</div>
+  //   <div>Designing healthcare in Singapore</div> 
+  //   <br></br>
+  //   <div>Past Projects:</div>
+  //   <div>Burj Shadow</div>
+  //   <div>Grand Bouquet</div>
+  //   <div>Berita Harian</div> */}
 
 
 
-  </div>
+  // </div>
 
-  // Commenting out
-  // <Router>
-  //     <div id ="main-container">
+  // Full version
+  <Router>
+      <div id ="main-container">
 
-  //       <ScrollToTopRoute path="/" component={Menu}/>
+        <ScrollToTopRoute path="/" component={Menu}/>
 
-  //       <div id="content-container">
-  //         <div>
-  //           {routes.map((route, index) => (
-  //             <ScrollToTopRoute
-  //               key={index}
-  //               path={route.path}
-  //               exact={route.exact}
-  //               component={route.main}
-  //             />
-  //           ))}
-  //         </div>
-  //         <div>
-  //           {projectList.map((projectList, index) => (
-  //               <div key={index}>
-  //               {projectList.projects.map((project, index) => (
-  //                             <ScrollToTopRoute
-  //                               key={index}
-  //                               path={project.path}
-  //                               exact={true}
-  //                               component={project.main}
-  //                             />
-  //               ))}
-  //               </div>
-  //           ))}
-  //         </div>
-  //       <Footer />
+        <div id="content-container">
+          <div>
+            {routes.map((route, index) => (
+              <ScrollToTopRoute
+                key={index}
+                path={route.path}
+                exact={route.exact}
+                component={route.main}
+              />
+            ))}
+          </div>
+          <div>
+            {projectList.map((projectList, index) => (
+                <div key={index}>
+                {projectList.projects.map((project, index) => (
+                              <ScrollToTopRoute
+                                key={index}
+                                path={project.path}
+                                exact={true}
+                                component={project.main}
+                              />
+                ))}
+                </div>
+            ))}
+          </div>
+        <Footer />
 
-  //       </div>
+        </div>
 
-  //     </div>
-  // </Router>
+      </div>
+  </Router>
 )
 
          // <Route exact path="/" render={() => 
