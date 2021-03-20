@@ -58,13 +58,14 @@ body {
   margin-bottom: 15px;
   font-size: 0.7em;
   font-weight: 400;
+  color: #a3a3a3;
 }
 
 .project-content p a {
   color: black;
   font-weight: 700;
   text-decoration: none;
-  cursor: auto;
+  cursor: pointer;
 }
 
 .project-content p a:hover {

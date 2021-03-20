@@ -36,6 +36,7 @@
   padding: 0;
   margin-top: 20px;
   position: absolute;
+  outline: none;
 }
 
 .no-transition {

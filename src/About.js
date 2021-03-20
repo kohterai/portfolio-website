@@ -11,22 +11,30 @@ class About extends Component {
   render() {
     return (
       <div id="about">
-        <div style={{textAlign: 'left'}} className="text-container">
+        <div style={{ textAlign: 'left' }} className="text-container">
           <div>
-            <div style={{width: '100%'}}>
-              <h1 style={{fontSize:'1.5em', paddingTop: 50, marginTop: 10, marginBottom: 5, fontWeight: 600}}>
+            <div style={{ width: '100%' }}>
+              <h1 style={{ fontSize: '1.5em', paddingTop: 50, marginTop: 10, marginBottom: 5, fontWeight: 600 }}>
                 Hello, I'm Koh
               </h1>
-              <h1 style={{fontSize:'1.5em',  marginTop: 5, marginBottom: 10, fontWeight: 300}}>
-                I design <span style={{fontWeight: 700, color: "#F5AC1F"}}>products</span> and <span style={{fontWeight: 700, color: "#F5AC1F"}}>services</span>
+              <h1 style={{ fontSize: '1.5em', marginTop: 5, marginBottom: 10, fontWeight: 300 }}>
+                I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span>
               </h1>
               {/* <img style={{width: '100%'}} src={portrait} /> */}
             </div>
             <div className="project-content">
               <ImageLoader source={portrait} />
-            </div>
-            <div>
-              <p style={{fontSize: '0.8em'}}>I strive to bring beauty and excellence to my work.</p>
+              <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+                {/* Left Col */}
+                <div style={{width: '48%'}} className="text-paragraphs">
+                  <h2>About Me</h2>
+                  <p><em>I care deeply about detail and craft.</em><br></br>Sometimes this requires an understanding of code, sometimes this requires an understanding of regulations. I do not limit myself to pixels to find ways to push the limits to produce things that people love. I am a firm believer that taking design to the edge.</p>
+                </div>
+                <div style={{width: '48%'}} className="text-paragraphs">
+                  <h2>About Me</h2>
+                  <p><em>I care deeply about detail and craft.</em><br></br>Sometimes this requires an understanding of code, sometimes this requires an understanding of regulations. I do not limit myself to pixels to find ways to push the limits to produce things that people love. I am a firm believer that taking design to the edge.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -34,7 +42,7 @@ class About extends Component {
     )
   }
 }
-            // <img style={{height: '300px', width: '300px', marginTop: '50px'}} src={portrait1} />
+// <img style={{height: '300px', width: '300px', marginTop: '50px'}} src={portrait1} />
 
 
 export default About

@@ -46,6 +46,10 @@
 
 }
 
+#Menu a:active, a:focus {
+  outline: none;
+}
+
 #Menu .menu-title:hover {
   color: #000000;
   padding-left: 10px;
