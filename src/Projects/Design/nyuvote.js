@@ -57,7 +57,7 @@ class NYUVote extends Component {
         <ImageLoader source={nyuvote3} />
         <ImageLoader source={nyuvote2} />
 
-        <div className="text-container">
+        {/* <div className="text-container">
           <div className = "text-paragraphs">
             <h2>Process Flow</h2>
             <p>Extra emphasis was put into making the casting of the ballots as
@@ -66,7 +66,7 @@ class NYUVote extends Component {
           </div>
         </div>
 
-        <ImageLoader source={nyuvote5} />
+        <ImageLoader source={nyuvote5} /> */}
 
         <div className="text-container">
           <div className = "text-paragraphs">
