@@ -23,6 +23,8 @@ class Thumbnail extends Component {
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center',
               position: 'absolute',
+              borderRadius: '6px',
+              margin: '6px',
               top: '0',bottom:'0', left: '0', right: '0'
             }} />
           </div>

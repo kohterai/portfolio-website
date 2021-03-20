@@ -41,19 +41,18 @@ class ThumbnailCatalog extends Component {
             // onLeave={this._leaveSection.bind(this, `${projectList.type}`)}
           >
             <div className="thumbnailCategoryTitle" style={{
-              textTransform: 'uppercase',
               fontWeight: '600',
               fontSize: '1.2em'}}>
-              <div style={{marginTop: "30px"}} id={projectList.type}>{projectList.type}</div>
+              <div style={{marginTop: "30px", marginLeft: "4px"}} id={projectList.type}>{projectList.type}</div>
             </div>
             </Waypoint>
 
 
             {projectList.longThumb ? (
               <div>
-              <div className="project-video-wrapper" style={{marginTop: "20px", marginBottom: "40px", backgroundColor: "black"}}>
+              {/* <div className="project-video-wrapper" style={{marginTop: "20px", marginBottom: "40px", backgroundColor: "black"}}>
                 <ReactPlayer className="project-video" url='https://vimeo.com/201632847' width='100%' height='100%'/>
-              </div>
+              </div> */}
               <div className="thumbnailContainer" style={{
                               display: 'flex',
                               flexWrap: 'wrap'}}>

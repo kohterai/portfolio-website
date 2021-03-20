@@ -283,7 +283,7 @@ class Menu extends Component {
 
             <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
             className="active-title">
-              KOH TERAI
+              Koh Terai
             </Link>
 
           <div id="menu-list">

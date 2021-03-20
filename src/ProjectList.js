@@ -127,7 +127,7 @@ import IntersectionT3 from './Projects/Cinematography/photos/intersection-thumb-
 // ref is for reference for ID, since cant have space
 
 const projectList = [
-  { type: "Design",
+  { type: "Projects",
     longThumb: false,
     projects: [
                 { title: "NYU Vote",
@@ -336,56 +336,56 @@ const projectList = [
                 // }
                 ]
   },
-  { type: "Photography",
-    longThumb: false,
-    projects: [{ title: "Sports",
-                  menutitle: "Sports",
-                  ref: "sports",
-                  caption: "Sports photography",
-                  thumbnail: sportT,
-                  path: '/projects/Sports',
-                  main: Sports
-                },{ title: "Portraits",
-                  menutitle: "Portraits",
-                  ref: "portraits",
-                  caption: "People Photos",
-                  thumbnail: portraitsT,
-                  path: '/projects/Portraits',
-                  main: Portraits
-                },
-                { title: "Theater",
-                  menutitle: "Theater",
-                  ref: "theater",
-                  caption: "Stills from theater productions",
-                  thumbnail: theaterT,
-                  path: '/projects/Theater',
-                  main: Theater
-                },
-                { title: "Commercial",
-                  menutitle: "Commercial",
-                  ref: "commercial",
-                  caption: "Advertisements and posters",
-                  thumbnail: commercialT,
-                  path: '/projects/Commercial',
-                  main: Commercial
-                },
-                {  title: "Georgia",
-                  menutitle: "Georgia",
-                  ref: "georgia",
-                  caption: "Journey through Georgia",
-                  thumbnail: georgiaT,
-                  path: '/projects/Georgia',
-                  main: Georgia
-                },
-                {  title: "Burj Shadow",
-                  menutitle: "Burj Shadow",
-                  ref: "burj",
-                  caption: "Burj Khalifa Timelapse",
-                  thumbnail: burjT,
-                  path: '/projects/Burj',
-                  main: Burj
-                }]
-  }
+  // { type: "Photography",
+  //   longThumb: false,
+  //   projects: [{ title: "Sports",
+  //                 menutitle: "Sports",
+  //                 ref: "sports",
+  //                 caption: "Sports photography",
+  //                 thumbnail: sportT,
+  //                 path: '/projects/Sports',
+  //                 main: Sports
+  //               },{ title: "Portraits",
+  //                 menutitle: "Portraits",
+  //                 ref: "portraits",
+  //                 caption: "People Photos",
+  //                 thumbnail: portraitsT,
+  //                 path: '/projects/Portraits',
+  //                 main: Portraits
+  //               },
+  //               { title: "Theater",
+  //                 menutitle: "Theater",
+  //                 ref: "theater",
+  //                 caption: "Stills from theater productions",
+  //                 thumbnail: theaterT,
+  //                 path: '/projects/Theater',
+  //                 main: Theater
+  //               },
+  //               { title: "Commercial",
+  //                 menutitle: "Commercial",
+  //                 ref: "commercial",
+  //                 caption: "Advertisements and posters",
+  //                 thumbnail: commercialT,
+  //                 path: '/projects/Commercial',
+  //                 main: Commercial
+  //               },
+  //               {  title: "Georgia",
+  //                 menutitle: "Georgia",
+  //                 ref: "georgia",
+  //                 caption: "Journey through Georgia",
+  //                 thumbnail: georgiaT,
+  //                 path: '/projects/Georgia',
+  //                 main: Georgia
+  //               },
+  //               {  title: "Burj Shadow",
+  //                 menutitle: "Burj Shadow",
+  //                 ref: "burj",
+  //                 caption: "Burj Khalifa Timelapse",
+  //                 thumbnail: burjT,
+  //                 path: '/projects/Burj',
+  //                 main: Burj
+  //               }]
+  // }
 ]
 
 

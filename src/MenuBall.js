@@ -14,7 +14,7 @@ class MenuBall extends Component {
       <div id={this.props.idName} style={{
       height: "6px",
       width: "6px",
-      backgroundColor: "#81a8c5",
+      backgroundColor: "#F5AC1F",
       position: "fixed",
       borderRadius: "50%"
       }} />

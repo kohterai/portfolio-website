@@ -31,9 +31,10 @@ class ImageLoader extends Component {
         blur = {0}
         transition="all 0.3s linear"
         style={{
-          backgroundSize: 'contain',
+          backgroundSize: 'cover',
           backgroundPosition: 'center center',
-          margin: "30px 0px"
+          margin: "30px 0px",
+          borderRaius: "5px"
         }}
       />
     )

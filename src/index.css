@@ -81,6 +81,7 @@ body {
   /*transition: background-image 0.5s ease-in;*/
   padding-top: 66.64%;
   width: 100%;
+  border-radius: 8px;
   background-size: contain;
 }
 
