@@ -13,10 +13,10 @@ class Footer extends Component {
         <div style={{textAlign: "center", color: "#a3a3a3", fontWeight: "300"}}>
 
 
-                    <Link to="/about">
+                    {/* <Link to="/about">
                     about
                     </Link>
-                    &nbsp;&nbsp;-&nbsp;&nbsp;
+                    &nbsp;&nbsp;-&nbsp;&nbsp; */}
                     <a href="mailto:koh.terai@gmail.com?Subject=Hello" target="_top">koh.terai@gmail.com</a>
 
                     {/* &nbsp;&nbsp;-&nbsp;&nbsp;

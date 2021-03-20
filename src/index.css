@@ -56,9 +56,10 @@ body {
 .project-content p {
   margin: 0px auto;
   margin-bottom: 15px;
-  font-size: 0.7em;
+  font-size: 0.8em;
   font-weight: 400;
   color: #a3a3a3;
+  line-height: 150%;
 }
 
 .project-content p a {
@@ -97,8 +98,8 @@ body {
 }
 
 .project-content .text-paragraphs {
- margin-top: 40px;
- margin-bottom: 40px;
+ margin-top: 70px;
+ margin-bottom: 70px;
 }
 
 /*Autosize code from: https://github.com/CookPete/react-player/issues/145*/

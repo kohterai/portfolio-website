@@ -11,7 +11,7 @@ import './App.css';
 import ScrollToTopRoute from './ScrollToTopRoute';
 import ReactPlayer from 'react-player'
 import Footer from './Footer'
-import About from './About'
+import About from './about/About'
 
 
 
