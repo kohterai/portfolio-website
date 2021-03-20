@@ -4,7 +4,7 @@
 }
 
 .project-content .credit-person-wrapper {
-  font-size: 0.7em;
+  font-size: 0.8em;
   padding-right: 20px;
   margin-bottom: 5px;
   flex-grow: 1;
@@ -13,8 +13,9 @@
 }
 
 .project-content .credit-title {
-  font-size: 0.6em;
-  font-weight: 700;
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #a3a3a3;
 }
 
 a {
