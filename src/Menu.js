@@ -281,7 +281,7 @@ class Menu extends Component {
             <MenuBall idName={"menu-ball-sub"} />
 
 
-            <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/#" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
+            <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/about" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
             className="active-title">
               Koh Terai
             </Link>

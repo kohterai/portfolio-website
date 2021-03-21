@@ -16,34 +16,38 @@ class About extends Component {
         <div style={{ textAlign: 'left' }} className="text-container">
           <div>
             <div style={{ width: '100%' }}>
-              <h1 style={{ fontSize: '1.5em', paddingTop: 50, marginTop: 10, marginBottom: 5, fontWeight: 600 }}>
+              <h1 id="about-header" style={{ fontSize: '1.5em', marginTop: 10, marginBottom: 5, fontWeight: 600 }}>
                 Hello, I'm Koh
               </h1>
-              <h1 style={{ fontSize: '1.5em', marginTop: 5, marginBottom: 10, fontWeight: 300 }}>
-                I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span>
-              </h1>
+              <h2 style={{ fontSize: '1.0em', marginTop: 5, marginBottom: 10, fontWeight: 300, color: "#a3a3a3" }}>
+                {/* I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span> */}
+                I design products and services
+              </h2>
               {/* <img style={{width: '100%'}} src={portrait} /> */}
             </div>
             <div className="project-content">
               <ImageLoader source={portrait} />
-              <div style={{display: 'flex', flexDirection: 'row', justifyContent: 'space-between'}}>
+              <div className="flex-grid">
                 {/* Left Col */}
-                <div style={{width: '48%', marginTop: '0px'}} className="text-paragraphs">
-                  <h2>About Me</h2>
-                  <p><em>I care deeply about detail and craft.</em><br></br>Sometimes this requires an understanding of code, sometimes this requires an understanding of regulations. I firmly believe that good products should never start or end with pixels. It should encompass everything surrounding the screen.</p>
-                  <p><em>I care deeply about intention.</em><br></br>I believe that every design decision has an impact on the product and the user's life, and on society. I try to be aware of the consequences of such a decision.</p>
-                  <p><em>I care deeply about building things that matter.</em><br></br>I believe one of my biggest responsibilities as a designer is to ensure that what gets created fits into the lives of who we are creating for. This means having a nuanced understanding of users and their context.</p>
+                <div style={{marginTop: '0px'}} className="text-paragraphs">
+                  <h2>About</h2>
+                  <p><em>I care deeply about beauty</em><br></br>Getting the rythm, balance, and tempo to the pixel (or millimeter) and or the milisecond (or frame) is important. I believe this is what separates good from excellence.</p>
+                  <p><em>I care deeply about intention</em><br></br>I feel responsible as a designer to ensure that what gets created fits positively into the lives of who we are creating for. This means having a nuanced understanding of users and their context. I believe that every design decision has an impact on the product and the user's life, and on society. I try to be aware of the consequences of my decisions.</p>
+                  <p><em>I care deeply about the final delivery</em><br></br>Unrealistic (unshippable) design is useless. As a designer I believe an understanding of code and regulations is important to have a clear understanding of boundaries (technical and regulatory) from the getgo.</p>
+                  {/* <p><em>I care deeply about building things that matter.</em><br></br></p> */}
+
+                  {/* <h2>Words from Collaborators</h2> */}
 
 
                 </div>
-                <div style={{width: '48%', marginTop: '0px'}} className="text-paragraphs">
+                <div style={{marginTop: '0px'}} className="text-paragraphs">
                   <div className="about-section-group">
-                    <h2>Work</h2>
+                    <h2>Education</h2>
                     <TitleLine url="https://nyuad.nyu.edu/en/" name="New York University Abu Dhabi" title="B.S. Computer Science" date="2017 - 2018" />
                   </div>
 
                   <div className="about-section-group">
-                    <h2>Education</h2>
+                    <h2>Work</h2>
                     <TitleLine url="https://gojo.co/" name="Gojo &amp; Co." title="Product Designer" date="2020 - Now" />
                     <TitleLine url="https://www.designingagency.com/" name="Agency" title="Interaction Designer" date="2018 - 2019" />
                     <TitleLine url="https://kohterai.com" name="Freelance" title="Design Technologist" date="2017 - 2018" />

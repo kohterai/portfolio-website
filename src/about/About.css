@@ -17,3 +17,38 @@
 .about-section-group {
     padding-bottom: 3px;
 }
+
+#about-header {
+    padding-top: 50px;
+}
+
+
+/* Using .flex-grid to scope down to about page */
+.project-content .flex-grid .text-paragraphs {
+    width: 48%;
+}
+
+.flex-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1024px) {
+    #about-header {
+        padding-top: 10px;
+    }
+
+    .flex-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .project-content .flex-grid .text-paragraphs {
+        width: 100%;
+        margin-top: 0px;
+        max-width: 400px;
+        margin: auto;
+    }
+}
