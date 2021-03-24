@@ -76,11 +76,11 @@
 /* Hamburger menu appears at this point */
 @media screen and (max-width: 1024px) {
   .bm-item-list {
-    margin-top: 60px;
+    margin-top: 15px;
   }
 
   #Menu .menu-sub {
-    margin-top:  -45px;
+    margin-top:  -89px;
   }
 
   #menu-bar {

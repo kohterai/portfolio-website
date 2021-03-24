@@ -102,7 +102,7 @@ class Menu extends Component {
     function displaySubmenu(path, projType) {
       var res = path.split("/")
       // len = 2 means we are on homepage
-      console.log(res)
+      // console.log(res)
       // Because main path has /projects now
       if (res[2] == "" || res.length<3) {
       // if (res.length<3) {
