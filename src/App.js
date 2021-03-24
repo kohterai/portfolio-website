@@ -22,16 +22,16 @@ import About from './about/About'
 const routes = [
   { path: '/',
     exact: true,
-    main: Catalog
+    main: About
   },
   { path: '/projects',
     exact: true,
     main: Catalog
   },
-  { path: '/about',
-    exact: true,
-    main: About
-  }
+  // { path: '/about',
+  //   exact: true,
+  //   main: About
+  // }
 ]
 
 

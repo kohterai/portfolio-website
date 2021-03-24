@@ -15,6 +15,10 @@ import yallaT from './Projects/Design/photos/yalla-thumb.jpg'
 import CamelDict from './Projects/Design/CamelDict'
 import cameldictT from './Projects/Design/photos/cameldict-thumb.jpg'
 
+import Fluident from './Projects/Design/Fluident'
+import FluidentT from './Projects/Design/photos/fluident-thumb.jpg'
+
+
 import Callscribe from './Projects/Design/Callscribe'
 import callscribeT from './Projects/Design/photos/callscribe-thumb.jpg'
 
@@ -124,217 +128,353 @@ import IntersectionT2 from './Projects/Cinematography/photos/intersection-thumb-
 import IntersectionT3 from './Projects/Cinematography/photos/intersection-thumb-3.jpg'
 
 
+// Work
+import MLady from './Projects/Work/MLady'
+import Bridge from './Projects/Work/Bridge'
+import BeritaHarian from './Projects/Work/BeritaHarian'
+import Rpcts from './Projects/Work/Rpcts'
+import Foodbot from './Projects/Work/Foodbot'
+// import CCSAD from './Projects/Work/CCSAD'
+
+
+
+
+import MLadyThumb from './Projects/Work/photos/mlady-thumb.jpg'
+import BridgeThumb from './Projects/Work/photos/bridge-thumb.jpg'
+import BeritaHarianThumb from './Projects/Work/photos/beritaharian-thumb.jpg'
+
+import MLadyThumb2 from './Projects/Work/photos/mlady-thumb-2.jpg'
+import BridgeThumb2 from './Projects/Work/photos/bridge-thumb-2.jpg'
+import BridgeThumb3 from './Projects/Work/photos/bridge-thumb-8.jpg'
+
+import BeritaHarianThumb2 from './Projects/Work/photos/beritaharian-thumb-2.jpg'
+
+
 // ref is for reference for ID, since cant have space
 
 const projectList = [
-  { type: "Projects",
+  // {
+  //   type: "Work",
+  //   longThumb: false,
+  //   projects: [
+  //     {
+  //       title: "M-Lady",
+  //       menutitle: "M-Lady",
+  //       ref: "nyuvote",
+  //       caption: "Agent Banking in Rural Cambodia",
+  //       thumbnail: MLadyThumb2,
+  //       path: '/projects/mlady',
+  //       main: MLady
+  //     },
+  //     {
+  //       title: "Bridge",
+  //       menutitle: "Bridge",
+  //       ref: "bridge",
+  //       caption: "Loan Management App",
+  //       thumbnail: BridgeThumb3,
+  //       path: '/projects/bridge',
+  //       main: Bridge
+  //     },
+  //     {
+  //       title: "Berita Harian",
+  //       menutitle: "Berita Harian",
+  //       ref: "beritaharian",
+  //       caption: "Malay Newspaper in Singapore",
+  //       thumbnail: BeritaHarianThumb2,
+  //       path: '/projects/beritaharian',
+  //       main: BeritaHarian
+  //     },
+      // {
+      //   title: "RPC_TS",
+      //   menutitle: "RPC_TS",
+      //   ref: "rpcts",
+      //   caption: "Documentation for Open Source Library",
+      //   thumbnail: focuseyeT,
+      //   path: '/projects/RPC_TS',
+      //   main: Rpcts
+      // },
+      // {
+      //   title: "Center for Cyber Security",
+      //   menutitle: "Triangles",
+      //   ref: "triangles",
+      //   caption: "Wooden sculpture",
+      //   thumbnail: TrianglesT,
+      //   path: '/projects/CCSAD',
+      //   main: CCSAD
+      // },
+      // {
+      //   title: "Footbot",
+      //   menutitle: "Haptic Simulator",
+      //   ref: "dental",
+      //   caption: "Haptic-based periodontal training",
+      //   thumbnail: DentalT,
+      //   path: '/projects/Foodbot',
+      //   main: Foodbot
+      // }      
+  //   ]
+  // },
+  {
+    type: "Design",
     longThumb: false,
     projects: [
-                { title: "NYU Vote",
-                  menutitle: "NYU Vote",
-                  ref: "nyuvote",
-                  caption: "Voting platform for NYU",
-                  thumbnail: nyuvoteT,
-                  path: '/projects/nyuvote',
-                  main: NYUVote
-                },
-                { title: "Callscribe",
-                  menutitle: "Callscribe",
-                  ref: "callscribe",
-                  caption: "Call Transcription and Recording App",
-                  thumbnail: callscribeT,
-                  path: '/projects/callscribe',
-                  main: Callscribe
-                },
-                { title: "Camel Dictionary",
-                  menutitle: "Camel Dictionary",
-                  ref: "cameldict",
-                  caption: "Minimalist Arabic Dictionary",
-                  thumbnail: cameldictT,
-                  path: '/projects/cameldict',
-                  main: CamelDict
-                },
-                { title: "Yalla",
-                  menutitle: "Yalla",
-                  ref: "yalla",
-                  caption: "Social Events Web App",
-                  thumbnail: yallaT,
-                  path: '/projects/Yalla',
-                  main: Yalla
-                },
-                {  title: "Hungry Snake",
-                  menutitle: "Hungry Snake",
-                  ref: "hungrysnake",
-                  caption: "Kinetic sculpture",
-                  thumbnail: hungrySnakeT,
-                  path: '/projects/snake',
-                  main: Snake
-                },
-                { title: "Audiloid",
-                  menutitle: "Audiloid",
-                  ref: "audiloid",
-                  caption: "Celluloid based audio player",
-                  thumbnail: audiloidT,
-                  path: '/projects/audiloid',
-                  main: Audiloid
-                },
-                { title: "FocusEye",
-                  menutitle: "FocusEye",
-                  ref: "focuseye",
-                  caption: "Follow focus reimagined",
-                  thumbnail: focuseyeT,
-                  path: '/projects/FocusEye',
-                  main: FocusEye
-                },
-                  { title: "Triangles",
-                  menutitle: "Triangles",
-                  ref: "triangles",
-                  caption: "Wooden sculpture",
-                  thumbnail: TrianglesT,
-                  path: '/projects/Triangles',
-                  main: Triangles
-                },
-                  { title: "Haptic Simulator",
-                  menutitle: "Haptic Simulator",
-                  ref: "dental",
-                  caption: "Haptic-based periodontal training",
-                  thumbnail: DentalT,
-                  path: '/projects/Dental',
-                  main: Dental
-                }
-                // { title: "Cyber Security",
-                //   ref: "ccsad",
-                //   caption: "Website Redesign Center for Cyber Security",
-                //   thumbnail: ccsadT,
-                //   path: '/projects/CCSAD',
-                //   main: CCSAD
-                // }
-                ]
+      {
+        title: "M-Lady",
+        menutitle: "M-Lady",
+        ref: "mlady",
+        caption: "Agent Banking in Rural Cambodia",
+        thumbnail: MLadyThumb2,
+        path: '/projects/mlady',
+        main: MLady
+      },
+      {
+        title: "Bridge",
+        menutitle: "Bridge",
+        ref: "bridge",
+        caption: "Loan Management App",
+        thumbnail: BridgeThumb3,
+        path: '/projects/bridge',
+        main: Bridge
+      },
+      {
+        title: "Berita Harian",
+        menutitle: "Berita Harian",
+        ref: "beritaharian",
+        caption: "Malay Newspaper in Singapore",
+        thumbnail: BeritaHarianThumb2,
+        path: '/projects/beritaharian',
+        main: BeritaHarian
+      },
+      {
+        title: "NYU Vote",
+        menutitle: "NYU Vote",
+        ref: "nyuvote",
+        caption: "Voting platform for NYU",
+        thumbnail: nyuvoteT,
+        path: '/projects/nyuvote',
+        main: NYUVote
+      },
+      {
+        title: "Fluident",
+        menutitle: "Fluident",
+        ref: "fluident",
+        caption: "Dental Startup Branding",
+        thumbnail: FluidentT,
+        path: '/projects/fluident',
+        main: Fluident
+      },
+
+      {
+        title: "Camel Dictionary",
+        menutitle: "Camel Dictionary",
+        ref: "cameldict",
+        caption: "Minimalist Arabic Dictionary",
+        thumbnail: cameldictT,
+        path: '/projects/cameldict',
+        main: CamelDict
+      },
+      {
+        title: "Callscribe",
+        menutitle: "Callscribe",
+        ref: "callscribe",
+        caption: "Call Transcription and Recording App",
+        thumbnail: callscribeT,
+        path: '/projects/callscribe',
+        main: Callscribe
+      },
+
+      // { title: "Yalla",
+      //   menutitle: "Yalla",
+      //   ref: "yalla",
+      //   caption: "Social Events Web App",
+      //   thumbnail: yallaT,
+      //   path: '/projects/Yalla',
+      //   main: Yalla
+      // },
+
+      {
+        title: "Hungry Snake",
+        menutitle: "Hungry Snake",
+        ref: "hungrysnake",
+        caption: "Kinetic sculpture",
+        thumbnail: hungrySnakeT,
+        path: '/projects/snake',
+        main: Snake
+      },
+      {
+        title: "Audiloid",
+        menutitle: "Audiloid",
+        ref: "audiloid",
+        caption: "Celluloid based audio player",
+        thumbnail: audiloidT,
+        path: '/projects/audiloid',
+        main: Audiloid
+      },
+      {
+        title: "FocusEye",
+        menutitle: "FocusEye",
+        ref: "focuseye",
+        caption: "Follow focus reimagined",
+        thumbnail: focuseyeT,
+        path: '/projects/FocusEye',
+        main: FocusEye
+      },
+      {
+        title: "Triangles",
+        menutitle: "Triangles",
+        ref: "triangles",
+        caption: "Wooden sculpture",
+        thumbnail: TrianglesT,
+        path: '/projects/Triangles',
+        main: Triangles
+      },
+      {
+        title: "Haptic Simulator",
+        menutitle: "Haptic Simulator",
+        ref: "dental",
+        caption: "Haptic-based periodontal training",
+        thumbnail: DentalT,
+        path: '/projects/Dental',
+        main: Dental
+      }
+      // { title: "Cyber Security",
+      //   ref: "ccsad",
+      //   caption: "Website Redesign Center for Cyber Security",
+      //   thumbnail: ccsadT,
+      //   path: '/projects/CCSAD',
+      //   main: CCSAD
+      // }
+    ]
   },
-  { type: "Cinematography",
+  {
+    type: "Cinematography",
     longThumb: true,
     projects: [
-                { title: "A Fang and a Pear's Journey",
-                  menutitle: "Fang and a Pear",
-                  ref: "pear",
-                  caption: "Short Film",
-                  thumbnail1: PearT1,
-                  thumbnail2: PearT2,
-                  thumbnail3: PearT3,
-                  path: '/projects/Pear',
-                  main: Pear
-                },
-                { title: "Grand Bouquet",
-                  menutitle: "Grand Bouquet",
-                  ref: "grandbouquet",
-                  caption: "Short Film",
-                  thumbnail1: GrandBouquetT1,
-                  thumbnail2: GrandBouquetT2,
-                  thumbnail3: GrandBouquetT3,
-                  path: '/projects/GrandBouquet',
-                  main: GrandBouquet
-                },
-                { title: "Munsingwear",
-                  menutitle: "Munsingwear",
-                  ref: "munsing",
-                  caption: "Commercial",
-                  thumbnail1: MunsingwearT1,
-                  thumbnail2: MunsingwearT4,
-                  thumbnail3: MunsingwearT2,
-                  path: '/projects/Munsingwear',
-                  main: Munsingwear
-                },
-                { title: "Intersection",
-                menutitle: "Intersection",
-                ref: "intersection",
-                caption: "Music Video",
-                thumbnail1: IntersectionT1,
-                thumbnail2: IntersectionT2,
-                thumbnail3: IntersectionT3,
-                path: '/projects/Intersection',
-                main: Intersection
-                },
-                // { title: "Baycrew's",
-                //   menutitle: "Baycrew's",
-                //   ref: "baycrew",
-                //   caption: "Commercial",
-                //   thumbnail1: BaycrewT1,
-                //   thumbnail2: BaycrewT2,
-                //   thumbnail3: BaycrewT3,
-                //   path: '/projects/Baycrew',
-                //   main: Baycrew
-                // },
-                // { title: "25 Hours in Shikoku",
-                //   menutitle: "Shikoku",
-                //   ref: "penshikoku",
-                //   caption: "Short Film",
-                //   thumbnail1: penShikokuT1,
-                //   thumbnail2: penShikokuT2,
-                //   thumbnail3: penShikokuT3,
-                //   path: '/projects/PenShikoku',
-                //   main: PenShikoku
-                // },
-                { title: "Los Mimos Monarcas",
-                  menutitle: "Monarcas",
-                  ref: "monarchs",
-                  caption: "Short Film",
-                  thumbnail1: monarchsT1,
-                  thumbnail2: monarchsT2,
-                  thumbnail3: monarchsT3,
-                  path: '/projects/Monarchs',
-                  main: Monarchs
-                },
-                // { title: "Insān",
-                //   menutitle: "Insān",
-                //   ref: "insan",
-                //   caption: "Short Film",
-                //   thumbnail1: oryxT1,
-                //   thumbnail2: oryxT2,
-                //   thumbnail3: oryxT3,
-                //   path: '/projects/Oryx',
-                //   main: Oryx
-                // },
-                // { title: "Field Work DRC",
-                //   menutitle: "Field Work DRC",
-                //   ref: "drc",
-                //   caption: "Documentary on social science research",
-                //   thumbnail1: drcT2,
-                //   thumbnail2: drcT1,
-                //   thumbnail3: drcT3,
-                //   path: '/projects/DRC',
-                //   main: DRC
-                // },
-                // { title: "Rescue",
-                //   menutitle: "Rescue",
-                //   ref: "rescue",
-                //   caption: "Space sci-Fi",
-                //   thumbnail1: rescueT1,
-                //   thumbnail2: rescueT2,
-                //   thumbnail3: rescueT3,
-                //   path: '/projects/Rescue',
-                //   main: Rescue
-                // },
-                // { title: "Ámame como Amas",
-                //   menutitle: "Ámame",
-                //   ref: "amame",
-                //   caption: "Music video",
-                //   thumbnail1: AmameT1,
-                //   thumbnail2: AmameT2,
-                //   thumbnail3: AmameT3,
-                //   path: '/projects/Amame',
-                //   main: Amame
-                // }
-                // { title: "Cinematography Workshops",
-                //   menutitle: "Workshops",
-                //   ref: "workshops",
-                //   caption: "Cinematography workshops at NYU Abu Dhabi",
-                //   thumbnail1: workshopT1,
-                //   thumbnail2: workshopT2,
-                //   thumbnail3: workshopT3,
-                //   path: '/projects/CinematographyWorkshop',
-                //   main: CinematographyWorkshop
-                // }
-                ]
+      {
+        title: "A Fang and a Pear's Journey",
+        menutitle: "Fang and a Pear",
+        ref: "pear",
+        caption: "Short Film",
+        thumbnail1: PearT1,
+        thumbnail2: PearT2,
+        thumbnail3: PearT3,
+        path: '/projects/Pear',
+        main: Pear
+      },
+      {
+        title: "Grand Bouquet",
+        menutitle: "Grand Bouquet",
+        ref: "grandbouquet",
+        caption: "Short Film",
+        thumbnail1: GrandBouquetT1,
+        thumbnail2: GrandBouquetT2,
+        thumbnail3: GrandBouquetT3,
+        path: '/projects/GrandBouquet',
+        main: GrandBouquet
+      },
+      {
+        title: "Munsingwear",
+        menutitle: "Munsingwear",
+        ref: "munsing",
+        caption: "Commercial",
+        thumbnail1: MunsingwearT1,
+        thumbnail2: MunsingwearT4,
+        thumbnail3: MunsingwearT2,
+        path: '/projects/Munsingwear',
+        main: Munsingwear
+      },
+      {
+        title: "Intersection",
+        menutitle: "Intersection",
+        ref: "intersection",
+        caption: "Music Video",
+        thumbnail1: IntersectionT1,
+        thumbnail2: IntersectionT2,
+        thumbnail3: IntersectionT3,
+        path: '/projects/Intersection',
+        main: Intersection
+      },
+      // { title: "Baycrew's",
+      //   menutitle: "Baycrew's",
+      //   ref: "baycrew",
+      //   caption: "Commercial",
+      //   thumbnail1: BaycrewT1,
+      //   thumbnail2: BaycrewT2,
+      //   thumbnail3: BaycrewT3,
+      //   path: '/projects/Baycrew',
+      //   main: Baycrew
+      // },
+      // { title: "25 Hours in Shikoku",
+      //   menutitle: "Shikoku",
+      //   ref: "penshikoku",
+      //   caption: "Short Film",
+      //   thumbnail1: penShikokuT1,
+      //   thumbnail2: penShikokuT2,
+      //   thumbnail3: penShikokuT3,
+      //   path: '/projects/PenShikoku',
+      //   main: PenShikoku
+      // },
+      {
+        title: "Los Mimos Monarcas",
+        menutitle: "Monarcas",
+        ref: "monarchs",
+        caption: "Short Film",
+        thumbnail1: monarchsT1,
+        thumbnail2: monarchsT2,
+        thumbnail3: monarchsT3,
+        path: '/projects/Monarchs',
+        main: Monarchs
+      },
+      // { title: "Insān",
+      //   menutitle: "Insān",
+      //   ref: "insan",
+      //   caption: "Short Film",
+      //   thumbnail1: oryxT1,
+      //   thumbnail2: oryxT2,
+      //   thumbnail3: oryxT3,
+      //   path: '/projects/Oryx',
+      //   main: Oryx
+      // },
+      // { title: "Field Work DRC",
+      //   menutitle: "Field Work DRC",
+      //   ref: "drc",
+      //   caption: "Documentary on social science research",
+      //   thumbnail1: drcT2,
+      //   thumbnail2: drcT1,
+      //   thumbnail3: drcT3,
+      //   path: '/projects/DRC',
+      //   main: DRC
+      // },
+      // { title: "Rescue",
+      //   menutitle: "Rescue",
+      //   ref: "rescue",
+      //   caption: "Space sci-Fi",
+      //   thumbnail1: rescueT1,
+      //   thumbnail2: rescueT2,
+      //   thumbnail3: rescueT3,
+      //   path: '/projects/Rescue',
+      //   main: Rescue
+      // },
+      // { title: "Ámame como Amas",
+      //   menutitle: "Ámame",
+      //   ref: "amame",
+      //   caption: "Music video",
+      //   thumbnail1: AmameT1,
+      //   thumbnail2: AmameT2,
+      //   thumbnail3: AmameT3,
+      //   path: '/projects/Amame',
+      //   main: Amame
+      // }
+      // { title: "Cinematography Workshops",
+      //   menutitle: "Workshops",
+      //   ref: "workshops",
+      //   caption: "Cinematography workshops at NYU Abu Dhabi",
+      //   thumbnail1: workshopT1,
+      //   thumbnail2: workshopT2,
+      //   thumbnail3: workshopT3,
+      //   path: '/projects/CinematographyWorkshop',
+      //   main: CinematographyWorkshop
+      // }
+    ]
   },
   // { type: "Photography",
   //   longThumb: false,

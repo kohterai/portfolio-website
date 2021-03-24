@@ -33,11 +33,8 @@ class About extends Component {
                   <h2>About</h2>
                   <p><em>I care deeply about beauty</em><br></br>Getting the rythm, balance, and tempo to the pixel (or millimeter) and or the milisecond (or frame) is important. I believe this is what separates good from excellence.</p>
                   <p><em>I care deeply about intention</em><br></br>I feel responsible as a designer to ensure that what gets created fits positively into the lives of who we are creating for. This means having a nuanced understanding of users and their context. I believe that every design decision has an impact on the product and the user's life, and on society. I try to be aware of the consequences of my decisions.</p>
-                  <p><em>I care deeply about the final delivery</em><br></br>Unrealistic (unshippable) design is useless. As a designer I believe an understanding of code and regulations is important to have a clear understanding of boundaries (technical and regulatory) from the getgo.</p>
+                  <p><em>I care deeply about the final delivery</em><br></br>Unrealistic (unshippable) design is not very useful in a production environment. As a designer I believe an understanding of code and regulations is important to have a clear understanding of constraints (technical and regulatory) from the getgo.</p>
                   {/* <p><em>I care deeply about building things that matter.</em><br></br></p> */}
-
-                  {/* <h2>Words from Collaborators</h2> */}
-
 
                 </div>
                 <div style={{marginTop: '0px'}} className="text-paragraphs">

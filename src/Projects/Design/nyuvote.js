@@ -55,7 +55,7 @@ class NYUVote extends Component {
         </div>
         
         <ImageLoader source={nyuvote3} />
-        <ImageLoader source={nyuvote2} />
+        {/* <ImageLoader source={nyuvote2} /> */}
 
         {/* <div className="text-container">
           <div className = "text-paragraphs">

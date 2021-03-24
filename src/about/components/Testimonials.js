@@ -5,7 +5,7 @@ import {
   Link
 } from 'react-router-dom'
 
-class TitleLine extends Component {
+class Testimonial extends Component {
   render() {
     return (
       <div className="title-wrapper" style={{marginBottom: '12px'}}>
@@ -23,4 +23,4 @@ class TitleLine extends Component {
   }
 }
 
-export default TitleLine
+export default Testimonial

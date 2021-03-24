@@ -102,7 +102,10 @@ class Menu extends Component {
     function displaySubmenu(path, projType) {
       var res = path.split("/")
       // len = 2 means we are on homepage
-      if (res.length<3) {
+      console.log(res)
+      // Because main path has /projects now
+      if (res[2] == "" || res.length<3) {
+      // if (res.length<3) {
         if ($("#menu-list").hasClass("expanded")) {
           //we are collapsing the menu
           $("#menu-list").removeClass("expanded")
@@ -205,10 +208,10 @@ class Menu extends Component {
     function menuBallAnimate(path) {
       $( document ).ready(function() {
         // console.log(path)
-        if (path == "/" && !($("#menu-list").hasClass("collapsing"))) {
+        if (path == "/projects/" && !($("#menu-list").hasClass("collapsing"))) {
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
-        } else if (path=="/about") {
+        } else if (path=="/") {
           console.log("in about")
           // Hide both balls
 
@@ -281,7 +284,9 @@ class Menu extends Component {
             <MenuBall idName={"menu-ball-sub"} />
 
 
-            <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/about" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
+            {/* No need to recover ball when we are making KOH TERAI goto about page instead of the thumbnail page */}
+            {/* <Link onClick={(event) => { this.closeMenu.bind(this); this.getBallBack(); }} to="/about" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}} */}
+            <Link onClick={(event) => { this.closeMenu.bind(this); }} to="/" style={{fontSize: '1.5em', fontWeight: '600', color: '#000000'}}
             className="active-title">
               Koh Terai
             </Link>

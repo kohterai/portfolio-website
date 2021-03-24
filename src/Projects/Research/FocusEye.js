@@ -27,7 +27,9 @@ class focuseye extends Component {
   render() {
     return (
       <div className="project-content">
-        <ImageLoader source={focuseye8} />
+        {/* <ImageLoader source={focuseye8} /> */}
+        <ImageLoader source={focuseye1} />
+
 
         <div className="text-container">
           <h1>Focus Eye</h1>
@@ -49,7 +51,6 @@ class focuseye extends Component {
           </div>
         </div>
         
-        <ImageLoader source={focuseye1} />
         <ImageLoader source={focuseye2} />
         <ImageLoader source={focuseye3} />
 
