@@ -12,6 +12,7 @@ import ScrollToTopRoute from './ScrollToTopRoute';
 import ReactPlayer from 'react-player'
 import Footer from './Footer'
 import About from './about/About'
+import { Beforeunload } from 'react-beforeunload';
 
 
 
@@ -51,47 +52,47 @@ const Main = () => (
   //   <div>Grand Bouquet</div>
   //   <div>Berita Harian</div> */}
 
-
-
   // </div>
 
   // Full version
-  <Router>
-      <div id ="main-container">
+  // <Beforeunload onBeforeunload= {localStorage.removeItem('token')}>
+    <Router>
+        <div id ="main-container">
 
-        <ScrollToTopRoute path="/" component={Menu}/>
+          <ScrollToTopRoute path="/" component={Menu}/>
 
-        <div id="content-container">
-          <div>
-            {routes.map((route, index) => (
-              <ScrollToTopRoute
-                key={index}
-                path={route.path}
-                exact={route.exact}
-                component={route.main}
-              />
-            ))}
+          <div id="content-container">
+            <div>
+              {routes.map((route, index) => (
+                <ScrollToTopRoute
+                  key={index}
+                  path={route.path}
+                  exact={route.exact}
+                  component={route.main}
+                />
+              ))}
+            </div>
+            <div>
+              {projectList.map((projectList, index) => (
+                  <div key={index}>
+                  {projectList.projects.map((project, index) => (
+                                <ScrollToTopRoute
+                                  key={index}
+                                  path={project.path}
+                                  exact={true}
+                                  component={project.main}
+                                />
+                  ))}
+                  </div>
+              ))}
+            </div>
+          <Footer />
+
           </div>
-          <div>
-            {projectList.map((projectList, index) => (
-                <div key={index}>
-                {projectList.projects.map((project, index) => (
-                              <ScrollToTopRoute
-                                key={index}
-                                path={project.path}
-                                exact={true}
-                                component={project.main}
-                              />
-                ))}
-                </div>
-            ))}
-          </div>
-        <Footer />
 
         </div>
-
-      </div>
-  </Router>
+    </Router>
+  // </Beforeunload>
 )
 
          // <Route exact path="/" render={() => 

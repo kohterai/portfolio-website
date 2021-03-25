@@ -10,6 +10,22 @@ import TitleLine from './components/TitleLine'
 import './About.css'
 
 class About extends Component {
+  // onUnload = e => { // the method that will be used for both add and remove event
+  //   // e.preventDefault();
+  //   // e.returnValue = '';
+  //   console.log("coming in here");
+  //   localStorage.removeItem('token');
+  //   return '';
+  // }
+
+  // componentDidMount() {
+  //     window.addEventListener("beforeunload", this.onUnload);
+  // }
+
+  // componentWillUnmount() {
+  //     window.removeEventListener("beforeunload", this.onUnload);
+  // }
+  
   render() {
     return (
       <div id="about">
@@ -17,12 +33,14 @@ class About extends Component {
           <div>
             <div style={{ width: '100%' }}>
               <h1 id="about-header" style={{ fontSize: '1.5em', marginTop: 10, marginBottom: 5, fontWeight: 600 }}>
-                Hello, I'm Koh
+                Hello, I'm Koh!
               </h1>
-              <h2 style={{ fontSize: '1.0em', marginTop: 5, marginBottom: 10, fontWeight: 300, color: "#a3a3a3" }}>
-                {/* I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span> */}
+              <h1 id="about-header" style={{ fontSize: '1.5em', paddingTop: 0, marginTop: 0, marginBottom: 5, fontWeight: 600 }}>
+                I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span>
+              </h1>
+              {/* <h2 style={{ fontSize: '1.0em', marginTop: 5, marginBottom: 10, fontWeight: 300, color: "#a3a3a3" }}>
                 I design products and services
-              </h2>
+              </h2> */}
               {/* <img style={{width: '100%'}} src={portrait} /> */}
             </div>
             <div className="project-content">
@@ -31,9 +49,9 @@ class About extends Component {
                 {/* Left Col */}
                 <div style={{marginTop: '0px'}} className="text-paragraphs">
                   <h2>About</h2>
-                  <p><em>I care deeply about beauty</em><br></br>Getting the rythm, balance, and tempo to the pixel (or millimeter) and or the milisecond (or frame) is important. I believe this is what separates good from excellence.</p>
-                  <p><em>I care deeply about intention</em><br></br>I feel responsible as a designer to ensure that what gets created fits positively into the lives of who we are creating for. This means having a nuanced understanding of users and their context. I believe that every design decision has an impact on the product and the user's life, and on society. I try to be aware of the consequences of my decisions.</p>
-                  <p><em>I care deeply about the final delivery</em><br></br>Unrealistic (unshippable) design is not very useful in a production environment. As a designer I believe an understanding of code and regulations is important to have a clear understanding of constraints (technical and regulatory) from the getgo.</p>
+                  <p><span style={{ fontWeight: "800", color: "black" }}>I care deeply about details</span><br></br>Getting the rhythm, balance, and tempo to the pixel (or millimeter) and or the millisecond (or frame) is important. I believe this is what separates good from great.</p>
+                  <p><span style={{ fontWeight: "800", color: "black" }}>I care deeply about intention</span><br></br>I feel responsible as a designer to ensure that what gets created fits positively into the lives of who we are creating for. This means having a nuanced understanding of users and their context. I believe that every design decision has an impact on the product and the user's life, and on society.</p>
+                  <p><span style={{ fontWeight: "800", color: "black" }}>I care deeply about the final delivery</span><br></br>Unrealistic (unshippable) design is not useful in a production environment. As a designer, I believe having a deep understanding of technical and regulatory constraints from the get-go allows me to produce the most elegant design decisions that are implementable.</p>
                   {/* <p><em>I care deeply about building things that matter.</em><br></br></p> */}
 
                 </div>

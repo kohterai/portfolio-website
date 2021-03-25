@@ -9,8 +9,24 @@ import $ from 'jquery'
 import Waypoint from 'react-waypoint'
 
 
-class ThumbnailCatalog extends Component {
+class 
+ThumbnailCatalog extends Component {
 
+  // onUnload = e => { // the method that will be used for both add and remove event
+  //   // e.preventDefault();
+  //   // e.returnValue = '';
+  //   console.log("coming in here");
+  //   localStorage.removeItem('token');
+  //   return '';
+  // }
+
+  // componentDidMount() {
+  //     window.addEventListener("beforeunload", this.onUnload);
+  // }
+
+  // componentWillUnmount() {
+  //     window.removeEventListener("beforeunload", this.onUnload);
+  // }
 
   _enterSection(msg) {
 

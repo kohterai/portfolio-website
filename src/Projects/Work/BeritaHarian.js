@@ -40,8 +40,7 @@ class BeritaHarian extends Component {
           <div className = "text-paragraphs">
             <h2>Research</h2>
             <p>
-              I put together sacrificial concepts and conducted research to understand reader's behaviours around the newspaper, and how we could redesign the web experience for the Malay community.
-            </p>
+              I put together sacrificial concepts and conducted research to understand reader's behaviors around the newspaper, and how we could redesign the web experience for the Malay community.            </p>
             </div>
           </div>
         <ImageLoader source={bh3} />
@@ -52,7 +51,7 @@ class BeritaHarian extends Component {
           <div className = "text-paragraphs">
             <h2>Outcome</h2>
             <p>
-              As an interaction designer, I redesigned their entire navigational structure, information architecture, comments section, search, and filtering mechanism.
+            As an interaction designer, I redesigned their entire information architecture, navigation, comments section, search, and filtering mechanism to allow readers to find the content they are looking for as quickly and easily as possible.
             </p>
           </div>
         </div>

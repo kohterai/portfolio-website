@@ -9,6 +9,7 @@
     "jquery": "^3.2.1",
     "react": "^15.6.1",
     "react-background-image-loader": "0.0.5",
+    "react-beforeunload": "^2.4.0",
     "react-burger-menu": "^2.1.4",
     "react-dom": "^15.6.1",
     "react-hamburger-menu": "0.0.4",

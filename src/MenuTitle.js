@@ -75,9 +75,14 @@ class MenuTitle extends Component {
               }
             });
         } else {
-          var ballPos = $(`#menu-title-a-${id}`).position().top + 61
-          $("#menu-ball").css({marginTop: ballPos})
-          $("#menu-ball").addClass("scrolling")
+          try {
+            var ballPos = $(`#menu-title-a-${id}`).position().top + 61
+            $("#menu-ball").css({marginTop: ballPos})
+            $("#menu-ball").addClass("scrolling")
+          } catch(e) {
+            // Donothing
+          }
+
 
 
           // console.log("scroll function")

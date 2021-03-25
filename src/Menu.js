@@ -14,6 +14,22 @@ import MenuBall from './MenuBall'
 
 class Menu extends Component {
 
+  // onUnload = e => { // the method that will be used for both add and remove event
+  //   // e.preventDefault();
+  //   // e.returnValue = '';
+  //   console.log("coming in here");
+  //   localStorage.removeItem('token');
+  //   return '';
+  // }
+
+  // componentDidMount() {
+  //     window.addEventListener("beforeunload", this.onUnload);
+  // }
+
+  // componentWillUnmount() {
+  //     window.removeEventListener("beforeunload", this.onUnload);
+  // }
+
   constructor(props) {
     super(props);
     this.state = {open: false};

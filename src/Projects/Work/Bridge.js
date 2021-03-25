@@ -31,7 +31,7 @@ class Bridge extends Component {
           <h1>Bridge</h1>
           <h6>Loan Management Tablet App</h6>
 
-          <p>I led the product design for a Tablet App for processing loans for a Microfinance company in Myanmar. The prior to the tablet App, all of the
+          <p>I led the product design for a Tablet App for processing loans for a Microfinance company in Myanmar. Prior to the tablet App, all of the
             loan officers processed the applications with pen and paper. The App attempts to make managing loans and customers faster and easier than ever.
           </p>
         </div>
@@ -53,8 +53,7 @@ class Bridge extends Component {
           <div className = "text-paragraphs">
             <h2>Analogous Field Research</h2>
             <p>
-              As a replacement for in-person research in Myanmar, I spent one week of shadowing with loan officers in Cambodia, to at least get a general understanding of what the lives, and behaviors around loan officers are.
-              These shadowing activities were documented on video to share with the rest of the team.
+              As a replacement for in-person research in Myanmar, I spent one-week shadowing loan officers in Cambodia, to at least get a general understanding of what the lives and behaviors around loan officers are. These shadowing activities were documented on the video to share with the rest of the team.
             </p>
             </div>
           </div>
@@ -94,9 +93,7 @@ class Bridge extends Component {
           <div className = "text-paragraphs">
             <h2>State Management</h2>
             <p>
-              Half of the complexity of the App comes from managing states.
-              There are a complex mixture of states that need to be displayed to the user based on combinations of loan and customer states.
-              I tried to design components in a way that allow clear distinction to the user regarding the client, and can easily be extended to future components.
+            Half of the complexity of the App comes from managing states. There is a complex mixture of states that need to be displayed to the user based on combinations of loan and customer states. I tried to design components in a way that allows a clear distinction to the user regarding the client, and can easily be extended to future components.
             </p>
           </div>
         </div>
@@ -106,12 +103,11 @@ class Bridge extends Component {
         <div className="text-container">
           <div className = "text-paragraphs">
             <h2>Design System</h2>
-            <p>The product was scheduled to also be deployed at Microfinance companies in Cambodia, Sri Lanka, and India, all with slightly different requirements.
-              I kept all of components as modular as possible, so that the product manager could easily reconfigure the screens to prototype for future deployments.
+            <p>
+              The product was scheduled to also be deployed at Microfinance companies in Cambodia, Sri Lanka, and India, all with slightly different requirements. I kept all of the components as modular as possible so that the product manager could easily reconfigure the screens to prototype for future deployments.
             </p>
             <p>
-              In fact, Figma released variants and improved their auto align feature during the project, so I found myself "refactoring" my Figma files as I went along to
-              make the best use of these newly released features. 
+              Figma released variants and improved their auto-align feature during the project, so I found myself "refactoring" my Figma files as I went along to make the best use of these newly released features.
             </p>
           </div>
         </div>

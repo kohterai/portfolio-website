@@ -43,7 +43,7 @@ class MLady extends Component {
           <p>I helped design and launch an agent banking service in Rural Cambodia for small loans ($50~). I conducted design research to sharpen the service proposition and designed and built an App for the agents.
             The service is growing at over 20% per month and has provided over $100,000 in loans to villagers.</p>
           <p>
-            I strived to design the clearest, most user-friendly and hassle-free small loan product in Cambodia.
+            I strived to design the clearest, most user-friendly, and hassle-free small loan product in Cambodia.
           </p>
         </div>
 
@@ -75,10 +75,7 @@ class MLady extends Component {
           <div className = "text-paragraphs">
             <h2>Shaping the Product</h2>
             <p>
-              A big part of this project was creating an App that would enable loan processing in the rural areas.
-              In order to develop this App, I conducted a thorough process analysis, customer journey mapping, and disected all of the systems in play.
-              I created a tech stack that would enable us to start deploying the tool as soon as possible.
-              In addition, I sketched sacrificial concepts to test and align with stakeholders.
+              A big part of this project was creating an App that would enable loan processing in rural areas. To develop this App, I conducted a thorough process analysis, customer journey mapping, and dissected all of the systems in play. I created a tech stack that would enable us to start deploying the tool as soon as possible. I sketched sacrificial concepts to test and align with stakeholders.
             </p>
           </div>
         </div>
@@ -116,8 +113,7 @@ class MLady extends Component {
               I redesigned all of the forms so that they are easy to fill and understand. We wanted to break the stereotype of loans being highly complicated.
             </p>
             <p>
-              When the forms can be filled easily by the agents, the customers also feel at ease. The opposite is true that any friction the agents have with the tools that we give them,
-              immediately translate to anxiety, or doubt to our customers. I firmly believed that well designed forms were key to great service delivery.
+            When the forms can be filled easily by the agents, the customers also feel at ease. The opposite is true that any friction the agents have with the tools that we give them, immediately translates to anxiety, or doubt to our customers. I firmly believed that well-designed forms were key to great service delivery.
             </p>
           </div>
         </div>
