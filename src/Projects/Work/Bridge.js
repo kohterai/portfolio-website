@@ -25,7 +25,7 @@ class Bridge extends Component {
   render() {
     return (
       <div className="project-content">
-        <ImageLoader source={bridge1} />
+        <ImageLoader source={bridge1} ratio="r169"/>
 
         <div className="text-container">
           <h1>Bridge</h1>

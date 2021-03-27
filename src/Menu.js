@@ -11,6 +11,8 @@ import HamburgerMenu from 'react-hamburger-menu'
 import { slide as AnimatedMenu } from 'react-burger-menu'
 import Headroom from 'react-headroom'
 import MenuBall from './MenuBall'
+import { useHistory } from 'react-router-dom'
+
 
 class Menu extends Component {
 
@@ -34,6 +36,38 @@ class Menu extends Component {
     super(props);
     this.state = {open: false};
   }
+
+
+  
+  componentDidMount() {
+    if (this.props.history.action === "POP") {
+        console.log("here")
+        // custom back button implementation
+    }
+}
+
+  // componentDidMount() {
+  //   console.log(this.props.history.action);
+
+  //   if (this.props.history.action === "POP") {
+  //     console.log("in this myster");
+  //     // custom back button implementation
+  //   }
+
+  //   // this._isMounted = true;
+  //   // window.onpopstate = ()=> {
+  //   //   if(this._isMounted) {
+  //   //     console.log("in this mystery")
+  //   //     // const { hash } = location;
+  //   //     // if(hash.indexOf('home')>-1 && this.state.value!==0)
+  //   //     //   this.setState({value: 0})
+  //   //     // if(hash.indexOf('users')>-1 && this.state.value!==1)
+  //   //     //   this.setState({value: 1})
+  //   //     // if(hash.indexOf('data')>-1 && this.state.value!==2)
+  //   //     //   this.setState({value: 2})
+  //   //   }
+  //   // }
+  // }
 
   handleClick() {
     this.setState({
@@ -79,6 +113,7 @@ class Menu extends Component {
       $("#menu-ball")
         .delay(10)
         .queue(function (next) {
+          console.log("Menu Ball pos2")
           var ballPos = $(`#menu-title-a-${projectList[0].type}`).position().top + 61
           //temporarily disable transitions while we reposition the ball instantly
           $("#menu-ball").addClass("no-transition")
@@ -117,6 +152,7 @@ class Menu extends Component {
     // Function should be relocated to somewhere more appropiate (block, none, matters much less now)
     function displaySubmenu(path, projType) {
       var res = path.split("/")
+      console.log("called")
       // len = 2 means we are on homepage
       // console.log(res)
       // Because main path has /projects now
@@ -223,8 +259,17 @@ class Menu extends Component {
     // get ball when loading landing page path: "/"
     function menuBallAnimate(path) {
       $( document ).ready(function() {
-        // console.log(path)
-        if (path == "/projects/" && !($("#menu-list").hasClass("collapsing"))) {
+        console.log(path)
+        // This means that it's inside a project
+        if (path == "/projects/") {
+          console.log("at back")
+          $("#menu-ball").removeClass("ball-exit")
+          $("#menu-ball").addClass("ball-enter")
+          $("#menu-ball-sub").removeClass("ball-enter-sub")
+          $("#menu-ball-sub").addClass("ball-exit-sub")
+        }
+        else if (path == "/projects/" && !($("#menu-list").hasClass("collapsing"))) {
+          console.log("in project");
           $("#menu-ball").removeClass("ball-exit")
           $("#menu-ball").addClass("ball-enter")
         } else if (path=="/") {

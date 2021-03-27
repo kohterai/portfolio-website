@@ -25,7 +25,7 @@ class Fluident extends Component {
   render() {
     return (
       <div className="project-content">
-        <ImageLoader source={fluident2} />
+        <ImageLoader source={fluident2} ratio="r169" />
 
         <div className="text-container">
           <h1>Fluident</h1>

@@ -35,12 +35,12 @@ class About extends Component {
               <h1 id="about-header" style={{ fontSize: '1.5em', marginTop: 10, marginBottom: 5, fontWeight: 600 }}>
                 Hello, I'm Koh!
               </h1>
-              <h1 id="about-header" style={{ fontSize: '1.5em', paddingTop: 0, marginTop: 0, marginBottom: 5, fontWeight: 600 }}>
+              {/* <h1 id="about-header" style={{ fontSize: '1.5em', paddingTop: 0, marginTop: 0, marginBottom: 5, fontWeight: 600 }}>
                 I design <span style={{ fontWeight: 700, color: "#F5AC1F" }}>products</span> and <span style={{ fontWeight: 700, color: "#F5AC1F" }}>services</span>
-              </h1>
-              {/* <h2 style={{ fontSize: '1.0em', marginTop: 5, marginBottom: 10, fontWeight: 300, color: "#a3a3a3" }}>
+              </h1> */}
+              <h2 style={{ fontSize: '1.0em', marginTop: 5, marginBottom: 10, fontWeight: 300, color: "#a3a3a3" }}>
                 I design products and services
-              </h2> */}
+              </h2>
               {/* <img style={{width: '100%'}} src={portrait} /> */}
             </div>
             <div className="project-content">
