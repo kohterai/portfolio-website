@@ -58,7 +58,7 @@ class About extends Component {
                 <div style={{marginTop: '0px'}} className="text-paragraphs">
                   <div className="about-section-group">
                     <h2>Education</h2>
-                    <TitleLine url="https://nyuad.nyu.edu/en/" name="New York University Abu Dhabi" title="B.S. Computer Science" date="2017 - 2018" />
+                    <TitleLine url="https://nyuad.nyu.edu/en/" name="New York University Abu Dhabi" title="B.S. Computer Science" date="2013 - 2017" />
                   </div>
 
                   <div className="about-section-group">
