@@ -1,7 +1,7 @@
 var pathList = document.getElementsByClassName("path");
 
-console.log(pathList)
-console.log("Hello")
+// console.log(pathList)
+// console.log("Hello")
 
 for(i = 0; i < pathList.length; i++){
 	var pathLength = pathList[i].getTotalLength();
